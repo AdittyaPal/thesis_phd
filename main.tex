@@ -1,0 +1,77 @@
+\documentclass[
+  a4paper,
+  twoside,
+  openright,
+  fontsize=13pt,
+  headings=normal,
+  DIV=10,
+  BCOR=10mm,
+  headinclude,
+  footinclude
+]{scrbook}
+
+% Encoding and language
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Classicthesis
+\usepackage[
+  eulerchapternumbers,
+  linedheaders,
+  parts
+]{classicthesis}
+
+\usepackage[
+  backend=biber,
+  style=numeric-comp,
+  sorting=none
+]{biblatex}
+\addbibresource{references.bib}
+
+
+% Math, figures, links
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{packages/kbordermatrix}
+\usepackage{comment}
+
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{adjustbox}
+
+\usepackage{chemfig}
+\setchemfig{atom sep=1.8em}
+
+% Metadata and tweaks
+\input{config/metadata}
+\input{config/classicthesis-config}
+
+\begin{document}
+
+\frontmatter
+\input{frontmatter/titlepage}
+\input{frontmatter/titlepage_reverse}
+\input{frontmatter/abstract}
+\tableofcontents
+
+\mainmatter
+\input{chapters/chapter0}
+\input{chapters/chapter1}
+\input{chapters/chapter2}
+\input{chapters/chapter3}
+\input{chapters/chapter4}
+\input{chapters/chapter5}
+\input{chapters/epilog}
+
+\backmatter
+\input{backmatter/bibliography}
+\input{backmatter/acknowledgements}
+
+\end{document}
+
