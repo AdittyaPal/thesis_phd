@@ -19,6 +19,2600 @@
 
 \refsection{1}
   \datalist[entry]{none/global//global/global}
+    \entry{crn_metabolite}{article}{}
+      \name{author}{13}{}{%
+        {{hash=3b0c55a812af5f3b0b49b1355e731776}{%
+           family={Krüsemann},
+           familyi={K\bibinitperiod},
+           given={Jan\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=48b351b7877af5789f583cf016efb1b2}{%
+           family={Lindner},
+           familyi={L\bibinitperiod},
+           given={Steffen\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=b0a023b0f57f63fdbd0fe185155f7ee9}{%
+           family={Dempfle},
+           familyi={D\bibinitperiod},
+           given={Marian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=96ad56229ab77734e322583117a47bb2}{%
+           family={Widmer},
+           familyi={W\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fd3aea8495dcf53d7bc726e01af9fd40}{%
+           family={Arrivault},
+           familyi={A\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6011ea343616edbfedf86e8ee66e5186}{%
+           family={Debacker},
+           familyi={D\bibinitperiod},
+           given={Marine},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4e99b84efc882220f21b2be124c3aa25}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Hai},
+           giveni={H\bibinitperiod}}}%
+        {{hash=780686ac7824980187b54e8d5f2ad161}{%
+           family={Kubis},
+           familyi={K\bibinitperiod},
+           given={Armin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6962371b52a097a1545c2f5a556a4383}{%
+           family={Chayot},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ac13d73615ea709bbbb0fca68f3e6461}{%
+           family={Anissimova},
+           familyi={A\bibinitperiod},
+           given={Macha},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d8eb274eaa46f88e2d986089a40f3764}{%
+           family={Marlière},
+           familyi={M\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0fed62863410287f260dcc70cc60f2c8}{%
+           family={Cotton},
+           familyi={C\bibinitperiod},
+           given={Charles\bibnamedelimb A.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ae4129b04ab3d0c000c330d82ccb72e9}{%
+           family={Bar-Even},
+           familyi={B\bibinithyphendelim E\bibinitperiod},
+           given={Arren},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc539a99524d9fbecff875b9ecaa4635}
+      \strng{fullhash}{09ce16de3103349d4de38335a7b245b5}
+      \strng{bibnamehash}{bc539a99524d9fbecff875b9ecaa4635}
+      \strng{authorbibnamehash}{bc539a99524d9fbecff875b9ecaa4635}
+      \strng{authornamehash}{bc539a99524d9fbecff875b9ecaa4635}
+      \strng{authorfullhash}{09ce16de3103349d4de38335a7b245b5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The FEBS Journal}
+      \field{number}{23}
+      \field{title}{Artificial pathway emergence in central metabolism from three recursive phosphoketolase reactions}
+      \field{volume}{285}
+      \field{year}{2018}
+      \field{pages}{4367\bibrangedash 4377}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1111/febs.14682
+      \endverb
+      \verb{eprint}
+      \verb https://febs.onlinelibrary.wiley.com/doi/pdf/10.1111/febs.14682
+      \endverb
+      \verb{urlraw}
+      \verb https://febs.onlinelibrary.wiley.com/doi/abs/10.1111/febs.14682
+      \endverb
+      \verb{url}
+      \verb https://febs.onlinelibrary.wiley.com/doi/abs/10.1111/febs.14682
+      \endverb
+      \keyw{metabolomics,pathway evolution,pentose phosphate pathway,promiscuous activity,recursive chemistry}
+    \endentry
+    \entry{crn_atmosphere}{article}{}
+      \name{author}{3}{}{%
+        {{hash=febd50b7480e83359250242c07ad35cc}{%
+           family={Kuypers},
+           familyi={K\bibinitperiod},
+           given={Marcel\bibnamedelima MM},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1fe61e397da15df14cf8fa57b9744fe6}{%
+           family={Marchant},
+           familyi={M\bibinitperiod},
+           given={Hannah\bibnamedelima K},
+           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=4fa924d0ad8ee1698719e960b0cca7a3}{%
+           family={Kartal},
+           familyi={K\bibinitperiod},
+           given={Boran},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{079aa3b11688742fe7c93d8d4e4d1557}
+      \strng{fullhash}{079aa3b11688742fe7c93d8d4e4d1557}
+      \strng{bibnamehash}{079aa3b11688742fe7c93d8d4e4d1557}
+      \strng{authorbibnamehash}{079aa3b11688742fe7c93d8d4e4d1557}
+      \strng{authornamehash}{079aa3b11688742fe7c93d8d4e4d1557}
+      \strng{authorfullhash}{079aa3b11688742fe7c93d8d4e4d1557}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Reviews Microbiology}
+      \field{number}{5}
+      \field{title}{The microbial nitrogen-cycling network}
+      \field{volume}{16}
+      \field{year}{2018}
+      \field{pages}{263\bibrangedash 276}
+      \range{pages}{14}
+    \endentry
+    \entry{crn_astronomy}{article}{}
+      \name{author}{2}{}{%
+        {{hash=46fac683f5bae0d27a893e5a512dbb1c}{%
+           family={Enrique-Romero},
+           familyi={E\bibinithyphendelim R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1ce140d2d5c2a14b149db45b18d0f787}{%
+           family={Lamberts},
+           familyi={L\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ae511446762a2393c93fe639bf5a899}
+      \strng{fullhash}{0ae511446762a2393c93fe639bf5a899}
+      \strng{bibnamehash}{0ae511446762a2393c93fe639bf5a899}
+      \strng{authorbibnamehash}{0ae511446762a2393c93fe639bf5a899}
+      \strng{authornamehash}{0ae511446762a2393c93fe639bf5a899}
+      \strng{authorfullhash}{0ae511446762a2393c93fe639bf5a899}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{A\&A}
+      \field{title}{Methanimine as a sink in the HCN and HNC solid state hydrogenation network}
+      \field{volume}{709}
+      \field{year}{2026}
+      \field{pages}{A116}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1051/0004-6361/202659799
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1051/0004-6361/202659799
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1051/0004-6361/202659799
+      \endverb
+    \endentry
+    \entry{rmg2}{article}{}
+      \name{author}{14}{}{%
+        {{hash=86a39f2dede83dfc83f945972c169479}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Mengjie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7e39b70e235bb2cfd51cb77c8d6b73c7}{%
+           family={Grinberg\bibnamedelima Dana},
+           familyi={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Alon},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a4c5e53a38f473e3ac06bdc8d5a53006}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Matthew\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7740ba64d5b7b8a5183458274e08ef2b}{%
+           family={Goldman},
+           familyi={G\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8d1c42161a752d5b6292e5cb6a46c42b}{%
+           family={Jocher},
+           familyi={J\bibinitperiod},
+           given={Agnes},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bf18236d970b20cd76bafcc4dc044992}{%
+           family={Payne},
+           familyi={P\bibinitperiod},
+           given={A.\bibnamedelimi Mark},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=fc7697582f935e6e50958fc826ac5cd5}{%
+           family={Grambow},
+           familyi={G\bibinitperiod},
+           given={Colin\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5bab1a2638b76a1c4cb31a8600285ae3}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Kehang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=36feaa96f39847b860ce4fd97ad2e862}{%
+           family={Yee},
+           familyi={Y\bibinitperiod},
+           given={Nathan\bibnamedelima W.},
+           giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=09ac3028a0d559b62f9d92575246343f}{%
+           family={Mazeau},
+           familyi={M\bibinitperiod},
+           given={Emily\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c96d3c85134ceb8919f9ddf1e68d5cf0}{%
+           family={Blondal},
+           familyi={B\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=85c794dda1d4e77e8b2345454135f0ef}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={Richard\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=06b25512183525ddb286847a1497a066}{%
+           family={Goldsmith},
+           familyi={G\bibinitperiod},
+           given={C.\bibnamedelimi Franklin},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=6f18552ff0ae36edff9a8d9012dd1ce8}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={William\bibnamedelima H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{16dcb4f708edfd799f20c7b6a36884ba}
+      \strng{fullhash}{3facf0baa285ed6151af8b75c3908a90}
+      \strng{bibnamehash}{16dcb4f708edfd799f20c7b6a36884ba}
+      \strng{authorbibnamehash}{16dcb4f708edfd799f20c7b6a36884ba}
+      \strng{authornamehash}{16dcb4f708edfd799f20c7b6a36884ba}
+      \strng{authorfullhash}{3facf0baa285ed6151af8b75c3908a90}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Information and Modeling}
+      \field{note}{PMID: 34048230}
+      \field{number}{6}
+      \field{title}{Reaction Mechanism Generator v3.0: Advances in Automatic Mechanism Generation}
+      \field{volume}{61}
+      \field{year}{2021}
+      \field{pages}{2686\bibrangedash 2696}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/acs.jcim.0c01480
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jcim.0c01480
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jcim.0c01480
+      \endverb
+    \endentry
+    \entry{chemotron}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ca2b55ef155b88a24d569474f0a9cbc4}{%
+           family={Unsleber},
+           familyi={U\bibinitperiod},
+           given={Jan\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=f0f42f86dbfa0d0d6a0bcf05e6684e4c}{%
+           family={Grimmel},
+           familyi={G\bibinitperiod},
+           given={Stephanie\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=101a884703c155ac5ca9bc3f658bcc99}{%
+           family={Reiher},
+           familyi={R\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{345c0cbb97b63d8b79bcb8cdc0eb722c}
+      \strng{fullhash}{345c0cbb97b63d8b79bcb8cdc0eb722c}
+      \strng{bibnamehash}{345c0cbb97b63d8b79bcb8cdc0eb722c}
+      \strng{authorbibnamehash}{345c0cbb97b63d8b79bcb8cdc0eb722c}
+      \strng{authornamehash}{345c0cbb97b63d8b79bcb8cdc0eb722c}
+      \strng{authorfullhash}{345c0cbb97b63d8b79bcb8cdc0eb722c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Theory and Computation}
+      \field{note}{PMID: 35926118}
+      \field{number}{9}
+      \field{title}{Chemoton 2.0: Autonomous Exploration of Chemical Reaction Networks}
+      \field{volume}{18}
+      \field{year}{2022}
+      \field{pages}{5393\bibrangedash 5409}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1021/acs.jctc.2c00193
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jctc.2c00193
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jctc.2c00193
+      \endverb
+    \endentry
+    \entry{yarp}{article}{}
+      \name{author}{2}{}{%
+        {{hash=746c23a7e527727576c544551cadb0f8}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Q.},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=a1eeeb51133efd30885a386731735989}{%
+           family={Savoie},
+           familyi={S\bibinitperiod},
+           given={B.M.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9f266e8064d11515b68dd38c89b1fa7}
+      \strng{fullhash}{d9f266e8064d11515b68dd38c89b1fa7}
+      \strng{bibnamehash}{d9f266e8064d11515b68dd38c89b1fa7}
+      \strng{authorbibnamehash}{d9f266e8064d11515b68dd38c89b1fa7}
+      \strng{authornamehash}{d9f266e8064d11515b68dd38c89b1fa7}
+      \strng{authorfullhash}{d9f266e8064d11515b68dd38c89b1fa7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nat Comput Sci}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Simultaneously improving reaction coverage and computational cost in automated reaction prediction tasks.}
+      \field{year}{2021}
+      \field{pages}{479\bibrangedash 490}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1038/s43588-021-00101-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s43588-021-00101-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s43588-021-00101-3
+      \endverb
+    \endentry
+    \entry{retrosynthesis_comp}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3b1ba00ee98f97e0aae375197a1dfd2a}{%
+           family={Shee},
+           familyi={S\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e1b0acc5a6a568a967f57187b29ae5f8}{%
+           family={Morgunov},
+           familyi={M\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+        {{hash=47e79d984db539998cb5a77cb333c74c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Haote},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e04a2082676f87e1ed224d50721e3f38}{%
+           family={Batista},
+           familyi={B\bibinitperiod},
+           given={Victor\bibnamedelima S.},
+           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ae445dcb6f82dd23821115b63ac473b}
+      \strng{fullhash}{5eb9b24c3f2a7fcae85876c2d03f652a}
+      \strng{bibnamehash}{4ae445dcb6f82dd23821115b63ac473b}
+      \strng{authorbibnamehash}{4ae445dcb6f82dd23821115b63ac473b}
+      \strng{authornamehash}{4ae445dcb6f82dd23821115b63ac473b}
+      \strng{authorfullhash}{5eb9b24c3f2a7fcae85876c2d03f652a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Information and Modeling}
+      \field{note}{PMID: 40197023}
+      \field{number}{8}
+      \field{title}{DirectMultiStep: Direct Route Generation for Multistep Retrosynthesis}
+      \field{volume}{65}
+      \field{year}{2025}
+      \field{pages}{3903\bibrangedash 3914}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1021/acs.jcim.4c01982
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jcim.4c01982
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jcim.4c01982
+      \endverb
+    \endentry
+    \entry{retrosynthesis_comp2}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=df91d522800bdc83b099bd21de7cfcf8}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e64376a16e5c0e4a2493548a2ee0804e}{%
+           family={Roh},
+           familyi={R\bibinitperiod},
+           given={Jihye},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2f8cd13e1a95cf232d08c2a98c3023ad}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ziang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c27a06ec124cee9d75602ebedb1e5bd9}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Wenhao},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f82070c5bc816da168c794fdb7be7476}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Runzhong},
+           giveni={R\bibinitperiod}}}%
+        {{hash=85ad2ee11d862ab56d14ae9541c11677}{%
+           family={Coley},
+           familyi={C\bibinitperiod},
+           given={Connor\bibnamedelima W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vancouver, BC, Canada}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates Inc.}%
+      }
+      \strng{namehash}{0bf03115e19ac8d0be33ec0c0d697957}
+      \strng{fullhash}{73ea2cf5d322eb8f2929cc1aca649710}
+      \strng{bibnamehash}{0bf03115e19ac8d0be33ec0c0d697957}
+      \strng{authorbibnamehash}{0bf03115e19ac8d0be33ec0c0d697957}
+      \strng{authornamehash}{0bf03115e19ac8d0be33ec0c0d697957}
+      \strng{authorfullhash}{73ea2cf5d322eb8f2929cc1aca649710}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 38th International Conference on Neural Information Processing Systems}
+      \field{isbn}{9798331314385}
+      \field{series}{NIPS '24}
+      \field{title}{Double-ended synthesis planning with goal-constrained bidirectional search}
+      \field{year}{2024}
+    \endentry
+    \entry{metabolic_comp}{article}{}
+      \name{author}{4}{}{%
+        {{hash=569ea98c151b487f12f4a5607eae65dc}{%
+           family={Rodrigo},
+           familyi={R\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b5b3e10c89cd03e07701475d85f278b1}{%
+           family={Carrera},
+           familyi={C\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6a3229aae6f6a3a95a1e13530c3fca22}{%
+           family={Prather},
+           familyi={P\bibinitperiod},
+           given={Kristala\bibnamedelima Jones},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d9a5b84885bee99a6da167a8f91ddda9}{%
+           family={Jaramillo},
+           familyi={J\bibinitperiod},
+           given={Alfonso},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f4594ebe729ea7165f477eea3e3315b}
+      \strng{fullhash}{35de25ba016afb63102af4d896dd5a2d}
+      \strng{bibnamehash}{0f4594ebe729ea7165f477eea3e3315b}
+      \strng{authorbibnamehash}{0f4594ebe729ea7165f477eea3e3315b}
+      \strng{authornamehash}{0f4594ebe729ea7165f477eea3e3315b}
+      \strng{authorfullhash}{35de25ba016afb63102af4d896dd5a2d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1367-4803}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{11}
+      \field{number}{21}
+      \field{title}{DESHARKY: automatic design of metabolic pathways for optimal cell growth}
+      \field{volume}{24}
+      \field{year}{2008}
+      \field{pages}{2554\bibrangedash 2556}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btn471
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/bioinformatics/article-pdf/24/21/2554/49055428/bioinformatics_24_21_2554.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/bioinformatics/btn471
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/bioinformatics/btn471
+      \endverb
+    \endentry
+    \entry{metabolic_comp2}{article}{}
+      \name{author}{9}{}{%
+        {{hash=afe2cea0739936cf24d09ee4e6e9e26f}{%
+           family={Wołos},
+           familyi={W\bibinitperiod},
+           given={Agnieszka},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8c59880d842b9063045b6918ab8f292e}{%
+           family={Roszak},
+           familyi={R\bibinitperiod},
+           given={Rafał},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9c2600bf8822c1082087eda822186dad}{%
+           family={Żądło-Dobrowolska},
+           familyi={Ż\bibinithyphendelim D\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8400ce70d4ce0c53ab6b1aa632f2170c}{%
+           family={Beker},
+           familyi={B\bibinitperiod},
+           given={Wiktor},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f648713395d273193a882cfdd5ee899c}{%
+           family={Mikulak-Klucznik},
+           familyi={M\bibinithyphendelim K\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a6c73f09cfbf6a66e91bcae9e8a86d98}{%
+           family={Spólnik},
+           familyi={S\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2171ae13a7522cfd45f9190c0aed7ea1}{%
+           family={Dygas},
+           familyi={D\bibinitperiod},
+           given={Mirosław},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bb9c67775bbc20d04783efb2b4bdba43}{%
+           family={Szymkuć},
+           familyi={S\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c55b5530b194d13fc559ca93e25f6c60}{%
+           family={Grzybowski},
+           familyi={G\bibinitperiod},
+           given={Bartosz\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
+      \strng{fullhash}{cde97092f95c04112ddbf9b558e18807}
+      \strng{bibnamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
+      \strng{authorbibnamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
+      \strng{authornamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
+      \strng{authorfullhash}{cde97092f95c04112ddbf9b558e18807}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{6511}
+      \field{title}{Synthetic connectivity, emergence, and self-regeneration in the network of prebiotic chemistry}
+      \field{volume}{369}
+      \field{year}{2020}
+      \field{pages}{eaaw1955}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/science.aaw1955
+      \endverb
+      \verb{eprint}
+      \verb https://www.science.org/doi/pdf/10.1126/science.aaw1955
+      \endverb
+      \verb{urlraw}
+      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
+      \endverb
+      \verb{url}
+      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
+      \endverb
+    \endentry
+    \entry{crn_expand_qm}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8459614be77cbb79b403de332978ec5a}{%
+           family={Dewyer},
+           familyi={D\bibinitperiod},
+           given={Amanda\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=339544665d30beef04a5f94c6705b0b6}{%
+           family={Argüelles},
+           familyi={A\bibinitperiod},
+           given={Alonso\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=310a6b2a7f536a44d61d496659791346}{%
+           family={Zimmerman},
+           familyi={Z\bibinitperiod},
+           given={Paul\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
+      \strng{fullhash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
+      \strng{bibnamehash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
+      \strng{authorbibnamehash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
+      \strng{authornamehash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
+      \strng{authorfullhash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WIREs Computational Molecular Science}
+      \field{number}{2}
+      \field{title}{Methods for exploring reaction space in molecular systems}
+      \field{volume}{8}
+      \field{year}{2018}
+      \field{pages}{e1354}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/wcms.1354
+      \endverb
+      \verb{urlraw}
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1354
+      \endverb
+      \verb{url}
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1354
+      \endverb
+    \endentry
+    \entry{crn_expand_qm3}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=a9e1eebb2ff21dddd248c819ff400a79}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={LP.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=35637d3d2c5c21febb28361a6cb8ba99}{%
+           family={Titov},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d20cb129e779bd9bc8bcd06d2b714a50}{%
+           family={McGibbon},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7fdb151bc46fa1a3edfa4c5df45f573a}
+      \strng{fullhash}{7fdb151bc46fa1a3edfa4c5df45f573a}
+      \strng{bibnamehash}{7fdb151bc46fa1a3edfa4c5df45f573a}
+      \strng{authorbibnamehash}{7fdb151bc46fa1a3edfa4c5df45f573a}
+      \strng{authornamehash}{7fdb151bc46fa1a3edfa4c5df45f573a}
+      \strng{authorfullhash}{7fdb151bc46fa1a3edfa4c5df45f573a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Chem}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{Discovering chemistry with an ab initio nanoreactor.}
+      \field{year}{2014}
+      \field{pages}{1044\bibrangedash 1048}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nchem.2099
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/nchem.2099
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/nchem.2099
+      \endverb
+    \endentry
+    \entry{yaks}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9e01f95483a003ad331a798357e0b473}{%
+           family={Woulfe},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c66a2f1e9241dcabcd937bf95bde3535}{%
+           family={Savoie},
+           familyi={S\bibinitperiod},
+           given={Brett\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
+      \strng{fullhash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
+      \strng{bibnamehash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
+      \strng{authorbibnamehash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
+      \strng{authornamehash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
+      \strng{authorfullhash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Theory and Computation}
+      \field{note}{PMID: 39883589}
+      \field{number}{3}
+      \field{title}{Chemical Reaction Networks from Scratch with Reaction Prediction and Kinetics-Guided Exploration}
+      \field{volume}{21}
+      \field{year}{2025}
+      \field{pages}{1276\bibrangedash 1291}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1021/acs.jctc.4c01401
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jctc.4c01401
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jctc.4c01401
+      \endverb
+    \endentry
+    \entry{empi1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d305cb38bfff69a55e996f539f598d4a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yutai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e51bd353d330d0203232b51fcbc2b64a}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+        {{hash=02758fb4795ad024d88a6249b75a938a}{%
+           family={Lan},
+           familyi={L\bibinitperiod},
+           given={Zhenggang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{befdb26d56bc5172ba2c2673e17a3f96}
+      \strng{fullhash}{befdb26d56bc5172ba2c2673e17a3f96}
+      \strng{bibnamehash}{befdb26d56bc5172ba2c2673e17a3f96}
+      \strng{authorbibnamehash}{befdb26d56bc5172ba2c2673e17a3f96}
+      \strng{authornamehash}{befdb26d56bc5172ba2c2673e17a3f96}
+      \strng{authorfullhash}{befdb26d56bc5172ba2c2673e17a3f96}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Theory and Computation}
+      \field{note}{PMID: 38031422}
+      \field{number}{23}
+      \field{title}{Automated Exploration of Reaction Networks and Mechanisms Based on Metadynamics Nanoreactor Simulations}
+      \field{volume}{19}
+      \field{year}{2023}
+      \field{pages}{8718\bibrangedash 8731}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1021/acs.jctc.3c00752
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jctc.3c00752
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jctc.3c00752
+      \endverb
+    \endentry
+    \entry{OA-ReactDiff}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a84e5f1014fa1842f98f3f21584b8e4e}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Chenru},
+           giveni={C\bibinitperiod}}}%
+        {{hash=16ba464b4b0d4d57bcb1466a73a1b7ba}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Yuanqi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=464d6720c842b758c37c36c91967ac10}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Haojun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2652445723a7e56bfab8ea9cc0e64d8f}{%
+           family={Kulik},
+           familyi={K\bibinitperiod},
+           given={Heather\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbab06486d7666e6dac92e87a2acd683}
+      \strng{fullhash}{b06f9c5664ab2ec56e1e1e8d6d11f2a4}
+      \strng{bibnamehash}{dbab06486d7666e6dac92e87a2acd683}
+      \strng{authorbibnamehash}{dbab06486d7666e6dac92e87a2acd683}
+      \strng{authornamehash}{dbab06486d7666e6dac92e87a2acd683}
+      \strng{authorfullhash}{b06f9c5664ab2ec56e1e1e8d6d11f2a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Computational Science}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Accurate transition state generation with an object-aware equivariant elementary reaction diffusion model}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{pages}{1045\bibrangedash 1055}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1038/s43588-023-00563-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s43588-023-00563-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s43588-023-00563-7
+      \endverb
+    \endentry
+    \entry{diffusion_ai}{article}{}
+      \name{author}{3}{}{%
+        {{hash=20b4de09eb2c0f6fbdf0febbafea948d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6a8ff29084a08cc38780c73be563d9cf}{%
+           family={Woo},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=51c7a8e4f1a95c5620208ce72e627223}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={W.Y.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d31234fd0eb27debf8cbd658cc234b2}
+      \strng{fullhash}{0d31234fd0eb27debf8cbd658cc234b2}
+      \strng{bibnamehash}{0d31234fd0eb27debf8cbd658cc234b2}
+      \strng{authorbibnamehash}{0d31234fd0eb27debf8cbd658cc234b2}
+      \strng{authornamehash}{0d31234fd0eb27debf8cbd658cc234b2}
+      \strng{authorfullhash}{0d31234fd0eb27debf8cbd658cc234b2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nat Commun}
+      \field{month}{1}
+      \field{number}{341}
+      \field{title}{Diffusion-based generative AI for exploring transition states from 2D molecular graphs.}
+      \field{volume}{15}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1038/s41467-023-44629-6
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41467-023-44629-6
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41467-023-44629-6
+      \endverb
+    \endentry
+    \entry{molpher}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=349b3ffe3eb779a05e32f62368822db7}{%
+           family={Hoksza},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b8b3e78f225c50aeb01b76898f74fbed}{%
+           family={Škoda},
+           familyi={Š\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2bfaac9e95e6de0c4a93702566f2cf1a}{%
+           family={Voršilák},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {BMC Springer}%
+      }
+      \strng{namehash}{48be1dd8c162d2e9f30afaf1c2c017c2}
+      \strng{fullhash}{48be1dd8c162d2e9f30afaf1c2c017c2}
+      \strng{bibnamehash}{48be1dd8c162d2e9f30afaf1c2c017c2}
+      \strng{authorbibnamehash}{48be1dd8c162d2e9f30afaf1c2c017c2}
+      \strng{authornamehash}{48be1dd8c162d2e9f30afaf1c2c017c2}
+      \strng{authorfullhash}{48be1dd8c162d2e9f30afaf1c2c017c2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J Cheminform}
+      \field{month}{3}
+      \field{number}{7}
+      \field{title}{Molpher: a software framework for systematic chemical space exploration.}
+      \field{volume}{6}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1186/1758-2946-6-7
+      \endverb
+    \endentry
+    \entry{heuristic_expert}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b194fce0a14db3afc984052eb570f8aa}{%
+           family={Rappoport},
+           familyi={R\bibinitperiod},
+           given={Dmitrij},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a9252ad9e74953ef9e133c0908d3219}{%
+           family={Galvin},
+           familyi={G\bibinitperiod},
+           given={Cooper\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8c437ab10f91eeddf6ce70ac3489d360}{%
+           family={Zubarev},
+           familyi={Z\bibinitperiod},
+           given={Dmitry\bibnamedelima Yu.},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=083dcdd0db2687433b22fabfb2e55c17}{%
+           family={Aspuru-Guzik},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Alán},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{710261d174ddc44295f75299002002cc}
+      \strng{fullhash}{6e36d83a19a4640b39a04f15cec12920}
+      \strng{bibnamehash}{710261d174ddc44295f75299002002cc}
+      \strng{authorbibnamehash}{710261d174ddc44295f75299002002cc}
+      \strng{authornamehash}{710261d174ddc44295f75299002002cc}
+      \strng{authorfullhash}{6e36d83a19a4640b39a04f15cec12920}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Theory and Computation}
+      \field{note}{PMID: 26580168}
+      \field{number}{3}
+      \field{title}{Complex Chemical Reaction Networks from Heuristics-Aided Quantum Chemistry}
+      \field{volume}{10}
+      \field{year}{2014}
+      \field{pages}{897\bibrangedash 907}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/ct401004r
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/ct401004r
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/ct401004r
+      \endverb
+    \endentry
+    \entry{reported_network}{article}{}
+      \name{author}{9}{}{%
+        {{hash=afe2cea0739936cf24d09ee4e6e9e26f}{%
+           family={Wołos},
+           familyi={W\bibinitperiod},
+           given={Agnieszka},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8c59880d842b9063045b6918ab8f292e}{%
+           family={Roszak},
+           familyi={R\bibinitperiod},
+           given={Rafał},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9c2600bf8822c1082087eda822186dad}{%
+           family={Żądło-Dobrowolska},
+           familyi={Ż\bibinithyphendelim D\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8400ce70d4ce0c53ab6b1aa632f2170c}{%
+           family={Beker},
+           familyi={B\bibinitperiod},
+           given={Wiktor},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f648713395d273193a882cfdd5ee899c}{%
+           family={Mikulak-Klucznik},
+           familyi={M\bibinithyphendelim K\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a6c73f09cfbf6a66e91bcae9e8a86d98}{%
+           family={Spólnik},
+           familyi={S\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2171ae13a7522cfd45f9190c0aed7ea1}{%
+           family={Dygas},
+           familyi={D\bibinitperiod},
+           given={Mirosław},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bb9c67775bbc20d04783efb2b4bdba43}{%
+           family={Szymkuć},
+           familyi={S\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c55b5530b194d13fc559ca93e25f6c60}{%
+           family={Grzybowski},
+           familyi={G\bibinitperiod},
+           given={Bartosz\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
+      \strng{fullhash}{cde97092f95c04112ddbf9b558e18807}
+      \strng{bibnamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
+      \strng{authorbibnamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
+      \strng{authornamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
+      \strng{authorfullhash}{cde97092f95c04112ddbf9b558e18807}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{6511}
+      \field{title}{Synthetic connectivity, emergence, and self-regeneration in the network of prebiotic chemistry}
+      \field{volume}{369}
+      \field{year}{2020}
+      \field{pages}{eaaw1955}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/science.aaw1955
+      \endverb
+      \verb{urlraw}
+      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
+      \endverb
+      \verb{url}
+      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
+      \endverb
+    \endentry
+    \entry{search_crn}{article}{}
+      \name{author}{8}{}{%
+        {{hash=c557cea3b482850195da73f5afee9cc0}{%
+           family={Kowalik},
+           familyi={K\bibinitperiod},
+           given={Mikołaj},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a76e94ad920e77fa28c709e03577fca}{%
+           family={Gothard},
+           familyi={G\bibinitperiod},
+           given={Chris\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3d9ad67aa1a8f3c98e051d41d95d9972}{%
+           family={Drews},
+           familyi={D\bibinitperiod},
+           given={Aaron\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ea3f39c41f9e5a2c39e1dc90a86ecbd5}{%
+           family={Gothard},
+           familyi={G\bibinitperiod},
+           given={Nosheen\bibnamedelima A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=936d7eb7596326df05838b2616228fc1}{%
+           family={Weckiewicz},
+           familyi={W\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=30d329d2f7d0cf1b06ac0ac595cc8773}{%
+           family={Fuller},
+           familyi={F\bibinitperiod},
+           given={Patrick\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=c55b5530b194d13fc559ca93e25f6c60}{%
+           family={Grzybowski},
+           familyi={G\bibinitperiod},
+           given={Bartosz\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2567fa0a85fa0e2d097148e103ac477c}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Kyle\bibnamedelimb J.\bibnamedelimi M.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{81de3d95b8510e0a28a43e0acaf0e97f}
+      \strng{fullhash}{478b0d4f12dfe9fa7571bf36e52b5ea1}
+      \strng{bibnamehash}{81de3d95b8510e0a28a43e0acaf0e97f}
+      \strng{authorbibnamehash}{81de3d95b8510e0a28a43e0acaf0e97f}
+      \strng{authornamehash}{81de3d95b8510e0a28a43e0acaf0e97f}
+      \strng{authorfullhash}{478b0d4f12dfe9fa7571bf36e52b5ea1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Angewandte Chemie International Edition}
+      \field{number}{32}
+      \field{title}{Parallel Optimization of Synthetic Pathways within the Network of Organic Chemistry}
+      \field{volume}{51}
+      \field{year}{2012}
+      \field{pages}{7928\bibrangedash 7932}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1002/anie.201202209
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201202209
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201202209
+      \endverb
+      \keyw{algorithms,chemical networks,optimization,synthetic methods}
+    \endentry
+    \entry{search_crn2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=512e9e8bffecf47ce8902be086a5d1bb}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=19ec07b909c5027c225c14e1a5746060}{%
+           family={Ismail},
+           familyi={I\bibinitperiod},
+           given={Idil},
+           giveni={I\bibinitperiod}}}%
+        {{hash=99fc31cc670715e67b856f206f3351fa}{%
+           family={Habershon},
+           familyi={H\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ff474237b70546504c20dffc6da843c}
+      \strng{fullhash}{8ff474237b70546504c20dffc6da843c}
+      \strng{bibnamehash}{8ff474237b70546504c20dffc6da843c}
+      \strng{authorbibnamehash}{8ff474237b70546504c20dffc6da843c}
+      \strng{authornamehash}{8ff474237b70546504c20dffc6da843c}
+      \strng{authorfullhash}{8ff474237b70546504c20dffc6da843c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ChemSystemsChem}
+      \field{number}{4}
+      \field{title}{Traversing Dense Networks of Elementary Chemical Reactions to Predict Minimum-Energy Reaction Mechanisms}
+      \field{volume}{2}
+      \field{year}{2020}
+      \field{pages}{e1900047}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/syst.201900047
+      \endverb
+      \verb{urlraw}
+      \verb https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/syst.201900047
+      \endverb
+      \verb{url}
+      \verb https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/syst.201900047
+      \endverb
+      \keyw{Catalysis,graph searching algorithms,nudge-elastic-band,reaction discovery,reaction mechanism}
+    \endentry
+    \entry{beam_search_pq}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c55b5530b194d13fc559ca93e25f6c60}{%
+           family={Grzybowski},
+           familyi={G\bibinitperiod},
+           given={Bartosz\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d0d2c28152588357e14ea24281147185}{%
+           family={Badowski},
+           familyi={B\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod}}}%
+        {{hash=eb800b187be5e42362b387a25d9a88de}{%
+           family={Molga},
+           familyi={M\bibinitperiod},
+           given={Karol},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bb9c67775bbc20d04783efb2b4bdba43}{%
+           family={Szymkuć},
+           familyi={S\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{df35c7a606d2f5acbdd6e9f7c28d37bf}
+      \strng{fullhash}{02e1287052e4b1c87f88ff69ba048dee}
+      \strng{bibnamehash}{df35c7a606d2f5acbdd6e9f7c28d37bf}
+      \strng{authorbibnamehash}{df35c7a606d2f5acbdd6e9f7c28d37bf}
+      \strng{authornamehash}{df35c7a606d2f5acbdd6e9f7c28d37bf}
+      \strng{authorfullhash}{02e1287052e4b1c87f88ff69ba048dee}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WIREs Computational Molecular Science}
+      \field{number}{1}
+      \field{title}{Network search algorithms and scoring functions for advanced-level computerized synthesis planning}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{pages}{e1630}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/wcms.1630
+      \endverb
+      \verb{urlraw}
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1630
+      \endverb
+      \verb{url}
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1630
+      \endverb
+      \keyw{artificial intelligence,Chematica,expert systems,networks,synthesis}
+    \endentry
+    \entry{mc_trees}{article}{}
+      \name{author}{3}{}{%
+        {{hash=aae13fa974d28468290c9aeeadc66d0c}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kyunghoon},
+           giveni={K\bibinitperiod}}}%
+        {{hash=43b1add69a707b26838bffa504fcdcc7}{%
+           family={Woo\bibnamedelima Kim},
+           familyi={W\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=99822221b566512781784c79dfaa1e71}{%
+           family={Youn\bibnamedelima Kim},
+           familyi={Y\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Woo},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e094449a4bace2a30b582fa4b5278ab}
+      \strng{fullhash}{3e094449a4bace2a30b582fa4b5278ab}
+      \strng{bibnamehash}{3e094449a4bace2a30b582fa4b5278ab}
+      \strng{authorbibnamehash}{3e094449a4bace2a30b582fa4b5278ab}
+      \strng{authornamehash}{3e094449a4bace2a30b582fa4b5278ab}
+      \strng{authorfullhash}{3e094449a4bace2a30b582fa4b5278ab}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ChemSystemsChem}
+      \field{number}{5}
+      \field{title}{Efficient Construction of a Chemical Reaction Network Guided By a Monte Carlo Tree Search}
+      \field{volume}{2}
+      \field{year}{2020}
+      \field{pages}{e1900057}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/syst.201900057
+      \endverb
+      \verb{urlraw}
+      \verb https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/syst.201900057
+      \endverb
+      \verb{url}
+      \verb https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/syst.201900057
+      \endverb
+      \keyw{graph-theoretic method,Monte Carlo tree search (MCTS),organic reactions,quantum calculations,reaction networks}
+    \endentry
+    \entry{shortest_path_hypergraph2}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=a8b96b6876780b1eac8cc07bf6b06dd7}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3b91db13235ba01e4e445afd11f015b4}{%
+           family={Hachiya},
+           familyi={H\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=203a8196e3302f452ce10659daacc640}{%
+           family={Saito},
+           familyi={S\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {BMC}%
+      }
+      \strng{namehash}{509ba2497769bade9e4e35d3b4f83fc2}
+      \strng{fullhash}{509ba2497769bade9e4e35d3b4f83fc2}
+      \strng{bibnamehash}{509ba2497769bade9e4e35d3b4f83fc2}
+      \strng{authorbibnamehash}{509ba2497769bade9e4e35d3b4f83fc2}
+      \strng{authornamehash}{509ba2497769bade9e4e35d3b4f83fc2}
+      \strng{authorfullhash}{509ba2497769bade9e4e35d3b4f83fc2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{12}
+      \field{number}{S8}
+      \field{title}{An efficient algorithm for de novo predictions of biochemical pathways between chemical compounds}
+      \field{volume}{13 (Suppl 17)}
+      \field{year}{2012}
+      \verb{doi}
+      \verb 10.1186/1471-2105-13-S17-S8
+      \endverb
+    \endentry
+    \entry{shortest_path_hypergraph1}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6f707a28a705571c35b7b022ea7a99ae}{%
+           family={Krieger},
+           familyi={K\bibinitperiod},
+           given={Spencer},
+           giveni={S\bibinitperiod}}}%
+        {{hash=27725c25c4eb25e418979f87e764dbe9}{%
+           family={Kececioglu},
+           familyi={K\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1db3b5a9066e5da56e1414803fe46342}
+      \strng{fullhash}{1db3b5a9066e5da56e1414803fe46342}
+      \strng{bibnamehash}{1db3b5a9066e5da56e1414803fe46342}
+      \strng{authorbibnamehash}{1db3b5a9066e5da56e1414803fe46342}
+      \strng{authornamehash}{1db3b5a9066e5da56e1414803fe46342}
+      \strng{authorfullhash}{1db3b5a9066e5da56e1414803fe46342}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Biology}
+      \field{note}{PMID: 37906100}
+      \field{number}{11}
+      \field{title}{Shortest Hyperpaths in Directed Hypergraphs for Reaction Pathway Inference}
+      \field{volume}{30}
+      \field{year}{2023}
+      \field{pages}{1198\bibrangedash 1225}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1089/cmb.2023.0242
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1089/cmb.2023.0242
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1089/cmb.2023.0242
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1089/cmb.2023.0242
+      \endverb
+    \endentry
+    \entry{crn_dynamics}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b66cee30c1ce669a05d2784990f48f65}{%
+           family={Shimada},
+           familyi={S\bibinitperiod},
+           given={Masanari},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c7cc92127bed8179b85e1e65acabcf24}{%
+           family={Behrad},
+           familyi={B\bibinitperiod},
+           given={Pegah},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0dc0f88cda16496ea63ad5841ca765c0}{%
+           family={De\bibnamedelima Giuli},
+           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{fc32b1f59bd9d78ff57046060d8dd694}
+      \strng{fullhash}{fc32b1f59bd9d78ff57046060d8dd694}
+      \strng{bibnamehash}{fc32b1f59bd9d78ff57046060d8dd694}
+      \strng{authorbibnamehash}{fc32b1f59bd9d78ff57046060d8dd694}
+      \strng{authornamehash}{fc32b1f59bd9d78ff57046060d8dd694}
+      \strng{authorfullhash}{fc32b1f59bd9d78ff57046060d8dd694}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{Phys. Rev. E}
+      \field{month}{4}
+      \field{title}{Universal slow dynamics of chemical reaction networks}
+      \field{volume}{109}
+      \field{year}{2024}
+      \field{pages}{044105}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.109.044105
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.109.044105
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.109.044105
+      \endverb
+    \endentry
+    \entry{crn_dynamics2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9d9449988779ffa34eeff18a6e653946}{%
+           family={Schaft},
+           familyi={S\bibinitperiod},
+           given={Arjan},
+           giveni={A\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=59b5536a00f833210d44512a8b9184ae}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Shodhan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=17a0a2e68c7abc9db0169a9dfb060942}{%
+           family={Jayawardhana},
+           familyi={J\bibinitperiod},
+           given={Bayu},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae05b395854fa567e8516fd47bb2f571}
+      \strng{fullhash}{ae05b395854fa567e8516fd47bb2f571}
+      \strng{bibnamehash}{ae05b395854fa567e8516fd47bb2f571}
+      \strng{authorbibnamehash}{ae05b395854fa567e8516fd47bb2f571}
+      \strng{authornamehash}{ae05b395854fa567e8516fd47bb2f571}
+      \strng{authorfullhash}{ae05b395854fa567e8516fd47bb2f571}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Applied Mathematics}
+      \field{number}{2}
+      \field{title}{On the Mathematical Structure of Balanced Chemical Reaction Networks Governed by Mass Action Kinetics}
+      \field{volume}{73}
+      \field{year}{2013}
+      \field{pages}{953\bibrangedash 973}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1137/11085431X
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1137/11085431X
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1137/11085431X
+      \endverb
+    \endentry
+    \entry{synthesis_planning_CRN_thermodynamics}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ffe435e80f4daf6f025f9c53acfb899b}{%
+           family={McDermott},
+           familyi={M\bibinitperiod},
+           given={Matthew\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e334351ab13bdecadcb45379ecfb62e3}{%
+           family={Dwaraknath},
+           familyi={D\bibinitperiod},
+           given={Shyam\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d823a736a8705c23b18ef2b370c1426b}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Kristin\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{004b1f83907407a0e06b469a2baec539}
+      \strng{fullhash}{004b1f83907407a0e06b469a2baec539}
+      \strng{bibnamehash}{004b1f83907407a0e06b469a2baec539}
+      \strng{authorbibnamehash}{004b1f83907407a0e06b469a2baec539}
+      \strng{authornamehash}{004b1f83907407a0e06b469a2baec539}
+      \strng{authorfullhash}{004b1f83907407a0e06b469a2baec539}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3097}
+      \field{journaltitle}{Nat Commun}
+      \field{month}{4}
+      \field{title}{A graph-based network for predicting chemical reaction pathways in solid-state materials synthesis.}
+      \field{volume}{12}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1038/s41467-021-23339-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41467-021-23339-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41467-021-23339-x
+      \endverb
+    \endentry
+    \entry{hatz_thermo_flow}{article}{}
+      \name{author}{3}{}{%
+        {{hash=215fb5408fc427ee1f2f3829e2267ed9}{%
+           family={Henry},
+           familyi={H\bibinitperiod},
+           given={Christopher\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e2234e499e2b3e60d94a4d0e36d02c5f}{%
+           family={Broadbelt},
+           familyi={B\bibinitperiod},
+           given={Linda\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=757a081ce146584a14c1bdbaeb837b57}{%
+           family={Hatzimanikatis},
+           familyi={H\bibinitperiod},
+           given={Vassily},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{80e16381543cdec63c7471bd02bdb96b}
+      \strng{fullhash}{80e16381543cdec63c7471bd02bdb96b}
+      \strng{bibnamehash}{80e16381543cdec63c7471bd02bdb96b}
+      \strng{authorbibnamehash}{80e16381543cdec63c7471bd02bdb96b}
+      \strng{authornamehash}{80e16381543cdec63c7471bd02bdb96b}
+      \strng{authorfullhash}{80e16381543cdec63c7471bd02bdb96b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0006-3495}
+      \field{journaltitle}{Biophysical Journal}
+      \field{number}{5}
+      \field{title}{Thermodynamics-Based Metabolic Flux Analysis}
+      \field{volume}{92}
+      \field{year}{2007}
+      \field{pages}{1792\bibrangedash 1805}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1529/biophysj.106.093138
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006349507709876
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006349507709876
+      \endverb
+    \endentry
+    \entry{seifert_thermodynamics_CRN_JCP}{article}{}
+      \name{author}{2}{}{%
+        {{hash=24834bfb8a02d2cf25ecbb0dc7546395}{%
+           family={Schmiedl},
+           familyi={S\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=03c58f7973dbaff22d5e24c09f8b075e}{%
+           family={Seifert},
+           familyi={S\bibinitperiod},
+           given={Udo},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{641282e6a897d77f95af0d9567075f99}
+      \strng{fullhash}{641282e6a897d77f95af0d9567075f99}
+      \strng{bibnamehash}{641282e6a897d77f95af0d9567075f99}
+      \strng{authorbibnamehash}{641282e6a897d77f95af0d9567075f99}
+      \strng{authornamehash}{641282e6a897d77f95af0d9567075f99}
+      \strng{authorfullhash}{641282e6a897d77f95af0d9567075f99}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{01}
+      \field{number}{4}
+      \field{title}{{Stochastic thermodynamics of chemical reaction networks}}
+      \field{volume}{126}
+      \field{year}{2007}
+      \field{pages}{044101}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.2428297
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.2428297
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.2428297
+      \endverb
+    \endentry
+    \entry{esposito_thermodynamics_CRN_PRX}{article}{}
+      \name{author}{2}{}{%
+        {{hash=378ba5e3539044634d23fda8e7e44520}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7021e9ce0c33d60c5c8d3ac7090393d7}{%
+           family={Esposito},
+           familyi={E\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{ae85fc1ed2dc7866f65237c18a712b84}
+      \strng{fullhash}{ae85fc1ed2dc7866f65237c18a712b84}
+      \strng{bibnamehash}{ae85fc1ed2dc7866f65237c18a712b84}
+      \strng{authorbibnamehash}{ae85fc1ed2dc7866f65237c18a712b84}
+      \strng{authornamehash}{ae85fc1ed2dc7866f65237c18a712b84}
+      \strng{authorfullhash}{ae85fc1ed2dc7866f65237c18a712b84}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{Phys. Rev. X}
+      \field{month}{12}
+      \field{title}{Nonequilibrium Thermodynamics of Chemical Reaction Networks: Wisdom from Stochastic Thermodynamics}
+      \field{volume}{6}
+      \field{year}{2016}
+      \field{pages}{041064}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.6.041064
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.6.041064
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.6.041064
+      \endverb
+    \endentry
+    \entry{esposito_circuit_theory_CRN_PRX}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c7a381a53d4d701aed06de938e006220}{%
+           family={Avanzini},
+           familyi={A\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d55a7410845cd12c781ea2028f6276ec}{%
+           family={Freitas},
+           familyi={F\bibinitperiod},
+           given={Nahuel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7021e9ce0c33d60c5c8d3ac7090393d7}{%
+           family={Esposito},
+           familyi={E\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{895c94c23ce7476175ce549c0ee17bc2}
+      \strng{fullhash}{895c94c23ce7476175ce549c0ee17bc2}
+      \strng{bibnamehash}{895c94c23ce7476175ce549c0ee17bc2}
+      \strng{authorbibnamehash}{895c94c23ce7476175ce549c0ee17bc2}
+      \strng{authornamehash}{895c94c23ce7476175ce549c0ee17bc2}
+      \strng{authorfullhash}{895c94c23ce7476175ce549c0ee17bc2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{Phys. Rev. X}
+      \field{month}{6}
+      \field{title}{Circuit Theory for Chemical Reaction Networks}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{pages}{021041}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.13.021041
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.13.021041
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.13.021041
+      \endverb
+    \endentry
+    \entry{ILP_paper2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5ceb2cc15283b3d6ec3751f0bc1dcf43}{%
+           family={Szederkényi},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8161e10c0939abfcb67b780c1389e949}{%
+           family={Hangos},
+           familyi={H\bibinitperiod},
+           given={K.M},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Link}%
+      }
+      \strng{namehash}{63af15d34a049587e7dab027f7328f61}
+      \strng{fullhash}{63af15d34a049587e7dab027f7328f61}
+      \strng{bibnamehash}{63af15d34a049587e7dab027f7328f61}
+      \strng{authorbibnamehash}{63af15d34a049587e7dab027f7328f61}
+      \strng{authornamehash}{63af15d34a049587e7dab027f7328f61}
+      \strng{authorfullhash}{63af15d34a049587e7dab027f7328f61}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J Math Chem}
+      \field{month}{3}
+      \field{title}{Finding complex balanced and detailed balanced realizations of chemical reaction networks.}
+      \field{volume}{49}
+      \field{year}{2011}
+      \field{pages}{1163\bibrangedash 1179}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s10910-011-9804-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10910-011-9804-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10910-011-9804-9
+      \endverb
+    \endentry
+    \entry{ILP_paper3}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dd079c8571980e20d75b6a0d62670bed}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={M.D.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f86d84d9faea15f90c1dfe66f9ab7a06}{%
+           family={Siegel},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5ceb2cc15283b3d6ec3751f0bc1dcf43}{%
+           family={Szederkényi},
+           familyi={S\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Link}%
+      }
+      \strng{namehash}{e3f55b62db6a0f70113efb451010219e}
+      \strng{fullhash}{e3f55b62db6a0f70113efb451010219e}
+      \strng{bibnamehash}{e3f55b62db6a0f70113efb451010219e}
+      \strng{authorbibnamehash}{e3f55b62db6a0f70113efb451010219e}
+      \strng{authornamehash}{e3f55b62db6a0f70113efb451010219e}
+      \strng{authorfullhash}{e3f55b62db6a0f70113efb451010219e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J Math Chem}
+      \field{month}{9}
+      \field{title}{A linear programming approach to weak reversibility and linear conjugacy of chemical reaction networks.}
+      \field{volume}{50}
+      \field{year}{2011}
+      \field{pages}{274\bibrangedash 288}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s10910-011-9911-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10910-011-9911-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10910-011-9911-7
+      \endverb
+    \endentry
+    \entry{ILP_paper4}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dd079c8571980e20d75b6a0d62670bed}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={M.D.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Link}%
+      }
+      \strng{namehash}{dd079c8571980e20d75b6a0d62670bed}
+      \strng{fullhash}{dd079c8571980e20d75b6a0d62670bed}
+      \strng{bibnamehash}{dd079c8571980e20d75b6a0d62670bed}
+      \strng{authorbibnamehash}{dd079c8571980e20d75b6a0d62670bed}
+      \strng{authornamehash}{dd079c8571980e20d75b6a0d62670bed}
+      \strng{authorfullhash}{dd079c8571980e20d75b6a0d62670bed}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J Math Chem}
+      \field{month}{11}
+      \field{title}{Analysis of mass-action systems by split network translation.}
+      \field{volume}{60}
+      \field{year}{2021}
+      \field{pages}{195\bibrangedash 218}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1007/s10910-021-01299-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10910-021-01299-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10910-021-01299-3
+      \endverb
+    \endentry
+    \entry{ilp_CRN_infer}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7b7e5fa96b76cf2156dc9f5584a0187f}{%
+           family={Willis},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=61daf748c715838222a2895801d0c260}{%
+           family={Stosch},
+           familyi={S\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{d98387cf81d818164dc0d81690634a53}
+      \strng{fullhash}{d98387cf81d818164dc0d81690634a53}
+      \strng{bibnamehash}{d98387cf81d818164dc0d81690634a53}
+      \strng{authorbibnamehash}{d98387cf81d818164dc0d81690634a53}
+      \strng{authornamehash}{d98387cf81d818164dc0d81690634a53}
+      \strng{authorfullhash}{d98387cf81d818164dc0d81690634a53}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0098-1354}
+      \field{journaltitle}{Computers \& Chemical Engineering}
+      \field{title}{Inference of chemical reaction networks using mixed integer linear programming}
+      \field{volume}{90}
+      \field{year}{2016}
+      \field{pages}{31\bibrangedash 43}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.compchemeng.2016.04.019
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0098135416301156
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0098135416301156
+      \endverb
+      \keyw{Chemical reaction network,Structural optimization,Kinetic fitting,Mixed-integer-linear programming}
+    \endentry
+    \entry{mod_web}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5b003eec61572048178f55ff7d538bc8}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Jakob\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b003eec61572048178f55ff7d538bc8}
+      \strng{fullhash}{5b003eec61572048178f55ff7d538bc8}
+      \strng{bibnamehash}{5b003eec61572048178f55ff7d538bc8}
+      \strng{authorbibnamehash}{5b003eec61572048178f55ff7d538bc8}
+      \strng{authornamehash}{5b003eec61572048178f55ff7d538bc8}
+      \strng{authorfullhash}{5b003eec61572048178f55ff7d538bc8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://mod.imada.sdu.dk}}
+      \field{title}{{MØD}}
+      \field{year}{2024}
+    \endentry
+    \entry{jakob_software}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=5b003eec61572048178f55ff7d538bc8}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Jakob\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b55421f384dce57ae38e9e8bcf44850b}{%
+           family={Flamm},
+           familyi={F\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5fd7dca2f8197d813cf980c556899438}{%
+           family={Merkle},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9982debdce05bebbf7a7f24842a44650}{%
+           family={Stadler},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima F.},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=cf4175cb79c157a7ff3f6a9c18fa5215}{%
+           family={Echahed},
+           familyi={E\bibinitperiod},
+           given={Rachid},
+           giveni={R\bibinitperiod}}}%
+        {{hash=332128479529606992e58a1c310908ba}{%
+           family={Minas},
+           familyi={M\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{1f4d893a8078049ded43c947f8436113}
+      \strng{fullhash}{cd4e39da8b82092977fa7887d1a406fc}
+      \strng{bibnamehash}{1f4d893a8078049ded43c947f8436113}
+      \strng{authorbibnamehash}{1f4d893a8078049ded43c947f8436113}
+      \strng{authornamehash}{1f4d893a8078049ded43c947f8436113}
+      \strng{authorfullhash}{cd4e39da8b82092977fa7887d1a406fc}
+      \strng{editorbibnamehash}{768a8f82356e3551ea3c6ac6979bf360}
+      \strng{editornamehash}{768a8f82356e3551ea3c6ac6979bf360}
+      \strng{editorfullhash}{768a8f82356e3551ea3c6ac6979bf360}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Graph Transformation}
+      \field{isbn}{978-3-319-40530-8}
+      \field{title}{A Software Package for Chemically Inspired Graph Transformation}
+      \field{year}{2016}
+      \field{pages}{73\bibrangedash 88}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-319-40530-8_5
+      \endverb
+    \endentry
+    \entry{jakob_integer_hyperflows}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5b003eec61572048178f55ff7d538bc8}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Jakob\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b55421f384dce57ae38e9e8bcf44850b}{%
+           family={Flamm},
+           familyi={F\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5fd7dca2f8197d813cf980c556899438}{%
+           family={Merkle},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9982debdce05bebbf7a7f24842a44650}{%
+           family={Stadler},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima F.},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society Press}%
+      }
+      \strng{namehash}{1f4d893a8078049ded43c947f8436113}
+      \strng{fullhash}{cd4e39da8b82092977fa7887d1a406fc}
+      \strng{bibnamehash}{1f4d893a8078049ded43c947f8436113}
+      \strng{authorbibnamehash}{1f4d893a8078049ded43c947f8436113}
+      \strng{authornamehash}{1f4d893a8078049ded43c947f8436113}
+      \strng{authorfullhash}{cd4e39da8b82092977fa7887d1a406fc}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1545-5963}
+      \field{journaltitle}{IEEE/ACM Trans. Comput. Biol. Bioinformatics}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Chemical Transformation Motifs—Modelling Pathways as Integer Hyperflows}
+      \field{volume}{16}
+      \field{year}{2019}
+      \field{pages}{510\bibrangedash 523}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCBB.2017.2781724
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/TCBB.2017.2781724
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/TCBB.2017.2781724
+      \endverb
+    \endentry
+    \entry{database_energy_barriers}{article}{}
+      \name{author}{11}{}{%
+        {{hash=1a7df34f95bdb077e13b78311841ed67}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Anubhav},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ec35ac10384a057f3608216b62bde711}{%
+           family={Ong},
+           familyi={O\bibinitperiod},
+           given={Shyue\bibnamedelima Ping},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=9492618befda84af2f30c9f7d944783a}{%
+           family={Hautier},
+           familyi={H\bibinitperiod},
+           given={Geoffroy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=06debc36f6b61a405e8f0da1c7ccd6ca}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=7a4053b9fa91834fbc95a799bd91dfd4}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={William\bibnamedelima Davidson},
+           giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=646cdc10187b872c480b8f3aa1005258}{%
+           family={Dacek},
+           familyi={D\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2fe72fe0e3063bf47737d661d057bfbb}{%
+           family={Cholia},
+           familyi={C\bibinitperiod},
+           given={Shreyas},
+           giveni={S\bibinitperiod}}}%
+        {{hash=33a335e9d1139fd3b19e94f7d27752bf}{%
+           family={Gunter},
+           familyi={G\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=11bf7d6db288ef4a60f0b89ec9a0421d}{%
+           family={Skinner},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1119594242bcd7037a1f252b0626e411}{%
+           family={Ceder},
+           familyi={C\bibinitperiod},
+           given={Gerbrand},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d823a736a8705c23b18ef2b370c1426b}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Kristin\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8629080c79402ef687b0ad7f85bd02f}
+      \strng{fullhash}{702fd5245039e3ef0b1f5d54e8fd55f8}
+      \strng{bibnamehash}{d8629080c79402ef687b0ad7f85bd02f}
+      \strng{authorbibnamehash}{d8629080c79402ef687b0ad7f85bd02f}
+      \strng{authornamehash}{d8629080c79402ef687b0ad7f85bd02f}
+      \strng{authorfullhash}{702fd5245039e3ef0b1f5d54e8fd55f8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2166-532X}
+      \field{journaltitle}{APL Materials}
+      \field{month}{07}
+      \field{number}{1}
+      \field{title}{Commentary: The Materials Project: A materials genome approach to accelerating materials innovation}
+      \field{volume}{1}
+      \field{year}{2013}
+      \field{pages}{011002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4812323
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.4812323
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.4812323
+      \endverb
+    \endentry
+    \entry{CRN_qm}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ffe435e80f4daf6f025f9c53acfb899b}{%
+           family={McDermott},
+           familyi={M\bibinitperiod},
+           given={Matthew\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e334351ab13bdecadcb45379ecfb62e3}{%
+           family={Dwaraknath},
+           familyi={D\bibinitperiod},
+           given={Shyam\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d823a736a8705c23b18ef2b370c1426b}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Kristin\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{004b1f83907407a0e06b469a2baec539}
+      \strng{fullhash}{004b1f83907407a0e06b469a2baec539}
+      \strng{bibnamehash}{004b1f83907407a0e06b469a2baec539}
+      \strng{authorbibnamehash}{004b1f83907407a0e06b469a2baec539}
+      \strng{authornamehash}{004b1f83907407a0e06b469a2baec539}
+      \strng{authorfullhash}{004b1f83907407a0e06b469a2baec539}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3097}
+      \field{journaltitle}{Nat Commun}
+      \field{month}{4}
+      \field{title}{A graph-based network for predicting chemical reaction pathways in solid-state materials synthesis.}
+      \field{volume}{12}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1038/s41467-021-23339-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41467-021-23339-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41467-021-23339-x
+      \endverb
+    \endentry
+    \entry{ml_energy_barrier}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b062cafcbaf3a006669c8154c236b27c}{%
+           family={Schaaf},
+           familyi={S\bibinitperiod},
+           given={Lars\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=29b278e3b9ca2563cd4692a25d7a6c61}{%
+           family={Fako},
+           familyi={F\bibinitperiod},
+           given={Edvin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1a39c0b2f5565771333f64a9ceae23a2}{%
+           family={De},
+           familyi={D\bibinitperiod},
+           given={Sandip},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b5925688af40fcd7cd73f82ec700e9a6}{%
+           family={Schäfer},
+           familyi={S\bibinitperiod},
+           given={Ansgar},
+           giveni={A\bibinitperiod}}}%
+        {{hash=aef6628a7e1ad935b99d3d3cf7e63e20}{%
+           family={Csányi},
+           familyi={C\bibinitperiod},
+           given={Gábor},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6e9ea71dcfae65d486beda0d97dab0f}
+      \strng{fullhash}{56b0a796181f2a8d2407b797e39c2cb8}
+      \strng{bibnamehash}{c6e9ea71dcfae65d486beda0d97dab0f}
+      \strng{authorbibnamehash}{c6e9ea71dcfae65d486beda0d97dab0f}
+      \strng{authornamehash}{c6e9ea71dcfae65d486beda0d97dab0f}
+      \strng{authorfullhash}{56b0a796181f2a8d2407b797e39c2cb8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{npj Comput Mater}
+      \field{month}{10}
+      \field{number}{180}
+      \field{title}{Accurate energy barriers for catalytic reaction pathways: an automatic training protocol for machine learning force fields}
+      \field{volume}{9}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1038/s41524-023-01124-2
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41524-023-01124-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41524-023-01124-2
+      \endverb
+    \endentry
+    \entry{ml_energy_barrier2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=125996c381caf4753e6c2c2b51e22f04}{%
+           family={Lewis-Atwell},
+           familyi={L\bibinithyphendelim A\bibinitperiod},
+           given={Toby},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c068b71a18f065f15fe5889be84ad06c}{%
+           family={Townsend},
+           familyi={T\bibinitperiod},
+           given={Piers\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=88377195f702dd1313e41bfe95c8126e}{%
+           family={Grayson},
+           familyi={G\bibinitperiod},
+           given={Matthew\bibnamedelima N.},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{a36d84510652bf68e57b68aa7a25217f}
+      \strng{fullhash}{a36d84510652bf68e57b68aa7a25217f}
+      \strng{bibnamehash}{a36d84510652bf68e57b68aa7a25217f}
+      \strng{authorbibnamehash}{a36d84510652bf68e57b68aa7a25217f}
+      \strng{authornamehash}{a36d84510652bf68e57b68aa7a25217f}
+      \strng{authorfullhash}{a36d84510652bf68e57b68aa7a25217f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WIREs Computational Molecular Science}
+      \field{number}{4}
+      \field{title}{Machine learning activation energies of chemical reactions}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{e1593}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/wcms.1593
+      \endverb
+      \verb{urlraw}
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1593
+      \endverb
+      \verb{url}
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1593
+      \endverb
+      \keyw{activation barriers,chemical reactions,data,machine learning,reactivity prediction}
+    \endentry
+    \entry{ml_energy_barrier3}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d9dc7ea29ca33cdfe925b080b257d14b}{%
+           family={Heinen},
+           familyi={H\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5e85fc66ee2fc1e96b9152c0d6b44f01}{%
+           family={Rudorff},
+           familyi={R\bibinitperiod},
+           given={Guido\bibnamedelima Falk},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=ca745b5acdf3d4bf19edcd7892ad563d}{%
+           family={Lilienfeld},
+           familyi={L\bibinitperiod},
+           given={O.\bibnamedelimi Anatole},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d691c8f43248e0361566fc1e6f3d193}
+      \strng{fullhash}{4d691c8f43248e0361566fc1e6f3d193}
+      \strng{bibnamehash}{4d691c8f43248e0361566fc1e6f3d193}
+      \strng{authorbibnamehash}{4d691c8f43248e0361566fc1e6f3d193}
+      \strng{authornamehash}{4d691c8f43248e0361566fc1e6f3d193}
+      \strng{authorfullhash}{4d691c8f43248e0361566fc1e6f3d193}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{08}
+      \field{number}{6}
+      \field{title}{Toward the design of chemical reactions: Machine learning barriers of competing mechanisms in reactant space}
+      \field{volume}{155}
+      \field{year}{2021}
+      \field{pages}{064105}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0059742
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/5.0059742
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/5.0059742
+      \endverb
+    \endentry
+    \entry{ml_energy_barrier4}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bd893eebcf476f67488356877ebe10b3}{%
+           family={Stocker},
+           familyi={S\bibinitperiod},
+           given={Sina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=aef6628a7e1ad935b99d3d3cf7e63e20}{%
+           family={Csányi},
+           familyi={C\bibinitperiod},
+           given={Gábor},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bf36b41827088c8b137fa0da9508f7fe}{%
+           family={Reuter},
+           familyi={R\bibinitperiod},
+           given={Karsten},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4a6a679baf48070a0b26525f2056c7e1}{%
+           family={Margraf},
+           familyi={M\bibinitperiod},
+           given={Johannes\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5fcff81d0379e435a84bdc511538ba0f}
+      \strng{fullhash}{dfd658b5a9c6332bb1e61c27c258d8f9}
+      \strng{bibnamehash}{5fcff81d0379e435a84bdc511538ba0f}
+      \strng{authorbibnamehash}{5fcff81d0379e435a84bdc511538ba0f}
+      \strng{authornamehash}{5fcff81d0379e435a84bdc511538ba0f}
+      \strng{authorfullhash}{dfd658b5a9c6332bb1e61c27c258d8f9}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nat Commun}
+      \field{month}{10}
+      \field{number}{5505}
+      \field{title}{Machine learning in chemical reaction space}
+      \field{volume}{11}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1038/s41467-020-19267-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41467-020-19267-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41467-020-19267-x
+      \endverb
+    \endentry
+    \entry{ml_energy_barrier5}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bd893eebcf476f67488356877ebe10b3}{%
+           family={Stocker},
+           familyi={S\bibinitperiod},
+           given={Sina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=aef6628a7e1ad935b99d3d3cf7e63e20}{%
+           family={Csányi},
+           familyi={C\bibinitperiod},
+           given={Gábor},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bf36b41827088c8b137fa0da9508f7fe}{%
+           family={Reuter},
+           familyi={R\bibinitperiod},
+           given={Karsten},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4a6a679baf48070a0b26525f2056c7e1}{%
+           family={Margraf},
+           familyi={M\bibinitperiod},
+           given={Johannes\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5fcff81d0379e435a84bdc511538ba0f}
+      \strng{fullhash}{dfd658b5a9c6332bb1e61c27c258d8f9}
+      \strng{bibnamehash}{5fcff81d0379e435a84bdc511538ba0f}
+      \strng{authorbibnamehash}{5fcff81d0379e435a84bdc511538ba0f}
+      \strng{authornamehash}{5fcff81d0379e435a84bdc511538ba0f}
+      \strng{authorfullhash}{dfd658b5a9c6332bb1e61c27c258d8f9}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nat Commun}
+      \field{month}{10}
+      \field{number}{5505}
+      \field{title}{Machine learning in chemical reaction space}
+      \field{volume}{11}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1038/s41467-020-19267-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41467-020-19267-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41467-020-19267-x
+      \endverb
+    \endentry
+    \entry{ml_energy_barrier6}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=09969fdd1ae551c4f4792873d17ddcd1}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Mingjian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b8fc11e42b4831f04643d5c68c3a487c}{%
+           family={Spotte-Smith},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={Evan\bibnamedelimb Walter\bibnamedelima Clark},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c92c9565e92227e3cedcaec87fa6f596}
+      \strng{fullhash}{c92c9565e92227e3cedcaec87fa6f596}
+      \strng{bibnamehash}{c92c9565e92227e3cedcaec87fa6f596}
+      \strng{authorbibnamehash}{c92c9565e92227e3cedcaec87fa6f596}
+      \strng{authornamehash}{c92c9565e92227e3cedcaec87fa6f596}
+      \strng{authorfullhash}{c92c9565e92227e3cedcaec87fa6f596}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nat Comput Sci}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{Chemical reaction networks and opportunities for machine learning}
+      \field{year}{2023}
+      \field{pages}{12\bibrangedash 24}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1038/s43588-022-00369-z
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s43588-022-00369-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s43588-022-00369-z
+      \endverb
+    \endentry
+    \entry{ml_reaction_barrier7}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ecbd7c95e124cc3e92c2e7db4fb15063}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Han-Chung},
+           giveni={H\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=4dac139b53ee1d926185465aed563ccd}{%
+           family={Tsai},
+           familyi={T\bibinitperiod},
+           given={Ming-Hsuan},
+           giveni={M\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=2ece2e3803b652d7458d267a1c39fd26}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yi-Pei},
+           giveni={Y\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed59439035199628fc4d40f7125fad7f}
+      \strng{fullhash}{ed59439035199628fc4d40f7125fad7f}
+      \strng{bibnamehash}{ed59439035199628fc4d40f7125fad7f}
+      \strng{authorbibnamehash}{ed59439035199628fc4d40f7125fad7f}
+      \strng{authornamehash}{ed59439035199628fc4d40f7125fad7f}
+      \strng{authorfullhash}{ed59439035199628fc4d40f7125fad7f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Information and Modeling}
+      \field{note}{PMID: 39862160}
+      \field{number}{3}
+      \field{title}{Enhancing Activation Energy Predictions under Data Constraints Using Graph Neural Networks}
+      \field{volume}{65}
+      \field{year}{2025}
+      \field{pages}{1367\bibrangedash 1377}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/acs.jcim.4c02319
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jcim.4c02319
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jcim.4c02319
+      \endverb
+    \endentry
+    \entry{scaling_limitations}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f7ed839484c6286ac7384d9540d7acd9}{%
+           family={Vijay},
+           familyi={V\bibinitperiod},
+           given={Sudarshan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=24b21c3b95b376afbfc7d046913302e8}{%
+           family={Kastlunger},
+           familyi={K\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7db22b1446dedb830ef2f829d5321ef5}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e7978b6851731a6ee2d29e162f55d468}{%
+           family={Nørskov},
+           familyi={N\bibinitperiod},
+           given={Jens\bibnamedelima K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{eee36f7fdfa3dfd82ae5c328cab785ab}
+      \strng{fullhash}{90ca686a6acff28d7a43820dd05568ef}
+      \strng{bibnamehash}{eee36f7fdfa3dfd82ae5c328cab785ab}
+      \strng{authorbibnamehash}{eee36f7fdfa3dfd82ae5c328cab785ab}
+      \strng{authornamehash}{eee36f7fdfa3dfd82ae5c328cab785ab}
+      \strng{authorfullhash}{90ca686a6acff28d7a43820dd05568ef}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{06}
+      \field{number}{23}
+      \field{title}{Limits to scaling relations between adsorption energies?}
+      \field{volume}{156}
+      \field{year}{2022}
+      \field{pages}{231102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0096625
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/5.0096625
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/5.0096625
+      \endverb
+    \endentry
+    \entry{grimme_xtb}{article}{}
+      \name{author}{8}{}{%
+        {{hash=ec75a624132a0bda972dc3585a639c9c}{%
+           family={Bannwarth},
+           familyi={B\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e6ab9f7bed7e585a281231294699f534}{%
+           family={Caldeweyher},
+           familyi={C\bibinitperiod},
+           given={Eike},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ead1f648a4aeec4688036c900978feb9}{%
+           family={Ehlert},
+           familyi={E\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0012541dc48332d491b75eddc2de50ec}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e0dcf8cd232c8e15bc5cf6b6c3401ebd}{%
+           family={Pracht},
+           familyi={P\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b1aa2b5319ae4a2e5fc9a84d8d83b9b0}{%
+           family={Seibert},
+           familyi={S\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d0ba004fb45e3b7bcf7245f586572418}{%
+           family={Spicher},
+           familyi={S\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3a2585af369dbd4150db746c63177b0c}{%
+           family={Grimme},
+           familyi={G\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd4754e13476c7b6d3d23ff40703b8e0}
+      \strng{fullhash}{5555f82330d353f6d9ec3adcdbf1c074}
+      \strng{bibnamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
+      \strng{authorbibnamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
+      \strng{authornamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
+      \strng{authorfullhash}{5555f82330d353f6d9ec3adcdbf1c074}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WIREs Computational Molecular Science}
+      \field{number}{2}
+      \field{title}{Extended tight-binding quantum chemistry methods}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{pages}{e1493}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1002/wcms.1493
+      \endverb
+      \verb{urlraw}
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1493
+      \endverb
+      \verb{url}
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1493
+      \endverb
+      \keyw{density functional tight-binding theory,multilevel quantum chemistry,semiempirical molecular orbital theory}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{2}
+  \datalist[entry]{none/global//global/global}
     \entry{jakob_reactions_hypergraph}{article}{}
       \name{author}{4}{}{%
         {{hash=5b003eec61572048178f55ff7d538bc8}{%
@@ -201,7 +2795,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{2}
+\refsection{3}
   \datalist[entry]{none/global//global/global}
     \entry{cobrapy}{article}{}
       \true{moreauthor}
@@ -270,7 +2864,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{3}
+\refsection{4}
   \datalist[entry]{none/global//global/global}
     \entry{crooks}{article}{}
       \name{author}{1}{}{%
@@ -1824,7 +4418,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{4}
+\refsection{5}
   \datalist[entry]{none/global//global/global}
     \entry{implemented_CRN}{article}{}
       \name{author}{2}{}{%
@@ -2655,7 +5249,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{5}
+\refsection{6}
   \datalist[entry]{none/global//global/global}
     \entry{arrhenius1}{misc}{}
       \name{author}{1}{}{%
@@ -3579,7 +6173,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{6}
+\refsection{7}
   \datalist[entry]{none/global//global/global}
     \entry{implemented_CRN}{article}{}
       \name{author}{2}{}{%
@@ -3807,7 +6401,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{7}
+\refsection{8}
   \datalist[entry]{none/global//global/global}
     \entry{rdkit_embedMolecule}{misc}{}
       \name{author}{1}{}{%

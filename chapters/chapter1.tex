@@ -4,7 +4,7 @@
 \label{ch:preliminaries}
 %************************************************
 
-{\sffamily\slshape This chapter is identical to Appendix A and B of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609}.\\}
+{\sffamily\slshape The text in this chapter is identical to Appendix A and B of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609} along with the figures.\\}
 
 While one might choose to represent a reaction formally by \eqref{chemical_equation}, for more practical scenarios, it is just a collection of reactant molecules (with their multiplicities) that gets converted into a collection of product molecules (with some different multiplicities). For example,\\
 
@@ -37,7 +37,10 @@ This reaction is a two-to-one map which converts molecules $\{v_0, v_1\}$ to $\{
     \end{tikzpicture}
 \end{center}
 
-This object is called an hyperedge and the individual molecules $v_0$, $v_2$ and $v_3$ form the vertices. However, in a practical scenario, when the molecules $v_0$ and $v_2$ are allowed to react, reaction $e_1$ is not the only reaction that would occur and the system would not stop reacting after producing $v_3$. Successive reactions might also be possible, some of which might be:
+This object is called an hyperedge and the individual molecules $v_0$, $v_2$ and $v_3$ form the vertices. However, in a practical scenario, when the molecules $v_0$ and $v_2$ are allowed to react, reaction $e_1$ is not the only reaction that would occur and the system would not stop reacting after producing $v_3$. Successive reactions might also be possible.
+Some of the reactions that might occur when molecules of $v_0$ and $v_2$ are allowed to react is shown in the next page. To a chemist, not all the reactions would look feasible due to reactivity constraints on the molecules, which would disallow some of the reactions. However, all these reactions might possibly occur in the system in parallel, making it an example of a concurrent system. 
+We would represent each reaction by a separate hyperedge and each class of molecules by a distinct vertex. This results in the structure shown in Figure~\ref{fig:sample_network}.
+The reverse reactions are omitted from the hypergraph in Figure~\ref{fig:sample_network} to reduce clutter. However, in our actual modeling, we do add separate hyperedges to represent the forward and backward directions of reversible reactions.
 
 \begin{center}
 \begin{tiny}
@@ -70,10 +73,7 @@ This object is called an hyperedge and the individual molecules $v_0$, $v_2$ and
 \end{tiny}
 \end{center}
 
-Some of the reactions that might occur when molecules of $v_0$ and $v_2$ are allowed to react is shown. To a chemist, not all the reactions would look feasible due to reactivity constraints on the molecules, which would disallow some of the reactions. However, all these reactions might possibly occur in the system in parallel, making it an example of a concurrent system. 
-\newpage
-
-\begin{figure}[!t]
+\begin{figure}[!h]
     \centering
     \includegraphics[scale=1.0]{graphics/chapter1/sample_network.pdf}
     \caption{A hypergraph representation of the reactions in the concurrent system.}
@@ -109,14 +109,11 @@ Some of the reactions that might occur when molecules of $v_0$ and $v_2$ are all
 \end{figure}
 \newpage
 
-We would represent each reaction by a separate hyperedge and each class of molecules by a distinct vertex. This results in the structure shown in Figure~\ref{fig:sample_network}.
-The reverse reactions are omitted from the hypergraph in Figure~\ref{fig:sample_network} to reduce clutter. However, in our actual modeling, we do add separate hyperedges to represent the forward and backward directions of reversible reactions.
-
 This data structure representing the concurrent set of reactions in the system is called a multi-directed hypergraph or for simplicity, just a hypergraph. An advantage of using this data structure is that is faithfully represents the many-to-many mappings which are present in reactions which are not unimolecular. Contrast this with a simple directed graph containing edges which map one vertex to another vertex, which are often used to represent and study diverse networks in many situations. The hypergraph in Figure~\ref{fig: hypergraph} is an abstraction of another system of concurrent reactions.
 
 One observes that glyoxal is represented as vertex $v_9$ in the hypergraph. One might query, how one inside this hypergraph can find a pathway producing glyoxal while using the input molecules $v_0$ and $v_2$. One possible transformation pathway is shown in Scheme~\ref{tab:sample_path1}.
 
-Highlighting the hyperedges used in this transformation pathway in the hypergraph results in Figure~\ref{fig:sample_path1}. This sequence of reactions in a pathway can be found by formulating it as a flow query with molecules $v_0$ and $v_2$ as the source molecules and $v_9$ as the target molecule. The ILP assigns integers to the hyperedges which denote the number of times the hyperedge is used in the pathway. Since the flows assigned to the hyperedges are constrained to be integers, this is called an integer hyperflow. The motivation behind using allowing only non-negative integers as permissible hyperflows on a hyperedge is discussed in Section~\ref{sec: discussions}.
+Highlighting the hyperedges used in this transformation pathway in the hypergraph results in Figure~\ref{fig:sample_path1}. This sequence of reactions in a pathway can be found by formulating it as a flow query with molecules $v_0$ and $v_2$ as the source molecules and $v_9$ as the target molecule. The ILP assigns integers to the hyperedges which denote the number of times the hyperedge is used in the pathway. Since the flows assigned to the hyperedges are constrained to be integers, this is called an integer hyperflow. The motivation behind using allowing only non-negative integers as permissible hyperflows on a hyperedge is discussed in Chapter~\ref{ch:thermodynamic_model}.
 
 Often, there might exist alternative solutions to the flow query. In this case, there exists another valid integer hyperflow to the same flow query in the network with molecules $v_0$ and $v_2$ as the source molecules and $v_9$ as the target molecule which is shown in Figure~\ref{fig:sample_path2}
 
@@ -363,6 +360,10 @@ In all the graph transformation rules in this section, the context graph $K$, wh
 
 When a graph transformation rule is applied to a set of reactant molecules, a reaction might occur. First, it is checked if the left-hand side of the rule, $L$, is present as a subgraph in the set of reactant molecules $G$. If so, then that subgraph is rewritten according to the rule to R, to generate a new set of molecules $H$, the product molecules. This process is illustrated in Figure~\ref{fig:rule_application1}.
 
+If the left-hand side of the rule, $L$, is not present in the set of molecules $G$, then that reaction template cannot be applied to the given set of molecules as shown in Figure~\ref{fig:rule_application2}.
+
+Therefore, the application of a rule to an existing set of molecules might produce new molecules, which in turn expands the molecular space. Repeated application of these rules constructs a network, which is detailed in the next section.
+
 \begin{figure}[!t]
     \centering
     \includegraphics[width=\linewidth]{graphics/chapter1/rule_app1.pdf}
@@ -375,9 +376,7 @@ When a graph transformation rule is applied to a set of reactant molecules, a re
     \label{fig:rule_application1}
 \end{figure}
 
-If the left-hand side of the rule, $L$, is not present in the set of molecules $G$, then that reaction template cannot be applied to the given set of molecules.
-
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
     \begin{tikzpicture}[scale=1.0]    
         \tikzset{
@@ -421,7 +420,8 @@ If the left-hand side of the rule, $L$, is not present in the set of molecules $
     \caption{A case where the graph transformation rule cannot be applied to a molecule}
     \label{fig:rule_application2}
 \end{figure}
-Therefore, the application of a rule to an existing set of molecules might produce new molecules, which in turn expands the molecular space. Repeated application of these rules constructs a network, which is detailed in the next section.
+\newpage
+
 
 \subsection{Construction of the reaction network}
 

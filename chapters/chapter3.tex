@@ -5,7 +5,7 @@
 \label{ch:casestudy1} %
 %************************************************
 
-{\sffamily\slshape This chapter is identical to Section 4 of the published version of the preprint at \href{https://arxiv.org/abs/2411.15900}{arXiv:2411.15900}.\\}
+{\sffamily\slshape The text in this chapter is identical to Section 4 of the published version of the preprint at \href{https://arxiv.org/abs/2411.15900}{arXiv:2411.15900} along with the figures.\\}
 
 In this chapter, we demonstrate the methods from Chapter~\ref{ch:thermodynamic_model} on a reaction network involving hydrogen cyanide, formamidic acid, and formamide in aqueous solution which has been studied in \cite{implemented_CRN}.
 
@@ -29,34 +29,38 @@ Molecular graphs also constitute the vertices of the hypergraph representing the
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[scale=1.5]{graphics/chapter3/rule0.pdf}
+        \vspace{0.5cm}
         \caption{Addition to a cyanide: in this rule \texttt{x} $\in$ \{N, O\}, representing the addition of an amide nitrogen or hydroxyl oxygen to the nitrile bond respectively.}
         \label{fig: rule0}
     \end{subfigure}
     \\
-    \vspace{0.5cm}
+    \vspace{1cm}
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[scale=1.5]{graphics/chapter3/rule1.pdf}
+        \vspace{0.5cm}
         \caption{Addition to an imine or carbonyl: in this rule \texttt{x}, \texttt{y} $\in$ \{N, O\}, representing the addition of an amide nitrogen or hydroxyl oxygen to an amide or hydroxyl bond respectively. This single rule encapsulates $2^2 = 4$ individual rules depending on the instantiation of \texttt{x} and \texttt{y}.}
         \label{fig: rule1}
     \end{subfigure}
     \\
-    \vspace{0.5cm}
+    \vspace{1cm}
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[scale=1.5]{graphics/chapter3/rule2.pdf}
+        \vspace{0.5cm}
         \caption{1,3 hydrogen shift: in this rule \texttt{x}, \texttt{y} $\in$ \{C, N, O\}, representing the shift of a double bond as in tautomerism. When \texttt{x}$\equiv$O and \texttt{y}$\equiv$O it is keto-enol tautomerism, \texttt{x}$\equiv$N and \texttt{y}$\equiv$N is imine-enamine tautomerism, \texttt{x}$\equiv$N and \texttt{y}$\equiv$O is amine-iminol tautomerism and \texttt{x}$\equiv$C and \texttt{y}$\equiv$C is an allylic shift of the double bond. This single rule encapsulates $3\times 3 = 9$ individual rules depending on the instantiation of \texttt{x} and \texttt{y}.}
         \label{fig: rule2}
     \end{subfigure}%
     \\
-    \vspace{0.5cm}
+    \vspace{1cm}
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[scale=1.5]{graphics/chapter3/rule3.pdf}
+        \vspace{0.5cm}
         \caption{Condensation: in this rule \texttt{x} $\in$ \{C, N, O\}, \texttt{y},\texttt{z} $\in$ \{N, O\} representation of the addition of a double bond (of an enol, enamine) to a imine or a carbonyl group. This single rule encapsulates $3\times 2\times 2 = 12$ individual rules depending on the instantiation of \texttt{x}, \texttt{y} and \texttt{z}.}
         \label{fig: rule3}
     \end{subfigure}%
-    \vspace{0.2cm}
+    \vspace{1cm}
     \caption{The graph transformation rules used to expand the molecular space and generate the network.}
     \label{fig: graphTransformationRules}
 \end{figure}
@@ -113,10 +117,10 @@ The memory requirement scales as $\mathcal{O}(N^2)$ because of the number of two
 
 \begin{figure}[!t]
     \centering
-    \includegraphics[width=1.2\textwidth]{graphics/chapter3/thermOracle.pdf}
+    \includegraphics[width=0.9\textwidth]{graphics/chapter3/sampleConformer.pdf}
     \vspace{0.5cm}
-    \caption{The sequence of operations that was used to assign chemical potentials to the molecules, represented by vertices, in the reaction network, which is referred to thermodynamic oracle in the text.}
-    \label{fig: thermOracle}
+    \caption{OpenBabel's \texttt{WeightetedRotorSearch()} iteratively samples conformers to reach towards the lowest energy conformer of the molecule. It randomly chooses from the allowed torsion angles, and reweights the choice based on the energy of the last generated lowest energy conformer. Progressively, the generated conformer has increasingly lower energy.}
+    \label{fig: sampleConformer}
 \end{figure}
 
 Efficient software design necessitates striking a balance among the components in this work: expanding the molecular space, assigning chemical potentials to the molecules in the space and solving the formulated MILP for queried pathways in the network.   
@@ -127,16 +131,15 @@ In the rest of this Section, we describe how we estimate the chemical potentials
 
 The molecules in the expanded reaction network were modeled as graphs where individual vertices represented atoms (labeled by the symbol of the corresponding element), while edges represented bonds. The adjacency matrix of this graph was utilized to determine the connectivity for that molecule. Given a connectivity matrix that satisfies the valences of each atom in the molecule, a three-dimensional embedding for the molecule was generated using the VSEPR theory. The \href{https://github.com/openbabel/openbabel/blob/32cf131444c1555c749b356dab44fb9fe275271f/include/openbabel/builder.h#L42}{\texttt{OBBuilder}} class from the Open Babel~\cite{open_babel, openbabel_web} library was employed to generate the three dimensional coordinates for the atoms utilizing a combination of VSEPR rules and commonly encountered fragments.
 
+The generated geometry of the molecule was refined using 1000 iterations of conjugate gradient descent or until the change in energy (in atomic units, calculated using the universal force field~\cite{uff}) between successive iterations is less than $10^{-4}$. Next, to identify a low energy conformer, \href{https://github.com/openbabel/openbabel/blob/32cf131444c1555c749b356dab44fb9fe275271f/src/forcefield.cpp#L1595}{\texttt{OBForceField::WeightedRotorSearch()}} was utilized to systematically perform a tree-search for a conformer of the molecule with a low energy, by biasing the expansion of the search tree towards the current low energy conformer as shown in Figure~\ref{fig: sampleConformer}. At each iterative expansion step, 25 conformers were generated, and 100 steps of conjugate descent are executed on each. This lead to the generation of conformers with successively lower energies over subsequent iterations. The conformer with the lowest energy identified at the end of this search process was further subjected to 250 iterations of conjugate descent or until the energy tolerance of $10^{-5}$ is reached. The energy for a conformer at each step was estimated using the universal force field~\cite{uff}. The result of this search process, the configuration of the low-energy conformer, containing the three dimensional Cartesian coordinate of each atom in the molecule was written into an \texttt{.xyz} file. 
+
 \begin{figure}[!t]
     \centering
-    \includegraphics[width=0.9\textwidth]{graphics/chapter3/sampleConformer.pdf}
+    \includegraphics[width=1.25\textwidth]{graphics/chapter3/thermOracle.pdf}
     \vspace{0.5cm}
-    \caption{OpenBabel's \texttt{WeightetedRotorSearch()} iteratively samples conformers to reach towards the lowest energy conformer of the molecule. It randomly chooses from the allowed torsion angles, and reweights the choice based on the energy of the last generated lowest energy conformer. Progressively, the generated conformer has increasingly lower energy.}
-    \label{fig: sampleConformer}
+    \caption{The sequence of operations that was used to assign chemical potentials to the molecules, represented by vertices, in the reaction network, which is referred to thermodynamic oracle in the text.}
+    \label{fig: thermOracle}
 \end{figure}
-
-
-The generated geometry of the molecule was refined using 1000 iterations of conjugate gradient descent or until the change in energy (in atomic units, calculated using the universal force field~\cite{uff}) between successive iterations is less than $10^{-4}$. Next, \href{https://github.com/openbabel/openbabel/blob/32cf131444c1555c749b356dab44fb9fe275271f/src/forcefield.cpp#L1595}{\texttt{OBForceField::WeightedRotorSearch()}} was utilized to systematically perform a tree-search for a conformer of the molecule with a low energy, by biasing the expansion of the search tree towards the current low energy conformer as shown in Figure~\ref{fig: sampleConformer}. At each iterative expansion step, 25 conformers were generated, and 100 steps of conjugate descent are executed on each. This lead to the generation of conformers with successively lower energies over subsequent iterations. The conformer with the lowest energy identified at the end of this search process was further subjected to 250 iterations of conjugate descent or until the energy tolerance of $10^{-5}$ is reached. The energy for a conformer at each step was estimated using the universal force field~\cite{uff}. The result of this search process, the configuration of the low-energy conformer, containing the three dimensional Cartesian coordinate of each atom in the molecule was written into an \texttt{.xyz} file. 
 
 The \texttt{.xyz} coordinate file generated by OpenBabel serves as an input file for xTB.
 A geometry optimization of the structure is performed with xTB, employing an energy tolerance of $5\times 10^{-8}$ Eh and a gradient tolerance of $5\times 10^{-5}$ Eh bohr$^{-1}$. This is followed by the calculation of the Hessian matrix for the optimized structure, and the chemical potentials at $298.15$ K using standard translational, rotational, vibrational, and electronic partition functions from statistical mechanics under the coupled rigid-rotor and harmonic-oscillator approximations.
@@ -160,8 +163,7 @@ The lower limit of the reactants is imposed by practical constraints because the
 
 For this work, we have chosen the limits in the concentration variables as $\left[x^K_v\right]_{\text{min}} = -3$ and $\left[x^K_v\right]_{\text{max}} = 1$. These correspond to physical values of the concentrations between $10^{-3}$ mol lit$^{-1}$ and $10^{1}$ mol lit$^{-1}$. While minimolar concentrations can be achieved under laboratory conditions using standard fludics procedures, a concentration of tens of molars is often encountered for pure liquids (the concentration of pure water is $55.56$ mol lit$^{-1}$). While we use the same range for the log concentration values for all the molecules in the reaction network, the user might choose to assign different ranges for different molecules to make the model more realistic.
 
-\section{Formamide Chemistry}
-
+\newpage
 \begin{figure}[!t]
     \centering
     \includegraphics[width=\textwidth]{graphics/chapter3/queryPathway.pdf}
@@ -170,15 +172,7 @@ For this work, we have chosen the limits in the concentration variables as $\lef
     \label{fig: pathwayQuery}
 \end{figure}
 
-\begin{figure}[t]
-    \centering
-    \vspace{0.5cm}
-    \includegraphics[width=\textwidth]{graphics/chapter3/pathway1.pdf}
-    \vspace{1.0cm}
-    \caption{The pathway reported in \cite{implemented_CRN} with the sum of free energies $-178.412$ kJ mol$^{-1}$. This pathway requires four hyperedges (denoted by the squares, with the assigned hyperflow the integer in the square). The vertices in the pathway correspond to molecules, whose structures are listed below the pathway along with the label of the vertex.}
-    \label{fig: conventional_path}
-\end{figure}
-\clearpage
+\section{Formamide Chemistry}
 
 The primary objective was to study the energetics of condensation pathways of the smaller seed molecules (HCN, NH$_3$, and H$_2$O) into larger oligomers, which might have implication for the prebiotic synthesis of amino acids and compare it with the pathways reported in \cite{implemented_CRN}. 
 Therefore, the formulated MILP model was set up to query the pathways with HCN, NH$_3$, and H$_2$O as the input molecules and the trimer of formamide (numbered $17$ in \cite{implemented_CRN}) as the target molecule as shown in Figure~\ref{fig: pathwayQuery}.
@@ -190,6 +184,16 @@ The sum of free energies of the transitions in this pathway is $-178.412$ kJ mol
 This pathway uses four unique transitions (hyperedges) as depicted in Figure~\ref{fig: conventional_path}.
 Two of them are used multiple times, which makes seven transitions in total (sum of flows assigned to the hyperedges).
 The pathway requires an inflow of three molecules of $v_0$ (hydrogen cyanide) and three molecules of $v_1$ (water) to produce the target molecule $v_5$. The chemical potential $x_v^{\Delta G}$ and the log concentration $x_v^K$ values assigned to each molecule by the MILP solver is listed in Table~\ref{tab:convSoln_molecules}, along with their molecular graphs. 
+
+\begin{figure}[t]
+    \centering
+    \vspace{0.5cm}
+    \includegraphics[width=\textwidth]{graphics/chapter3/pathway1.pdf}
+    \vspace{1.0cm}
+    \caption{The pathway reported in \cite{implemented_CRN} with the sum of free energies $-178.412$ kJ mol$^{-1}$. This pathway requires four hyperedges (denoted by the squares, with the assigned hyperflow the integer in the square). The vertices in the pathway correspond to molecules, whose structures are listed below the pathway along with the label of the vertex.}
+    \label{fig: conventional_path}
+\end{figure}
+\clearpage
 
 \begin{table}[!h]
 	\centering
@@ -243,6 +247,16 @@ choosing hyperedges with larger free energy differences would increase the value
 Using transition with larger free energy differences to `cover' the net difference in the chemical potential,
 lead to fewer transitions being used in the pathway. 
 
+\begin{figure}[!h]
+    \centering
+    \vspace{0.5cm}
+    \includegraphics[width=\textwidth]{graphics/chapter3/pathway2.pdf}
+    \vspace{1.0cm}
+    \caption{The pathway scoring the best when the model proposed in Chapter~\ref{ch:thermodynamic_model} was applied to the generated reaction network along with the objective function (8) with the simple sum of free energies $-313.718$ kJ mol$^{-1}$. This pathway requires four hyperedges (denoted by the squares, with the assigned hyperflow the integer in the square). The vertices in the pathway correspond to molecules, whose structures are listed below the pathway along with the label of the vertex.}
+    \label{fig: shortest_path}
+\end{figure}
+\newpage
+
 \begin{table}[!h]
 	\centering
 	\begin{tabular}{cccrr}
@@ -281,16 +295,6 @@ lead to fewer transitions being used in the pathway.
     \caption{The MILP solution assigned hyperflows $f_e$ to the hyperedges in the pathway, indicating the number of times they are used to effect the pathway shown  in Figure~\ref{fig: shortest_path}. The set of vertices which is the inset of the hyperedge (or the reactants in the corresponding transition) is listed under in($v$), while the set of vertices which is the outset of the hyperedge (or the products in the corresponding transition) is listed under out($v$). $\overline{x}^{\Delta G}_e$ gives the free energy difference assigned to the hyperedge in kJ mol$^{-1}$.}
     \label{tab:shortestSoln_reactions}
 \end{table}
-
-\begin{figure}[t]
-    \centering
-    \vspace{0.5cm}
-    \includegraphics[width=\textwidth]{graphics/chapter3/pathway2.pdf}
-    \vspace{1.0cm}
-    \caption{The pathway scoring the best when the model proposed in Chapter~\ref{ch:thermodynamic_model} was applied to the generated reaction network along with the objective function (8) with the simple sum of free energies $-313.718$ kJ mol$^{-1}$. This pathway requires four hyperedges (denoted by the squares, with the assigned hyperflow the integer in the square). The vertices in the pathway correspond to molecules, whose structures are listed below the pathway along with the label of the vertex.}
-    \label{fig: shortest_path}
-\end{figure}
-\clearpage
 
 The main source of difference in the objective function value in the two pathways is the chemical potential of the molecule $v_3$ from Figure~\ref{fig: shortest_path} that is not present in the conventional pathway.
 While the conventional pathway in \cite{implemented_CRN} is more symmetric and appealing because of the stepwise nucleophilic attack on the carbonyl $C$ atom by the amine $N$ atom of an adjacent $v_3$ molecule, which is repeated twice to generate $v_5$ as illutrated in Figure~\ref{fig: symAdd}, \cite{implemented_CRN} also notes that these condensation reactions have a positive Gibbs free energy.

@@ -4,7 +4,7 @@
 \label{ch:toolbox}
 %************************************************
 
-{\sffamily\slshape This chapter is identical to Section 2 of the published version of the preprint at \href{https://arxiv.org/abs/2411.15900}{arXiv:2411.15900}.\\}
+{\sffamily\slshape The text in this chapter is identical to Section 2 of the published version of the preprint at \href{https://arxiv.org/abs/2411.15900}{arXiv:2411.15900} along with the figures.\\}
 
 In this chapter, the mathematical models for chemical reaction networks and pathways in them are presented,
 namely directed hypergraphs and integer hyperflows, respectively.
@@ -33,6 +33,18 @@ $s_{ve}^{+}$ & is the number of molecules of $v$ that are produced \\
 The sum is over the entire set of molecules $V$ in the chemical reaction network,
 and for molecules $v$ that do not take part in a particular reaction $e$, we have $s^-_{ve} = s^+_{ve} = 0$
 
+A chemical reaction network is formally well represented~\cite{jakob_integer_hyperflows} as a directed multi-hypergraph~$(V, E)$, where
+
+\begin{tabular}{l}
+the set~$V$ of vertices models molecules and \\
+the set~$E$ of directed multi-hyperedges models reactions. \\
+\end{tabular}
+
+A directed multi-hyperedge $e\in E$ is an ordered pair $(e^-, e^+)$ of multisets of vertices, which represents a reaction in the chemical reaction network.
+The elements of $e^-$ model the reactants of the reaction, with each reactant $v$ appearing $s^-_{ve}$ times,
+and correspondingly $e^+$ and $s^+_{ve}$ model the products of the reaction. An example hyperedge representing a chemical reaction is shown in Figure~\ref{fig: hyperedge}.
+\newpage
+
 \begin{figure}[!t]
 	\centering
 	\vspace{0.5cm}
@@ -54,16 +66,7 @@ and for molecules $v$ that do not take part in a particular reaction $e$, we hav
     \label{fig: hypergraph}
 \end{figure}
 
-A chemical reaction network is formally well represented~\cite{jakob_integer_hyperflows} as a directed multi-hypergraph~$(V, E)$, where
-
-\begin{tabular}{l}
-the set~$V$ of vertices models molecules and \\
-the set~$E$ of directed multi-hyperedges models reactions. \\
-\end{tabular}
-
-A directed multi-hyperedge $e\in E$ is an ordered pair $(e^-, e^+)$ of multisets of vertices, which represents a reaction in the chemical reaction network.
-The elements of $e^-$ model the reactants of the reaction, with each reactant $v$ appearing $s^-_{ve}$ times,
-and correspondingly $e^+$ and $s^+_{ve}$ model the products of the reaction. An example hyperedge representing a chemical reaction is shown in Figure~\ref{fig: hyperedge}.
+\newpage
 
 Figure~\ref{fig: hypergraph} depicts a hypergraph with eight vertices and eleven hyperedges.
 As examples, \\
@@ -218,22 +221,6 @@ $f_e$ & an entry in $f$ \\
 \end{tabular}
 
 \noindent The constraint in Equation~\eqref{int_hyperflow_jakob} is easily seen to be equivalent to the constraint in Equation~\eqref{int_hyperflow_matrix}. 
-
-In Figure~\ref{fig: hyperflow}, three possible hyperflows in a hypergraph are depicted.
-Unboxed integers are flow values on half-edges, while boxed integers are the flow values for hyperedges in $E$.
-The inflow and the outflow are depicted as half-edges in and out of the source and target vertices of the pathway.
-For clarity, only half-edges with non-zero flow values are shown.
-
-One key feature of integer hyperflows is that they give a flexible and generic way to \emph{specify} pathways via constraints on the flow on half-edges.
-This may be as straight-forward as specifying an overall reaction for the pathway by fixing the flow on the half-edges for the molecules in the source and target sets and setting the flow to zero for the rest of the half-edges.
-Or one may specify upper and lower limits for some half-edges and free values for others,
-for instance to ask if there is any way to produce at least some target molecules using any amount of source molecules,
-while at the same time allowing waste products.
-
-Then a \emph{search} for pathways fulfilling the specification amounts to finding flow vectors~$f$ obeying those constraints, in addition to the constraint in Equation~\eqref{int_hyperflow_jakob}.
-Since integer hyperflows are integer valued, it is natural to model the situation via the ILP formalism and search for~$f$ using an ILP solver.
-This idea has been implemented as part of the software system~MØD~\cite{mod_web}.
-The result is a powerful and flexible tool for specifying and searching for pathways (integer hyper-
 \newpage
 
 \begin{figure}[!h]
@@ -287,7 +274,25 @@ The result is a powerful and flexible tool for specifying and searching for path
     \label{fig: hyperflow}
 \end{figure}
 
-flows) in a given chemical reaction network (hypergraph).
+\newpage
+
+
+
+In Figure~\ref{fig: hyperflow}, six possible hyperflows in a hypergraph are depicted.
+Unboxed integers are flow values on half-edges, while boxed integers are the flow values for hyperedges in $E$.
+The inflow and the outflow are depicted as half-edges in and out of the source and target vertices of the pathway.
+For clarity, only half-edges with non-zero flow values are shown.
+
+One key feature of integer hyperflows is that they give a flexible and generic way to \emph{specify} pathways via constraints on the flow on half-edges.
+This may be as straight-forward as specifying an overall reaction for the pathway by fixing the flow on the half-edges for the molecules in the source and target sets and setting the flow to zero for the rest of the half-edges.
+Or one may specify upper and lower limits for some half-edges and free values for others,
+for instance to ask if there is any way to produce at least some target molecules using any amount of source molecules,
+while at the same time allowing waste products.
+
+Then a \emph{search} for pathways fulfilling the specification amounts to finding flow vectors~$f$ obeying those constraints, in addition to the constraint in Equation~\eqref{int_hyperflow_jakob}.
+Since integer hyperflows are integer valued, it is natural to model the situation via the ILP formalism and search for~$f$ using an ILP solver.
+This idea has been implemented as part of the software system~MØD~\cite{mod_web}.
+The result is a powerful and flexible tool for specifying and searching for pathways (integer hyperflows) in a given chemical reaction network (hypergraph).
 The flexibility is further increased by the possibility of having flow values in the ILP objective function, such that e.g.\ flow solutions allowing but minimizing waste can be found.
 Also the flow values on non-half-edges can enter the specification and/or optimization,
 allowing e.g.\ the search for solutions minimizing the use of a given reaction deemed particularly expensive to include in the pathway.

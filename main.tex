@@ -1,13 +1,13 @@
 \documentclass[
-  a4paper,
+  paper=a4,
   twoside,
-  openright,
-  fontsize=13pt,
+  open=right,
+  fontsize=11pt,
   headings=normal,
-  DIV=10,
-  BCOR=10mm,
+  DIV=12,
+  BCOR=0mm,
   headinclude,
-  footinclude
+  %footinclude
 ]{scrbook}
 
 % Encoding and language
@@ -21,6 +21,7 @@
   linedheaders,
   parts
 ]{classicthesis}
+
 
 \usepackage[
   backend=biber,
@@ -44,6 +45,7 @@
 \usepackage{multirow}
 \usepackage{colortbl}
 \usepackage{adjustbox}
+\usepackage{showframe}
 
 \usepackage{chemfig}
 \setchemfig{atom sep=1.8em}
@@ -57,10 +59,11 @@
 \frontmatter
 \input{frontmatter/titlepage}
 \input{frontmatter/titlepage_reverse}
-\input{frontmatter/abstract}
 \tableofcontents
 
+\input{frontmatter/abstract}
 \mainmatter
+\input{chapters/prolog}
 \input{chapters/chapter0}
 \input{chapters/chapter1}
 \input{chapters/chapter2}

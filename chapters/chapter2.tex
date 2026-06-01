@@ -5,10 +5,24 @@
 \label{ch:thermodynamic_model}
 %************************************************
 
-{\sffamily\slshape This chapter is identical to Section 3 of the published version of the preprint at \href{https://arxiv.org/abs/2411.15900}{arXiv:2411.15900}.\\}
+{\sffamily\slshape The text in this chapter is identical to Section 3 of the published version of the preprint at \href{https://arxiv.org/abs/2411.15900}{arXiv:2411.15900} along with some additional figures.\\}
 
 Analogous to typical thermodynamics problems where pathways maximizing the work done by the flow of heat between the system and the reservoir are sought (such as the cycle of a heat engine as shown in Figure~\ref{fig: heatCycles}),
 we seek pathways in our system to maximize the chemical work done (interpreted as maximizing the production of the target molecules) by directing the flow of molecules along specific reactions on the free energy landscape.
+
+Classical thermodynamics---contrary to the `dynamics' in the name---is used to study systems at equilibrium,
+or near equilibrium, when the thermodynamic driving forces are in exact balance.
+In a closed system, the concentrations of the molecules in the system would be such that the chemical potentials of all the molecules in the reaction network is the same.
+To achieve the required flow along the pathway returned by our method,
+one has to perturb the system from the equilibrium by tweaking the molecular concentrations in a direction returned by the solution.
+In practical scenarios, this is done supplying a steady inflow of the source molecules and removing the target molecules from the system to maintain a non-zero thermodynamic driving force along the pathway.  
+For perturbations that are small enough, the equations from classical thermodynamics describing the equilibrium situation can still be used as a first-order approximation.
+The gradients of the chemical potentials in general, or in our case, the differences in the chemical potentials of the target molecules and the source molecules in a elementary reaction serve as the thermodynamic force driving a reaction.
+In the linear regime, the flow for each reaction would be directly proportional to the thermodynamic forces driving the flow.
+The forces driving the flows in a reaction network might not remain linear functions of the difference in the chemical potentials farther from the equilibrium, resulting in non-linear dynamics.
+Therefore, in this work we would restrict ourselves to analyzing the system perturbed, within acceptable limits,
+from the equilibrium, so that using equations from equilibrium thermodynamics does not introduce large errors into the calculations.
+\newpage
 
 \begin{figure}[!t]
     \centering
@@ -30,19 +44,7 @@ we seek pathways in our system to maximize the chemical work done (interpreted a
     \caption{Thermodynamics studied the pathways traversed by heat engines in the $P-V$ space which maximized the work done by it. The efficiency of such heat engines was calculated as $\eta = \frac{W}{Q_H} = \frac{Q_H - Q_C}{Q_H} = 1 - \frac{Q_C}{Q_H}$ which can be shown t be equivalent to $\eta = 1 - \frac{T_1}{T_0}$. therefore, increasing the temperature gradient in the system increased the work done by the heat engine under ideal conditions.}
     \label{fig: heatCycles}
 \end{figure}
-
-Classical thermodynamics---contrary to the `dynamics' in the name---is used to study systems at equilibrium,
-or near equilibrium, when the thermodynamic driving forces are in exact balance.
-In a closed system, the concentrations of the molecules in the system would be such that the chemical potentials of all the molecules in the reaction network is the same.
-To achieve the required flow along the pathway returned by our method,
-one has to perturb the system from the equilibrium by tweaking the molecular concentrations in a direction returned by the solution.
-In practical scenarios, this is done supplying a steady inflow of the source molecules and removing the target molecules from the system to maintain a non-zero thermodynamic driving force along the pathway.  
-For perturbations that are small enough, the equations from classical thermodynamics describing the equilibrium situation can still be used as a first-order approximation.
-The gradients of the chemical potentials in general, or in our case, the differences in the chemical potentials of the target molecules and the source molecules in a elementary reaction serve as the thermodynamic force driving a reaction.
-In the linear regime, the flow for each reaction would be directly proportional to the thermodynamic forces driving the flow.
-The forces driving the flows in a reaction network might not remain linear functions of the difference in the chemical potentials farther from the equilibrium, resulting in non-linear dynamics.
-Therefore, in this work we would restrict ourselves to analyzing the system perturbed, within acceptable limits,
-from the equilibrium, so that using equations from equilibrium thermodynamics does not introduce large errors into the calculations.
+\newpage
 
 \section{Mathematical Formulation}\label{math_form}
 

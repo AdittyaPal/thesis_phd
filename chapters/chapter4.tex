@@ -5,15 +5,16 @@
 \label{ch:refined_model} %
 %************************************************
 
-{\sffamily\slshape This chapter is identical to Section 3 of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609}.\\}
+{\sffamily\slshape The text in this chapter is identical to Section 3 of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609} along with some additional figures.\\}
 
 In this chapter, we develop an objective measure to rank pathways in a reaction network maximizing the probability of the entire pathway based on physical principles. 
 Additionally, based on the notion that energy barriers of reactions are the determining factor for the kinetics of the network, we develop an automated methodology for computing such energy barriers, building on a combination of an array of existing computational tools. A key novelty is that in contrast to the standard manual intervention required to generate reaction trajectories from which the reaction barrier can be estimated, we try to automate this part of the process.
 Lastly, we formulate an integer linear program which allows the user to specify queries for pathways in the network in a very flexible and generic way. Solving this integer linear program returns all pathways fulfilling the criteria, ranked by the objective measure mentioned above.
 In short, this gives an automated, general, and flexible methodology for analyzing reaction networks, a methodology which offers a speed-up over manual search for pathways but with comparable quality.
 
-In this chapter, we detail our proposed methodology for automating the search for kinetically informed pathways in reaction networks. As shown in Figure~\ref{fig: thermoEnergyBarrierCases}, the kinetics of the reaction can often lead to different results than those obtained from the reaction thermodynamics as done in \newpage
+In this chapter, we detail our proposed methodology for automating the search for kinetically informed pathways in reaction networks. As shown in Figure~\ref{fig: thermoEnergyBarrierCases}, the kinetics of the reaction can often lead to different results than those obtained from the reaction thermodynamics as done in Chapter~\ref{ch:thermodynamic_model}. In Sections~\ref{reaction_prob} and \ref{obj_func}, we first propose an objective function for ranking pathways in a reaction network annotated with kinetic data in the form of energy barriers for each reaction. In Section~\ref{implemented_model}, we then formulate an integer linear program (ILP) representing such networks and allowing the specification and execution of pathway searches. This part builds on the modeling described in Chapter~\ref{ch:thermodynamic_model}. We also describe how to search for not only one, but multiple solutions to a given pathway query, ordered by an objective function such as the one presented in Section~\ref{obj_func}. 
 
+\newpage
 \begin{figure}[!htb]
     \centering
     \begin{subfigure}{0.8\textwidth}
@@ -49,7 +50,6 @@ In this chapter, we detail our proposed methodology for automating the search fo
 \end{figure}
 \newpage
 
-Chapter~\ref{ch:thermodynamic_model}. In Sections~\ref{reaction_prob} and \ref{obj_func}, we first propose an objective function for ranking pathways in a reaction network annotated with kinetic data in the form of energy barriers for each reaction. In Section~\ref{implemented_model}, we then formulate an integer linear program (ILP) representing such networks and allowing the specification and execution of pathway searches. This part builds on the modeling described in Chapter~\ref{ch:thermodynamic_model}. We also describe how to search for not only one, but multiple solutions to a given pathway query, ordered by an objective function such as the one presented in Section~\ref{obj_func}. 
 
 \section{From Rate Constants to Edge Weights}
 \label{reaction_prob}
@@ -267,25 +267,29 @@ That is, if we define $supp(f) = \{e\in E \mid z_e = 1\}$ then two solutions $f_
     \begin{subfigure}{0.8\textwidth}
         \centering
         \includegraphics[scale=1.4]{graphics/chapter4/subset1.pdf}
+        \vspace{0.5cm}
         \caption{An integer hyperflow solution with $4$ hyperedges.}
         \label{fig:solution1}
     \end{subfigure}
-    \vspace{0.5cm}
+    \vspace{1cm}
     \\
     \begin{subfigure}{0.8\textwidth}
         \centering
         \includegraphics[scale=1.4]{graphics/chapter4/subset2.pdf}
+        \vspace{0.5cm}
         \caption{Another integer hyperflow solution to the same flow query using $5$ hyperedges.}
         \label{fig:solution2}
     \end{subfigure}
-    \vspace{0.5cm}
+    \vspace{1cm}
     \\
     \begin{subfigure}{0.8\textwidth}
         \centering
         \includegraphics[scale=1.4]{graphics/chapter4/overlap.pdf}
+        \vspace{0.5cm}
         \caption{An integer hyperflow satisfying all constraints listed in Section~\ref{implemented_model}. However, it is just the superposition of the solutions~\ref{fig:solution1} and~\ref{fig:solution2}.}
         \label{fig:overlap}
     \end{subfigure}
+    \vspace{0.5cm}
     \caption{Addition of constrain~\eqref{subset_elimination} removes solutions like those shown in~\ref{fig:overlap} from the enumerated solutions.}
     \label{fig: union_solutions}
 \end{figure}

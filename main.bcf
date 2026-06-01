@@ -2370,6 +2370,75 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="1">
+    <bcf:citekey order="1" intorder="1">crn_metabolite</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">crn_metabolite</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">crn_atmosphere</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">crn_atmosphere</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">crn_astronomy</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">crn_astronomy</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">rmg2</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">chemotron</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">yarp</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">rmg2</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">retrosynthesis_comp</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">retrosynthesis_comp2</bcf:citekey>
+    <bcf:citekey order="11" intorder="3">retrosynthesis_comp2</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">metabolic_comp</bcf:citekey>
+    <bcf:citekey order="12" intorder="2">metabolic_comp2</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">crn_expand_qm</bcf:citekey>
+    <bcf:citekey order="13" intorder="2">crn_expand_qm3</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">yaks</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">empi1</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">OA-ReactDiff</bcf:citekey>
+    <bcf:citekey order="15" intorder="2">diffusion_ai</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">rmg2</bcf:citekey>
+    <bcf:citekey order="16" intorder="2">molpher</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">heuristic_expert</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">reported_network</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">search_crn</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">search_crn2</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">beam_search_pq</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">mc_trees</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">shortest_path_hypergraph2</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">shortest_path_hypergraph1</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">crn_dynamics</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">crn_dynamics2</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">synthesis_planning_CRN_thermodynamics</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">hatz_thermo_flow</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">seifert_thermodynamics_CRN_JCP</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">esposito_thermodynamics_CRN_PRX</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">esposito_circuit_theory_CRN_PRX</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">ILP_paper2</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">ILP_paper2</bcf:citekey>
+    <bcf:citekey order="32" intorder="2">ILP_paper3</bcf:citekey>
+    <bcf:citekey order="32" intorder="3">ILP_paper4</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">ilp_CRN_infer</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">mod_web</bcf:citekey>
+    <bcf:citekey order="34" intorder="2">jakob_software</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">jakob_integer_hyperflows</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">jakob_integer_hyperflows</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">database_energy_barriers</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">reported_network</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">CRN_qm</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">ml_energy_barrier</bcf:citekey>
+    <bcf:citekey order="40" intorder="2">ml_energy_barrier2</bcf:citekey>
+    <bcf:citekey order="40" intorder="3">ml_energy_barrier3</bcf:citekey>
+    <bcf:citekey order="40" intorder="4">ml_energy_barrier4</bcf:citekey>
+    <bcf:citekey order="40" intorder="5">ml_energy_barrier5</bcf:citekey>
+    <bcf:citekey order="40" intorder="6">ml_energy_barrier6</bcf:citekey>
+    <bcf:citekey order="40" intorder="7">ml_reaction_barrier7</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">scaling_limitations</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">jakob_integer_hyperflows</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">grimme_xtb</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 2 -->
+  <bcf:bibdata section="2">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="2">
     <bcf:citekey order="1" intorder="1">jakob_reactions_hypergraph</bcf:citekey>
     <bcf:citekey order="1" intorder="2">jakob_integer_hyperflows</bcf:citekey>
     <bcf:citekey order="2" intorder="1">christoph_reaction_network_chemical</bcf:citekey>
@@ -2386,22 +2455,22 @@
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
   </bcf:section>
-  <!-- SECTION 2 -->
-  <bcf:bibdata section="2">
+  <!-- SECTION 3 -->
+  <bcf:bibdata section="3">
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
-  <bcf:section number="2">
+  <bcf:section number="3">
     <bcf:citekey order="1" intorder="1">cobrapy</bcf:citekey>
     <bcf:citekey order="2" intorder="1">fba_alternative_pathways</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
   </bcf:section>
-  <!-- SECTION 3 -->
-  <bcf:bibdata section="3">
+  <!-- SECTION 4 -->
+  <bcf:bibdata section="4">
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
-  <bcf:section number="3">
+  <bcf:section number="4">
     <bcf:citekey order="1" intorder="1">crooks</bcf:citekey>
     <bcf:citekey order="1" intorder="2">crooks2</bcf:citekey>
     <bcf:citekey order="2" intorder="1">jarzynski</bcf:citekey>
@@ -2437,11 +2506,11 @@
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
   </bcf:section>
-  <!-- SECTION 4 -->
-  <bcf:bibdata section="4">
+  <!-- SECTION 5 -->
+  <bcf:bibdata section="5">
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
-  <bcf:section number="4">
+  <bcf:section number="5">
     <bcf:citekey order="1" intorder="1">implemented_CRN</bcf:citekey>
     <bcf:citekey order="2" intorder="1">implemented_CRN</bcf:citekey>
     <bcf:citekey order="3" intorder="1">data_repository</bcf:citekey>
@@ -2476,11 +2545,11 @@
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
   </bcf:section>
-  <!-- SECTION 5 -->
-  <bcf:bibdata section="5">
+  <!-- SECTION 6 -->
+  <bcf:bibdata section="6">
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
-  <bcf:section number="5">
+  <bcf:section number="6">
     <bcf:citekey order="1" intorder="1">arrhenius1</bcf:citekey>
     <bcf:citekey order="1" intorder="2">arrhenius2</bcf:citekey>
     <bcf:citekey order="2" intorder="1">eyring_equation</bcf:citekey>
@@ -2512,11 +2581,11 @@
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
   </bcf:section>
-  <!-- SECTION 6 -->
-  <bcf:bibdata section="6">
+  <!-- SECTION 7 -->
+  <bcf:bibdata section="7">
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
-  <bcf:section number="6">
+  <bcf:section number="7">
     <bcf:citekey order="1" intorder="1">implemented_CRN</bcf:citekey>
     <bcf:citekey order="2" intorder="1">MeCN_precursor</bcf:citekey>
     <bcf:citekey order="3" intorder="1">implemented_CRN</bcf:citekey>
@@ -2532,11 +2601,11 @@
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
   </bcf:section>
-  <!-- SECTION 7 -->
-  <bcf:bibdata section="7">
+  <!-- SECTION 8 -->
+  <bcf:bibdata section="8">
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
-  <bcf:section number="7">
+  <bcf:section number="8">
     <bcf:citekey order="1" intorder="1">rdkit_embedMolecule</bcf:citekey>
     <bcf:citekey order="2" intorder="1">grimme_xtb</bcf:citekey>
     <bcf:citekey order="3" intorder="1">ase-paper</bcf:citekey>
@@ -2610,6 +2679,15 @@
                 labelalphanametemplatename="global">
   </bcf:datalist>
   <bcf:datalist section="7"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="8"
                 name="none/global//global/global"
                 type="entry"
                 sortingtemplatename="none"
