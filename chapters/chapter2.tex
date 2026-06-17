@@ -1,5 +1,3 @@
-\begin{refsection}
-
 %************************************************
 \chapter{A Constraint-based Model}
 \label{ch:thermodynamic_model}
@@ -56,21 +54,24 @@ MILP attempts to model the system with linear inequalities involving some variab
 
 \begin{figure}[!t]
     \centering
+    \vspace{0.2cm}
     \begin{subfigure}{0.9\textwidth}
         \centering
         \includegraphics[width=\textwidth]{graphics/chapter2/thermPathway.pdf}
+        \vspace{0.2cm}
         \caption{A pathway in a chemical reaction network is a sequence of reactions that convert the source molecules (with supplied inflow) to the target molecules (with required inflow). In a thermodynamically consistent modeling, the pathway would aim to maximize the thermodynamic driving force along the pathway producing the target molecules.}
         \label{fig: thermPathway}
     \end{subfigure}
     \\
-    \vspace{1.5cm}
+    \vspace{1.2cm}
     \begin{subfigure}{0.9\textwidth}
         \centering
         \includegraphics[width=0.6\textwidth]{graphics/chapter2/thermConstraints.pdf}
+        \vspace{0.2cm}
         \caption{The addition of constraints describing the thermodynamics of the system prunes the solution space of the system, leading to hyperflow solutions that were valid earlier being thermodynamically infeasible.}
         \label{fig: thermConstraints}
     \end{subfigure}
-    \vspace{0.5cm}
+    \vspace{0.4cm}
     \caption{A thermodynamically informed modeling of pathways in reaction networks requires the addition of constraints based on thermodynamics to capture the energetics in the system. This leads to the modification of the solution space.}
     \label{fig: thermModeling}
 \end{figure}
@@ -113,12 +114,12 @@ MILP attempts to model the system with linear inequalities involving some variab
     \label{fig: flowConv}
 \end{figure}
 
-Since we are extending the existing integer hyperflow formulation defined earlier, the base ILP formulation for modeling flow conservation in pathways in reaction networks is inherited from that work.
-\begin{equation}
+Since we are extending the existing integer hyperflow formulation defined earlier, the base ILP formulation for modeling flow conservation in pathways in reaction networks stated by Equation~\eqref{int_hyperflow_jakob} is inherited from that work.
+\[
 \forall v\in V\colon \sum_{ e\in \overline{E} } s_{ve}^+ f_e - \sum_{ e\in \overline{E} } s_{ve}^- f_e = 0
-\tag{\ref{int_hyperflow_jakob}}
-\end{equation}
-The working of Constraint~\ref{int_hyperflow_jakob} is illustrated in the four example cases in Figure~\ref{fig: flowConv}. 
+\]
+
+The working of Constraint~\eqref{int_hyperflow_jakob} is illustrated in the four example cases in Figure~\ref{fig: flowConv}. 
 
 Any set of integer flow values on $E$ induces some overall reaction, which corresponds to flow values on $E^+ \cup E^-$ that make Equation~\eqref{int_hyperflow_jakob} hold.
 However, the set of available source molecules is often constrained by practical considerations such as cost, ease of availability and purity.
@@ -140,9 +141,9 @@ We would like to have an assignment of variables $x_v^K$ (within practical limit
 
 \begin{table}[!t]
     \centering
-    \begin{scriptsize}
+    \begin{footnotesize}
     \begin{tabular}{clll}
-        \toprule
+        \\\toprule
         MILP variable & datatype & & description \\
         \midrule
         $f_e$ & integer & & flow variable for a hyperedge $e$ \\
@@ -160,17 +161,16 @@ We would like to have an assignment of variables $x_v^K$ (within practical limit
         $x^{\Delta G^0}_e$ & float & & differences in chemical potential \\
         &&& of in-vertices and out-vertices of a hyperedge $e$ \\
         & & & under standard physical conditions \\
-        \bottomrule
+        \bottomrule\\
     \end{tabular}
-    \end{scriptsize}
-    \caption{Variables in the proposed MILP formulation. The variables $M$ and $x^{G^0}_v$ are assigned as input parameters,
-    while the constants $x^{\Delta G^0}_e$ are calculated based on the given $x^{G^0}_v$.}
+    \end{footnotesize}
+    \caption{Variables used in the proposed constraint based formulation of pathways in a reaction network. These variables are used to formulate implication constraints in Section~\ref{milp_implication} which would be later linearized using additional auxiliary variables.}
     \label{tab: MILPvariables}
 \end{table}
 
 \begin{figure}[!h]
 	\centering
-	\vspace{0.5cm}
+	\vspace{1.0cm}
     \includegraphics[width=0.8\textwidth]{graphics/chapter2/thermoConstraint.pdf}
     \vspace{0.5cm}
     \caption{Separate hyperedges have been added for the reaction $e_> : v_0 + v_1 \rightarrow v_2 + v_2$ and its reverse $e_< : v_2 + v_2 \rightarrow v_0 + v_1$. The difference in chemical potential for the hyperedge is calculated as $x_{e_>}^{\Delta G} = \Delta G(\text{RHS}) - \Delta G(\text{LHS}) = \left[\Delta G(v_2) + \Delta G(v_3)\right] - \left[\Delta G(v_0) + \Delta G(v_-)\right] = -x_{e_<}^{\Delta G}$. As a result of constraints~\ref{proposed_constraint2} and \ref{proposed_constraint3}, it is allowed to have a positive hyperflow only on the hyperedge corresponding to $e_>$. The hyperedge corresponding to $e_<$ might be assigned a hyperflow only when $x_{e_<}^{\Delta G} \leq 0$, by some possible assignment of the concentration variables $x_v^K$ of the vertices involved. Therefore, thermodynamic free energy differences dicatate the direction of mass flows in the network.}
@@ -213,7 +213,6 @@ set by practical and physical constraints detailed in Chapter \ref{ch:casestudy1
         \label{fig: concTweak1}
     \end{subfigure}
     \\
-    \vspace{0.5cm}
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{graphics/chapter2/concTweak2.pdf}
@@ -236,7 +235,9 @@ Note that the dependence of difference in the chemical potentials for a reaction
     &= x^{\Delta G^0}_e + \frac{RT}{\ln 10}\left(\log\left(\prod_{v\in e^+} \text{conc}(v)\right)\right.\\
     & \text{\hspace{3cm}}- \left.\log\left(\prod_{v\in e^-} \text{conc}(v)\right)\right) \\
     &= x^{\Delta G^0}_e + \frac{RT}{\ln 10}\left(\sum_{v\in e^+} \log \text{conc}(v)\right.\\
-    & \text{\hspace{3cm}}- \left.\sum_{v\in e^-} \log \text{conc}(v)\right) \\
+    & \text{\hspace{3cm}}- \left.\sum_{v\in e^-} \log \text{conc}(v)\right)
+\end{align*}
+\begin{align*}
     & \text{ where, }\\
     x^{\Delta G^0}_e &= \sum_{v\in e^+} x^{G^0}_v - \sum_{v\in e^-} x^{G^0}_v
 \end{align*}
@@ -264,7 +265,7 @@ The minimal work required to be performed to achieve the required perturbation s
 \begin{equation*}
 	\langle W_{\text{min}} \rangle \geq \sum_{e\colon f_e > 0} x^{\Delta G}_e
 \end{equation*}
-This is similar to the Crooks fluctuation theorem~\cite{crooks,crooks2} and its implication, the Jarzynski inequality~\cite{jarzynski,jarzynski2,jarzynski3}.\graffito{Equation (2) in~\cite{jarzynski} and equations (3.2) and (3.4a) in~\cite{jarzynski2} have a similar form involving the free energy on the right-hand side.}
+This is similar to the Crooks fluctuation theorem~\cite{crooks,crooks2} and its implication, the Jarzynski inequality~\cite{jarzynski,jarzynski2,jarzynski3}.\footnote{Equation (2) in~\cite{jarzynski} and equations (3.2) and (3.4a) in~\cite{jarzynski2} have a similar form involving the free energy on the right-hand side.}
 All in all, ranking pathways by the objective function~\eqref{objective function} corresponds closely to selecting the pathway that requires the least thermodynamic work to sustain the outflow of the queried target molecule. Maximizing objective function~\eqref{objective function} becomes equivalent to minimizing the work done to perturb the system from equilibrium to achieve the desired hyperflow. 
 
 The motivation behind choosing this particular objective function can also be argued for from the perspective of maximizing the probability of the pathway.
@@ -273,7 +274,7 @@ We interpret the free energy difference to be the measure of the probability of 
     p(e) \sim \exp\left(-x^{\Delta G}_e\right)
     \label{prob_transition}
 \end{equation}
-This probability for a reaction $e$ can also be argued for using the principle of local detailed balance between the rates of the reaction and its reverse where \graffito{Markovian trajectories might be coarse-grained into pathways (sets of reactions with positive hyperflow) under dilute limit, Markovian kinetics, and weak coupling between reactions.}
+This probability for a reaction $e$ can also be argued for using the principle of local detailed balance between the rates of the reaction and its reverse where \footnote{Markovian trajectories might be coarse-grained into pathways (sets of reactions with positive hyperflow) under dilute limit, Markovian kinetics, and weak coupling between reactions.}
 \begin{equation*}
     \frac{k_+(e)}{k_-(e)} = \exp\left(-\frac{x^{\Delta G}_e}{k_B T}\right)
 \end{equation*}
@@ -345,16 +346,16 @@ lead to assignment of $z_e$ satisfying the implication constraints in Equations~
 is shown in Table~\ref{tab: truth_table_constraint1}.
 \begin{table}[!t]
     \centering
-    \begin{scriptsize}
+    \begin{footnotesize}
     \begin{tabular}{cccc}
-        \toprule
+        \\\toprule
         case of $f_e$ & \eqref{linear_constraint6} & \eqref{linear_constraint7} & implication for $z_e$ \\
         \midrule
         $f_e = 0$ & $z_e \leq 0$ & $M\cdot z_e \geq 0$ & $z_e = 0$ \\
         $f_e = k > 0$ & $z_e \leq k$ & $M\cdot z_e \geq k$ & $z_e = 1$ \\
-        \bottomrule
+        \bottomrule\\
     \end{tabular}
-    \end{scriptsize}
+    \end{footnotesize}
     \caption{The linear constraints in Equations \eqref{linear_constraint6} and \eqref{linear_constraint7}
     are equivalent to the bi-implication constraints in Equations \eqref{biimp3} and \eqref{biimp4}.}
     \label{tab: truth_table_constraint1}
@@ -369,18 +370,18 @@ This is linearized as
 The equivalence of the added linear constraints in Equation~\eqref{linear_constraint1} to the implication constraint in Equation~\eqref{proposed_constraint3} is shown in Table~\ref{tab: truth_table_constraint2}.
 \begin{table*}[!t]
     \centering
-    \begin{scriptsize}
+    \begin{footnotesize}
     \begin{tabular}{ccccc}
-        \toprule
+        \\\toprule
         case of $f_{e}$ & implication for $z_{e}$ & case of $x^{\Delta G}_e$ & \eqref{proposed_constraint3} satisfied? & \eqref{linear_constraint1} satisfied? \\
         \midrule
         $f_{e} = 0$ & $z_{e} = 0$ & $x^{\Delta G}_e > 0$ & True & True \\
         $f_{e} = 0$ & $z_{e} = 0$ & $x^{\Delta G}_e \leq 0$ & True & True \\
         $f_{e} > 0$ & $z_{e} = 1$ & $x^{\Delta G}_e > 0$ & False & False \\
         $f_{e} > 0$ & $z_{e} = 1$ & $x^{\Delta G}_e \leq 0$ & True & True \\
-        \bottomrule
+        \bottomrule\\
     \end{tabular}
-    \end{scriptsize}
+    \end{footnotesize}
     \caption{The linear constraint in Equation~\eqref{linear_constraint1} is equivalent to the implication constraint in Equation~\eqref{proposed_constraint3}.}
     \label{tab: truth_table_constraint2}
 \end{table*}
@@ -396,9 +397,9 @@ By utilizing the variables $z_e$, we implement the constraints as
 \end{align}
 The expansion of how the added linear constraints in Equations~\eqref{linear_constraint2}, \eqref{linear_constraint3}, \eqref{linear_constraint4}, and \eqref{linear_constraint5} lead to desired assignment of $\overline{x}^{\Delta G}_e$ satisfying the implication constraints in Equations~\eqref{biimp1} and \eqref{biimp2} is shown in Table~\ref{tab: truth_table_constraint3}.
 
-\begin{table*}[ht]
+\begin{table*}[!t]
     \centering
-    \begin{scriptsize}
+    \begin{footnotesize}
     \begin{tabular}{@{}c@{\qquad}c*{4}{@{\qquad}c}l@{\qquad}c@{}}
         \toprule
         &&\multicolumn{4}{c}{Constraint on $\overline{x}^{\Delta G}_e$ by}\\
@@ -418,7 +419,7 @@ The expansion of how the added linear constraints in Equations~\eqref{linear_con
         $z_{e} = 1$ & $x^{\Delta G}_e \leq 0$ & $\geq x^{\Delta G}_e$ & $\leq x^{\Delta G}_e$ & & && $= x^{\Delta G}_e$ \\
         \bottomrule
     \end{tabular}
-    \end{scriptsize}
+    \end{footnotesize}
     \caption{The linear constraints of Equation~\eqref{linear_constraint2}, \eqref{linear_constraint3}, \eqref{linear_constraint4}, and \eqref{linear_constraint5}
     assign $\overline{x}^{\Delta G}_e$ according to the bi-implication constraints in Equations~\eqref{biimp1} and \eqref{biimp2}.
     Note that the third case cannot happen due to Equation~\eqref{proposed_constraint3},
@@ -426,34 +427,12 @@ The expansion of how the added linear constraints in Equations~\eqref{linear_con
     \label{tab: truth_table_constraint3}
 \end{table*}
 
+
 \subsection{Implemented Model}\label{implemented model}
 
-For an overview, we here list the entire set of variables of the model in Table~\ref{tab: MILP variables} and the constants used in the model in Table~\ref{tab: MILP constants}. We also summarize the mixed integer linear program developed in the earlier sections.
-This model is what is given to the MILP solver.
-
-\begin{align}
-    & \min\left(\sum_{e \in E} \overline{x}^{\Delta G}_e \right) \label{obj_func_impl} \\    
-    \forall v\in V\colon  & \sum_{ e\in \overline{E} } s_{ve}^+ f_e - \sum_{ e\in \overline{E} } s_{ve}^- f_e = 0 \tag{\ref{int_hyperflow_jakob}}
-\end{align}
-\begin{align}
-    \text{Structural speci}&\text{fication constraints on $f_e$ for } e \in \overline{E} \tag{\ref{inflow_outflow_constraints}}\\
-    \forall e&\equiv (e^-, e^+) \in E\colon \nonumber\\
-    0 &\leq f_e  \tag{\ref{proposed_constraint2}} \\
-    x^{\Delta G}_e &= \left(\sum_{v\in e^+} x^{G^0}_v - \sum_{v\in e^-} x^{G^0}_v\right) \nonumber\\
-    & \hspace{0.5cm}+ RT\cdot \left(\sum_{v\in e^+} x^K_v - \sum_{v\in e^-} x^K_v\right) \tag{\ref{proposed_constraint4}} \\    
-    0 &\geq x^{\Delta G}_e + M\cdot (z_e - 1) \tag{\ref{linear_constraint1}} \\
-    M(1 - z_e) &\geq x^{\Delta G}_e - \overline{x}^{\Delta G}_e  \tag{\ref{linear_constraint2}} \\
-    -M(1 - z_e) &\leq x^{\Delta G}_e - \overline{x}^{\Delta G}_e \tag{\ref{linear_constraint3}} \\
-    M\cdot z_e &\geq \overline{x}^{\Delta G}_e \tag{\ref{linear_constraint4}} \\
-    -M\cdot z_e &\leq \overline{x}^{\Delta G}_e \tag{\ref{linear_constraint5}} \\
-    \forall v \in V\colon  & \nonumber\\
-    0 &\leq t_v \leq |V| \tag{\ref{linear_constraint7}} \\
-    \left[x^K_v\right]_{\text{min}} &\leq x^K_v \leq \left[x^K_v\right]_{\text{max}} \tag{\ref{proposed_constraint8}}
-\end{align}
-
-\begin{table*}[!t]
+\begin{table*}[!b]
     \centering
-    \begin{scriptsize}
+    \begin{footnotesize}
     \begin{tabular}{clll}
         \toprule
         Constant & datatype & & description \\
@@ -469,16 +448,21 @@ This model is what is given to the MILP solver.
         & & & under standard physical conditions \\
         \bottomrule
     \end{tabular}
-    \end{scriptsize}
+    \end{footnotesize}
     \caption{Constants in the proposed MILP formulation.
     The constants $M$ and $x^{G^0}_v$ are provided as input,
     while the constants $x^{\Delta G^0}_e$ are calculated based on the given $x^{G^0}_v$.
     }
     \label{tab: MILP constants}
 \end{table*}%
+
+
+For an overview, we here list the entire set of variables of the model in Table~\ref{tab: MILP variables} and the constants used in the model in Table~\ref{tab: MILP constants}. We also summarize the mixed integer linear program developed in the earlier sections.
+This model is what is given to the MILP solver.
+
 \begin{table*}[!t]
     \centering
-    \begin{scriptsize}
+    \begin{footnotesize}
     \begin{tabular}{clll}
         \toprule
         MILP variable & datatype & & description \\
@@ -496,10 +480,31 @@ This model is what is given to the MILP solver.
         &&& for vertex $v$, non-negative\\
         \bottomrule
     \end{tabular}
-    \end{scriptsize}
+    \end{footnotesize}
     \caption{Variables in the proposed MILP formulation.}
     \label{tab: MILP variables}
 \end{table*}%
+
+The formulated MILP is:
+\begin{align}
+    & \min\left(\sum_{e \in E} \overline{x}^{\Delta G}_e \right) \label{obj_func_impl} \\    
+    \forall v\in V\colon  & \sum_{ e\in \overline{E} } s_{ve}^+ f_e - \sum_{ e\in \overline{E} } s_{ve}^- f_e = 0 \tag{\ref{int_hyperflow_jakob}}
+\end{align}
+\begin{align}
+    \text{Structural speci}&\text{fication constraints on $f_e$ for } e \in \overline{E} \tag{\ref{inflow_outflow_constraints}}\\
+    \forall e&\equiv (e^-, e^+) \in E\colon \nonumber\\
+    0 &\leq f_e  \tag{\ref{proposed_constraint2}} \\
+    x^{\Delta G}_e &= \left(\sum_{v\in e^+} x^{G^0}_v - \sum_{v\in e^-} x^{G^0}_v\right) \nonumber\\
+    & \hspace{0.5cm}+ RT\cdot \left(\sum_{v\in e^+} x^K_v - \sum_{v\in e^-} x^K_v\right) \tag{\ref{proposed_constraint4}} \\    
+    0 &\geq x^{\Delta G}_e + M\cdot (z_e - 1) \tag{\ref{linear_constraint1}} \\
+    M(1 - z_e) &\geq x^{\Delta G}_e - \overline{x}^{\Delta G}_e  \tag{\ref{linear_constraint2}} \\
+    -M(1 - z_e) &\leq x^{\Delta G}_e - \overline{x}^{\Delta G}_e \tag{\ref{linear_constraint3}} \\
+    M\cdot z_e &\geq \overline{x}^{\Delta G}_e \tag{\ref{linear_constraint4}} \\
+    -M\cdot z_e &\leq \overline{x}^{\Delta G}_e \tag{\ref{linear_constraint5}} \\
+    \forall v \in V\colon  & \nonumber\\
+    0 &\leq t_v \leq |V| \tag{\ref{linear_constraint7}} \\
+    \left[x^K_v\right]_{\text{min}} &\leq x^K_v \leq \left[x^K_v\right]_{\text{max}} \tag{\ref{proposed_constraint8}}\\\nonumber
+\end{align}
 
 The computational complexity of finding MILP solutions is in general NP-hard~\cite{Karp:72},
 and even the restricted case of finding chemical pathways remains so~\cite{integer_hyperflow_np_hard}.
@@ -524,7 +529,7 @@ listed in the order of increasing value of the objective function \eqref{obj_fun
 
 %************************************************
 \section{Contextualizing this method}
-\label{ch:discussions} %
+\label{discussions_method} %
 %************************************************
 
 In this short chapter, we give a detailed comparison of our methods with some existing frameworks.
@@ -549,9 +554,3 @@ we utilize the free energies themselves to allow for an analysis more directly b
 Several other cheminformatics tools and automated protocols for computationally exploring reaction networks utilize reactive molecular dynamics simulations \cite{CRN_MD_tool1, CRN_MD_tool2, CRN_MD_tool3} or chemical heuristics \cite{CRN_kin_tool1, CRN_kin_tool2, CRN_kin_tool3, pickaxe_CRN_analyzer}.
 However, to the best of our knowledge, there does not exist any computational framework for explicitly specifying and searching for pathways in reaction networks while simultaneously incorporating thermodynamic constraints in the present form. 
 
-\printbibliography[
-  heading=subbibliography,
-  title={References}
-]
-
-\end{refsection}

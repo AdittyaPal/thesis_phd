@@ -1,27 +1,9 @@
-\documentclass[
-  paper=a4,
-  twoside,
-  open=right,
-  fontsize=11pt,
-  headings=normal,
-  DIV=12,
-  BCOR=0mm,
-  headinclude,
-  %footinclude
-]{scrbook}
+\documentclass[a4paper,10pt,twoside,openright]{memoir}
 
 % Encoding and language
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-
-% Classicthesis
-\usepackage[
-  eulerchapternumbers,
-  linedheaders,
-  parts
-]{classicthesis}
-
 
 \usepackage[
   backend=biber,
@@ -38,7 +20,11 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{booktabs}
 \usepackage{microtype}
-\usepackage{hyperref}
+\usepackage[
+	colorlinks = true,
+    linkcolor = Blue,
+    citecolor = NavyBlue,
+    urlcolor = BlueViolet]{hyperref}
 \usepackage{packages/kbordermatrix}
 \usepackage{comment}
 
@@ -50,9 +36,8 @@
 \usepackage{chemfig}
 \setchemfig{atom sep=1.8em}
 
-% Metadata and tweaks
+% Metadata
 \input{config/metadata}
-\input{config/classicthesis-config}
 
 \begin{document}
 

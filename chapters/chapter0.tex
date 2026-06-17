@@ -1,6 +1,5 @@
-\begin{refsection}
 %************************************************
-\chapter{Toolbox}
+\chapter{Definitions}
 \label{ch:toolbox}
 %************************************************
 
@@ -29,7 +28,7 @@ $s_{ve}^{+}$ & is the number of molecules of $v$ that are produced \\
 \end{tabular}
 
 \noindent by reaction~$e$.
-\graffito{Note that the use of $^+$ and $^-$ is swapped compared to the notation in the referred previous work using hyperflows~\cite{jakob_integer_hyperflows}).}
+\footnote{Note that the use of $^+$ and $^-$ is swapped compared to the notation in the referred previous work using hyperflows~\cite{jakob_integer_hyperflows}).}
 The sum is over the entire set of molecules $V$ in the chemical reaction network,
 and for molecules $v$ that do not take part in a particular reaction $e$, we have $s^-_{ve} = s^+_{ve} = 0$
 
@@ -48,17 +47,17 @@ and correspondingly $e^+$ and $s^+_{ve}$ model the products of the reaction. An 
 \begin{figure}[!t]
 	\centering
 	\vspace{0.5cm}
-    \includegraphics[scale=1.5]{graphics/chapter1/hyperedge.pdf}
+    \includegraphics[scale=1.5]{graphics/chapter0/hyperedge.pdf}
     \vspace{0.5cm}
     \caption{A directed hyperedge, which represents a reaction where one copy of the molecule represented by the vertex $v_0$ reacts with two copies of $v_1$ to produce two copies of $v_2$. 
     This hyperedge can be considered to represent the reaction with the vertices representing the molecules: $v_0 \equiv$ O$_2$, $v_1 \equiv$ H$_2$ and $v_2 \equiv$ H$_2$O and the directed hyperedge representing the chemical reaction $e :$ O$_2$ + 2 H$_2$ $\longrightarrow$ 2 H$_2$O.}
     \label{fig: hyperedge}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \vspace{1cm}
-    \includegraphics[scale=1.5]{graphics/chapter1/hypergraph.pdf}
+    \includegraphics[scale=1.5]{graphics/chapter0/hypergraph.pdf}
     \vspace{0.4cm}
     \caption{A directed hypergraph, where circles are vertices and the squares are hyperedges.
     Hyperedges with multiple copies of a vertex as source or target are depicted with parallel arrows.
@@ -107,7 +106,7 @@ i.e., an assignment of a non-negative integer to each edge in~$E$, denoting how 
 Additionally, two vectors $f_{\text{in}} \in \mathbb{N}_{0}^{|V|}$ and $f_{\text{out}} \in \mathbb{N}_{0}^{|V|}$ denote for each molecule in~$V$ the amount of it consumed as source molecule, respectively produced as target molecule, by the pathway.
 
 \begin{figure}[!t]
-    \includegraphics[scale=1.5]{graphics/chapter1/flowQuery.pdf}
+    \includegraphics[scale=1.5]{graphics/chapter0/flowQuery.pdf}
     \vspace{0.5cm}
     \caption{An integer hyperflow query in the directed hypergraph from Figure~{ref: hypergraph}, where $v_0$ is specified as the source and $v_7$ is specified as the target. 
     The exact inflow and outflow on these vertices are not specified, and the hyperpaths in Figure~\ref{fig: hyperpath1}, \ref{fig: hyperpath2}, \ref{fig: hyperpath3}, \ref{fig: hyperpath4} and \ref{fig: hyperpath5} would be valid solutions of this flow query if the required additional sets of vertices is allowed as sources (which are {\O}, $\{v_2\}$, $\{v_1\}$, $\{v_2\}$, $\{v_6\}$ respectively).
@@ -207,7 +206,7 @@ E^- & = & \{ e_v^- \mid  v \in V\}\\
 $$
 \cite{jakob_integer_hyperflows} introduced the extended hypergraph $\overline{\mathcal{H}} = (V, \overline{E})$
 and defined an \emph{integer hyperflow} to be a vector $f \in \mathbb{N}_{0}^{|\overline{E}|}$ satisfying the flow conservation constraint
-\graffito{A detailed discussion of how integer hyperflows relate to, and differ from, other similar concepts such as elementary modes, extreme pathways, and flux balance analysis can be found in Section 2.6 of~\cite{jakob_integer_hyperflows}.}
+\footnote{A detailed discussion of how integer hyperflows relate to, and differ from, other similar concepts such as elementary modes, extreme pathways, and flux balance analysis can be found in Section 2.6 of~\cite{jakob_integer_hyperflows}.}
 \begin{equation}
     \forall v\in V\colon \sum_{ e\in \overline{E} } s_{ve}^+ f_e - \sum_{ e\in \overline{E} } s_{ve}^- f_e = 0 
     \label{int_hyperflow_jakob}
@@ -220,21 +219,19 @@ $s_{ve}^+$ & an entry in the $|V|\times |\overline{E}|$ in-incidence matrix of $
 $f_e$ & an entry in $f$ \\
 \end{tabular}
 
-\noindent The constraint in Equation~\eqref{int_hyperflow_jakob} is easily seen to be equivalent to the constraint in Equation~\eqref{int_hyperflow_matrix}. 
 \newpage
-
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter1/hyperpath1.pdf}
+        \includegraphics[width=\textwidth]{graphics/chapter0/hyperpath1.pdf}
         \caption{hyperpath 1}
         \label{fig: hyperpath1}
     \end{subfigure}%
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter1/hyperpath2.pdf}
+        \includegraphics[width=\textwidth]{graphics/chapter0/hyperpath2.pdf}
         \caption{hyperpath 2}
         \label{fig: hyperpath2}
     \end{subfigure}
@@ -242,14 +239,14 @@ $f_e$ & an entry in $f$ \\
     \vspace{0.5cm}
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter1/hyperpath3.pdf}
+        \includegraphics[width=\textwidth]{graphics/chapter0/hyperpath3.pdf}
         \caption{hyperpath 3}
         \label{fig: hyperpath3}
     \end{subfigure}%
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter1/hyperpath4.pdf}
+        \includegraphics[width=\textwidth]{graphics/chapter0/hyperpath4.pdf}
         \caption{hyperpath 4}
         \label{fig: hyperpath4}
     \end{subfigure}
@@ -257,26 +254,25 @@ $f_e$ & an entry in $f$ \\
     \vspace{0.5cm}
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter1/hyperpath5.pdf}
+        \includegraphics[width=\textwidth]{graphics/chapter0/hyperpath5.pdf}
         \caption{hyperpath 5}
         \label{fig: hyperpath5}
     \end{subfigure}%
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter1/hyperpath6.pdf}
+        \includegraphics[width=\textwidth]{graphics/chapter0/hyperpath6.pdf}
         \caption{hyperpath 6}
         \label{fig: hyperpath6}
     \end{subfigure}
-    \vspace{0.2cm}
+    \vspace{0.4cm}
     \caption{Six possible integer hyperflows \ref{fig: hyperpath1}, \ref{fig: hyperpath2}, \ref{fig: hyperpath3}, \ref{fig: hyperpath4}, \ref{fig: hyperpath5}, and \ref{fig: hyperpath6} in the hypergraph from Figure \ref{fig: hypergraph}, each representing a pathway,
     where hyperedges with non-zero flow are drawn in bold. The integers in the boxes represent the hyperflow assigned to the respective hyperedge in the pathway.}
     \label{fig: hyperflow}
 \end{figure}
 
 \newpage
-
-
+\noindent The constraint in Equation~\eqref{int_hyperflow_jakob} is easily seen to be equivalent to the constraint in Equation~\eqref{int_hyperflow_matrix}. 
 
 In Figure~\ref{fig: hyperflow}, six possible hyperflows in a hypergraph are depicted.
 Unboxed integers are flow values on half-edges, while boxed integers are the flow values for hyperedges in $E$.
@@ -297,9 +293,52 @@ The flexibility is further increased by the possibility of having flow values in
 Also the flow values on non-half-edges can enter the specification and/or optimization,
 allowing e.g.\ the search for solutions minimizing the use of a given reaction deemed particularly expensive to include in the pathway.
 
-\printbibliography[
-  heading=subbibliography,
-  title={References}
-]
+\section{Hyperflows and Fluxes}
+\label{sec: comparison}
 
-\end{refsection}
+In this section, we give a comparison of our workflow with existing methods. Constraint-based models such as flux balance analysis also use constraint programming with an objective function that is optimized. For instance, open-source tools such as COBRApy~\cite{cobrapy} perform flux analysis on a reaction network supplied to them. However, such tools do not construct the network on the fly in a generative way--- rather the reaction network has to be constructed beforehand using some other tool. Flux balance analysis generates a flux vector for the reactions in the network which is allowed to contain floating-point values, while our method accepts only integers as a valid hyperflow for a reaction, which is more aligned with the standard notion of a pathway. Formulating a flux balance analysis on the network would be equivalent to an LP relaxation of the pathway query problem using integer hyperflows for the same network. A linear program (LP) can be solved in polynomial time while an ILP is NP-hard. However, formulating the search for pathways to a queried molecule in a reaction network offers some advantages.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=1.0]{graphics/chapter0/example_network.pdf}
+        \vspace{0.4cm}
+        \caption{An example reaction network with $4$ molecules and $3$ reactions.}
+        \label{fig:example_network}
+    \end{subfigure}\\
+    \vspace{0.8cm}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=1.0]{graphics/chapter0/example_flux.pdf}
+        \vspace{0.4cm}
+        \caption{A flux distribution in the network which produces an outflow of $1.5$ for $v_3$.}
+        \label{fig:example_flux}
+    \end{subfigure}\\
+    \vspace{0.8cm}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=1.0]{graphics/chapter0/example_flow.pdf}
+        \vspace{0.4cm}
+        \caption{An assignment of integer hyperflows in the network which produces an outflow of $1$ for $v_3$.}
+        \label{fig:example_flow}
+    \end{subfigure}
+    \vspace{1cm}
+    \caption{Comparison of flux balance analysis and an integer hyperflow in an example reaction network.}
+    \label{fig:comparison}
+\end{figure}
+
+There exists reaction networks where the optimal solutions from the ILP formulated by our modeling and the relaxed LP from flux balance analysis differ. Consider the reaction network shown in Figure~\ref{fig:example_network} with the following formulation of the problem:
+\begin{align*}
+    &\max \left( \text{outflow}(v_3) \right) \\
+    \text{subject to: } &\text{inflow}(v_0) + \text{inflow}(v_1) +\text{inflow}(v_2) \leq 3
+\end{align*}
+The optimal flux distribution yields an objective value of $1.5$ with the assigned fluxes shown in Figure~\ref{fig:example_flux} while our method assigns the integer hyperflows shown in Figure~\ref{fig:example_flow} in one of the three optimal solutions with objective value $1$. The other two solutions assign the hyperflows $(0,1,1)$ and $(1,1,0)$ to the hyperedge set $(e_1,e_2,e_3)$ respectively.
+
+The ILP solution space is a subset of the LP feasible reaction and therefore, the objective value for the optimal solution for the relaxed LP will always be as at least as large as the objective value of optimal solution for the corresponding ILP. This is illustrated in the example shown in Figure~\ref{fig:comparison} too. As the result, the fluxes and the structure of the solution is often different from those if they were constrained to be integers.
+
+Restricting hyperflows to integers makes physical sense because molecules occur and react in discrete quantities.
+Actually, small molecular counts in several biological settings (often involving trace amounts of enzymes and inhibitors affecting multiple iterations of the same pathway) and physical cases (as in chain reactions and cascades) do not allow arbitrary scaling of the number of molecules, as the use of real-valued fluxes by flux balance analysis assume.
+When a small number of molecules are encountered in a scenario as above (or in scenarios with appearances of a rare but significant molecule in the system), the discrete nature of the molecules becomes more pronounced.
+
+Another feature of our proposed method is the enumeration of alternative pathways with disjoint set of hyperedges ranked on the basis of a chosen objective function. While flux balance analysis offers the possibility to find alternative pathways~\cite{fba_alternative_pathways}, they have the same objective value but a different flux distribution in the network. This differs from the enumeration of solutions in the current method which offers a list of pathways ordered by the increasing value of the objective function for the user to choose from. Enumerating solutions over variables with a continuous domain is difficult using indicator variables and biimplications as in constraints \ref{biimp1}  and \ref{biimp2}. The enumeration of solutions offers diverse pathways to the queried molecules and makes the method more robust to uncertainties in the weights assigned to the hyperedges.

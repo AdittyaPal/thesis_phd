@@ -17,7 +17,7 @@
 \endgroup
 
 
-\refsection{1}
+\refsection{0}
   \datalist[entry]{none/global//global/global}
     \entry{crn_metabolite}{article}{}
       \name{author}{13}{}{%
@@ -105,16 +105,7 @@
       \field{pages}{4367\bibrangedash 4377}
       \range{pages}{11}
       \verb{doi}
-      \verb https://doi.org/10.1111/febs.14682
-      \endverb
-      \verb{eprint}
-      \verb https://febs.onlinelibrary.wiley.com/doi/pdf/10.1111/febs.14682
-      \endverb
-      \verb{urlraw}
-      \verb https://febs.onlinelibrary.wiley.com/doi/abs/10.1111/febs.14682
-      \endverb
-      \verb{url}
-      \verb https://febs.onlinelibrary.wiley.com/doi/abs/10.1111/febs.14682
+      \verb 10.1111/febs.14682
       \endverb
       \keyw{metabolomics,pathway evolution,pentose phosphate pathway,promiscuous activity,recursive chemistry}
     \endentry
@@ -156,6 +147,9 @@
       \field{year}{2018}
       \field{pages}{263\bibrangedash 276}
       \range{pages}{14}
+      \verb{doi}
+      \verb 10.1038/nrmicro.2018.9
+      \endverb
     \endentry
     \entry{crn_astronomy}{article}{}
       \name{author}{2}{}{%
@@ -188,12 +182,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1051/0004-6361/202659799
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/0004-6361/202659799
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/0004-6361/202659799
       \endverb
     \endentry
     \entry{rmg2}{article}{}
@@ -275,12 +263,12 @@
       \strng{authorbibnamehash}{16dcb4f708edfd799f20c7b6a36884ba}
       \strng{authornamehash}{16dcb4f708edfd799f20c7b6a36884ba}
       \strng{authorfullhash}{3facf0baa285ed6151af8b75c3908a90}
+      \field{extraname}{1}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Information and Modeling}
-      \field{note}{PMID: 34048230}
       \field{number}{6}
       \field{title}{Reaction Mechanism Generator v3.0: Advances in Automatic Mechanism Generation}
       \field{volume}{61}
@@ -289,12 +277,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1021/acs.jcim.0c01480
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jcim.0c01480
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jcim.0c01480
       \endverb
     \endentry
     \entry{chemotron}{article}{}
@@ -326,7 +308,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 35926118}
       \field{number}{9}
       \field{title}{Chemoton 2.0: Autonomous Exploration of Chemical Reaction Networks}
       \field{volume}{18}
@@ -335,12 +316,6 @@
       \range{pages}{17}
       \verb{doi}
       \verb 10.1021/acs.jctc.2c00193
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jctc.2c00193
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jctc.2c00193
       \endverb
     \endentry
     \entry{yarp}{article}{}
@@ -367,7 +342,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nat Comput Sci}
-      \field{month}{7}
       \field{number}{1}
       \field{title}{Simultaneously improving reaction coverage and computational cost in automated reaction prediction tasks.}
       \field{year}{2021}
@@ -375,12 +349,6 @@
       \range{pages}{12}
       \verb{doi}
       \verb 10.1038/s43588-021-00101-3
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s43588-021-00101-3
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s43588-021-00101-3
       \endverb
     \endentry
     \entry{retrosynthesis_comp}{article}{}
@@ -417,7 +385,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Information and Modeling}
-      \field{note}{PMID: 40197023}
       \field{number}{8}
       \field{title}{DirectMultiStep: Direct Route Generation for Multistep Retrosynthesis}
       \field{volume}{65}
@@ -426,12 +393,6 @@
       \range{pages}{12}
       \verb{doi}
       \verb 10.1021/acs.jcim.4c01982
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jcim.4c01982
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jcim.4c01982
       \endverb
     \endentry
     \entry{retrosynthesis_comp2}{inproceedings}{}
@@ -488,6 +449,12 @@
       \field{series}{NIPS '24}
       \field{title}{Double-ended synthesis planning with goal-constrained bidirectional search}
       \field{year}{2024}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2407.06334
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2407.06334
+      \endverb
     \endentry
     \entry{metabolic_comp}{article}{}
       \name{author}{4}{}{%
@@ -524,7 +491,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{1367-4803}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{11}
       \field{number}{21}
       \field{title}{DESHARKY: automatic design of metabolic pathways for optimal cell growth}
       \field{volume}{24}
@@ -533,15 +499,6 @@
       \range{pages}{3}
       \verb{doi}
       \verb 10.1093/bioinformatics/btn471
-      \endverb
-      \verb{eprint}
-      \verb https://academic.oup.com/bioinformatics/article-pdf/24/21/2554/49055428/bioinformatics_24_21_2554.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1093/bioinformatics/btn471
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1093/bioinformatics/btn471
       \endverb
     \endentry
     \entry{metabolic_comp2}{article}{}
@@ -613,15 +570,6 @@
       \verb{doi}
       \verb 10.1126/science.aaw1955
       \endverb
-      \verb{eprint}
-      \verb https://www.science.org/doi/pdf/10.1126/science.aaw1955
-      \endverb
-      \verb{urlraw}
-      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
-      \endverb
-      \verb{url}
-      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
-      \endverb
     \endentry
     \entry{crn_expand_qm}{article}{}
       \name{author}{3}{}{%
@@ -661,12 +609,6 @@
       \verb{doi}
       \verb 10.1002/wcms.1354
       \endverb
-      \verb{urlraw}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1354
-      \endverb
-      \verb{url}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1354
-      \endverb
     \endentry
     \entry{crn_expand_qm3}{article}{}
       \true{moreauthor}
@@ -699,7 +641,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Chem}
-      \field{month}{11}
       \field{number}{6}
       \field{title}{Discovering chemistry with an ab initio nanoreactor.}
       \field{year}{2014}
@@ -707,12 +648,6 @@
       \range{pages}{5}
       \verb{doi}
       \verb 10.1038/nchem.2099
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/nchem.2099
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/nchem.2099
       \endverb
     \endentry
     \entry{yaks}{article}{}
@@ -739,7 +674,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 39883589}
       \field{number}{3}
       \field{title}{Chemical Reaction Networks from Scratch with Reaction Prediction and Kinetics-Guided Exploration}
       \field{volume}{21}
@@ -748,12 +682,6 @@
       \range{pages}{16}
       \verb{doi}
       \verb 10.1021/acs.jctc.4c01401
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jctc.4c01401
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jctc.4c01401
       \endverb
     \endentry
     \entry{empi1}{article}{}
@@ -785,7 +713,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 38031422}
       \field{number}{23}
       \field{title}{Automated Exploration of Reaction Networks and Mechanisms Based on Metadynamics Nanoreactor Simulations}
       \field{volume}{19}
@@ -794,12 +721,6 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1021/acs.jctc.3c00752
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jctc.3c00752
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jctc.3c00752
       \endverb
     \endentry
     \entry{OA-ReactDiff}{article}{}
@@ -836,7 +757,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Computational Science}
-      \field{month}{12}
       \field{number}{12}
       \field{title}{Accurate transition state generation with an object-aware equivariant elementary reaction diffusion model}
       \field{volume}{3}
@@ -845,12 +765,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1038/s43588-023-00563-7
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s43588-023-00563-7
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s43588-023-00563-7
       \endverb
     \endentry
     \entry{diffusion_ai}{article}{}
@@ -882,19 +796,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nat Commun}
-      \field{month}{1}
       \field{number}{341}
       \field{title}{Diffusion-based generative AI for exploring transition states from 2D molecular graphs.}
       \field{volume}{15}
       \field{year}{2024}
       \verb{doi}
       \verb 10.1038/s41467-023-44629-6
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41467-023-44629-6
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41467-023-44629-6
       \endverb
     \endentry
     \entry{molpher}{article}{}
@@ -931,7 +838,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Cheminform}
-      \field{month}{3}
       \field{number}{7}
       \field{title}{Molpher: a software framework for systematic chemical space exploration.}
       \field{volume}{6}
@@ -974,7 +880,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 26580168}
       \field{number}{3}
       \field{title}{Complex Chemical Reaction Networks from Heuristics-Aided Quantum Chemistry}
       \field{volume}{10}
@@ -983,12 +888,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1021/ct401004r
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/ct401004r
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/ct401004r
       \endverb
     \endentry
     \entry{reported_network}{article}{}
@@ -1060,12 +959,6 @@
       \verb{doi}
       \verb 10.1126/science.aaw1955
       \endverb
-      \verb{urlraw}
-      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
-      \endverb
-      \verb{url}
-      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
-      \endverb
     \endentry
     \entry{search_crn}{article}{}
       \name{author}{8}{}{%
@@ -1130,12 +1023,6 @@
       \verb{doi}
       \verb 10.1002/anie.201202209
       \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201202209
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201202209
-      \endverb
       \keyw{algorithms,chemical networks,optimization,synthetic methods}
     \endentry
     \entry{search_crn2}{article}{}
@@ -1175,12 +1062,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1002/syst.201900047
-      \endverb
-      \verb{urlraw}
-      \verb https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/syst.201900047
-      \endverb
-      \verb{url}
-      \verb https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/syst.201900047
       \endverb
       \keyw{Catalysis,graph searching algorithms,nudge-elastic-band,reaction discovery,reaction mechanism}
     \endentry
@@ -1227,12 +1108,6 @@
       \verb{doi}
       \verb 10.1002/wcms.1630
       \endverb
-      \verb{urlraw}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1630
-      \endverb
-      \verb{url}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1630
-      \endverb
       \keyw{artificial intelligence,Chematica,expert systems,networks,synthesis}
     \endentry
     \entry{mc_trees}{article}{}
@@ -1273,12 +1148,6 @@
       \verb{doi}
       \verb 10.1002/syst.201900057
       \endverb
-      \verb{urlraw}
-      \verb https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/syst.201900057
-      \endverb
-      \verb{url}
-      \verb https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/syst.201900057
-      \endverb
       \keyw{graph-theoretic method,Monte Carlo tree search (MCTS),organic reactions,quantum calculations,reaction networks}
     \endentry
     \entry{shortest_path_hypergraph2}{article}{}
@@ -1315,7 +1184,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{12}
       \field{number}{S8}
       \field{title}{An efficient algorithm for de novo predictions of biochemical pathways between chemical compounds}
       \field{volume}{13 (Suppl 17)}
@@ -1348,7 +1216,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Biology}
-      \field{note}{PMID: 37906100}
       \field{number}{11}
       \field{title}{Shortest Hyperpaths in Directed Hypergraphs for Reaction Pathway Inference}
       \field{volume}{30}
@@ -1357,15 +1224,6 @@
       \range{pages}{28}
       \verb{doi}
       \verb 10.1089/cmb.2023.0242
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1089/cmb.2023.0242
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1089/cmb.2023.0242
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1089/cmb.2023.0242
       \endverb
     \endentry
     \entry{crn_dynamics}{article}{}
@@ -1401,7 +1259,6 @@
       \field{labeltitlesource}{title}
       \field{issue}{4}
       \field{journaltitle}{Phys. Rev. E}
-      \field{month}{4}
       \field{title}{Universal slow dynamics of chemical reaction networks}
       \field{volume}{109}
       \field{year}{2024}
@@ -1409,12 +1266,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevE.109.044105
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.109.044105
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.109.044105
       \endverb
     \endentry
     \entry{crn_dynamics2}{article}{}
@@ -1457,12 +1308,6 @@
       \verb{doi}
       \verb 10.1137/11085431X
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1137/11085431X
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1137/11085431X
-      \endverb
     \endentry
     \entry{synthesis_planning_CRN_thermodynamics}{article}{}
       \name{author}{3}{}{%
@@ -1498,18 +1343,11 @@
       \field{labeltitlesource}{title}
       \field{issue}{3097}
       \field{journaltitle}{Nat Commun}
-      \field{month}{4}
       \field{title}{A graph-based network for predicting chemical reaction pathways in solid-state materials synthesis.}
       \field{volume}{12}
       \field{year}{2021}
       \verb{doi}
       \verb 10.1038/s41467-021-23339-x
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41467-021-23339-x
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41467-021-23339-x
       \endverb
     \endentry
     \entry{hatz_thermo_flow}{article}{}
@@ -1549,13 +1387,7 @@
       \field{pages}{1792\bibrangedash 1805}
       \range{pages}{14}
       \verb{doi}
-      \verb https://doi.org/10.1529/biophysj.106.093138
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0006349507709876
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0006349507709876
+      \verb 10.1529/biophysj.106.093138
       \endverb
     \endentry
     \entry{seifert_thermodynamics_CRN_JCP}{article}{}
@@ -1583,7 +1415,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{0021-9606}
       \field{journaltitle}{The Journal of Chemical Physics}
-      \field{month}{01}
       \field{number}{4}
       \field{title}{{Stochastic thermodynamics of chemical reaction networks}}
       \field{volume}{126}
@@ -1592,12 +1423,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1063/1.2428297
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/1.2428297
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/1.2428297
       \endverb
     \endentry
     \entry{esposito_thermodynamics_CRN_PRX}{article}{}
@@ -1628,7 +1453,6 @@
       \field{labeltitlesource}{title}
       \field{issue}{4}
       \field{journaltitle}{Phys. Rev. X}
-      \field{month}{12}
       \field{title}{Nonequilibrium Thermodynamics of Chemical Reaction Networks: Wisdom from Stochastic Thermodynamics}
       \field{volume}{6}
       \field{year}{2016}
@@ -1636,12 +1460,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevX.6.041064
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevX.6.041064
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevX.6.041064
       \endverb
     \endentry
     \entry{esposito_circuit_theory_CRN_PRX}{article}{}
@@ -1677,7 +1495,6 @@
       \field{labeltitlesource}{title}
       \field{issue}{2}
       \field{journaltitle}{Phys. Rev. X}
-      \field{month}{6}
       \field{title}{Circuit Theory for Chemical Reaction Networks}
       \field{volume}{13}
       \field{year}{2023}
@@ -1685,12 +1502,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevX.13.021041
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevX.13.021041
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevX.13.021041
       \endverb
     \endentry
     \entry{ILP_paper2}{article}{}
@@ -1720,7 +1531,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Math Chem}
-      \field{month}{3}
       \field{title}{Finding complex balanced and detailed balanced realizations of chemical reaction networks.}
       \field{volume}{49}
       \field{year}{2011}
@@ -1728,12 +1538,6 @@
       \range{pages}{17}
       \verb{doi}
       \verb 10.1007/s10910-011-9804-9
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10910-011-9804-9
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10910-011-9804-9
       \endverb
     \endentry
     \entry{ILP_paper3}{article}{}
@@ -1768,7 +1572,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Math Chem}
-      \field{month}{9}
       \field{title}{A linear programming approach to weak reversibility and linear conjugacy of chemical reaction networks.}
       \field{volume}{50}
       \field{year}{2011}
@@ -1776,12 +1579,6 @@
       \range{pages}{15}
       \verb{doi}
       \verb 10.1007/s10910-011-9911-7
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10910-011-9911-7
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10910-011-9911-7
       \endverb
     \endentry
     \entry{ILP_paper4}{article}{}
@@ -1806,7 +1603,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Math Chem}
-      \field{month}{11}
       \field{title}{Analysis of mass-action systems by split network translation.}
       \field{volume}{60}
       \field{year}{2021}
@@ -1814,12 +1610,6 @@
       \range{pages}{24}
       \verb{doi}
       \verb 10.1007/s10910-021-01299-3
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10910-021-01299-3
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10910-021-01299-3
       \endverb
     \endentry
     \entry{ilp_CRN_infer}{article}{}
@@ -1855,13 +1645,7 @@
       \field{pages}{31\bibrangedash 43}
       \range{pages}{13}
       \verb{doi}
-      \verb https://doi.org/10.1016/j.compchemeng.2016.04.019
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0098135416301156
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0098135416301156
+      \verb 10.1016/j.compchemeng.2016.04.019
       \endverb
       \keyw{Chemical reaction network,Structural optimization,Kinetic fitting,Mixed-integer-linear programming}
     \endentry
@@ -1994,7 +1778,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{1545-5963}
       \field{journaltitle}{IEEE/ACM Trans. Comput. Biol. Bioinformatics}
-      \field{month}{4}
       \field{number}{2}
       \field{title}{Chemical Transformation Motifs—Modelling Pathways as Integer Hyperflows}
       \field{volume}{16}
@@ -2003,12 +1786,6 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1109/TCBB.2017.2781724
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/TCBB.2017.2781724
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/TCBB.2017.2781724
       \endverb
     \endentry
     \entry{database_energy_barriers}{article}{}
@@ -2081,7 +1858,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{2166-532X}
       \field{journaltitle}{APL Materials}
-      \field{month}{07}
       \field{number}{1}
       \field{title}{Commentary: The Materials Project: A materials genome approach to accelerating materials innovation}
       \field{volume}{1}
@@ -2090,12 +1866,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1063/1.4812323
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/1.4812323
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/1.4812323
       \endverb
     \endentry
     \entry{CRN_qm}{article}{}
@@ -2132,18 +1902,11 @@
       \field{labeltitlesource}{title}
       \field{issue}{3097}
       \field{journaltitle}{Nat Commun}
-      \field{month}{4}
       \field{title}{A graph-based network for predicting chemical reaction pathways in solid-state materials synthesis.}
       \field{volume}{12}
       \field{year}{2021}
       \verb{doi}
       \verb 10.1038/s41467-021-23339-x
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41467-021-23339-x
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41467-021-23339-x
       \endverb
     \endentry
     \entry{ml_energy_barrier}{article}{}
@@ -2185,19 +1948,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{npj Comput Mater}
-      \field{month}{10}
       \field{number}{180}
       \field{title}{Accurate energy barriers for catalytic reaction pathways: an automatic training protocol for machine learning force fields}
       \field{volume}{9}
       \field{year}{2023}
       \verb{doi}
       \verb 10.1038/s41524-023-01124-2
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41524-023-01124-2
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41524-023-01124-2
       \endverb
     \endentry
     \entry{ml_energy_barrier2}{article}{}
@@ -2238,12 +1994,6 @@
       \verb{doi}
       \verb 10.1002/wcms.1593
       \endverb
-      \verb{urlraw}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1593
-      \endverb
-      \verb{url}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1593
-      \endverb
       \keyw{activation barriers,chemical reactions,data,machine learning,reactivity prediction}
     \endentry
     \entry{ml_energy_barrier3}{article}{}
@@ -2280,7 +2030,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{0021-9606}
       \field{journaltitle}{The Journal of Chemical Physics}
-      \field{month}{08}
       \field{number}{6}
       \field{title}{Toward the design of chemical reactions: Machine learning barriers of competing mechanisms in reactant space}
       \field{volume}{155}
@@ -2289,12 +2038,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1063/5.0059742
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/5.0059742
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/5.0059742
       \endverb
     \endentry
     \entry{ml_energy_barrier4}{article}{}
@@ -2332,19 +2075,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nat Commun}
-      \field{month}{10}
       \field{number}{5505}
       \field{title}{Machine learning in chemical reaction space}
       \field{volume}{11}
       \field{year}{2022}
       \verb{doi}
       \verb 10.1038/s41467-020-19267-x
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41467-020-19267-x
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41467-020-19267-x
       \endverb
     \endentry
     \entry{ml_energy_barrier5}{article}{}
@@ -2382,19 +2118,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nat Commun}
-      \field{month}{10}
       \field{number}{5505}
       \field{title}{Machine learning in chemical reaction space}
       \field{volume}{11}
       \field{year}{2022}
       \verb{doi}
       \verb 10.1038/s41467-020-19267-x
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41467-020-19267-x
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41467-020-19267-x
       \endverb
     \endentry
     \entry{ml_energy_barrier6}{article}{}
@@ -2423,7 +2152,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nat Comput Sci}
-      \field{month}{1}
       \field{number}{3}
       \field{title}{Chemical reaction networks and opportunities for machine learning}
       \field{year}{2023}
@@ -2431,12 +2159,6 @@
       \range{pages}{13}
       \verb{doi}
       \verb 10.1038/s43588-022-00369-z
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s43588-022-00369-z
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s43588-022-00369-z
       \endverb
     \endentry
     \entry{ml_reaction_barrier7}{article}{}
@@ -2468,7 +2190,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Information and Modeling}
-      \field{note}{PMID: 39862160}
       \field{number}{3}
       \field{title}{Enhancing Activation Energy Predictions under Data Constraints Using Graph Neural Networks}
       \field{volume}{65}
@@ -2477,12 +2198,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1021/acs.jcim.4c02319
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jcim.4c02319
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jcim.4c02319
       \endverb
     \endentry
     \entry{scaling_limitations}{article}{}
@@ -2514,13 +2229,13 @@
       \strng{authorbibnamehash}{eee36f7fdfa3dfd82ae5c328cab785ab}
       \strng{authornamehash}{eee36f7fdfa3dfd82ae5c328cab785ab}
       \strng{authorfullhash}{90ca686a6acff28d7a43820dd05568ef}
+      \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0021-9606}
       \field{journaltitle}{The Journal of Chemical Physics}
-      \field{month}{06}
       \field{number}{23}
       \field{title}{Limits to scaling relations between adsorption energies?}
       \field{volume}{156}
@@ -2529,12 +2244,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1063/5.0096625
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/5.0096625
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/5.0096625
       \endverb
     \endentry
     \entry{grimme_xtb}{article}{}
@@ -2598,21 +2307,10 @@
       \field{pages}{e1493}
       \range{pages}{-1}
       \verb{doi}
-      \verb https://doi.org/10.1002/wcms.1493
-      \endverb
-      \verb{urlraw}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1493
-      \endverb
-      \verb{url}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1493
+      \verb 10.1002/wcms.1493
       \endverb
       \keyw{density functional tight-binding theory,multilevel quantum chemistry,semiempirical molecular orbital theory}
     \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{2}
-  \datalist[entry]{none/global//global/global}
     \entry{jakob_reactions_hypergraph}{article}{}
       \name{author}{4}{}{%
         {{hash=5b003eec61572048178f55ff7d538bc8}{%
@@ -2642,9 +2340,9 @@
       \strng{authorbibnamehash}{1f4d893a8078049ded43c947f8436113}
       \strng{authornamehash}{1f4d893a8078049ded43c947f8436113}
       \strng{authorfullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
@@ -2656,71 +2354,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1098/rsta.2016.0354
-      \endverb
-      \verb{urlraw}
-      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2016.0354
-      \endverb
-      \verb{url}
-      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2016.0354
-      \endverb
-    \endentry
-    \entry{jakob_integer_hyperflows}{article}{}
-      \name{author}{4}{}{%
-        {{hash=5b003eec61572048178f55ff7d538bc8}{%
-           family={Andersen},
-           familyi={A\bibinitperiod},
-           given={Jakob\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=b55421f384dce57ae38e9e8bcf44850b}{%
-           family={Flamm},
-           familyi={F\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=5fd7dca2f8197d813cf980c556899438}{%
-           family={Merkle},
-           familyi={M\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9982debdce05bebbf7a7f24842a44650}{%
-           family={Stadler},
-           familyi={S\bibinitperiod},
-           given={Peter\bibnamedelima F.},
-           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Washington, DC, USA}%
-      }
-      \list{publisher}{1}{%
-        {IEEE Computer Society Press}%
-      }
-      \strng{namehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{fullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \strng{bibnamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authorbibnamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authornamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authorfullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1545-5963}
-      \field{journaltitle}{IEEE/ACM Trans. Comput. Biol. Bioinformatics}
-      \field{month}{4}
-      \field{number}{2}
-      \field{title}{Chemical Transformation Motifs—Modelling Pathways as Integer Hyperflows}
-      \field{volume}{16}
-      \field{year}{2019}
-      \field{pages}{510\bibrangedash 523}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/TCBB.2017.2781724
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/TCBB.2017.2781724
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/TCBB.2017.2781724
       \endverb
     \endentry
     \entry{christoph_reaction_network_chemical}{article}{}
@@ -2750,12 +2383,11 @@
       \strng{authorbibnamehash}{3f59e7733244c75efcd288def199f5dc}
       \strng{authornamehash}{3f59e7733244c75efcd288def199f5dc}
       \strng{authorfullhash}{3f59e7733244c75efcd288def199f5dc}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Cheminform}
-      \field{month}{9}
       \field{number}{63}
       \field{title}{What makes a reaction network “chemical”?}
       \field{volume}{14}
@@ -2763,40 +2395,7 @@
       \verb{doi}
       \verb 10.1186/s13321-022-00621-8
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1186/s13321-022-00621-8
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1186/s13321-022-00621-8
-      \endverb
     \endentry
-    \entry{mod_web}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=5b003eec61572048178f55ff7d538bc8}{%
-           family={Andersen},
-           familyi={A\bibinitperiod},
-           given={Jakob\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{fullhash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{bibnamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authorbibnamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authornamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authorfullhash}{5b003eec61572048178f55ff7d538bc8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{http://mod.imada.sdu.dk}}
-      \field{title}{{MØD}}
-      \field{year}{2024}
-    \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{3}
-  \datalist[entry]{none/global//global/global}
     \entry{cobrapy}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -2826,12 +2425,11 @@
       \strng{authorbibnamehash}{c78e50176177521f4c8f21b35abfb318}
       \strng{authornamehash}{c78e50176177521f4c8f21b35abfb318}
       \strng{authorfullhash}{c78e50176177521f4c8f21b35abfb318}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Syst Biol}
-      \field{month}{8}
       \field{number}{74}
       \field{title}{COBRApy: COnstraints-Based Reconstruction and Analysis for Python}
       \field{volume}{7}
@@ -2854,18 +2452,13 @@
       \strng{authorbibnamehash}{2556669673a20e588b3268884f207346}
       \strng{authornamehash}{2556669673a20e588b3268884f207346}
       \strng{authorfullhash}{2556669673a20e588b3268884f207346}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://opencobra.github.io/cobratoolbox/stable/tutorials/tutorial_practical_alternateOptimalSolutions.html}}
       \field{title}{Flux Balance Analysis: Alternate optimal solutions}
     \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{4}
-  \datalist[entry]{none/global//global/global}
     \entry{crooks}{article}{}
       \name{author}{1}{}{%
         {{hash=9f65ac557691562d4b8946b4ba50cd96}{%
@@ -2884,13 +2477,12 @@
       \strng{authornamehash}{9f65ac557691562d4b8946b4ba50cd96}
       \strng{authorfullhash}{9f65ac557691562d4b8946b4ba50cd96}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3}
       \field{journaltitle}{Phys. Rev. E}
-      \field{month}{9}
       \field{title}{Entropy production fluctuation theorem and the nonequilibrium work relation for free energy differences}
       \field{volume}{60}
       \field{year}{1999}
@@ -2898,12 +2490,6 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.1103/PhysRevE.60.2721
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.60.2721
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.60.2721
       \endverb
     \endentry
     \entry{crooks2}{article}{}
@@ -2924,13 +2510,12 @@
       \strng{authornamehash}{9f65ac557691562d4b8946b4ba50cd96}
       \strng{authorfullhash}{9f65ac557691562d4b8946b4ba50cd96}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3}
       \field{journaltitle}{Phys. Rev. E}
-      \field{month}{3}
       \field{title}{Path-ensemble averages in systems driven far from equilibrium}
       \field{volume}{61}
       \field{year}{2000}
@@ -2938,12 +2523,6 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.1103/PhysRevE.61.2361
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.61.2361
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.61.2361
       \endverb
     \endentry
     \entry{jarzynski}{article}{}
@@ -2968,13 +2547,12 @@
       \strng{authorbibnamehash}{dbfc71015665f69ed23e34ef285df324}
       \strng{authornamehash}{dbfc71015665f69ed23e34ef285df324}
       \strng{authorfullhash}{dbfc71015665f69ed23e34ef285df324}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{9}
       \field{journaltitle}{Phys. Rev. Lett.}
-      \field{month}{3}
       \field{title}{Generalized Jarzynski Equality under Nonequilibrium Feedback Control}
       \field{volume}{104}
       \field{year}{2010}
@@ -2982,12 +2560,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevLett.104.090602
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.104.090602
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.104.090602
       \endverb
     \endentry
     \entry{jarzynski2}{article}{}
@@ -3012,13 +2584,12 @@
       \strng{authorbibnamehash}{4a444697cc4d022ab5a5191b69e0490e}
       \strng{authornamehash}{4a444697cc4d022ab5a5191b69e0490e}
       \strng{authorfullhash}{4a444697cc4d022ab5a5191b69e0490e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{1}
       \field{journaltitle}{Phys. Rev. E}
-      \field{month}{1}
       \field{title}{Jarzynski equality: Connections to thermodynamics and the second law}
       \field{volume}{75}
       \field{year}{2007}
@@ -3027,14 +2598,8 @@
       \verb{doi}
       \verb 10.1103/PhysRevE.75.011133
       \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.75.011133
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.75.011133
-      \endverb
     \endentry
-    \entry{jarzynski3}{inproceedings}{}
+    \entry{jarzynski3}{article}{}
       \name{author}{4}{}{%
         {{hash=597da9260cbb1fdd98d5fa60ddb49e2f}{%
            family={Carbone},
@@ -3057,40 +2622,8 @@
            given={Eric},
            giveni={E\bibinitperiod}}}%
       }
-      \name{editor}{6}{}{%
-        {{hash=6d9c5f3daf57997af27b3617ec7d1fe9}{%
-           family={Oh},
-           familyi={O\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=85bc7cefdd5554b76135cee4b8e4ce02}{%
-           family={Naumann},
-           familyi={N\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=fbc410321d4ef88338a144a263d84a52}{%
-           family={Globerson},
-           familyi={G\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b4c13335066154b96f9f6b69c52f1c34}{%
-           family={Saenko},
-           familyi={S\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=d5244a9be1ca0eac9110d23de0146408}{%
-           family={Hardt},
-           familyi={H\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=3cd8fe4b36223cabb80a65d5bca613b3}{%
-           family={Levine},
-           familyi={L\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-      }
       \list{publisher}{1}{%
-        {Curran Associates, Inc.}%
+        {IOP Publishing}%
       }
       \strng{namehash}{faef3b77c124c1ffa4c5d8eb4924a7ad}
       \strng{fullhash}{8868453000fe0c5c782a14228c650d29}
@@ -3098,24 +2631,19 @@
       \strng{authorbibnamehash}{faef3b77c124c1ffa4c5d8eb4924a7ad}
       \strng{authornamehash}{faef3b77c124c1ffa4c5d8eb4924a7ad}
       \strng{authorfullhash}{8868453000fe0c5c782a14228c650d29}
-      \strng{editorbibnamehash}{cdfb36351492c4e843cfb87a8549b3ef}
-      \strng{editornamehash}{cdfb36351492c4e843cfb87a8549b3ef}
-      \strng{editorfullhash}{c4805185ea5603cbf8bdc85fe57d1ec3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Neural Information Processing Systems}
-      \field{title}{Efficient Training of Energy-Based Models Using Jarzynski Equality}
-      \field{volume}{36}
-      \field{year}{2023}
-      \field{pages}{52583\bibrangedash 52614}
-      \range{pages}{32}
-      \verb{urlraw}
-      \verb https://proceedings.neurips.cc/paper_files/paper/2023/file/a4ddb865e0a8ca3cca43fd7387b4b0da-Paper-Conference.pdf
-      \endverb
-      \verb{url}
-      \verb https://proceedings.neurips.cc/paper_files/paper/2023/file/a4ddb865e0a8ca3cca43fd7387b4b0da-Paper-Conference.pdf
+      \field{journaltitle}{Journal of Statistical Mechanics: Theory and Experiment}
+      \field{number}{10}
+      \field{title}{Efficient training of energy-based models using Jarzynski equality}
+      \field{volume}{2024}
+      \field{year}{2024}
+      \field{pages}{104019}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-5468/ad65e0
       \endverb
     \endentry
     \entry{convex_rate_law}{misc}{}
@@ -3142,15 +2670,12 @@
       \strng{authorbibnamehash}{6e625add5b038820c31dd4337e9f1f2c}
       \strng{authornamehash}{6e625add5b038820c31dd4337e9f1f2c}
       \strng{authorfullhash}{6e625add5b038820c31dd4337e9f1f2c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Large deviations theory for Markov jump models of chemical reaction networks}
       \field{year}{2017}
-      \verb{eprint}
-      \verb 1701.02126
-      \endverb
       \verb{urlraw}
       \verb https://arxiv.org/abs/1701.02126
       \endverb
@@ -3163,20 +2688,14 @@
         {International Union of Pure}%
         {Applied Chemistry (IUPAC)}%
       }
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{edition}{5.0.0}
       \field{title}{driving force}
       \field{year}{2025}
       \verb{doi}
-      \verb doi:10.1351/goldbook.D01860
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1351/goldbook.D01860
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1351/goldbook.D01860
+      \verb 10.1351/goldbook.D01860
       \endverb
     \endentry
     \entry{affinity}{article}{}
@@ -3184,20 +2703,14 @@
         {International Union of Pure}%
         {Applied Chemistry (IUPAC)}%
       }
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{edition}{5.0.0}
       \field{title}{affinity of reaction}
       \field{year}{2025}
       \verb{doi}
-      \verb doi:10.1351/goldbook.A00178
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1351/goldbook.A00178
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1351/goldbook.A00178
+      \verb 10.1351/goldbook.A00178
       \endverb
     \endentry
     \entry{bigM}{article}{}
@@ -3222,25 +2735,18 @@
       \strng{authorbibnamehash}{3d041ee209279a98edfa7f91f3e80cb5}
       \strng{authornamehash}{3d041ee209279a98edfa7f91f3e80cb5}
       \strng{authorfullhash}{3d041ee209279a98edfa7f91f3e80cb5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{M. Optim Lett}
-      \field{month}{9}
       \field{title}{The Big-M method with the numerical infinite M}
       \field{volume}{15}
       \field{year}{2020}
       \field{pages}{2455\bibrangedash 2468}
       \range{pages}{14}
       \verb{doi}
-      \verb https://doi.org/10.1007/s11590-020-01644-6
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s11590-020-01644-6
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s11590-020-01644-6
+      \verb 10.1007/s11590-020-01644-6
       \endverb
     \endentry
     \entry{Karp:72}{inproceedings}{}
@@ -3278,8 +2784,8 @@
       \strng{editorbibnamehash}{19a35f25f444509f90d30b45662f618d}
       \strng{editornamehash}{19a35f25f444509f90d30b45662f618d}
       \strng{editorfullhash}{19a35f25f444509f90d30b45662f618d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Complexity of Computer Computations}
@@ -3287,6 +2793,9 @@
       \field{year}{1972}
       \field{pages}{85\bibrangedash 103}
       \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/978-1-4684-2001-2_9
+      \endverb
     \endentry
     \entry{integer_hyperflow_np_hard}{article}{}
       \name{author}{4}{}{%
@@ -3317,90 +2826,18 @@
       \strng{authorbibnamehash}{02d3e16ec195236d23b1bbd02853d557}
       \strng{authornamehash}{02d3e16ec195236d23b1bbd02853d557}
       \strng{authorfullhash}{78c5a52af51fd2cee057fda6b8bde694}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Syst Chem}
-      \field{month}{01}
       \field{number}{1}
       \field{title}{{Maximizing output and recognizing autocatalysis in chemical reaction networks is NP-complete}}
       \field{volume}{3}
       \field{year}{2012}
       \verb{doi}
       \verb 10.1186/1759-2208-3-1
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1186/1759-2208-3-1
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1186/1759-2208-3-1
-      \endverb
-    \endentry
-    \entry{jakob_software}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=5b003eec61572048178f55ff7d538bc8}{%
-           family={Andersen},
-           familyi={A\bibinitperiod},
-           given={Jakob\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=b55421f384dce57ae38e9e8bcf44850b}{%
-           family={Flamm},
-           familyi={F\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=5fd7dca2f8197d813cf980c556899438}{%
-           family={Merkle},
-           familyi={M\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9982debdce05bebbf7a7f24842a44650}{%
-           family={Stadler},
-           familyi={S\bibinitperiod},
-           given={Peter\bibnamedelima F.},
-           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \name{editor}{2}{}{%
-        {{hash=cf4175cb79c157a7ff3f6a9c18fa5215}{%
-           family={Echahed},
-           familyi={E\bibinitperiod},
-           given={Rachid},
-           giveni={R\bibinitperiod}}}%
-        {{hash=332128479529606992e58a1c310908ba}{%
-           family={Minas},
-           familyi={M\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Cham}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{fullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \strng{bibnamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authorbibnamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authornamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authorfullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \strng{editorbibnamehash}{768a8f82356e3551ea3c6ac6979bf360}
-      \strng{editornamehash}{768a8f82356e3551ea3c6ac6979bf360}
-      \strng{editorfullhash}{768a8f82356e3551ea3c6ac6979bf360}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Graph Transformation}
-      \field{isbn}{978-3-319-40530-8}
-      \field{title}{A Software Package for Chemically Inspired Graph Transformation}
-      \field{year}{2016}
-      \field{pages}{73\bibrangedash 88}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1007/978-3-319-40530-8_5
       \endverb
     \endentry
     \entry{cbc}{misc}{}
@@ -3515,22 +2952,15 @@
       \strng{authorbibnamehash}{fa39ce09d30989abe8fbc5a486e7cd11}
       \strng{authornamehash}{fa39ce09d30989abe8fbc5a486e7cd11}
       \strng{authorfullhash}{46a86874d87524a6315c2ef4d65cadd1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{8}
       \field{title}{coin-or/Cbc: Release releases/2.10.12}
       \field{version}{releases/2.10.12}
       \field{year}{2024}
       \verb{doi}
       \verb 10.5281/zenodo.13347261
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.5281/zenodo.13347261
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.5281/zenodo.13347261
       \endverb
     \endentry
     \entry{cbc2}{article}{}
@@ -3553,13 +2983,12 @@
       \strng{authorbibnamehash}{f39c9a9fe6285727db7df3472c40cc43}
       \strng{authornamehash}{f39c9a9fe6285727db7df3472c40cc43}
       \strng{authorfullhash}{f39c9a9fe6285727db7df3472c40cc43}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-8646}
       \field{journaltitle}{IBM J. Res. Dev.}
-      \field{month}{1}
       \field{number}{1}
       \field{title}{The Common Optimization INterface for Operations Research: Promoting open-source software in the operations research community}
       \field{volume}{47}
@@ -3568,117 +2997,6 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1147/rd.471.0057
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1147/rd.471.0057
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1147/rd.471.0057
-      \endverb
-    \endentry
-    \entry{jakob_integer_hyperflows}{article}{}
-      \name{author}{4}{}{%
-        {{hash=5b003eec61572048178f55ff7d538bc8}{%
-           family={Andersen},
-           familyi={A\bibinitperiod},
-           given={Jakob\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=b55421f384dce57ae38e9e8bcf44850b}{%
-           family={Flamm},
-           familyi={F\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=5fd7dca2f8197d813cf980c556899438}{%
-           family={Merkle},
-           familyi={M\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9982debdce05bebbf7a7f24842a44650}{%
-           family={Stadler},
-           familyi={S\bibinitperiod},
-           given={Peter\bibnamedelima F.},
-           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Washington, DC, USA}%
-      }
-      \list{publisher}{1}{%
-        {IEEE Computer Society Press}%
-      }
-      \strng{namehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{fullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \strng{bibnamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authorbibnamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authornamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authorfullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1545-5963}
-      \field{journaltitle}{IEEE/ACM Trans. Comput. Biol. Bioinformatics}
-      \field{month}{4}
-      \field{number}{2}
-      \field{title}{Chemical Transformation Motifs—Modelling Pathways as Integer Hyperflows}
-      \field{volume}{16}
-      \field{year}{2019}
-      \field{pages}{510\bibrangedash 523}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/TCBB.2017.2781724
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/TCBB.2017.2781724
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/TCBB.2017.2781724
-      \endverb
-    \endentry
-    \entry{hatz_thermo_flow}{article}{}
-      \name{author}{3}{}{%
-        {{hash=215fb5408fc427ee1f2f3829e2267ed9}{%
-           family={Henry},
-           familyi={H\bibinitperiod},
-           given={Christopher\bibnamedelima S.},
-           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=e2234e499e2b3e60d94a4d0e36d02c5f}{%
-           family={Broadbelt},
-           familyi={B\bibinitperiod},
-           given={Linda\bibnamedelima J.},
-           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=757a081ce146584a14c1bdbaeb837b57}{%
-           family={Hatzimanikatis},
-           familyi={H\bibinitperiod},
-           given={Vassily},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{80e16381543cdec63c7471bd02bdb96b}
-      \strng{fullhash}{80e16381543cdec63c7471bd02bdb96b}
-      \strng{bibnamehash}{80e16381543cdec63c7471bd02bdb96b}
-      \strng{authorbibnamehash}{80e16381543cdec63c7471bd02bdb96b}
-      \strng{authornamehash}{80e16381543cdec63c7471bd02bdb96b}
-      \strng{authorfullhash}{80e16381543cdec63c7471bd02bdb96b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0006-3495}
-      \field{journaltitle}{Biophysical Journal}
-      \field{number}{5}
-      \field{title}{Thermodynamics-Based Metabolic Flux Analysis}
-      \field{volume}{92}
-      \field{year}{2007}
-      \field{pages}{1792\bibrangedash 1805}
-      \range{pages}{14}
-      \verb{doi}
-      \verb https://doi.org/10.1529/biophysj.106.093138
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0006349507709876
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0006349507709876
       \endverb
     \endentry
     \entry{miangolarra_non_ideal_CRN}{article}{}
@@ -3703,66 +3021,17 @@
       \strng{authorbibnamehash}{499173c48d4e2191cae8889c31186731}
       \strng{authornamehash}{499173c48d4e2191cae8889c31186731}
       \strng{authorfullhash}{499173c48d4e2191cae8889c31186731}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Stat Phys}
-      \field{month}{11}
       \field{number}{23}
       \field{title}{On Non-ideal Chemical-Reaction Networks and Phase Separation.}
       \field{volume}{190}
       \field{year}{2023}
       \verb{doi}
       \verb 10.1007/s10955-022-03037-8
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10955-022-03037-8
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10955-022-03037-8
-      \endverb
-    \endentry
-    \entry{seifert_thermodynamics_CRN_JCP}{article}{}
-      \name{author}{2}{}{%
-        {{hash=24834bfb8a02d2cf25ecbb0dc7546395}{%
-           family={Schmiedl},
-           familyi={S\bibinitperiod},
-           given={Tim},
-           giveni={T\bibinitperiod}}}%
-        {{hash=03c58f7973dbaff22d5e24c09f8b075e}{%
-           family={Seifert},
-           familyi={S\bibinitperiod},
-           given={Udo},
-           giveni={U\bibinitperiod}}}%
-      }
-      \strng{namehash}{641282e6a897d77f95af0d9567075f99}
-      \strng{fullhash}{641282e6a897d77f95af0d9567075f99}
-      \strng{bibnamehash}{641282e6a897d77f95af0d9567075f99}
-      \strng{authorbibnamehash}{641282e6a897d77f95af0d9567075f99}
-      \strng{authornamehash}{641282e6a897d77f95af0d9567075f99}
-      \strng{authorfullhash}{641282e6a897d77f95af0d9567075f99}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0021-9606}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{month}{01}
-      \field{number}{4}
-      \field{title}{{Stochastic thermodynamics of chemical reaction networks}}
-      \field{volume}{126}
-      \field{year}{2007}
-      \field{pages}{044101}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1063/1.2428297
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/1.2428297
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/1.2428297
       \endverb
     \endentry
     \entry{nicolis_thermodynamics_CRN}{article}{}
@@ -3784,8 +3053,8 @@
       \strng{authorbibnamehash}{28e31f430451025dc36fbd730508de7f}
       \strng{authornamehash}{28e31f430451025dc36fbd730508de7f}
       \strng{authorfullhash}{28e31f430451025dc36fbd730508de7f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Non-Equilibrium Thermodynamics}
@@ -3796,60 +3065,7 @@
       \field{pages}{23\bibrangedash 46}
       \range{pages}{24}
       \verb{doi}
-      \verb doi:10.1515/JNETDY.2006.003
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1515/JNETDY.2006.003
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1515/JNETDY.2006.003
-      \endverb
-    \endentry
-    \entry{synthesis_planning_CRN_thermodynamics}{article}{}
-      \name{author}{3}{}{%
-        {{hash=ffe435e80f4daf6f025f9c53acfb899b}{%
-           family={McDermott},
-           familyi={M\bibinitperiod},
-           given={Matthew\bibnamedelima J.},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=e334351ab13bdecadcb45379ecfb62e3}{%
-           family={Dwaraknath},
-           familyi={D\bibinitperiod},
-           given={Shyam\bibnamedelima S.},
-           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=d823a736a8705c23b18ef2b370c1426b}{%
-           family={Persson},
-           familyi={P\bibinitperiod},
-           given={Kristin\bibnamedelima A.},
-           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer Nature}%
-      }
-      \strng{namehash}{004b1f83907407a0e06b469a2baec539}
-      \strng{fullhash}{004b1f83907407a0e06b469a2baec539}
-      \strng{bibnamehash}{004b1f83907407a0e06b469a2baec539}
-      \strng{authorbibnamehash}{004b1f83907407a0e06b469a2baec539}
-      \strng{authornamehash}{004b1f83907407a0e06b469a2baec539}
-      \strng{authorfullhash}{004b1f83907407a0e06b469a2baec539}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{3097}
-      \field{journaltitle}{Nat Commun}
-      \field{month}{4}
-      \field{title}{A graph-based network for predicting chemical reaction pathways in solid-state materials synthesis.}
-      \field{volume}{12}
-      \field{year}{2021}
-      \verb{doi}
-      \verb 10.1038/s41467-021-23339-x
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41467-021-23339-x
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41467-021-23339-x
+      \verb 10.1515/JNETDY.2006.003
       \endverb
     \endentry
     \entry{CRN_MD_tool1}{article}{}
@@ -3916,25 +3132,18 @@
       \strng{authorbibnamehash}{37ee512602fd1f14fc50b429367cf819}
       \strng{authornamehash}{37ee512602fd1f14fc50b429367cf819}
       \strng{authorfullhash}{f445af5513dd44828debdd4a6caa3082}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Chemistry}
       \field{number}{28}
       \field{title}{AutoMeKin2021: An open-source program for automated reaction discovery}
       \field{volume}{42}
-      \field{year}{2021}
       \field{pages}{2036\bibrangedash 2048}
       \range{pages}{13}
       \verb{doi}
-      \verb https://doi.org/10.1002/jcc.26734
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26734
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26734
+      \verb 10.1002/jcc.26734
       \endverb
       \keyw{graph theory,kinetics,MD simulations,reaction mechanisms}
     \endentry
@@ -3967,12 +3176,11 @@
       \strng{authorbibnamehash}{229bb9ed5b13c4678f2c6f2ac1210993}
       \strng{authornamehash}{229bb9ed5b13c4678f2c6f2ac1210993}
       \strng{authorfullhash}{7ca0b2d4d3bbac4233ebcd64f552eae2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 34283599}
       \field{number}{8}
       \field{title}{ChemDyME: Kinetically Steered, Automated Mechanism Generation through Combined Molecular Dynamics and Master Equation Calculations}
       \field{volume}{17}
@@ -3981,12 +3189,6 @@
       \range{pages}{12}
       \verb{doi}
       \verb 10.1021/acs.jctc.1c00335
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jctc.1c00335
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jctc.1c00335
       \endverb
     \endentry
     \entry{CRN_MD_tool3}{article}{}
@@ -4028,12 +3230,11 @@
       \strng{authorbibnamehash}{2886404d8e8f11fdd97360a0acf25ba3}
       \strng{authornamehash}{2886404d8e8f11fdd97360a0acf25ba3}
       \strng{authorfullhash}{2c75862e6c1bc55e1c5ad07d51cf840f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 26575551}
       \field{number}{6}
       \field{title}{Automated Discovery of Reaction Pathways, Rate Constants, and Transition States Using Reactive Molecular Dynamics Simulations}
       \field{volume}{11}
@@ -4042,12 +3243,6 @@
       \range{pages}{8}
       \verb{doi}
       \verb 10.1021/acs.jctc.5b00201
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jctc.5b00201
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jctc.5b00201
       \endverb
     \endentry
     \entry{CRN_kin_tool1}{article}{}
@@ -4129,12 +3324,12 @@
       \strng{authorbibnamehash}{16dcb4f708edfd799f20c7b6a36884ba}
       \strng{authornamehash}{16dcb4f708edfd799f20c7b6a36884ba}
       \strng{authorfullhash}{3facf0baa285ed6151af8b75c3908a90}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Information and Modeling}
-      \field{note}{PMID: 34048230}
       \field{number}{6}
       \field{title}{Reaction Mechanism Generator v3.0: Advances in Automatic Mechanism Generation}
       \field{volume}{61}
@@ -4143,12 +3338,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1021/acs.jcim.0c01480
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jcim.0c01480
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jcim.0c01480
       \endverb
     \endentry
     \entry{CRN_kin_tool2}{article}{}
@@ -4290,25 +3479,18 @@
       \strng{authorbibnamehash}{9c7236b67678706a952d346baf986579}
       \strng{authornamehash}{9c7236b67678706a952d346baf986579}
       \strng{authorfullhash}{077174dd9cf5554beea09e376b5595c3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Chemical Kinetics}
       \field{number}{6}
       \field{title}{Automated reaction kinetics and network exploration (Arkane): A statistical mechanics, thermodynamics, transition state theory, and master equation software}
       \field{volume}{55}
-      \field{year}{2023}
       \field{pages}{300\bibrangedash 323}
       \range{pages}{24}
       \verb{doi}
-      \verb https://doi.org/10.1002/kin.21637
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/kin.21637
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/kin.21637
+      \verb 10.1002/kin.21637
       \endverb
       \keyw{chemical kinetics,pressure-dependent reactions,potential energy surface,reaction mechanism generator,sensitivity analysis,statistical mechanics}
     \endentry
@@ -4341,25 +3523,18 @@
       \strng{authorbibnamehash}{a25b7a029740c5d8abc14b1a2d27407f}
       \strng{authornamehash}{a25b7a029740c5d8abc14b1a2d27407f}
       \strng{authorfullhash}{8de4f66f43f562ed340fde69c057203a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Angewandte Chemie International Edition}
       \field{number}{8}
       \field{title}{autodE: Automated Calculation of Reaction Energy Profiles— Application to Organic and Organometallic Reactions}
       \field{volume}{60}
-      \field{year}{2021}
       \field{pages}{4266\bibrangedash 4274}
       \range{pages}{9}
       \verb{doi}
-      \verb https://doi.org/10.1002/anie.202011941
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202011941
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202011941
+      \verb 10.1002/anie.202011941
       \endverb
       \keyw{automation,reaction mechanisms,sampling,transition states}
     \endentry
@@ -4395,12 +3570,11 @@
       \strng{authorbibnamehash}{f9edc5b4008ca4c55a7d8153e14f0930}
       \strng{authornamehash}{f9edc5b4008ca4c55a7d8153e14f0930}
       \strng{authorfullhash}{ad0f10b2bff9531ed441e09f5b26f7bb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{BMC Bioinformatics}
-      \field{month}{3}
       \field{number}{106}
       \field{title}{Pickaxe: a Python library for the prediction of novel metabolic reactions.}
       \field{volume}{24}
@@ -4408,18 +3582,7 @@
       \verb{doi}
       \verb 10.1186/s12859-023-05149-8
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1186/s12859-023-05149-8
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1186/s12859-023-05149-8
-      \endverb
     \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{5}
-  \datalist[entry]{none/global//global/global}
     \entry{implemented_CRN}{article}{}
       \name{author}{2}{}{%
         {{hash=d287902f13c77b2531e8d097ad228875}{%
@@ -4439,12 +3602,11 @@
       \strng{authorbibnamehash}{640299e8ad13a7cdee596395b971b3d3}
       \strng{authornamehash}{640299e8ad13a7cdee596395b971b3d3}
       \strng{authorfullhash}{640299e8ad13a7cdee596395b971b3d3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physical Chemistry B}
-      \field{note}{PMID: 27016454}
       \field{number}{33}
       \field{title}{HCN, Formamidic Acid, and Formamide in Aqueous Solution: A Free-Energy Map}
       \field{volume}{120}
@@ -4454,16 +3616,10 @@
       \verb{doi}
       \verb 10.1021/acs.jpcb.6b01690
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jpcb.6b01690
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jpcb.6b01690
-      \endverb
     \endentry
     \entry{data_repository}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/AdittyaPal/thermodynamicsWithILP.git}}
       \field{title}{supplementary data repository on GitHub}
@@ -4491,12 +3647,15 @@
       \strng{authorbibnamehash}{cad901a766a19b4b0f414185b7e77893}
       \strng{authornamehash}{cad901a766a19b4b0f414185b7e77893}
       \strng{authorfullhash}{cad901a766a19b4b0f414185b7e77893}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Parallel computing in quantum chemistry}
       \field{year}{2008}
+      \verb{doi}
+      \verb 10.1201/9781420051650
+      \endverb
     \endentry
     \entry{NN_molecule_energies}{article}{}
       \name{author}{5}{}{%
@@ -4535,24 +3694,17 @@
       \strng{authorbibnamehash}{534b02d1319690d56213c05563c23003}
       \strng{authornamehash}{534b02d1319690d56213c05563c23003}
       \strng{authorfullhash}{7a9ef47bd3849291080444eccec04a00}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{4870}
       \field{journaltitle}{Nat Commun}
-      \field{month}{8}
       \field{title}{Teaching a neural network to attach and detach electrons from molecules.}
       \field{volume}{12}
       \field{year}{2021}
       \verb{doi}
       \verb 10.1038/s41467-021-24904-0
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41467-021-24904-0
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41467-021-24904-0
       \endverb
     \endentry
     \entry{ml_energy}{article}{}
@@ -4601,13 +3753,7 @@
       \field{pages}{361\bibrangedash 390}
       \range{pages}{30}
       \verb{doi}
-      \verb https://doi.org/10.1146/annurev-physchem-042018-052331
-      \endverb
-      \verb{urlraw}
-      \verb https://www.annualreviews.org/content/journals/10.1146/annurev-physchem-042018-052331
-      \endverb
-      \verb{url}
-      \verb https://www.annualreviews.org/content/journals/10.1146/annurev-physchem-042018-052331
+      \verb 10.1146/annurev-physchem-042018-052331
       \endverb
     \endentry
     \entry{ml_energy1}{article}{}
@@ -4641,16 +3787,7 @@
       \field{pages}{7181815}
       \range{pages}{1}
       \verb{doi}
-      \verb https://doi.org/10.1155/2021/7181815
-      \endverb
-      \verb{eprint}
-      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1155/2021/7181815
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1155/2021/7181815
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1155/2021/7181815
+      \verb 10.1155/2021/7181815
       \endverb
     \endentry
     \entry{ml_energy2}{article}{}
@@ -4687,7 +3824,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Information and Modeling}
-      \field{note}{PMID: 35020394}
       \field{number}{9}
       \field{title}{Quantum Mechanics and Machine Learning Synergies: Graph Attention Neural Networks to Predict Chemical Reactivity}
       \field{volume}{62}
@@ -4696,15 +3832,6 @@
       \range{pages}{12}
       \verb{doi}
       \verb 10.1021/acs.jcim.1c01400
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1021/acs.jcim.1c01400
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jcim.1c01400
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jcim.1c01400
       \endverb
     \endentry
     \entry{ml_energy3}{article}{}
@@ -4731,7 +3858,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Information and Modeling}
-      \field{note}{PMID: 33118351}
       \field{number}{12}
       \field{title}{Deep Learning Total Energies and Orbital Energies of Large Organic Molecules Using Hybridization of Molecular Fingerprints}
       \field{volume}{60}
@@ -4740,15 +3866,6 @@
       \range{pages}{13}
       \verb{doi}
       \verb 10.1021/acs.jcim.0c00687
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1021/acs.jcim.0c00687
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jcim.0c00687
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jcim.0c00687
       \endverb
     \endentry
     \entry{ml-energy4}{article}{}
@@ -4795,7 +3912,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physical Chemistry A}
-      \field{note}{PMID: 33174750}
       \field{number}{47}
       \field{title}{Machine Learning Prediction of Nine Molecular Properties Based on the SMILES Representation of the QM9 Quantum-Chemistry Dataset}
       \field{volume}{124}
@@ -4804,15 +3920,6 @@
       \range{pages}{13}
       \verb{doi}
       \verb 10.1021/acs.jpca.0c05969
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1021/acs.jpca.0c05969
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jpca.0c05969
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jpca.0c05969
       \endverb
     \endentry
     \entry{ml_energy5}{article}{}
@@ -4841,12 +3948,11 @@
       \strng{authorbibnamehash}{60e6c761b00efe86c38c87b4d42fcdae}
       \strng{authornamehash}{60e6c761b00efe86c38c87b4d42fcdae}
       \strng{authorfullhash}{60e6c761b00efe86c38c87b4d42fcdae}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Information and Modeling}
-      \field{note}{PMID: 36456532}
       \field{number}{23}
       \field{title}{Exposing the Limitations of Molecular Machine Learning with Activity Cliffs}
       \field{volume}{62}
@@ -4855,15 +3961,6 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1021/acs.jcim.2c01073
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1021/acs.jcim.2c01073
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jcim.2c01073
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jcim.2c01073
       \endverb
     \endentry
     \entry{ml_energy6}{article}{}
@@ -4895,13 +3992,13 @@
       \strng{authorbibnamehash}{eee36f7fdfa3dfd82ae5c328cab785ab}
       \strng{authornamehash}{eee36f7fdfa3dfd82ae5c328cab785ab}
       \strng{authorfullhash}{90ca686a6acff28d7a43820dd05568ef}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0021-9606}
       \field{journaltitle}{The Journal of Chemical Physics}
-      \field{month}{06}
       \field{number}{23}
       \field{title}{Limits to scaling relations between adsorption energies?}
       \field{volume}{156}
@@ -4910,15 +4007,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1063/5.0096625
-      \endverb
-      \verb{eprint}
-      \verb https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/5.0096625/16544349/231102\_1\_online.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/5.0096625
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/5.0096625
       \endverb
     \endentry
     \entry{ml_energy7}{article}{}
@@ -4950,13 +4038,12 @@
       \strng{authorbibnamehash}{c5f1d73a020420ccd311e7cd9b65eb39}
       \strng{authornamehash}{c5f1d73a020420ccd311e7cd9b65eb39}
       \strng{authorfullhash}{cca87bfc36d2ac713067dfcde416d0fb}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0021-9606}
       \field{journaltitle}{The Journal of Chemical Physics}
-      \field{month}{03}
       \field{number}{9}
       \field{title}{Challenges for machine learning force fields in reproducing potential energy surfaces of flexible molecules}
       \field{volume}{154}
@@ -4966,107 +4053,21 @@
       \verb{doi}
       \verb 10.1063/5.0038516
       \endverb
-      \verb{eprint}
-      \verb https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/5.0038516/15587076/094119\_1\_online.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/5.0038516
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/5.0038516
-      \endverb
     \endentry
     \entry{epsPrinciple}{article}{}
       \list{institution}{2}{%
         {International Union of Pure}%
         {Applied Chemistry (IUPAC)}%
       }
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{edition}{5.0.0}
       \field{title}{Bell–Evans–Polanyi principle}
       \field{year}{2025}
       \verb{doi}
-      \verb doi:10.1351/goldbook.B00628
+      \verb 10.1351/goldbook.B00628
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1351/goldbook.B00628
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1351/goldbook.B00628
-      \endverb
-    \endentry
-    \entry{grimme_xtb}{article}{}
-      \name{author}{8}{}{%
-        {{hash=ec75a624132a0bda972dc3585a639c9c}{%
-           family={Bannwarth},
-           familyi={B\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=e6ab9f7bed7e585a281231294699f534}{%
-           family={Caldeweyher},
-           familyi={C\bibinitperiod},
-           given={Eike},
-           giveni={E\bibinitperiod}}}%
-        {{hash=ead1f648a4aeec4688036c900978feb9}{%
-           family={Ehlert},
-           familyi={E\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=0012541dc48332d491b75eddc2de50ec}{%
-           family={Hansen},
-           familyi={H\bibinitperiod},
-           given={Andreas},
-           giveni={A\bibinitperiod}}}%
-        {{hash=e0dcf8cd232c8e15bc5cf6b6c3401ebd}{%
-           family={Pracht},
-           familyi={P\bibinitperiod},
-           given={Philipp},
-           giveni={P\bibinitperiod}}}%
-        {{hash=b1aa2b5319ae4a2e5fc9a84d8d83b9b0}{%
-           family={Seibert},
-           familyi={S\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod}}}%
-        {{hash=d0ba004fb45e3b7bcf7245f586572418}{%
-           family={Spicher},
-           familyi={S\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=3a2585af369dbd4150db746c63177b0c}{%
-           family={Grimme},
-           familyi={G\bibinitperiod},
-           given={Stefan},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{cd4754e13476c7b6d3d23ff40703b8e0}
-      \strng{fullhash}{5555f82330d353f6d9ec3adcdbf1c074}
-      \strng{bibnamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
-      \strng{authorbibnamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
-      \strng{authornamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
-      \strng{authorfullhash}{5555f82330d353f6d9ec3adcdbf1c074}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{WIREs Computational Molecular Science}
-      \field{number}{2}
-      \field{title}{Extended tight-binding quantum chemistry methods}
-      \field{volume}{11}
-      \field{year}{2021}
-      \field{pages}{e1493}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb https://doi.org/10.1002/wcms.1493
-      \endverb
-      \verb{urlraw}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1493
-      \endverb
-      \verb{url}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1493
-      \endverb
-      \keyw{density functional tight-binding theory,multilevel quantum chemistry,semiempirical molecular orbital theory}
     \endentry
     \entry{hatz_therm_python}{article}{}
       \name{author}{6}{}{%
@@ -5107,13 +4108,12 @@
       \strng{authorbibnamehash}{820b882c0ef45de65b3452f90a495ea6}
       \strng{authornamehash}{820b882c0ef45de65b3452f90a495ea6}
       \strng{authorfullhash}{65912a6da34b53b11676d120776f1fde}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1367-4803}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{07}
       \field{number}{1}
       \field{title}{pyTFA and matTFA: a Python package and a Matlab toolbox for Thermodynamics-based Flux Analysis}
       \field{volume}{35}
@@ -5122,12 +4122,6 @@
       \range{pages}{3}
       \verb{doi}
       \verb 10.1093/bioinformatics/bty499
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1093/bioinformatics/bty499
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1093/bioinformatics/bty499
       \endverb
     \endentry
     \entry{open_babel}{article}{}
@@ -5152,12 +4146,11 @@
       \strng{authorbibnamehash}{62a08edeb33f15c234887286948ebae9}
       \strng{authornamehash}{62a08edeb33f15c234887286948ebae9}
       \strng{authorfullhash}{62a08edeb33f15c234887286948ebae9}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Cheminform}
-      \field{month}{8}
       \field{number}{49}
       \field{title}{Fast, efficient fragment-based coordinate generation for Open Babel.}
       \field{volume}{11}
@@ -5165,16 +4158,10 @@
       \verb{doi}
       \verb 10.1186/s13321-019-0372-5
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1186/s13321-019-0372-5
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1186/s13321-019-0372-5
-      \endverb
     \endentry
     \entry{openbabel_web}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/openbabel/openbabel}}
       \field{title}{Open Babel GitHub repository}
@@ -5214,8 +4201,8 @@
       \strng{authorbibnamehash}{aabc383f8f849f9960490517c5146046}
       \strng{authornamehash}{aabc383f8f849f9960490517c5146046}
       \strng{authorfullhash}{78dc0db0796f5745815776b213a3bec1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -5228,29 +4215,15 @@
       \verb{doi}
       \verb 10.1021/ja00051a040
       \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1021/ja00051a040
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/ja00051a040
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/ja00051a040
-      \endverb
     \endentry
     \entry{solutions_data}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/AdittyaPal/thermodynamicsWithILP/blob/5f7aed70fe8706bbe0ffc2efedd68316d44e0f42/listOfSolutions.pdf}}
-      \field{title}{list of returned solutions by the MILP solver on GitHub}
+      \field{howpublished}{\url{https://github.com/AdittyaPal/thermodynamicsWithILP.git}}
+      \field{title}{list of returned solutions by the MILP solver on GitHub at}
       \field{year}{2025}
     \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{6}
-  \datalist[entry]{none/global//global/global}
     \entry{arrhenius1}{misc}{}
       \name{author}{1}{}{%
         {{hash=2cc465540a73611a839622354610877f}{%
@@ -5273,12 +4246,6 @@
       \field{year}{2025}
       \verb{doi}
       \verb 10.1351/goldbook.A00446
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1351/goldbook.A00446
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1351/goldbook.A00446
       \endverb
     \endentry
     \entry{arrhenius2}{misc}{}
@@ -5304,12 +4271,6 @@
       \verb{doi}
       \verb 10.1351/goldbook.M03963
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1351/goldbook.M03963
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1351/goldbook.M03963
-      \endverb
     \endentry
     \entry{eyring_equation}{misc}{}
       \name{author}{1}{}{%
@@ -5324,8 +4285,8 @@
       \strng{authornamehash}{2cc465540a73611a839622354610877f}
       \strng{authorfullhash}{2cc465540a73611a839622354610877f}
       \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{5.0.0}
@@ -5334,95 +4295,8 @@
       \verb{doi}
       \verb 10.1351/goldbook.T06470
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1351/goldbook.T06470
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1351/goldbook.T06470
-      \endverb
     \endentry
-    \entry{mod_web}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=5b003eec61572048178f55ff7d538bc8}{%
-           family={Andersen},
-           familyi={A\bibinitperiod},
-           given={Jakob\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{fullhash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{bibnamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authorbibnamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authornamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authorfullhash}{5b003eec61572048178f55ff7d538bc8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{http://mod.imada.sdu.dk}}
-      \field{title}{{MØD}}
-      \field{year}{2024}
-    \endentry
-    \entry{jakob_integer_hyperflows}{article}{}
-      \name{author}{4}{}{%
-        {{hash=5b003eec61572048178f55ff7d538bc8}{%
-           family={Andersen},
-           familyi={A\bibinitperiod},
-           given={Jakob\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=b55421f384dce57ae38e9e8bcf44850b}{%
-           family={Flamm},
-           familyi={F\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=5fd7dca2f8197d813cf980c556899438}{%
-           family={Merkle},
-           familyi={M\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9982debdce05bebbf7a7f24842a44650}{%
-           family={Stadler},
-           familyi={S\bibinitperiod},
-           given={Peter\bibnamedelima F.},
-           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Washington, DC, USA}%
-      }
-      \list{publisher}{1}{%
-        {IEEE Computer Society Press}%
-      }
-      \strng{namehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{fullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \strng{bibnamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authorbibnamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authornamehash}{1f4d893a8078049ded43c947f8436113}
-      \strng{authorfullhash}{cd4e39da8b82092977fa7887d1a406fc}
-      \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1545-5963}
-      \field{journaltitle}{IEEE/ACM Trans. Comput. Biol. Bioinformatics}
-      \field{month}{4}
-      \field{number}{2}
-      \field{title}{Chemical Transformation Motifs—Modelling Pathways as Integer Hyperflows}
-      \field{volume}{16}
-      \field{year}{2019}
-      \field{pages}{510\bibrangedash 523}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/TCBB.2017.2781724
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/TCBB.2017.2781724
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/TCBB.2017.2781724
-      \endverb
-    \endentry
-    \entry{neurips_dag}{misc}{}
+    \entry{neurips_dag}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=85ae2108e6a3a7ddd29332a92040259a}{%
            family={Bradshaw},
@@ -5450,28 +4324,29 @@
            given={José\bibnamedelima Miguel},
            giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Red Hook, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates Inc.}%
+      }
       \strng{namehash}{d0039e71423d6650fc600237ba4ca4b5}
       \strng{fullhash}{b3b51d7e1c97919d7d1b7aaf10e8af71}
       \strng{bibnamehash}{d0039e71423d6650fc600237ba4ca4b5}
       \strng{authorbibnamehash}{d0039e71423d6650fc600237ba4ca4b5}
       \strng{authornamehash}{d0039e71423d6650fc600237ba4ca4b5}
       \strng{authorfullhash}{b3b51d7e1c97919d7d1b7aaf10e8af71}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.LG}
-      \field{eprinttype}{arXiv}
+      \field{booktitle}{Proceedings of the 34th International Conference on Neural Information Processing Systems}
+      \field{isbn}{9781713829546}
+      \field{series}{NIPS '20}
       \field{title}{Barking up the right tree: an approach to search over molecule synthesis DAGs}
       \field{year}{2020}
-      \verb{eprint}
-      \verb 2012.11522
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2012.11522
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2012.11522
+      \verb{doi}
+      \verb 10.5555/3495724.3496299
       \endverb
     \endentry
     \entry{rolf_synthesis_planning}{article}{}
@@ -5511,12 +4386,11 @@
       \strng{authorbibnamehash}{0321e902433e7e3464445d29927d3185}
       \strng{authornamehash}{0321e902433e7e3464445d29927d3185}
       \strng{authorfullhash}{2a60428ab374664aa0e8dae75d5e9087}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J Cheminform}
-      \field{month}{4}
       \field{number}{19}
       \field{title}{Finding the K best synthesis plans.}
       \field{volume}{10}
@@ -5524,14 +4398,8 @@
       \verb{doi}
       \verb 10.1186/s13321-018-0273-z
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1186/s13321-018-0273-z
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1186/s13321-018-0273-z
-      \endverb
     \endentry
-    \entry{sissel_realisability_petrinets}{misc}{}
+    \entry{sissel_realisability_petrinets}{article}{}
       \name{author}{6}{}{%
         {{hash=5b003eec61572048178f55ff7d538bc8}{%
            family={Andersen},
@@ -5564,110 +4432,29 @@
            given={Peter\bibnamedelima F.},
            giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage CA: Los Angeles, CA}%
+      }
       \strng{namehash}{1f4d893a8078049ded43c947f8436113}
       \strng{fullhash}{59005dcbbdbade2a70daf0ee856fc3c6}
       \strng{bibnamehash}{1f4d893a8078049ded43c947f8436113}
       \strng{authorbibnamehash}{1f4d893a8078049ded43c947f8436113}
       \strng{authornamehash}{1f4d893a8078049ded43c947f8436113}
       \strng{authorfullhash}{59005dcbbdbade2a70daf0ee856fc3c6}
-      \field{extraname}{2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{q-bio.MN}
-      \field{eprinttype}{arXiv}
-      \field{title}{On the Realisability of Chemical Pathways}
-      \field{year}{2023}
-      \verb{eprint}
-      \verb 2309.10629
-      \endverb
-    \endentry
-    \entry{shortest_path_hypergraph1}{article}{}
-      \name{author}{2}{}{%
-        {{hash=6f707a28a705571c35b7b022ea7a99ae}{%
-           family={Krieger},
-           familyi={K\bibinitperiod},
-           given={Spencer},
-           giveni={S\bibinitperiod}}}%
-        {{hash=27725c25c4eb25e418979f87e764dbe9}{%
-           family={Kececioglu},
-           familyi={K\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{1db3b5a9066e5da56e1414803fe46342}
-      \strng{fullhash}{1db3b5a9066e5da56e1414803fe46342}
-      \strng{bibnamehash}{1db3b5a9066e5da56e1414803fe46342}
-      \strng{authorbibnamehash}{1db3b5a9066e5da56e1414803fe46342}
-      \strng{authornamehash}{1db3b5a9066e5da56e1414803fe46342}
-      \strng{authorfullhash}{1db3b5a9066e5da56e1414803fe46342}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{extraname}{5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Biology}
-      \field{note}{PMID: 37906100}
-      \field{number}{11}
-      \field{title}{Shortest Hyperpaths in Directed Hypergraphs for Reaction Pathway Inference}
-      \field{volume}{30}
-      \field{year}{2023}
-      \field{pages}{1198\bibrangedash 1225}
-      \range{pages}{28}
+      \field{number}{2}
+      \field{title}{Pathway Realizability in Chemical Networks}
+      \field{volume}{32}
+      \field{year}{2025}
+      \field{pages}{164\bibrangedash 187}
+      \range{pages}{24}
       \verb{doi}
-      \verb 10.1089/cmb.2023.0242
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1089/cmb.2023.0242
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1089/cmb.2023.0242
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1089/cmb.2023.0242
-      \endverb
-    \endentry
-    \entry{shortest_path_hypergraph2}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{3}{}{%
-        {{hash=a8b96b6876780b1eac8cc07bf6b06dd7}{%
-           family={Nakamura},
-           familyi={N\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=3b91db13235ba01e4e445afd11f015b4}{%
-           family={Hachiya},
-           familyi={H\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=203a8196e3302f452ce10659daacc640}{%
-           family={Saito},
-           familyi={S\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {BMC}%
-      }
-      \strng{namehash}{509ba2497769bade9e4e35d3b4f83fc2}
-      \strng{fullhash}{509ba2497769bade9e4e35d3b4f83fc2}
-      \strng{bibnamehash}{509ba2497769bade9e4e35d3b4f83fc2}
-      \strng{authorbibnamehash}{509ba2497769bade9e4e35d3b4f83fc2}
-      \strng{authornamehash}{509ba2497769bade9e4e35d3b4f83fc2}
-      \strng{authorfullhash}{509ba2497769bade9e4e35d3b4f83fc2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Bioinformatics}
-      \field{month}{12}
-      \field{number}{S8}
-      \field{title}{An efficient algorithm for de novo predictions of biochemical pathways between chemical compounds}
-      \field{volume}{13 (Suppl 17)}
-      \field{year}{2012}
-      \verb{doi}
-      \verb 10.1186/1471-2105-13-S17-S8
+      \verb 10.1089/cmb.2024.0521
       \endverb
     \endentry
     \entry{graph_network1}{article}{}
@@ -5702,8 +4489,8 @@
       \strng{authorbibnamehash}{c0680b3a5ac4e2f44ddb4c04025d6fbd}
       \strng{authornamehash}{c0680b3a5ac4e2f44ddb4c04025d6fbd}
       \strng{authorfullhash}{1d6299ffdfbabf844660ff4dbac51361}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{4}
@@ -5715,12 +4502,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1039/C7SC03628K
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1039/C7SC03628K
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1039/C7SC03628K
       \endverb
     \endentry
     \entry{graph_network2}{article}{}
@@ -5752,12 +4533,11 @@
       \strng{authorbibnamehash}{9362fd90b009dc4014fc67b3adf91429}
       \strng{authornamehash}{9362fd90b009dc4014fc67b3adf91429}
       \strng{authorfullhash}{810fac98356ca5f046a1c857eeea584a}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 36321652}
       \field{number}{12}
       \field{title}{ReNeGate: A Reaction Network Graph-Theoretical Tool for Automated Mechanistic Studies in Computational Homogeneous Catalysis}
       \field{volume}{18}
@@ -5766,12 +4546,6 @@
       \range{pages}{13}
       \verb{doi}
       \verb 10.1021/acs.jctc.2c00404
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jctc.2c00404
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jctc.2c00404
       \endverb
     \endentry
     \entry{graph_network3}{article}{}
@@ -5801,8 +4575,8 @@
       \strng{authorbibnamehash}{b4e45433756f0eb2a23053f79bbf0636}
       \strng{authornamehash}{b4e45433756f0eb2a23053f79bbf0636}
       \strng{authorfullhash}{b4e45433756f0eb2a23053f79bbf0636}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{83}
@@ -5814,264 +4588,6 @@
       \range{pages}{4}
       \verb{doi}
       \verb 10.1039/D3CC03890D
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1039/D3CC03890D
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1039/D3CC03890D
-      \endverb
-    \endentry
-    \entry{heuristic_expert}{article}{}
-      \name{author}{4}{}{%
-        {{hash=b194fce0a14db3afc984052eb570f8aa}{%
-           family={Rappoport},
-           familyi={R\bibinitperiod},
-           given={Dmitrij},
-           giveni={D\bibinitperiod}}}%
-        {{hash=6a9252ad9e74953ef9e133c0908d3219}{%
-           family={Galvin},
-           familyi={G\bibinitperiod},
-           given={Cooper\bibnamedelima J.},
-           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=8c437ab10f91eeddf6ce70ac3489d360}{%
-           family={Zubarev},
-           familyi={Z\bibinitperiod},
-           given={Dmitry\bibnamedelima Yu.},
-           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=083dcdd0db2687433b22fabfb2e55c17}{%
-           family={Aspuru-Guzik},
-           familyi={A\bibinithyphendelim G\bibinitperiod},
-           given={Alán},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{710261d174ddc44295f75299002002cc}
-      \strng{fullhash}{6e36d83a19a4640b39a04f15cec12920}
-      \strng{bibnamehash}{710261d174ddc44295f75299002002cc}
-      \strng{authorbibnamehash}{710261d174ddc44295f75299002002cc}
-      \strng{authornamehash}{710261d174ddc44295f75299002002cc}
-      \strng{authorfullhash}{6e36d83a19a4640b39a04f15cec12920}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 26580168}
-      \field{number}{3}
-      \field{title}{Complex Chemical Reaction Networks from Heuristics-Aided Quantum Chemistry}
-      \field{volume}{10}
-      \field{year}{2014}
-      \field{pages}{897\bibrangedash 907}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1021/ct401004r
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/ct401004r
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/ct401004r
-      \endverb
-    \endentry
-    \entry{reported_network}{article}{}
-      \name{author}{9}{}{%
-        {{hash=afe2cea0739936cf24d09ee4e6e9e26f}{%
-           family={Wołos},
-           familyi={W\bibinitperiod},
-           given={Agnieszka},
-           giveni={A\bibinitperiod}}}%
-        {{hash=8c59880d842b9063045b6918ab8f292e}{%
-           family={Roszak},
-           familyi={R\bibinitperiod},
-           given={Rafał},
-           giveni={R\bibinitperiod}}}%
-        {{hash=9c2600bf8822c1082087eda822186dad}{%
-           family={Żądło-Dobrowolska},
-           familyi={Ż\bibinithyphendelim D\bibinitperiod},
-           given={Anna},
-           giveni={A\bibinitperiod}}}%
-        {{hash=8400ce70d4ce0c53ab6b1aa632f2170c}{%
-           family={Beker},
-           familyi={B\bibinitperiod},
-           given={Wiktor},
-           giveni={W\bibinitperiod}}}%
-        {{hash=f648713395d273193a882cfdd5ee899c}{%
-           family={Mikulak-Klucznik},
-           familyi={M\bibinithyphendelim K\bibinitperiod},
-           given={Barbara},
-           giveni={B\bibinitperiod}}}%
-        {{hash=a6c73f09cfbf6a66e91bcae9e8a86d98}{%
-           family={Spólnik},
-           familyi={S\bibinitperiod},
-           given={Grzegorz},
-           giveni={G\bibinitperiod}}}%
-        {{hash=2171ae13a7522cfd45f9190c0aed7ea1}{%
-           family={Dygas},
-           familyi={D\bibinitperiod},
-           given={Mirosław},
-           giveni={M\bibinitperiod}}}%
-        {{hash=bb9c67775bbc20d04783efb2b4bdba43}{%
-           family={Szymkuć},
-           familyi={S\bibinitperiod},
-           given={Sara},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c55b5530b194d13fc559ca93e25f6c60}{%
-           family={Grzybowski},
-           familyi={G\bibinitperiod},
-           given={Bartosz\bibnamedelima A.},
-           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
-      \strng{fullhash}{cde97092f95c04112ddbf9b558e18807}
-      \strng{bibnamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
-      \strng{authorbibnamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
-      \strng{authornamehash}{9d3c5112ab7d9de259bd94cf0c72ee10}
-      \strng{authorfullhash}{cde97092f95c04112ddbf9b558e18807}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Science}
-      \field{number}{6511}
-      \field{title}{Synthetic connectivity, emergence, and self-regeneration in the network of prebiotic chemistry}
-      \field{volume}{369}
-      \field{year}{2020}
-      \field{pages}{eaaw1955}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1126/science.aaw1955
-      \endverb
-      \verb{urlraw}
-      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
-      \endverb
-      \verb{url}
-      \verb https://www.science.org/doi/abs/10.1126/science.aaw1955
-      \endverb
-    \endentry
-    \entry{yaks}{article}{}
-      \name{author}{2}{}{%
-        {{hash=9e01f95483a003ad331a798357e0b473}{%
-           family={Woulfe},
-           familyi={W\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c66a2f1e9241dcabcd937bf95bde3535}{%
-           family={Savoie},
-           familyi={S\bibinitperiod},
-           given={Brett\bibnamedelima M.},
-           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
-      \strng{fullhash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
-      \strng{bibnamehash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
-      \strng{authorbibnamehash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
-      \strng{authornamehash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
-      \strng{authorfullhash}{5547e2b6dbb880ee8ea2ad0b54101eb3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 39883589}
-      \field{number}{3}
-      \field{title}{Chemical Reaction Networks from Scratch with Reaction Prediction and Kinetics-Guided Exploration}
-      \field{volume}{21}
-      \field{year}{2025}
-      \field{pages}{1276\bibrangedash 1291}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1021/acs.jctc.4c01401
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jctc.4c01401
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jctc.4c01401
-      \endverb
-    \endentry
-    \entry{yarp}{article}{}
-      \name{author}{2}{}{%
-        {{hash=746c23a7e527727576c544551cadb0f8}{%
-           family={Zhao},
-           familyi={Z\bibinitperiod},
-           given={Q.},
-           giveni={Q\bibinitperiod}}}%
-        {{hash=a1eeeb51133efd30885a386731735989}{%
-           family={Savoie},
-           familyi={S\bibinitperiod},
-           given={B.M.},
-           giveni={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{d9f266e8064d11515b68dd38c89b1fa7}
-      \strng{fullhash}{d9f266e8064d11515b68dd38c89b1fa7}
-      \strng{bibnamehash}{d9f266e8064d11515b68dd38c89b1fa7}
-      \strng{authorbibnamehash}{d9f266e8064d11515b68dd38c89b1fa7}
-      \strng{authornamehash}{d9f266e8064d11515b68dd38c89b1fa7}
-      \strng{authorfullhash}{d9f266e8064d11515b68dd38c89b1fa7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nat Comput Sci}
-      \field{month}{7}
-      \field{number}{1}
-      \field{title}{Simultaneously improving reaction coverage and computational cost in automated reaction prediction tasks.}
-      \field{year}{2021}
-      \field{pages}{479\bibrangedash 490}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1038/s43588-021-00101-3
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s43588-021-00101-3
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s43588-021-00101-3
-      \endverb
-    \endentry
-    \entry{crn_expand_qm}{article}{}
-      \name{author}{3}{}{%
-        {{hash=8459614be77cbb79b403de332978ec5a}{%
-           family={Dewyer},
-           familyi={D\bibinitperiod},
-           given={Amanda\bibnamedelima L.},
-           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=339544665d30beef04a5f94c6705b0b6}{%
-           family={Argüelles},
-           familyi={A\bibinitperiod},
-           given={Alonso\bibnamedelima J.},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=310a6b2a7f536a44d61d496659791346}{%
-           family={Zimmerman},
-           familyi={Z\bibinitperiod},
-           given={Paul\bibnamedelima M.},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
-      \strng{fullhash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
-      \strng{bibnamehash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
-      \strng{authorbibnamehash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
-      \strng{authornamehash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
-      \strng{authorfullhash}{a1d9f8c892ec9ae94b7720f0a9a61a7d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{WIREs Computational Molecular Science}
-      \field{number}{2}
-      \field{title}{Methods for exploring reaction space in molecular systems}
-      \field{volume}{8}
-      \field{year}{2018}
-      \field{pages}{e1354}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1002/wcms.1354
-      \endverb
-      \verb{urlraw}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1354
-      \endverb
-      \verb{url}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1354
       \endverb
     \endentry
     \entry{iminoacetaldehyde2}{article}{}
@@ -6117,104 +4633,6 @@
       \verb{doi}
       \verb 10.1051/0004-6361/202348196
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/0004-6361/202348196
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/0004-6361/202348196
-      \endverb
-    \endentry
-    \entry{empi1}{article}{}
-      \name{author}{3}{}{%
-        {{hash=d305cb38bfff69a55e996f539f598d4a}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Yutai},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=e51bd353d330d0203232b51fcbc2b64a}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Chao},
-           giveni={C\bibinitperiod}}}%
-        {{hash=02758fb4795ad024d88a6249b75a938a}{%
-           family={Lan},
-           familyi={L\bibinitperiod},
-           given={Zhenggang},
-           giveni={Z\bibinitperiod}}}%
-      }
-      \strng{namehash}{befdb26d56bc5172ba2c2673e17a3f96}
-      \strng{fullhash}{befdb26d56bc5172ba2c2673e17a3f96}
-      \strng{bibnamehash}{befdb26d56bc5172ba2c2673e17a3f96}
-      \strng{authorbibnamehash}{befdb26d56bc5172ba2c2673e17a3f96}
-      \strng{authornamehash}{befdb26d56bc5172ba2c2673e17a3f96}
-      \strng{authorfullhash}{befdb26d56bc5172ba2c2673e17a3f96}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Chemical Theory and Computation}
-      \field{note}{PMID: 38031422}
-      \field{number}{23}
-      \field{title}{Automated Exploration of Reaction Networks and Mechanisms Based on Metadynamics Nanoreactor Simulations}
-      \field{volume}{19}
-      \field{year}{2023}
-      \field{pages}{8718\bibrangedash 8731}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1021/acs.jctc.3c00752
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jctc.3c00752
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jctc.3c00752
-      \endverb
-    \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{7}
-  \datalist[entry]{none/global//global/global}
-    \entry{implemented_CRN}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d287902f13c77b2531e8d097ad228875}{%
-           family={Kua},
-           familyi={K\bibinitperiod},
-           given={Jeremy},
-           giveni={J\bibinitperiod}}}%
-        {{hash=87964596402142c87fcdcf5f8b08ff23}{%
-           family={Thrush},
-           familyi={T\bibinitperiod},
-           given={Kyra\bibnamedelima L.},
-           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{640299e8ad13a7cdee596395b971b3d3}
-      \strng{fullhash}{640299e8ad13a7cdee596395b971b3d3}
-      \strng{bibnamehash}{640299e8ad13a7cdee596395b971b3d3}
-      \strng{authorbibnamehash}{640299e8ad13a7cdee596395b971b3d3}
-      \strng{authornamehash}{640299e8ad13a7cdee596395b971b3d3}
-      \strng{authorfullhash}{640299e8ad13a7cdee596395b971b3d3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Physical Chemistry B}
-      \field{note}{PMID: 27016454}
-      \field{number}{33}
-      \field{title}{HCN, Formamidic Acid, and Formamide in Aqueous Solution: A Free-Energy Map}
-      \field{volume}{120}
-      \field{year}{2016}
-      \field{pages}{8175\bibrangedash 8185}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1021/acs.jpcb.6b01690
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jpcb.6b01690
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jpcb.6b01690
-      \endverb
     \endentry
     \entry{MeCN_precursor}{article}{}
       \name{author}{5}{}{%
@@ -6253,12 +4671,11 @@
       \strng{authorbibnamehash}{b69c34cbf83e9e6125c8411c9c216762}
       \strng{authornamehash}{b69c34cbf83e9e6125c8411c9c216762}
       \strng{authorfullhash}{4d5ab72bbcb7719bab7ce9a66575701f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}
-      \field{month}{8}
       \field{number}{1}
       \field{title}{Hydroxyacetonitrile (HOCH2CN) formation in astrophysical conditions. Competition with the aminomethanol, a glycine precursor}
       \field{volume}{756}
@@ -6267,81 +4684,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1088/0004-637X/756/1/11
-      \endverb
-      \verb{urlraw}
-      \verb https://dx.doi.org/10.1088/0004-637X/756/1/11
-      \endverb
-      \verb{url}
-      \verb https://dx.doi.org/10.1088/0004-637X/756/1/11
-      \endverb
-    \endentry
-    \entry{mod_web}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=5b003eec61572048178f55ff7d538bc8}{%
-           family={Andersen},
-           familyi={A\bibinitperiod},
-           given={Jakob\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{fullhash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{bibnamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authorbibnamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authornamehash}{5b003eec61572048178f55ff7d538bc8}
-      \strng{authorfullhash}{5b003eec61572048178f55ff7d538bc8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{http://mod.imada.sdu.dk}}
-      \field{title}{{MØD}}
-      \field{year}{2024}
-    \endentry
-    \entry{crn_expand_qm3}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{3}{}{%
-        {{hash=a9e1eebb2ff21dddd248c819ff400a79}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={LP.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=35637d3d2c5c21febb28361a6cb8ba99}{%
-           family={Titov},
-           familyi={T\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d20cb129e779bd9bc8bcd06d2b714a50}{%
-           family={McGibbon},
-           familyi={M\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{7fdb151bc46fa1a3edfa4c5df45f573a}
-      \strng{fullhash}{7fdb151bc46fa1a3edfa4c5df45f573a}
-      \strng{bibnamehash}{7fdb151bc46fa1a3edfa4c5df45f573a}
-      \strng{authorbibnamehash}{7fdb151bc46fa1a3edfa4c5df45f573a}
-      \strng{authornamehash}{7fdb151bc46fa1a3edfa4c5df45f573a}
-      \strng{authorfullhash}{7fdb151bc46fa1a3edfa4c5df45f573a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature Chem}
-      \field{month}{11}
-      \field{number}{6}
-      \field{title}{Discovering chemistry with an ab initio nanoreactor.}
-      \field{year}{2014}
-      \field{pages}{1044\bibrangedash 1048}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1038/nchem.2099
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/nchem.2099
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/nchem.2099
       \endverb
     \endentry
     \entry{glycine_pathway}{article}{}
@@ -6373,12 +4715,11 @@
       \strng{authorbibnamehash}{ad22031c7798b22176c52022b9d08b5a}
       \strng{authornamehash}{ad22031c7798b22176c52022b9d08b5a}
       \strng{authorfullhash}{84374f5c77f8078472ce310698939a8f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physical Chemistry Letters}
-      \field{note}{PMID: 39159425}
       \field{number}{34}
       \field{title}{A New Route to the Prebiotic Synthesis of Glycine via Ab Initio-Based Machine Learning Calculations}
       \field{volume}{15}
@@ -6388,21 +4729,7 @@
       \verb{doi}
       \verb 10.1021/acs.jpclett.4c01954
       \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1021/acs.jpclett.4c01954
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/acs.jpclett.4c01954
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/acs.jpclett.4c01954
-      \endverb
     \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{8}
-  \datalist[entry]{none/global//global/global}
     \entry{rdkit_embedMolecule}{misc}{}
       \name{author}{1}{}{%
         {{hash=995f2f8d6a943adeb5dd32bb8a524fae}{%
@@ -6421,77 +4748,6 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.rdkit.org/docs/source/rdkit.Chem.rdDistGeom.html\#rdkit.Chem.rdDistGeom.EmbedMolecule}}
       \field{title}{{embedMolecule() function in RDKit}}
-    \endentry
-    \entry{grimme_xtb}{article}{}
-      \name{author}{8}{}{%
-        {{hash=ec75a624132a0bda972dc3585a639c9c}{%
-           family={Bannwarth},
-           familyi={B\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=e6ab9f7bed7e585a281231294699f534}{%
-           family={Caldeweyher},
-           familyi={C\bibinitperiod},
-           given={Eike},
-           giveni={E\bibinitperiod}}}%
-        {{hash=ead1f648a4aeec4688036c900978feb9}{%
-           family={Ehlert},
-           familyi={E\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=0012541dc48332d491b75eddc2de50ec}{%
-           family={Hansen},
-           familyi={H\bibinitperiod},
-           given={Andreas},
-           giveni={A\bibinitperiod}}}%
-        {{hash=e0dcf8cd232c8e15bc5cf6b6c3401ebd}{%
-           family={Pracht},
-           familyi={P\bibinitperiod},
-           given={Philipp},
-           giveni={P\bibinitperiod}}}%
-        {{hash=b1aa2b5319ae4a2e5fc9a84d8d83b9b0}{%
-           family={Seibert},
-           familyi={S\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod}}}%
-        {{hash=d0ba004fb45e3b7bcf7245f586572418}{%
-           family={Spicher},
-           familyi={S\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=3a2585af369dbd4150db746c63177b0c}{%
-           family={Grimme},
-           familyi={G\bibinitperiod},
-           given={Stefan},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{cd4754e13476c7b6d3d23ff40703b8e0}
-      \strng{fullhash}{5555f82330d353f6d9ec3adcdbf1c074}
-      \strng{bibnamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
-      \strng{authorbibnamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
-      \strng{authornamehash}{cd4754e13476c7b6d3d23ff40703b8e0}
-      \strng{authorfullhash}{5555f82330d353f6d9ec3adcdbf1c074}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{WIREs Computational Molecular Science}
-      \field{number}{2}
-      \field{title}{Extended tight-binding quantum chemistry methods}
-      \field{volume}{11}
-      \field{year}{2021}
-      \field{pages}{e1493}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb https://doi.org/10.1002/wcms.1493
-      \endverb
-      \verb{urlraw}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1493
-      \endverb
-      \verb{url}
-      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1493
-      \endverb
-      \keyw{density functional tight-binding theory,multilevel quantum chemistry,semiempirical molecular orbital theory}
     \endentry
     \entry{ase-paper}{article}{}
       \name{author}{34}{}{%
@@ -6672,8 +4928,8 @@
       \strng{authorbibnamehash}{837cec237c177695c19a32c5cff47e50}
       \strng{authornamehash}{837cec237c177695c19a32c5cff47e50}
       \strng{authorfullhash}{b1b7128f849a3721430ed0f78fe69520}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Physics: Condensed Matter}
@@ -6683,11 +4939,8 @@
       \field{year}{2017}
       \field{pages}{273002}
       \range{pages}{1}
-      \verb{urlraw}
-      \verb http://stacks.iop.org/0953-8984/29/i=27/a=273002
-      \endverb
-      \verb{url}
-      \verb http://stacks.iop.org/0953-8984/29/i=27/a=273002
+      \verb{doi}
+      \verb 10.1088/1361-648X/aa680e
       \endverb
     \endentry
     \entry{neuralneb}{article}{}
@@ -6727,12 +4980,11 @@
       \strng{authorbibnamehash}{289f3cf08d5cc423bc200b89676d752b}
       \strng{authornamehash}{289f3cf08d5cc423bc200b89676d752b}
       \strng{authorfullhash}{ede1b35df15a17e702aaed2c7001875f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Machine Learning: Science and Technology}
-      \field{month}{12}
       \field{number}{4}
       \field{title}{NeuralNEB—neural networks can find reaction paths fast}
       \field{volume}{3}
@@ -6741,12 +4993,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1088/2632-2153/aca23e
-      \endverb
-      \verb{urlraw}
-      \verb https://dx.doi.org/10.1088/2632-2153/aca23e
-      \endverb
-      \verb{url}
-      \verb https://dx.doi.org/10.1088/2632-2153/aca23e
       \endverb
     \endentry
   \enddatalist

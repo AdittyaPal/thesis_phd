@@ -1,7 +1,5 @@
-\begin{refsection}
-
 %************************************************
-\chapter{A Case Study}
+\chapter{A Case Study: Foramide Chemistry}
 \label{ch:casestudy1} %
 %************************************************
 
@@ -13,12 +11,13 @@ In this chapter, we demonstrate the methods from Chapter~\ref{ch:thermodynamic_m
 
 The reaction network was generated using M{\O}D by the expansion of the molecular space with the input molecules HCN, NH$_3$, and H$_2$O, by the recursive application of the graph transformation rules listed in Figure~\ref{fig: graphTransformationRules}.
 The individual molecules in the generated network, such as HCN, NH$_3$, H$_2$O, formamide and so on, are represented as undirected labeled graphs.
-\graffito{The atoms represented as vertices, labeled by the symbol of the element it represents, such as $C$ for a carbon atom, $H$ for a hydrogen atom, $N$ for a nitrogen atom, $O$ for an oxygen atom and so on. The bonds are represented as edges, labeled by bond types such as a single, double, triple or aromatic bond. The default bondtype is single.}
+\footnote{The atoms represented as vertices, labeled by the symbol of the element it represents, such as $C$ for a carbon atom, $H$ for a hydrogen atom, $N$ for a nitrogen atom, $O$ for an oxygen atom and so on. The bonds are represented as edges, labeled by bond types such as a single, double, triple or aromatic bond. The default bondtype is single.}
 Stereo-information is not represented. Therefore, both the stereoisomers of the molecule shown in Figure~\ref{fig: molGraphs} are represented by the same graph. Hence, they cannot be distinguished in our modeling despite them being two different chemical entities.
 Molecular graphs also constitute the vertices of the hypergraph representing the reaction network. 
 
 \begin{figure}[b]
-    \includegraphics[scale=1.6]{graphics/chapter3/molGraphs.pdf}
+	\centering
+    \includegraphics[scale=1.5]{graphics/chapter3/molGraphs.pdf}
     \vspace{0.2cm}
     \caption{Two stereoisomers of a molecule (left) and the corresponding molecular graph (right).}
     \label{fig: molGraphs}
@@ -29,38 +28,38 @@ Molecular graphs also constitute the vertices of the hypergraph representing the
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[scale=1.5]{graphics/chapter3/rule0.pdf}
-        \vspace{0.5cm}
+        \vspace{0.2cm}
         \caption{Addition to a cyanide: in this rule \texttt{x} $\in$ \{N, O\}, representing the addition of an amide nitrogen or hydroxyl oxygen to the nitrile bond respectively.}
-        \label{fig: rule0}
+        \label{fig:rule0}
     \end{subfigure}
     \\
-    \vspace{1cm}
+    \vspace{0.5cm}
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[scale=1.5]{graphics/chapter3/rule1.pdf}
-        \vspace{0.5cm}
+        \vspace{0.2cm}
         \caption{Addition to an imine or carbonyl: in this rule \texttt{x}, \texttt{y} $\in$ \{N, O\}, representing the addition of an amide nitrogen or hydroxyl oxygen to an amide or hydroxyl bond respectively. This single rule encapsulates $2^2 = 4$ individual rules depending on the instantiation of \texttt{x} and \texttt{y}.}
-        \label{fig: rule1}
+        \label{fig:rule1}
     \end{subfigure}
     \\
-    \vspace{1cm}
+    \vspace{0.5cm}
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[scale=1.5]{graphics/chapter3/rule2.pdf}
-        \vspace{0.5cm}
+        \vspace{0.2cm}
         \caption{1,3 hydrogen shift: in this rule \texttt{x}, \texttt{y} $\in$ \{C, N, O\}, representing the shift of a double bond as in tautomerism. When \texttt{x}$\equiv$O and \texttt{y}$\equiv$O it is keto-enol tautomerism, \texttt{x}$\equiv$N and \texttt{y}$\equiv$N is imine-enamine tautomerism, \texttt{x}$\equiv$N and \texttt{y}$\equiv$O is amine-iminol tautomerism and \texttt{x}$\equiv$C and \texttt{y}$\equiv$C is an allylic shift of the double bond. This single rule encapsulates $3\times 3 = 9$ individual rules depending on the instantiation of \texttt{x} and \texttt{y}.}
-        \label{fig: rule2}
+        \label{fig:rule2}
     \end{subfigure}%
     \\
-    \vspace{1cm}
+    \vspace{0.5cm}
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[scale=1.5]{graphics/chapter3/rule3.pdf}
-        \vspace{0.5cm}
+        \vspace{0.2cm}
         \caption{Condensation: in this rule \texttt{x} $\in$ \{C, N, O\}, \texttt{y},\texttt{z} $\in$ \{N, O\} representation of the addition of a double bond (of an enol, enamine) to a imine or a carbonyl group. This single rule encapsulates $3\times 2\times 2 = 12$ individual rules depending on the instantiation of \texttt{x}, \texttt{y} and \texttt{z}.}
-        \label{fig: rule3}
+        \label{fig:rule3}
     \end{subfigure}%
-    \vspace{1cm}
+    \vspace{0.5cm}
     \caption{The graph transformation rules used to expand the molecular space and generate the network.}
     \label{fig: graphTransformationRules}
 \end{figure}
@@ -135,7 +134,7 @@ The generated geometry of the molecule was refined using 1000 iterations of conj
 
 \begin{figure}[!t]
     \centering
-    \includegraphics[width=1.25\textwidth]{graphics/chapter3/thermOracle.pdf}
+    \includegraphics[width=1.1\textwidth]{graphics/chapter3/thermOracle.pdf}
     \vspace{0.5cm}
     \caption{The sequence of operations that was used to assign chemical potentials to the molecules, represented by vertices, in the reaction network, which is referred to thermodynamic oracle in the text.}
     \label{fig: thermOracle}
@@ -163,7 +162,12 @@ The lower limit of the reactants is imposed by practical constraints because the
 
 For this work, we have chosen the limits in the concentration variables as $\left[x^K_v\right]_{\text{min}} = -3$ and $\left[x^K_v\right]_{\text{max}} = 1$. These correspond to physical values of the concentrations between $10^{-3}$ mol lit$^{-1}$ and $10^{1}$ mol lit$^{-1}$. While minimolar concentrations can be achieved under laboratory conditions using standard fludics procedures, a concentration of tens of molars is often encountered for pure liquids (the concentration of pure water is $55.56$ mol lit$^{-1}$). While we use the same range for the log concentration values for all the molecules in the reaction network, the user might choose to assign different ranges for different molecules to make the model more realistic.
 
-\newpage
+\section{Formamide Chemistry}
+
+The primary objective was to study the energetics of condensation pathways of the smaller seed molecules (HCN, NH$_3$, and H$_2$O) into larger oligomers, which might have implication for the prebiotic synthesis of amino acids and compare it with the pathways reported in \cite{implemented_CRN}. 
+Therefore, the formulated MILP model was set up to query the pathways with HCN, NH$_3$, and H$_2$O as the input molecules and the trimer of formamide (numbered $17$ in \cite{implemented_CRN}) as the target molecule as shown in Figure~\ref{fig: pathwayQuery}.
+The formulated MILP to search for pathways with the given input and output vertices had $336$ variables.
+
 \begin{figure}[!t]
     \centering
     \includegraphics[width=\textwidth]{graphics/chapter3/queryPathway.pdf}
@@ -172,69 +176,119 @@ For this work, we have chosen the limits in the concentration variables as $\lef
     \label{fig: pathwayQuery}
 \end{figure}
 
-\section{Formamide Chemistry}
-
-The primary objective was to study the energetics of condensation pathways of the smaller seed molecules (HCN, NH$_3$, and H$_2$O) into larger oligomers, which might have implication for the prebiotic synthesis of amino acids and compare it with the pathways reported in \cite{implemented_CRN}. 
-Therefore, the formulated MILP model was set up to query the pathways with HCN, NH$_3$, and H$_2$O as the input molecules and the trimer of formamide (numbered $17$ in \cite{implemented_CRN}) as the target molecule as shown in Figure~\ref{fig: pathwayQuery}.
-The formulated MILP to search for pathways with the given input and output vertices had $336$ variables.
-
-
 As a sanity check, the enumerated list of flow solutions returned by the solver included the pathway suggested in \cite{implemented_CRN}, thought not as the optimal solution when scored according to Equation~\eqref{obj_func_impl}.
 The sum of free energies of the transitions in this pathway is $-178.412$ kJ mol$^{-1}$, while the sum of free energies weighted by the number of times it is used in the pathway yields $-405.332$ kJ mol$^{-1}$.
 This pathway uses four unique transitions (hyperedges) as depicted in Figure~\ref{fig: conventional_path}.
 Two of them are used multiple times, which makes seven transitions in total (sum of flows assigned to the hyperedges).
-The pathway requires an inflow of three molecules of $v_0$ (hydrogen cyanide) and three molecules of $v_1$ (water) to produce the target molecule $v_5$. The chemical potential $x_v^{\Delta G}$ and the log concentration $x_v^K$ values assigned to each molecule by the MILP solver is listed in Table~\ref{tab:convSoln_molecules}, along with their molecular graphs. 
-
-\begin{figure}[t]
-    \centering
-    \vspace{0.5cm}
-    \includegraphics[width=\textwidth]{graphics/chapter3/pathway1.pdf}
-    \vspace{1.0cm}
-    \caption{The pathway reported in \cite{implemented_CRN} with the sum of free energies $-178.412$ kJ mol$^{-1}$. This pathway requires four hyperedges (denoted by the squares, with the assigned hyperflow the integer in the square). The vertices in the pathway correspond to molecules, whose structures are listed below the pathway along with the label of the vertex.}
-    \label{fig: conventional_path}
-\end{figure}
+The pathway requires an inflow of three molecules of $v_0$ (hydrogen cyanide) and three molecules of $v_1$ (water) to produce the target molecule $v_5$. The chemical potential $x_v^{\Delta G}$ and the log concentration $x_v^K$ values assigned to each molecule by the MILP solver is listed in Table~\ref{tab:convSoln_molecules}, along with their molecular graphs. The free energy difference of the hyperedges used in the pathway along with the set of vertices which is the inset of the hyperedge (or the reactants in the corresponding transition) is listed under in($v$), while the set of vertices which is the outset of the hyperedge (or the products in the corresponding transition) is listed under out($v$) in Table~\ref{tab:convSoln_reactions}.
 \clearpage
 
-\begin{table}[!h]
-	\centering
-	\vspace{0.5cm}
-	\begin{tabular}{cccrr}
-        \toprule
-        vertex & inFlow & outFlow & $x_v^{\Delta G}$ & $x_v^K$ \\
-        \midrule
-        $v_0$ & $3$ & $0$ & $-5.507$ &  $1.000$ \\
-        $v_1$ & $3$ & $0$ & $-5.068$ & $-6.000$ \\
-        $v_2$ & $0$ & $0$ & $-10.610$ & $-6.000$ \\
-        $v_3$ & $0$ & $0$ & $-10.625$ & $0.195$ \\
-        $v_4$ & $0$ & $0$ & $-21.249$ & $-1.190$ \\   
-        $v_5$ & $0$ & $1$ & $-31.869$ & $-6.000$ \\
-        \bottomrule
-    \end{tabular}
+\begin{figure}[!t]
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=1.0]{graphics/chapter3/pathway1.pdf}
+        \vspace{0.2cm}
+        \caption{The pathway reported in \cite{implemented_CRN} with four hyperedges (with the assigned hyperflow the integer in the square) and the molecular graphs for the respective vertices.}
+    \label{fig: conventional_path}
+    \end{subfigure}
+    \vspace{0.5cm}\\
+    \begin{subfigure}{\textwidth}
+        \centering
+        \begin{footnotesize}
+		\begin{tabular}{cccrr}
+		    \\\toprule
+		    vertex & inFlow & outFlow & $x_v^{\Delta G}$ & $x_v^K$ \\
+		    \midrule
+		    $v_0$ & $3$ & $0$ & $-5.507$ &  $1.000$ \\
+		    $v_1$ & $3$ & $0$ & $-5.068$ & $-6.000$ \\
+		    $v_2$ & $0$ & $0$ & $-10.610$ & $-6.000$ \\
+		    $v_3$ & $0$ & $0$ & $-10.625$ & $0.195$ \\
+		    $v_4$ & $0$ & $0$ & $-21.249$ & $-1.190$ \\   
+		    $v_5$ & $0$ & $1$ & $-31.869$ & $-6.000$ \\
+		    \bottomrule\\
+		\end{tabular}
+		\end{footnotesize}
+		\caption{The inflow for the source molecules and the outflow of the target molecule, along with assignment of the chemical potentials, $x_v^{\Delta G}$, and log concentration, $x_v^K$, of the molecules in the pathway in Figure~\ref{fig: conventional_path}.}
+		\label{tab:convSoln_molecules}
+    \end{subfigure}
+    \vspace{0.5cm}\\
+    \begin{subfigure}{\textwidth}
+        \centering
+        \begin{footnotesize}
+		\begin{tabular}{ccccr}
+		    \\\toprule
+		    hyperedge & $f_e$ & in($v$) & out($v$) & $\overline{x}^{\Delta G}_e$ \\
+		    \midrule
+		    $e_1$ & $3$ & $v_0, v_1$ & $v_2$ & $-94.141$ \\
+		    $e_2$ & $2$ & $v_2$ & $v_3$ & $-38.629$ \\
+		    $e_3$ & $1$ & $v_2, v_3$ & $v_4$ & $-0.006$ \\
+		    $e_4$ & $1$ & $v_3, v_4$ & $v_5$ & $-45.645$ \\
+		    \midrule
+		    & & $\sum_e \overline{x}^{\Delta G}_e$ & $=$ & $-178.412$ \\
+		    & & $\sum_e f_e\cdot \overline{x}^{\Delta G}_e$ & $=$ & $-405.332$ \\
+		    \bottomrule\\
+		\end{tabular}
+		\end{footnotesize}
+		\caption{The MILP solution assigns hyperflows $f_e$ to the hyperedges in the pathway from Figure~\ref{fig: conventional_path}.}
+		\label{tab:convSoln_reactions}
+    \end{subfigure}\\
     \vspace{0.5cm}
-    \caption{The MILP solver assigns the inflow for the allowed source molecules to generate an outflow of the queried target molecule, along with assigning the chemical potentials, $x_v^{\Delta G}$, and log concentration, $x_v^K$, values of the molecules in the pathway shown in Figure~\ref{fig: conventional_path}. The $x_v^{\Delta G}$ values are in atomic units (in Hartrees as returned by xTB) while the $x_v^K$ values are the dimensionless equivalent of $\log_{10} \frac{[\text{conc.}]}{1 \text{ mol lit}^{-1}}$, where conc. is the concentration of the molecule in mol lit$^{-1}$.}
-    \label{tab:convSoln_molecules}
-    \vspace{1cm}
-\end{table}
+    \caption{Details of the pathway reported in \cite{implemented_CRN}. The $x_v^{\Delta G}$ values are in atomic units (Hartrees), the $x_v^K$ values are the dimensionless equivalent of $\log_{10} \frac{[\text{conc.}]}{1 \text{ mol lit}^{-1}}$, where conc. is the concentration of the molecule in mol lit$^{-1}$ while $\overline{x}^{\Delta G}_e$ are in kJ mol$^{-1}$.}
+\end{figure}
 
-\begin{table}[!h]
-	\centering
-    \begin{tabular}{ccccr}
-        \toprule
-        hyperedge & $f_e$ & in($v$) & out($v$) & $\overline{x}^{\Delta G}_e$ \\
-        \midrule
-        $e_1$ & $3$ & $v_0, v_1$ & $v_2$ & $-94.141$ \\
-        $e_2$ & $2$ & $v_2$ & $v_3$ & $-38.629$ \\
-        $e_3$ & $1$ & $v_2, v_3$ & $v_4$ & $-0.006$ \\
-        $e_4$ & $1$ & $v_3, v_4$ & $v_5$ & $-45.645$ \\
-        \midrule
-        & & $\sum_e \overline{x}^{\Delta G}_e$ & $=$ & $-178.412$ \\
-        & & $\sum_e f_e\cdot \overline{x}^{\Delta G}_e$ & $=$ & $-405.332$ \\
-        \bottomrule
-    \end{tabular}
+
+\begin{figure}[!t]
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=1.0]{graphics/chapter3/pathway2.pdf}
+        \vspace{0.2cm}
+        \caption{The best scoring pathway with four hyperedges and the molecular graphs for the respective vertices.}
+    \label{fig: shortest_path}
+    \end{subfigure}
+    \vspace{0.5cm}\\
+    \begin{subfigure}{\textwidth}
+        \centering
+        \begin{footnotesize}
+		\begin{tabular}{cccrr}
+		    \\\toprule
+		    vertex & inFlow & outFlow & $x_v^{\Delta G}$ & $x_v^K$ \\
+		    \midrule
+		    $v_0$ & $3$ & $0$ & $-5.507$ &  $1.000$ \\
+		    $v_1$ & $3$ & $0$ & $-5.068$ & $-6.000$ \\
+		    $v_2$ & $0$ & $0$ & $-10.610$ & $1.000$ \\
+		    $v_3$ & $0$ & $0$ & $-16.159$ & $-6.000$ \\
+		    $v_4$ & $0$ & $0$ & $-21.240$ & $1.000$ \\        
+		    $v_5$ & $0$ & $1$ & $-31.869$ & $-6.000$ \\
+		    \bottomrule\\
+		\end{tabular}
+		\end{footnotesize}
+    	\caption{The inflow for the source molecules and the outflow of the target molecule, along with assignment of the chemical potentials, $x_v^{\Delta G}$, and log concentration, $x_v^K$, of the molecules in the pathway in Figure~\ref{fig: shortest_path}.}
+		\label{tab:shortestSoln_molecules}
+    \end{subfigure}
+    \vspace{0.5cm}\\
+    \begin{subfigure}{\textwidth}
+        \centering
+        \begin{footnotesize}
+		\begin{tabular}{ccccr}
+		    \\\toprule
+		    hyperedge & $f_e$ & in($v$) & out($v$) & $\overline{x}^{\Delta G}_e$ \\
+		    \midrule
+		    $e_1$ & $2$ & $v_0, v_1$ & $v_2$ & $-94.141$ \\
+		    $e_2$ & $1$ & $v_0, v_2$ & $v_3$ & $-129.554$ \\
+		    $e_3$ & $1$ & $v_1, v_3$ & $v_4$ & $-38.298$ \\
+		    $e_4$ & $1$ & $v_2, v_4$ & $v_5$ & $-51.185$ \\
+		    \midrule
+		    & & $\sum_e \overline{x}^{\Delta G}_e$ & $=$ & $-313.178$ \\
+		    & & $\sum_e f_e\cdot \overline{x}^{\Delta G}_e$ & $=$ & $-407.319$ \\
+		    \bottomrule\\
+		\end{tabular}
+		\end{footnotesize}
+		\caption{The MILP solution assigns hyperflows $f_e$ to the hyperedges in the pathway from Figure~\ref{fig: shortest_path}.}
+		\label{tab:shortestSoln_reactions}
+    \end{subfigure}\\
     \vspace{0.5cm}
-    \caption{The MILP solution assigned hyperflows $f_e$ to the hyperedges in the pathway, indicating the number of times they are used to effect the pathway shown in Figure~\ref{fig: conventional_path}. The set of vertices which is the inset of the hyperedge (or the reactants in the corresponding transition) is listed under in($v$), while the set of vertices which is the outset of the hyperedge (or the products in the corresponding transition) is listed under out($v$). $\overline{x}^{\Delta G}_e$ gives the free energy difference assigned to the hyperedge in kJ mol$^{-1}$.}
-    \label{tab:convSoln_reactions}
-\end{table}
+    \caption{Details of the best scoring pathway on applying the model proposed in Chapter~\ref{ch:thermodynamic_model} along with the objective function (8). The units are the same as in Table~\ref{tab:convSoln_reactions}.}
+\end{figure}
 
 While thermodynamics might provide an insight to the equilibrium flows in the reaction network,
 it does not describe the path to that equilibrium.
@@ -247,65 +301,28 @@ choosing hyperedges with larger free energy differences would increase the value
 Using transition with larger free energy differences to `cover' the net difference in the chemical potential,
 lead to fewer transitions being used in the pathway. 
 
-\begin{figure}[!h]
-    \centering
-    \vspace{0.5cm}
-    \includegraphics[width=\textwidth]{graphics/chapter3/pathway2.pdf}
-    \vspace{1.0cm}
-    \caption{The pathway scoring the best when the model proposed in Chapter~\ref{ch:thermodynamic_model} was applied to the generated reaction network along with the objective function (8) with the simple sum of free energies $-313.718$ kJ mol$^{-1}$. This pathway requires four hyperedges (denoted by the squares, with the assigned hyperflow the integer in the square). The vertices in the pathway correspond to molecules, whose structures are listed below the pathway along with the label of the vertex.}
-    \label{fig: shortest_path}
-\end{figure}
-\newpage
-
-\begin{table}[!h]
-	\centering
-	\begin{tabular}{cccrr}
-        \toprule
-        vertex & inFlow & outFlow & $x_v^{\Delta G}$ & $x_v^K$ \\
-        \midrule
-        $v_0$ & $3$ & $0$ & $-5.507$ &  $1.000$ \\
-        $v_1$ & $3$ & $0$ & $-5.068$ & $-6.000$ \\
-        $v_2$ & $0$ & $0$ & $-10.610$ & $1.000$ \\
-        $v_3$ & $0$ & $0$ & $-16.159$ & $-6.000$ \\
-        $v_4$ & $0$ & $0$ & $-21.240$ & $1.000$ \\        
-        $v_5$ & $0$ & $1$ & $-31.869$ & $-6.000$ \\
-        \bottomrule
-    \end{tabular}
-    \vspace{0.2cm}
-    \caption{The MILP solver assigns the inflow for the allowed source molecules to generate an outflow of the queried target molecule, along with assigning the chemical potentials, $x_v^{\Delta G}$, and log concentration, $x_v^K$, values of the molecules in the pathway shown in Figure~\ref{fig: shortest_path}. The units are the same as in Table~\ref{tab:convSoln_reactions}.}
-    \label{tab:convSoln_molecules}
-\end{table}
-
-\begin{table}[!h]
-	\centering
-    \begin{tabular}{ccccr}
-        \toprule
-        hyperedge & $f_e$ & in($v$) & out($v$) & $\overline{x}^{\Delta G}_e$ \\
-        \midrule
-        $e_1$ & $2$ & $v_0, v_1$ & $v_2$ & $-94.141$ \\
-        $e_2$ & $1$ & $v_0, v_2$ & $v_3$ & $-129.554$ \\
-        $e_3$ & $1$ & $v_1, v_3$ & $v_4$ & $-38.298$ \\
-        $e_4$ & $1$ & $v_2, v_4$ & $v_5$ & $-51.185$ \\
-        \midrule
-        & & $\sum_e \overline{x}^{\Delta G}_e$ & $=$ & $-313.178$ \\
-        & & $\sum_e f_e\cdot \overline{x}^{\Delta G}_e$ & $=$ & $-407.319$ \\
-        \bottomrule
-    \end{tabular}
-    \vspace{0.2cm}
-    \caption{The MILP solution assigned hyperflows $f_e$ to the hyperedges in the pathway, indicating the number of times they are used to effect the pathway shown  in Figure~\ref{fig: shortest_path}. The set of vertices which is the inset of the hyperedge (or the reactants in the corresponding transition) is listed under in($v$), while the set of vertices which is the outset of the hyperedge (or the products in the corresponding transition) is listed under out($v$). $\overline{x}^{\Delta G}_e$ gives the free energy difference assigned to the hyperedge in kJ mol$^{-1}$.}
-    \label{tab:shortestSoln_reactions}
-\end{table}
-
 The main source of difference in the objective function value in the two pathways is the chemical potential of the molecule $v_3$ from Figure~\ref{fig: shortest_path} that is not present in the conventional pathway.
-While the conventional pathway in \cite{implemented_CRN} is more symmetric and appealing because of the stepwise nucleophilic attack on the carbonyl $C$ atom by the amine $N$ atom of an adjacent $v_3$ molecule, which is repeated twice to generate $v_5$ as illutrated in Figure~\ref{fig: symAdd}, \cite{implemented_CRN} also notes that these condensation reactions have a positive Gibbs free energy.
+While the conventional pathway in~\cite{implemented_CRN} is more symmetric and appealing because of the stepwise nucleophilic attack on the carbonyl $C$ atom by the amine $N$ atom of an adjacent $v_3$ molecule, which is repeated twice to generate $v_5$ as illutrated in Figure~\ref{fig: symAdd}, \cite{implemented_CRN} also notes that these condensation reactions have a positive Gibbs free energy.
 
-\begin{figure}[t]
-    \centering
+\begin{figure}[!t]
+	\begin{subfigure}{\textwidth}
+        \centering
+        \vspace{0.2cm}
+        \includegraphics[scale=1.0]{graphics/chapter3/symAdd.pdf}
+        \vspace{0.2cm}
+    	\caption{Stepwise trimerization of formamide by iterative addition of the monomer as hypothesised in the conventional pathway shown in Figure~\ref{fig: conventional_path}.}
+    	\label{fig: symAdd}
+    \end{subfigure}\\
     \vspace{0.5cm}
-    \includegraphics[width=\textwidth]{graphics/chapter3/symAdd.pdf}
-    \vspace{0.5cm}
-    \caption{Stepwise trimerization of formamide by iterative addition of the monomer as hypothesised in the conventional pathway shown in Figure~\ref{fig: conventional_path}.}
-    \label{fig: symAdd}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \vspace{0.2cm}
+        \includegraphics[scale=1.0]{graphics/chapter3/stepAdd.pdf}
+        \vspace{0.2cm}
+        \caption{The trimerization of formamide which uses $v_3$ in the pathway that is returned as the best scoring pathway as shown in Figure~\ref{fig: shortest_path}.}
+        \label{fig: stepAdd}
+    \end{subfigure}
+    \caption{The difference between the best-scoring pathway returned by the proposed method and the pathway hypothesised in~\cite{implemented_CRN}.}
 \end{figure}
 
 To quote the authors, 
@@ -319,16 +336,6 @@ The constraint in Equation~\eqref{proposed_constraint3} forces the hyperedge to 
 The MILP solver chooses the log concentration variables $x_v^K$ for the molecules $v_3$ and $v_4$ in such a way so that $\overline{x}_e^{\Delta G}$ variables for $e_3$ is just below zero to realize the pathway.
 This might be the reason for $x_v^K$ for these two vertices not having the extremal value as is often the case, as discussed below.
 Our proposed model also returns an alternative pathway involving $v_3$ from Figure~\ref{fig: stepAdd}, where none of the $\overline{x}_e^{\Delta G}$ weights for the hyperedges is close to zero as listed in Table~\ref{tab:shortestSoln_reactions}.
-This involved stepwise addition of of a HCN molecules followed by a H$_2$O molecules instead of direct addition of a foramide molecule. 
-
-\begin{figure}[t]
-    \centering
-    \vspace{0.5cm}
-    \includegraphics[width=\textwidth]{graphics/chapter3/stepAdd.pdf}
-    \vspace{0.5cm}
-    \caption{The trimerization of formamide which uses $v_3$ in the pathway that is returned as the best scoring pathway as shown in Figure~\ref{fig: shortest_path}.}
-    \label{fig: stepAdd}
-\end{figure}
 
 We observe that the log concentration variables are always assigned extremal values decided by the constraint in Equation~\eqref{proposed_constraint8}.
 This is likely an artifact of using an MILP solver with an objective function for the problem.
@@ -337,20 +344,11 @@ The bounds for the variables are hand-crafted by the user and it might be more r
 Alternatively, a better interpretation of the assigned values for the variables, $x_v^K$ might be the direction in which the equilibrium concentrations have to be perturbed to achieve the desired flow.
 For example, the concentration values in Table~\ref{tab:convSoln_molecules} can be interpreted as the concentrations of $v_1$, $v_3$ and $v_5$ have to be lowered and the concentrations of $v_0$, $v_2$ and $v_4$ have to be raised to achieve a larger difference in the potentials while effecting a net outflow of molecule $v_5$ given input molecules $v_0$ and $v_1$. 
 
-\begin{figure}[!h]
+\begin{table}[!t]
     \centering
-    \includegraphics[width=\textwidth]{graphics/chapter3/rxnList.pdf}
-    \vspace{0.5cm}
-    \caption{The list of the reactions used in the pathways to the target molecules, with the sequence of specific reactions in each pathway listed in Table~\ref{tab: thermo_flow}.}
-    \label{fig: rxnList}
-\end{figure}
-
-
-\begin{table}[t]
-    \centering
-    \begin{small}
+    \begin{footnotesize}
     \begin{tabular}{ccccrrr}
-        \toprule
+        \\\toprule
         \# & $\sum_{e} f_e$ & $\sum_{e} z_e$ & $|v|$ & \hspace{0.1cm}obj \eqref{obj_func_impl} & $\sum_{e} f_e \cdot x_e^{\Delta G}$ & rxn sequence \\
         \midrule
         0 & $5$ & $4$ & $6$ & $-305.697$ & $-399.837$ & $1,3,4,10$ \\
@@ -362,18 +360,19 @@ For example, the concentration values in Table~\ref{tab:convSoln_molecules} can 
 		5 & $6$ & $4$ & $6$ & $-211.556$ & $-399.836$ & $1,8,5,9$ \\
         6 & $6$ & $4$ & $6$ & $-211.556$ & $-399.836$ & $1,2,7,9$ \\     
         7 & $6$ & $4$ & $6$ & $-211.554$ & $-399.836$ & $1,2,8,11$ \\
-        \bottomrule
+        \bottomrule\\
     \end{tabular}
-    \end{small}
+    \end{footnotesize}
     \caption{All enumerated pathways to the target molecule in the network, with the sequence of pathways leading to the target molecules. The specific reactions corresponding to the index listed in the sequence of reactions for each pathway listed in the last column can be read from Figure~\ref{fig: rxnList}. }
     \label{tab: thermo_flow}
 \end{table}
 
 An exhaustive search of the reaction space led to the identification of $13$ distinct reaction pathways \cite{solutions_data}, listed in Table~\ref{tab: thermo_flow} in the order of increasing value of objective \ref{obj_func_impl}. The column list the rank, the total number of reactions used, the number of unique reactions used, the number of molecules involved, the value of the objective \eqref{obj_func_impl} and the sum of the free energy differences of the reactions weighted by the flows in the columns respectively. Note, that the second column from the right gives the net free energy difference, which is path independent and therefore, the same for all the listed pathways. These pathways were enumerated in $866$ seconds on an AMD$^{\circledR}$ Ryzen 5 PRO 4650U CPU (2.1 GHz) utilizing $8$ threads. One may consult the list of reactions in Figure~\ref{fig: rxnList} for the molecules and the exact set of reactions involved in these pathways.
 
-\printbibliography[
-  heading=subbibliography,
-  title={References}
-]
-
-\end{refsection}
+\begin{figure}[!t]
+    \centering
+    \includegraphics[scale=1.0]{graphics/chapter3/rxnList.pdf}
+    \vspace{0.5cm}
+    \caption{The list of the reactions used in the pathways to the target molecules, with the sequence of specific reactions in each pathway listed in Table~\ref{tab: thermo_flow}.}
+    \label{fig: rxnList}
+\end{figure}

@@ -1,7 +1,5 @@
-\begin{refsection}
-
 %************************************************
-\chapter{Prologue}
+\chapter{Introduction}
 \label{ch:introduction} %
 %************************************************
 
@@ -149,95 +147,5 @@ In Chapter~\ref{ch:casestudy1}, we demonstrate the usability of the method propo
 In Chapter~\ref{ch:refined_model}, we refine the framework proposed in Chapter~\ref{ch:thermodynamic_model} with energy barriers, an alternative objective function, enumeration of pathways and partial ordering of the molecules in the returned pathways.
 In Chapter~\ref{ch:casestudy2}, we demonstrate the usability of the method proposed in Chapter~\ref{ch:refined_model} by applying them on a reaction network constructed from glycolonitrile, ammonia and water.
 In Chapter~\ref{ch:conclusion}, we offer a conclusion to the work presented here.
-Some additional technical details and discussions we have placed in appendices.
+Some additional work have been placed in appendices.
 
-
-
-
-
-
-
-\newpage
-tory in chemistry. In fact the term graph originates from the drawing, or graphing, of molecules [120]. In this thesis, we will turn our attention to the generation and analysis of chemical reaction networks. A reaction network describes
-how chemical reactions allow molecules to interact within a chemistry [47].
-These are used in a wide variety of research areas, such as the study of living organisms [115], drug synthesis and design [59], and the study of the chemistry
-of planetary atmospheres [131]. Known chemical reaction networks are available through databases such as KEGG [81], containing metabolic networks,
-or KIDA [125], containing gas-phase networks. The data provided by these
-databases, however, is inherently subject to sampling bias; reactions are often
-only included if they involve a number of molecules of interest in the chemistry
-being examined [17]. This immediately becomes a limitation when modeling
-reaction networks outside the scope of available databases or when seeking to
-answer questions about general properties of reaction networks. To tackle such
-problems, we must consider methods and formalisms applied to an artificial
-chemistry. The main challenge in formalizing an artificial chemistry is found
-in the potentially countless possible interactions between molecules. Given a
-set of molecules, a reaction can not only create more of the given molecules,
-but also produce novel new ones leading to a combinatorial explosion. Several
-attempts over the years have been made at formalizing artificial chemistries
-[39]. For example, in [15] the compounds of a reaction network are modeled
-as binary strings, where two strings can interact to form a third binary string.
-In [53], reaction networks are modeled using $\lambda$-calculus; compounds are $\lambda$ functions that can in turn interact to create new $\lambda$-functions. These methods
-treat molecules as abstract entities. As a consequence, a molecules molecular
-structure cannot be modeled, making it difficult to define molecular properties,
-such as Gibbs free energy, that can be estimated from such information [80].
-On the other hand, computing the three-dimensional structure of a molecule
-is computationally expensive [65]. Modeling molecules as graphs provide an
-excellent compromise between the retention of molecular structure and the
-avoidance of computational complexity. While graphs have been used in chemistry for more than a hundred years [120], it was only recently shown in [17]
-how to use graphs to model reaction networks of a chemistry. Here, molecules
-are represented by graphs and reaction mechanisms, i.e. the sequence of elementary reactions that cause a chemical change, are modeled as graph transformation rules. Variations this technique was later examined in [130] and a
-generic framework was implemented in [99]. Several tools have recently been
-developed that use graph transformations to model chemistry or biochemistry
-such as MØD [7], Kappa [23], and BioNetGen [20]. Our contributions for
-this section will build upon the formalisms established and used by MØD to
-model reaction networks. For this reason, we will in the following, give a brief
-
-\newpage
-dicated by the heuristic. Then recursively continue on the generated smaller
-molecules until sufficiently simple or commercially available starting materials have been found. As an alternative to using heuristics trying to mimic
-the choices of chemists, Bertz [Bertz \& Sommer 1993, Bertz 2003] suggested
-choosing bonds by minimizing the graph theoretical molecular complexity of
-the resulting precursor molecules. Other approaches include choosing bonds
-based on the existence of substructures of the target molecule that are isomorphic to easily accessible or available molecules found in libraries [Wipke
-\& Rogers 1984, Hanessian et al. 1990, Mehta et al. 1998, Gillet et al. 1995].
-An overview of programs for synthesis planning based on retrosynthesis can
-be found in [Todd 2005, Nowak \& Fic 2012].
-A major drawback of retrosynthesis, however, is that it is a greedy approach. In the attempt to make good choices during the retrosynthetic topdown recursion, it leaves out synthesis plans with costly last steps but much
-better first steps. Consequently, plans found using a retrosynthetic approach
-are not necessarily optimal plans according to quality measures for synthesis
-plans.
-The previous line of work closest to the work presented in this thesis is by
-Hendrickson [Hendrickson 1977] and by Smith [Smith 1997]. They both focus
-on graph based descriptions of synthesis plans, and on formal quality measures of these plans. Hendrickson [Hendrickson 1977] models synthesis plans
-as binary trees, and defines quality measures based on convergency [Velluz
-et al. 1967], which essentially is how balanced the tree is. The rationale for
-this quality measure is that the more balanced the tree for a plan is, the fewer
-reactions the average starting material will take part in, either directly or as
-part of larger molecules in later reactions. All reactions incur some loss, and
-the strategy aims at reducing this loss. Smith [Smith 1997] models synthesis
-plans as hypergraphs, and defines quality measures more explicitly based on
-the actual loss incurred by each reaction. In both papers, the focus is on
-finding a single best plan according to the quality measure in question. Smith
-explicitly gives an algorithm based on dynamic programming for finding this
-in his setting.
-In terms of programs for synthesis planning, Hendrickson’s line of work
-has led to a program SynGen (Synthetic Generator) [Hendrickson 2002]. This
-program retrosynthetically expands all possible ways to synthesize the carbon
-skeleton of the target molecule, offering different ways to assist selection of
-plans after they have been computed. As the program enumerates all plans,
-it is computationally costly even for synthesis plans of depth three [Hendrickson 2002].
-A concept somewhat related to synthesis planning is finding pathways in
-metabolic networks, see e.g. [Kim et al. 2017] for a recent review. The work
-most closely related to ours is [Carbonell et al. 2012], which models metabolic
-pathways as a type of hyperpaths and gives a method for enumerating path
-
-
-
-
-
-\printbibliography[
-  heading=subbibliography,
-  title={References}
-]
-
-\end{refsection}

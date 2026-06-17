@@ -1,6 +1,5 @@
-\begin{refsection}
 %************************************************
-\chapter{Preliminaries}
+\chapter{Generation of Reaction Networks}
 \label{ch:preliminaries}
 %************************************************
 
@@ -39,8 +38,8 @@ This reaction is a two-to-one map which converts molecules $\{v_0, v_1\}$ to $\{
 
 This object is called an hyperedge and the individual molecules $v_0$, $v_2$ and $v_3$ form the vertices. However, in a practical scenario, when the molecules $v_0$ and $v_2$ are allowed to react, reaction $e_1$ is not the only reaction that would occur and the system would not stop reacting after producing $v_3$. Successive reactions might also be possible.
 Some of the reactions that might occur when molecules of $v_0$ and $v_2$ are allowed to react is shown in the next page. To a chemist, not all the reactions would look feasible due to reactivity constraints on the molecules, which would disallow some of the reactions. However, all these reactions might possibly occur in the system in parallel, making it an example of a concurrent system. 
-We would represent each reaction by a separate hyperedge and each class of molecules by a distinct vertex. This results in the structure shown in Figure~\ref{fig:sample_network}.
-The reverse reactions are omitted from the hypergraph in Figure~\ref{fig:sample_network} to reduce clutter. However, in our actual modeling, we do add separate hyperedges to represent the forward and backward directions of reversible reactions.
+We would represent each reaction by a separate hyperedge and each class of molecules by a distinct vertex. This results in the structure shown in Figure~\ref{fig:sample_crnetwork}.
+The reverse reactions are omitted from the hypergraph in Figure~\ref{fig:sample_crnetwork} to reduce clutter. However, in our actual modeling, we do add separate hyperedges to represent the forward and backward directions of reversible reactions.
 
 \begin{center}
 \begin{tiny}
@@ -73,16 +72,18 @@ The reverse reactions are omitted from the hypergraph in Figure~\ref{fig:sample_
 \end{tiny}
 \end{center}
 
+This data structure representing the concurrent set of reactions in the system is called a multi-directed hypergraph or for simplicity, just a hypergraph and is shown in Figure~\ref{fig:sample_crnetwork}. An advantage of using this data structure is that is faithfully represents the many-to-many mappings which are present in reactions which are not unimolecular. Contrast this with a simple directed graph containing edges which map one vertex to another vertex, which are often used to represent and study networks in many situations. The hypergraph in Figure~\ref{fig: hypergraph} is an abstraction of another system of concurrent reactions.
+
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=1.0]{graphics/chapter1/sample_network.pdf}
     \caption{A hypergraph representation of the reactions in the concurrent system.}
-    \label{fig:sample_network}
+    \label{fig:sample_crnetwork}
 \end{figure}
 
 \begin{figure}[!h]
 	\centering
-	\vspace{1cm}
+	\vspace{1.5cm}
 	\begin{subfigure}{\textwidth}
 		\centering
 		\begin{tiny}
@@ -96,7 +97,7 @@ The reverse reactions are omitted from the hypergraph in Figure~\ref{fig:sample_
 		\label{tab:sample_path1}
     \end{subfigure}
     \\
-    \vspace{0.5cm}
+    \vspace{0.8cm}
     \begin{subfigure}{\textwidth}
     	\centering
     	\includegraphics[scale=1.0]{graphics/chapter1/sample_path1.pdf}
@@ -104,12 +105,10 @@ The reverse reactions are omitted from the hypergraph in Figure~\ref{fig:sample_
     	\label{fig:sample_path1}
 	\end{subfigure}
 	\vspace{0.4cm}
-    \caption{The hyperflow denoting the pathway from Figure~\ref{tab:sample_path1} is shown in the hypergraph from Figure~\ref{fig:sample_network}.}
+    \caption{The hyperflow denoting the pathway from Figure~\ref{tab:sample_path1} is shown in the hypergraph from Figure~\ref{fig:sample_crnetwork}.}
     \label{fig: samplePath1}
 \end{figure}
 \newpage
-
-This data structure representing the concurrent set of reactions in the system is called a multi-directed hypergraph or for simplicity, just a hypergraph. An advantage of using this data structure is that is faithfully represents the many-to-many mappings which are present in reactions which are not unimolecular. Contrast this with a simple directed graph containing edges which map one vertex to another vertex, which are often used to represent and study diverse networks in many situations. The hypergraph in Figure~\ref{fig: hypergraph} is an abstraction of another system of concurrent reactions.
 
 One observes that glyoxal is represented as vertex $v_9$ in the hypergraph. One might query, how one inside this hypergraph can find a pathway producing glyoxal while using the input molecules $v_0$ and $v_2$. One possible transformation pathway is shown in Scheme~\ref{tab:sample_path1}.
 
@@ -127,11 +126,11 @@ Often, there might exist alternative solutions to the flow query. In this case, 
 It might so happen than the reaction $v_3 \rightarrow v_7$ is slow (because it has a high energy barrier) and the two step process $v_3 \rightarrow v_5 \rightarrow v_7$ is faster. To judge which of the two pathways is better, a score is assign to them by evaluating an objective function (expression \eqref{proposed_objective} is used in this work) on the pathway, and the one with a better score is ranked higher. This automated search for pathways in a reaction system represented as a hypergraph is the motivation behind introducing the formalism of integer hyperflows in Chapter~\ref{ch:toolbox}.
 
 \section{Generation of Reaction networks}
-\label{second appendix}
+\label{generationOfCRNs}
 
 There exists a diverse range of reactions. However, they are often grouped together on the basis of their mechanisms to create classes of reactions. Reactions in a class share some properties: the reactive core (type of atoms taking part in the reaction), the bonds that are broken, the movement of elections, and the new bonds that are formed. We choose to represent these classes of reactions using reaction templates. Each template defines a change in the bondset of the molecules that take part in the reaction.
 
-For example, in the list of reaction depicted in the hypergraph~\ref{fig:sample_network}:
+For example, in the list of reaction depicted in the hypergraph~\ref{fig:sample_crnnetwork}:
 \begin{itemize}
     \item reactions $e_3$, $e_5$, $e_6$ $e_7$ and $e_8$ have a 1,3-shift of a hydrogen atom (often called tautomerism).
     \item reactions $e_2$, $e_4$ and $e_{11}$ are additions to an trigonal planar carbon to produce a tetrahedral carbon.
@@ -360,23 +359,30 @@ In all the graph transformation rules in this section, the context graph $K$, wh
 
 When a graph transformation rule is applied to a set of reactant molecules, a reaction might occur. First, it is checked if the left-hand side of the rule, $L$, is present as a subgraph in the set of reactant molecules $G$. If so, then that subgraph is rewritten according to the rule to R, to generate a new set of molecules $H$, the product molecules. This process is illustrated in Figure~\ref{fig:rule_application1}.
 
+\begin{figure}[!b]
+	\vspace{0.5cm}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=1.0]{graphics/chapter1/rule_app1.pdf}
+        \caption{An example of the application of a graph transformation rule to one molecular graph.}
+        \label{fig:rule_application1a}
+    \end{subfigure}
+    \vspace{0.4cm}\\
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=1.0]{graphics/chapter1/rule_app2.pdf}
+        \caption{An example of the application of a graph transformation rule to two molecular graphs. The left graph in the rule (top-span) has two connected components which be a subgraph in the disjoint union of two molecular graphs or one molecular graph.}
+        \label{fig:rule_application1b}
+    \end{subfigure}
+    \caption{Two examples of the application of a graph transformation rule to a collection of molecules.}
+    \label{fig:rule_application1}
+\end{figure}
+
 If the left-hand side of the rule, $L$, is not present in the set of molecules $G$, then that reaction template cannot be applied to the given set of molecules as shown in Figure~\ref{fig:rule_application2}.
 
 Therefore, the application of a rule to an existing set of molecules might produce new molecules, which in turn expands the molecular space. Repeated application of these rules constructs a network, which is detailed in the next section.
 
 \begin{figure}[!t]
-    \centering
-    \includegraphics[width=\linewidth]{graphics/chapter1/rule_app1.pdf}
-    \begin{tikzpicture}
-        \draw (0, 0) -- (4, 0);
-    \end{tikzpicture}
-    \vspace{1.0cm}\\
-    \includegraphics[width=\linewidth]{graphics/chapter1/rule_app2.pdf}
-    \caption{Two examples of the application of a graph transformation rule to a collection of molecules.}
-    \label{fig:rule_application1}
-\end{figure}
-
-\begin{figure}[!h]
     \centering
     \begin{tikzpicture}[scale=1.0]    
         \tikzset{
@@ -420,7 +426,6 @@ Therefore, the application of a rule to an existing set of molecules might produ
     \caption{A case where the graph transformation rule cannot be applied to a molecule}
     \label{fig:rule_application2}
 \end{figure}
-\newpage
 
 
 \subsection{Construction of the reaction network}
@@ -428,16 +433,21 @@ Therefore, the application of a rule to an existing set of molecules might produ
 The construction of the reaction network requires a set of input molecules and some graph transformation rules. A match between a collection of molecules and the subgraph on the left-hand side of one of the transformation rules means that this reaction template can be applied to that collection of molecules created from the input set of molecules. Thus, when a rule is applied to a collection of molecules from the current set of molecules, new molecules are created. In a generative process, these new molecules are then added to the set of available molecules (i.e., this set is updated). Graph transformation rules can be recursively applied to this new set of molecules, effecting more reactions to be made and thus the molecular space expands. The hypergraph representation of the network keeps track of all the reactions performed and of the molecules current present in the network.
 
 \begin{figure}
-    \centering
-    \includegraphics[scale=0.3]{graphics/chapter1/recurse1.pdf}\\
-    \vspace{0.4cm}
-    \begin{tikzpicture}
-        \draw (0, 0) -- (4, 0);
-    \end{tikzpicture}\\
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=0.3]{graphics/chapter1/recurse1.pdf}
+        \caption{The reaction network (with $4$ molecules and $2$ reactions) after one recursive application of the used graph transformation rules.}
+    \end{subfigure}
     \vspace{1.0cm}
-    \includegraphics[scale=0.4]{graphics/chapter1/recurse2.pdf}
+    \\
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=0.4]{graphics/chapter1/recurse2.pdf}
+        \caption{The reaction network (with $9$ molecules and $10$ reactions) after two recursive applications of the graph transformation rules.}
+        \label{fig: recurse2}
+    \end{subfigure}
     \vspace{0.5cm}
-    \caption{(top) The reaction network (with $4$ molecules and $2$ reactions) after one recursive application of the graph transformation rules, and (bottom) the reaction network (with $9$ molecules and $10$ reactions) after two recursive applications of the graph transformation rules. The part of the network already generated previously has been shaded.}
+    \caption{The reaction network is constructed with the application of the graph transformation rules to the molecules already in the reaction network, which leads to the addition of new reactions (and possibly also new molecules) to the reaction network at each step. Repeating this multiple times expands the molecular space. In the representations of the reaction networks above, the part of the network already generated in the previous recursion has been shaded.}
     \label{fig: grow_network}
 \end{figure}
 
@@ -449,11 +459,18 @@ The construction of the reaction network requires a set of input molecules and s
     \label{fig: recurse3}
 \end{figure}
 
-To illustrate the construction of a reaction network by the recursive application of graph transformation rules to an input set of molecules, the graph transformation rules from Figure~\ref{fig:graphTransformationRules} in Chpater~\ref{ch:casestudy2} is applied to the input molecules water and 2-hydroxyethanenitrile is shown in Figures~\ref{fig: grow_network}, \ref{fig: recurse3} and \ref{fig: recurse4}.
+To illustrate the construction of a reaction network by the recursive application of graph transformation rules to an input set of molecules, the graph transformation rules from Figure~\ref{fig:graphTransformationRules} in Chapter~\ref{ch:casestudy2} is applied to the input molecules water and 2-hydroxyethanenitrile is shown in Figures~\ref{fig: grow_network}, \ref{fig: recurse3} and \ref{fig: recurse4}.
 
-Notice that some molecules in Figure~\ref{fig: grow_network}, such as the 3-cycles, are not realistic. One can disallow their addition to the generated reaction network by using so-called right predicates. Right predicates filter out certain reactions from the network based on the properties of the molecular graphs that appear on the right-hand side of a derivation. This, it prunes the generated network and makes its growth more manageable and potentially more realistic. The effect of using the right predicate can be seen in the hypergraph in Figure~\ref{fig: recurse3}, which has $9$ molecules after three recursive expansion steps, while the hypergraph in Figure~\ref{fig: grow_network} already had $9$ molecules after two recursive steps when the right predicate was not used.
+Notice that some molecules in Figure~\ref{fig: grow_network}, such as the three-cycles, are not realistic. One can disallow their addition to the generated reaction network by using so-called right predicates. 
+Right predicates filter out certain reactions from the network based on the properties of the molecular graphs that appear on the right-hand side of a derivation. Thus, it prunes the generated network and makes its growth more manageable and potentially more realistic. 
+In this manner, the generated molecular space can be constrained not to have some specified subgraphs such as three cycles, four cycles, consecutive double bonds and others which are not commonly found in molecules.
+Moreover, it can also be used to limit the total number of atoms or the number of atoms of a specific type in the generated molecules. For example, monosaccharide carbohydrate molecules with more than eight carbon atoms are rarely found in natural reaction systems, and hence can also be excluded from the generated network using an appropriate right predicate.
+The effect of using the right predicate can be seen in the hypergraph in Figure~\ref{fig: recurse3}, which has $9$ molecules after three recursive expansion steps, while the hypergraph in Figure~\ref{fig: recurse2} already had $9$ molecules after two recursive steps when the right predicate was not used.
+All the molecular graphs generated with three cycles in Figure~\ref{fig: recurse2} was not used to expand the network further to generate the reaction network illustrated in Figure~\ref{fig: recurse3}. 
 
-\begin{figure}
+There also exists a corresponding left predicate where certain molecular graphs can be prevented from reacting with other molecules and are constrainted to appear only as products of reactions. Reaction networks involving unreactive molecules (such as carbon dioxide) can be modeled realistically as once produced, they do not generally react further. Therefore, left predicates disallow reactions with such molecules as reactants.
+
+\begin{figure}[!t]
     \centering
     \includegraphics[width=\linewidth]{graphics/chapter1/recurse4.pdf}
     \vspace{0.5cm}
@@ -464,59 +481,9 @@ Notice that some molecules in Figure~\ref{fig: grow_network}, such as the 3-cycl
 Often, one direction of a reaction is added to the hypergraph (adding new molecules to the existing set of molecules) and the reverse direction is added in the next recursion. This adds a new reaction between reactants and products both of which are already present in the set of existing molecules.
 The graph transformation rules can be applied for a specified number of iterations, or until a specified limit on the size of the different molecules generated is reached which terminated the network generation process. This makes the derived hypergraph finite.
 
-\section{Hyperflows and Fluxes}
-\label{sec: comparison}
+The manner in which the graph transformation rules are used to generate the molecular space is called the exploration strategy. The rules can be applied sequentially, in parallel, in a repetitive manner for a specified number of iterations or in a particular composition defied by the user. 
+Right predicates, described above, can also be included in the exploration strategy.
+This results in a function which takes a set of molecular graphs as input and returns the hypergraph representing the generated reaction network. 
+The input set of molecular graphs and the graph transformation rules define a graph grammar. Along with an exploration strategy, a graph grammar defines a molecular space recorded as a hypergraph without defining each constituent molecule and reaction explicitly.
 
-In this section, we give a comparison of our workflow with existing methods. Constraint-based models such as flux balance analysis also use constraint programming with an objective function that is optimized. For instance, open-source tools such as COBRApy~\cite{cobrapy} perform flux analysis on a reaction network supplied to them. However, such tools do not construct the network on the fly in a generative way--- rather the reaction network has to be constructed beforehand using some other tool. Flux balance analysis generates a flux vector for the reactions in the network which is allowed to contain floating-point values, while our method accepts only integers as a valid hyperflow for a reaction, which is more aligned with the standard notion of a pathway. Formulating a flux balance analysis on the network would be equivalent to an LP relaxation of the pathway query problem using integer hyperflows for the same network. A linear program (LP) can be solved in polynomial time while an ILP is NP-hard. However, formulating the search for pathways to a queried molecule in a reaction network offers some advantages.
-
-\begin{figure}
-    \centering
-    \begin{subfigure}{\textwidth}
-        \centering
-        \includegraphics[scale=1.0]{graphics/chapter1/example_network.pdf}
-        \vspace{0.4cm}
-        \caption{An example reaction network with $4$ molecules and $3$ reactions.}
-        \label{fig:example_network}
-    \end{subfigure}\\
-    \vspace{0.8cm}
-    \begin{subfigure}{\textwidth}
-        \centering
-        \includegraphics[scale=1.0]{graphics/chapter1/example_flux.pdf}
-        \vspace{0.4cm}
-        \caption{A flux distribution in the network which produces an outflow of $1.5$ for $v_3$.}
-        \label{fig:example_flux}
-    \end{subfigure}\\
-    \vspace{0.8cm}
-    \begin{subfigure}{\textwidth}
-        \centering
-        \includegraphics[scale=1.0]{graphics/chapter1/example_flow.pdf}
-        \vspace{0.4cm}
-        \caption{An assignment of integer hyperflows in the network which produces an outflow of $1$ for $v_3$.}
-        \label{fig:example_flow}
-    \end{subfigure}
-    \vspace{1cm}
-    \caption{Comparison of flux balance analysis and an integer hyperflow in an example reaction network.}
-    \label{fig:comparison}
-\end{figure}
-
-There exists reaction networks where the optimal solutions from the ILP formulated by our modeling and the relaxed LP from flux balance analysis differ. Consider the reaction network shown in Figure~\ref{fig:example_network} with the following formulation of the problem:
-\begin{align*}
-    &\max \left( \text{outflow}(v_3) \right) \\
-    \text{subject to: } &\text{inflow}(v_0) + \text{inflow}(v_1) +\text{inflow}(v_2) \leq 3
-\end{align*}
-The optimal flux distribution yields an objective value of $1.5$ with the assigned fluxes shown in Figure~\ref{fig:example_flux} while our method assigns the integer hyperflows shown in Figure~\ref{fig:example_flow} in one of the three optimal solutions with objective value $1$. The other two solutions assign the hyperflows $(0,1,1)$ and $(1,1,0)$ to the hyperedge set $(e_1,e_2,e_3)$ respectively.
-
-The ILP solution space is a subset of the LP feasible reaction and therefore, the objective value for the optimal solution for the relaxed LP will always be as at least as large as the objective value of optimal solution for the corresponding ILP. This is illustrated in the example shown in Figure~\ref{fig:comparison} too. As the result, the fluxes and the structure of the solution is often different from those if they were constrained to be integers.
-
-Restricting hyperflows to integers makes physical sense because molecules occur and react in discrete quantities.
-Actually, small molecular counts in several biological settings (often involving trace amounts of enzymes and inhibitors affecting multiple iterations of the same pathway) and physical cases (as in chain reactions and cascades) do not allow arbitrary scaling of the number of molecules, as the use of real-valued fluxes by flux balance analysis assume.
-When a small number of molecules are encountered in a scenario as above (or in scenarios with appearances of a rare but significant molecule in the system), the discrete nature of the molecules becomes more pronounced.
-
-Another feature of our proposed method is the enumeration of alternative pathways with disjoint set of hyperedges ranked on the basis of a chosen objective function. While flux balance analysis offers the possibility to find alternative pathways~\cite{fba_alternative_pathways}, they have the same objective value but a different flux distribution in the network. This differs from the enumeration of solutions in the current method which offers a list of pathways ordered by the increasing value of the objective function for the user to choose from. Enumerating solutions over variables with a continuous domain is difficult using indicator variables and biimplications as in constraints \ref{biimp1}  and \ref{biimp2}. The enumeration of solutions offers diverse pathways to the queried molecules and makes the method more robust to uncertainties in the weights assigned to the hyperedges.
-
-\printbibliography[
-  heading=subbibliography,
-  title={References}
-]
-
-\end{refsection}
+While this Chapter describes the rule-based generation of reaction networks, in no way is it necessary to have a rule-based description of the network to apply the methods described in Chapters~\ref{ch:thermodynamic_model} and~\ref{ch:refined_model}. The methods from the latter chapters can also be applied to networks loaded from a database or constructed by explicit addition of each reaction as a hyperedge to form the hypergraph recording the molecular space.

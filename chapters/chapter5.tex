@@ -1,7 +1,5 @@
-\begin{refsection}
-
 %************************************************
-\chapter{Another case study}
+\chapter{Another case study: Glycolonitrile Chemistry}
 \label{ch:casestudy2} %
 %************************************************
 
@@ -115,10 +113,19 @@ Ab initio molecular dynamics has been used in a previous work~\cite{crn_expand_q
 
 \begin{figure}[!thb]
 	\vspace{0.5cm}
-    \centering
-    \includegraphics[scale=0.3]{graphics/chapter5/molStrucPathway1.png}
-    \caption{List of the molecular structures corresponding to the the labeled vertices in the pathways in Figure \ref{fig:pathway1}.}
-    \label{tab:molecular_structures1}
+	\begin{subfigure}{0.65\textwidth}
+    	\centering
+    	\includegraphics[scale=0.3]{graphics/chapter5/molStrucPathway1.png}
+    	\caption{Molecular graphs in the pathways in Figure \ref{fig:pathway1}.}
+    	\label{tab:molecular_structures1}
+    \end{subfigure}%
+    \begin{subfigure}{0.3\textwidth}
+    	\centering
+    	\includegraphics[scale=0.3]{graphics/chapter5/molStrucPathway2.png}
+    	\caption{and in Figure \ref{fig:pathway2}}
+    	\label{tab:molecular_structures2}
+    \end{subfigure}
+    \caption{List of the molecular structures corresponding to the the labeled vertices in the pathways in Figures~\ref{fig:pathway1} and~\ref{fig:pathway2}.}
 \end{figure}
 
 \begin{table}[!h]
@@ -199,10 +206,7 @@ Ab initio molecular dynamics has been used in a previous work~\cite{crn_expand_q
 
 \begin{figure}[!thb]
 	\vspace{0.5cm}
-    \centering
-    \includegraphics[scale=0.3]{graphics/chapter5/molStrucPathway2.png}
-    \caption{List of the molecular structures corresponding to the the labeled vertices in the pathways in Figure \ref{fig:pathway2}.}
-    \label{tab:molecular_structures2}
+    
 \end{figure}
 
 Another molecule of importance in prebiotic systems which appears in the generated network is 2-hydroxyethanoic acid, commonly known ad glycolic acid. During photorespiration plants produce glycolate. It can also be used as a monomer for various biodegradable polymers such as polyglycolic acid and poly(lactic-co-glycolic) acid. However, there have not been many studies on pathways to glyocolic acid from the precursor molecules in prebiotic systems.  
@@ -213,11 +217,3 @@ Table \ref{tab:pathways2} contains six columns that list the assigned weights fo
 The expansion of the network shown in Figure~\ref{fig: hypergraphRNChapter5} took 67 seconds. It is quite faster than comparable methods using reaction templates without using graph transformation, molecular dynamics or potential energy search as done in~\cite{implemented_CRN}. Annotating the $116$ hyperedges with the energy barriers of the reactions as weights took around an hour. Using a neural network instead of more accurate traditional methods does lead to trade off of the accuracy for speed, but it allows scalability for larger networks. Formulating the ILP and enumerating the pathways in the network to the two target molecules using the objective function \eqref{proposed_objective} took around $52$ seconds. All the reported times are the average of $10$ runs on an AMD$^{\circledR}$ Ryzen 5 PRO 4650U CPU (2.1 GHz) utilizing $8$ threads.
 One may also expand the network from methanal and hydrogen cyanide instead of 2-hydroxyethanenitrile and use a more general version of the rules where the variable heavy atoms are allowed to match with carbon. nitrogen or oxygen atoms. However, it leads to a larger network with $481$ vertices and $2768$ hyperedges, of which the considered network is a sub-network.
 
-
-
-\printbibliography[
-  heading=subbibliography,
-  title={References}
-]
-
-\end{refsection}
