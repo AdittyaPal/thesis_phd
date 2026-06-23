@@ -37,5 +37,5 @@
 \contentsline {subsection}{Partial Ordering of Molecules}{71}{section*.100}%
 \contentsline {section}{\numberline {6.4}Comparison with other methods}{73}{section.6.4}%
 \contentsline {chapter}{\chapternumberline {7}Another case study: Glycolonitrile Chemistry}{75}{chapter.7}%
-\contentsline {chapter}{\chapternumberline {8}Conclusion}{83}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Summary}{83}{chapter.8}%
 \contentsline {chapter}{References}{87}{section*.113}%
