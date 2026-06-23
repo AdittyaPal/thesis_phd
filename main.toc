@@ -11,18 +11,17 @@
 \contentsline {section}{\numberline {2.2}Integer Hyperflows}{11}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Hyperflows and Fluxes}{15}{section.2.3}%
 \contentsline {chapter}{\chapternumberline {3}Generation of Reaction Networks}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Generation of Reaction networks}{22}{section.3.1}%
-\contentsline {subsection}{Graph transformation rules}{23}{section*.13}%
-\contentsline {subsection}{Rule application to a graph}{26}{section*.14}%
-\contentsline {subsection}{Construction of the reaction network}{27}{section*.17}%
+\contentsline {subsection}{Graph transformation rules}{23}{section*.14}%
+\contentsline {subsection}{Rule application to a graph}{25}{section*.15}%
+\contentsline {subsection}{Construction of the reaction network}{26}{section*.18}%
 \contentsline {chapter}{\chapternumberline {4}A Constraint-based Model}{31}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Mathematical Formulation}{33}{section.4.1}%
-\contentsline {subsection}{Constraint-Based Model}{33}{section*.23}%
-\contentsline {subsection}{Objective Function}{39}{section*.28}%
+\contentsline {subsection}{Constraint-Based Model}{33}{section*.24}%
+\contentsline {subsection}{Objective Function}{39}{section*.29}%
 \contentsline {section}{\numberline {4.2}Implementation}{41}{section.4.2}%
-\contentsline {subsection}{Implementing the Objective function}{41}{section*.29}%
-\contentsline {subsection}{Linearizing the Constraints}{41}{section*.30}%
-\contentsline {subsection}{Implemented Model}{43}{section*.34}%
+\contentsline {subsection}{Implementing the Objective function}{41}{section*.30}%
+\contentsline {subsection}{Linearizing the Constraints}{41}{section*.31}%
+\contentsline {subsection}{Implemented Model}{43}{section*.35}%
 \contentsline {section}{\numberline {4.3}Contextualizing this method}{45}{section.4.3}%
 \contentsline {chapter}{\chapternumberline {5}A Case Study: Foramide Chemistry}{47}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Network Generation}{47}{section.5.1}%
@@ -34,9 +33,9 @@
 \contentsline {section}{\numberline {6.1}From Rate Constants to Edge Weights}{63}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Formulating an Objective Function}{65}{section.6.2}%
 \contentsline {section}{\numberline {6.3}ILP Modeling}{67}{section.6.3}%
-\contentsline {subsection}{Enumeration of solutions}{69}{section*.96}%
-\contentsline {subsection}{Partial Ordering of Molecules}{71}{section*.99}%
+\contentsline {subsection}{Enumeration of solutions}{69}{section*.97}%
+\contentsline {subsection}{Partial Ordering of Molecules}{71}{section*.100}%
 \contentsline {section}{\numberline {6.4}Comparison with other methods}{73}{section.6.4}%
 \contentsline {chapter}{\chapternumberline {7}Another case study: Glycolonitrile Chemistry}{75}{chapter.7}%
 \contentsline {chapter}{\chapternumberline {8}Conclusion}{83}{chapter.8}%
-\contentsline {chapter}{References}{87}{section*.112}%
+\contentsline {chapter}{References}{87}{section*.113}%

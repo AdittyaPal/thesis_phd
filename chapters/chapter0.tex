@@ -3,7 +3,7 @@
 \label{ch:toolbox}
 %************************************************
 
-{\sffamily\slshape The text in this chapter is identical to Section 2 of the published version of the preprint at \href{https://arxiv.org/abs/2411.15900}{arXiv:2411.15900} along with the figures.\\}
+{\sffamily\slshape The text in this chapter is identical to Section 2 of the published version of the preprint at \href{https://arxiv.org/abs/2411.15900}{arXiv:2411.15900}.\\}
 
 In this chapter, the mathematical models for chemical reaction networks and pathways in them are presented,
 namely directed hypergraphs and integer hyperflows, respectively.
@@ -47,18 +47,27 @@ and correspondingly $e^+$ and $s^+_{ve}$ model the products of the reaction. An 
 \begin{figure}[!t]
 	\centering
 	\vspace{0.5cm}
-    \includegraphics[scale=1.5]{graphics/chapter0/hyperedge.pdf}
-    \vspace{0.5cm}
+    \includegraphics[scale=1.0]{graphics/chapter0/hyperedge.pdf}
+    \vspace{0.2cm}
     \caption{A directed hyperedge, which represents a reaction where one copy of the molecule represented by the vertex $v_0$ reacts with two copies of $v_1$ to produce two copies of $v_2$. 
     This hyperedge can be considered to represent the reaction with the vertices representing the molecules: $v_0 \equiv$ O$_2$, $v_1 \equiv$ H$_2$ and $v_2 \equiv$ H$_2$O and the directed hyperedge representing the chemical reaction $e :$ O$_2$ + 2 H$_2$ $\longrightarrow$ 2 H$_2$O.}
     \label{fig: hyperedge}
 \end{figure}
 
+\begin{figure}[!t]
+	\centering
+	\vspace{0.5cm}
+    \includegraphics[scale=1.0]{graphics/chapter0/hyperedge_catalyst.pdf}
+    \vspace{0.2cm}
+    \caption{Directed hyperedges allow the specification of a molecule as a catalyst in a reaction. A copy of the molecules $v_1$ acts as a catalyst in the transformation of a copy of the molecule $v_0$ into a copy of $v_2$.}
+    \label{fig: hyperedge}
+\end{figure}
+
 \begin{figure}[!ht]
     \centering
-    \vspace{1cm}
-    \includegraphics[scale=1.5]{graphics/chapter0/hypergraph.pdf}
-    \vspace{0.4cm}
+    \vspace{1.0cm}
+    \includegraphics[scale=1.0]{graphics/chapter0/hypergraph.pdf}
+    \vspace{0.2cm}
     \caption{A directed hypergraph, where circles are vertices and the squares are hyperedges.
     Hyperedges with multiple copies of a vertex as source or target are depicted with parallel arrows.
     See for instance~$e_4$, which has $v_3$ twice as a target and thus represents the reaction $e_4 : v_0 \rightarrow 2 v_3$. Hyperedges allow the many-to-many relations in chemical reaction to be captured in themodelling unlike edges in simple directed graphs.}
@@ -106,7 +115,8 @@ i.e., an assignment of a non-negative integer to each edge in~$E$, denoting how 
 Additionally, two vectors $f_{\text{in}} \in \mathbb{N}_{0}^{|V|}$ and $f_{\text{out}} \in \mathbb{N}_{0}^{|V|}$ denote for each molecule in~$V$ the amount of it consumed as source molecule, respectively produced as target molecule, by the pathway.
 
 \begin{figure}[!t]
-    \includegraphics[scale=1.5]{graphics/chapter0/flowQuery.pdf}
+	\centering
+    \includegraphics[scale=1.0]{graphics/chapter0/flowQuery.pdf}
     \vspace{0.5cm}
     \caption{An integer hyperflow query in the directed hypergraph from Figure~{ref: hypergraph}, where $v_0$ is specified as the source and $v_7$ is specified as the target. 
     The exact inflow and outflow on these vertices are not specified, and the hyperpaths in Figure~\ref{fig: hyperpath1}, \ref{fig: hyperpath2}, \ref{fig: hyperpath3}, \ref{fig: hyperpath4} and \ref{fig: hyperpath5} would be valid solutions of this flow query if the required additional sets of vertices is allowed as sources (which are {\O}, $\{v_2\}$, $\{v_1\}$, $\{v_2\}$, $\{v_6\}$ respectively).

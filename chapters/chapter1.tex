@@ -3,7 +3,7 @@
 \label{ch:preliminaries}
 %************************************************
 
-{\sffamily\slshape The text in this chapter is identical to Appendix A and B of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609} along with the figures.\\}
+{\sffamily\slshape The text in this chapter is identical to Appendix A and B of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609}.\\}
 
 While one might choose to represent a reaction formally by \eqref{chemical_equation}, for more practical scenarios, it is just a collection of reactant molecules (with their multiplicities) that gets converted into a collection of product molecules (with some different multiplicities). For example,\\
 
@@ -125,12 +125,9 @@ Often, there might exist alternative solutions to the flow query. In this case, 
 
 It might so happen than the reaction $v_3 \rightarrow v_7$ is slow (because it has a high energy barrier) and the two step process $v_3 \rightarrow v_5 \rightarrow v_7$ is faster. To judge which of the two pathways is better, a score is assign to them by evaluating an objective function (expression \eqref{proposed_objective} is used in this work) on the pathway, and the one with a better score is ranked higher. This automated search for pathways in a reaction system represented as a hypergraph is the motivation behind introducing the formalism of integer hyperflows in Chapter~\ref{ch:toolbox}.
 
-\section{Generation of Reaction networks}
-\label{generationOfCRNs}
-
 There exists a diverse range of reactions. However, they are often grouped together on the basis of their mechanisms to create classes of reactions. Reactions in a class share some properties: the reactive core (type of atoms taking part in the reaction), the bonds that are broken, the movement of elections, and the new bonds that are formed. We choose to represent these classes of reactions using reaction templates. Each template defines a change in the bondset of the molecules that take part in the reaction.
 
-For example, in the list of reaction depicted in the hypergraph~\ref{fig:sample_crnnetwork}:
+For example, in the list of reaction depicted in the hypergraph~\ref{fig:sample_crnetwork}:
 \begin{itemize}
     \item reactions $e_3$, $e_5$, $e_6$ $e_7$ and $e_8$ have a 1,3-shift of a hydrogen atom (often called tautomerism).
     \item reactions $e_2$, $e_4$ and $e_{11}$ are additions to an trigonal planar carbon to produce a tetrahedral carbon.
