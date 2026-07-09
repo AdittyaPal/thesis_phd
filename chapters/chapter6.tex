@@ -3,7 +3,7 @@
 \label{ch:stoc_explore} %
 %************************************************
 
-{\sffamily\slshape The text in this chapter is identical to Section 4 of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609}.\\}
+{\sffamily\slshape The text in this chapter is identical to Section 2 (excluding Section 2.4) and 3 of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv.2607.04160}.\\}
 
 At the molecular scale, chemical reactions are probabilistic events that arise from collisions between molecules. Hence, dynamics of chemical systems are inherently stochastic at the molecular level. Unlike deterministic macroscopic models, such as systems of differential equations, stochastic simulation directly model the discrete and random nature of chemical reactions. We here briefly recap the collision theory of chemical kinetics, as it provides a physics-based framework for understanding how molecules collide, interact, and react into products. While unimolecular reactions might appear to not fit into a scheme with a pair of colliding molecules, theories for unimolecular reactions~\cite{unimolecularReaction} consider the first step of such a reaction to be the energization of the reacting molecule by a collision with another molecule. Therefore, collisions can still be considered to act as a trigger for unimolecular reactions.
 
@@ -100,7 +100,9 @@ Equations~\eqref{zero_order}, \eqref{first_order} and \eqref{second_order} stipu
 
 \begin{figure}
     \centering
+    \vspace{0.5cm}
     \includegraphics[width=0.5\linewidth]{graphics/chapter6/rel_prob.pdf}
+    \vspace{0.5cm}
     \caption{The calculation of the weights for choosing whether to effect an inflow, outflow or a reaction at a particular simulation step.}
     \label{fig:rel_prob}
 \end{figure}
@@ -112,8 +114,7 @@ The possibility of mass flow in and out of the system not only allows for simula
 
 The algorithm used to allow the system to evolve is presented in Algorithm~\ref{generate_network}. This adopts the discrete scheme of either mimicking a collision to effect a reaction, sampling some molecules to remove from the system or adding some more molecules to it at an iteration in the simulation. 
 Effecting a reaction in the system is divided into three successive steps: choosing colliding molecular pair, choosing a reaction template, and subsequently, choosing a reaction instance from the enumerated reactions.
-This leads to progressive exploration of the underlying reaction network described by the specified graph grammar (i.e., set of reaction templates and set of initial molecular graphs) as the simulation progresses.\\
-\vspace{0.25cm}
+This leads to progressive exploration of the underlying reaction network described by the specified graph grammar (i.e., set of reaction templates and set of initial molecular graphs) as the simulation progresses.
 
 \begin{algorithm}[!h]
     \caption{}
@@ -176,7 +177,7 @@ or the time interval between two collision events scales inversely with the numb
 In this section, we use the formose reaction as a case study to assess the behaviour of the exploration framework on a chemically rich generative system. The purpose of these experiments is not to validate quantitative reaction kinetics, since the method does not aim to reproduce them, but to examine which regions of the reachable molecular space are discovered under different exploration conditions and how open-system dynamics affect that discovery process. We therefore analyse observables such as molecular-size distributions, diversity of molecular classes, innovation of newly encountered molecules, and the abundances of selected biologically relevant products~\cite{formose_prebiotic}. These observables characterize the exploratory trajectory induced by the sampling policy and illustrate the kinds of chemically interpretable questions the framework can address.
 
 Simulations to study the formose reaction network were carried out under two conditions: a closed system and a system with inflows and outflows. In the flow-enabled case, the fixed inflow vector $\delta$ consisted of methanal only.
-We initialized the system with $990$ molecules of methanal and $10$ molecules of 2-hydroxyethanal ($1 \%$ mol) when flows were disabled. When flows were allowed, $10$ molecules of 2-hydroxyethanal were found to not have the sufficient catalytic activity for the system to evolve, as all these molecules were often removed by outflow steps even before they could react with methanal. Therefore, we initialized the system with $950$ molecules of methanal and $50$ molecules of 2-hydroxyethanal ($5 \%$ mol), that is, with a higher number of catalyst molecules, when flows were allowed. The reaction templates consisted of the reaction templates for keto–enol tautomerism, aldol addition, and their reverse reactions, shown in the four subfigures of Figure~\ref{fig:reactionTemplate}. Graph representations of molecules do not encode stereochemistry; therefore, all aldopentose stereoisomers (arabinose, lyxose, ribose, and xylose) are represented by isomorphic graphs. In both cases, the simulation consisted of $10^6$ iteration steps, and equilibrium was operationally defined as the point at which each molecular count became stable.
+We initialized the system with $990$ molecules of methanal and $10$ molecules of 2-hydroxyethanal ($1 \%$ mol) when flows were disabled. When flows were allowed, $10$ molecules of 2-hydroxyethanal were found to not have the sufficient catalytic activity for the system to evolve, as all these molecules were often removed by outflow steps even before they could react with methanal. Therefore, we initialized the system with $950$ molecules of methanal and $50$ molecules of 2-hydroxyethanal ($5 \%$ mol), that is, with a higher number of catalyst molecules, when flows were allowed. The reaction templates consisted of the reaction templates for keto–enol tautomerism, aldol addition, and their reverse reactions. Graph representations of molecules do not encode stereochemistry; therefore, all aldopentose stereoisomers (arabinose, lyxose, ribose, and xylose) are represented by isomorphic graphs. In both cases, the simulation consisted of $10^6$ iteration steps, and equilibrium was operationally defined as the point at which each molecular count became stable.
 
 \begin{figure}[!b]
     \centering
@@ -293,7 +294,9 @@ Several directions exist for improving the physical fidelity and computational e
 
     \begin{figure}
         \centering
+        \vspace{0.5cm}
         \includegraphics[width=0.5\linewidth]{graphics/chapter6/reac_mh_prob.pdf}
+        \vspace{0.5cm}
         \caption{The calculation of the weights using a Metropolis-Hastings-type scheme after applying a reaction template to the selected pair of molecules generating the reactions $\{r_1, r_2, r_3, \cdots r_i\}$.}
         \label{fig:reac_mh_prob}
     \end{figure}

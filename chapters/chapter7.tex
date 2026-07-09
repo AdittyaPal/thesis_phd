@@ -3,7 +3,7 @@
 \label{ch:cache_in_crns} %
 %************************************************
 
-{\sffamily\slshape The text in this chapter is identical to Section 4 of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609}.\\}
+{\sffamily\slshape The text in this chapter is identical to Section 2.5, Section 4 and Appendix A of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv.2607.04160}.\\}
 
 Stochastic simulations in reaction networks naturally exhibit temporal locality in the reactions they explore. At any given stage of the simulation, the system state is typically dominated by a small subset of molecular classes with high counts, while the rest of the molecular classes have a low abundance. As a result, collisions repeatedly involve the same molecular pairs, and the same reaction templates are applied to these pairs across many consecutive simulation steps. This effect is particularly pronounced during early and intermediate phases of the simulation, where a limited set of precursor molecules drives most of the reactivity, as well as in regimes where the system approaches steady state. Consequently, the expensive operation of enumerating reaction instances for a given molecular pair and reaction template is often redundantly repeated, even though the underlying graph-theoretic computation yields identical results each time. Exploiting this temporal locality through caching allows the simulation to reuse previously computed reaction instances, thereby accelerating exploration of large reaction networks using the algorithm described in Chapter~\ref{ch:stoc_explore} without altering the stochastic trajectory of the system.
 
@@ -72,51 +72,55 @@ For the formose system studied here, a cache size of $2^{15}$ reaction instances
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\linewidth]{graphics/chapter7/cacheSizeEffect.png}
-    \caption{Effect of the cache size on the cache hit rate (blue) and the runtime of the simulation (orange). The chosen cache sizes for further experiments, $2^8 = 256$ and $2^{15} = 32768$ are denoted by the vertical dashed line.}
+    \vspace{0.5cm}
+    \includegraphics[width=0.8\linewidth]{graphics/chapter7/cacheSizeEffect.pdf}
+    \vspace{0.5cm}
+    \caption{Effect of the cache size on the cache hit rate (blue) and the runtime of the simulation (navy). The chosen cache sizes for further experiments, $2^8 = 256$ and $2^{15} = 32768$ are denoted by the vertical dashed line.}
     \label{fig:cacheSizeEffects}
 \end{figure}
 
 \subsection{Cache utilization and hit rates over time}
 
-With the cache size fixed at $2^8$ and $2^{15}$ reaction instances, we analysed how cache utilization and hit rates evolve during the course of a simulation. The cache hit rate (blue) and the fraction of cache capacity utilized (orange) are shown in Figure~\ref{fig:cacheAccess}. Cache hit rate and utilization are two correlated measures of cache use: once the entire cache has been utilized, new instances would be added to the cache at the expense of existing instances and the hit rate would start to fall. Prior to that, the hit rate would be close to one, because any new instances can be added to the cache which has not yet reached its capacity.
+With the cache size fixed at $2^8$ and $2^{15}$ reaction instances, we analysed how cache utilization and hit rates evolve during the course of a simulation. The cache hit rate (blue) and the fraction of cache capacity utilized (navy) are shown in Figure~\ref{fig:cacheAccess}. Cache hit rate and utilization are two correlated measures of cache use: once the entire cache has been utilized, new instances would be added to the cache at the expense of existing instances and the hit rate would start to fall. Prior to that, the hit rate would be close to one, because any new instances can be added to the cache which has not yet reached its capacity.
 
 In the closed system with cache size $2^8$ (Figure~\ref{fig:cacheNoFlow}), the cache is populated gradually over the first $1\times 10^5$ simulation steps. During this initial phase, the diversity of reactions is low and the system repeatedly applies a small set of reaction templates to the small set of molecular pairs. Consequently, the cache hit rate is high (nearly $100\%$). Once the cache is filled, new reaction instances are stored by evicting the least recently used cached entries. This eviction of reaction instances leads to a sharp decline in the hit rate, as expected, which stabilizes at approximately $56\pm 12\%$ after about $3\times 10^5$ steps.
 This stabilization coincides with the system ending its generative phase: by this point, the total number of molecules, the maximum molecular length, and the number of unique molecular classes have all reached steady values, as seen in Figure~\ref{fig:distMolsNoFlow}. The reduced hit rate therefore reflects increased diversity in reaction requests during the earlier generative phase, followed by repeated sampling from a larger but fairly stable set of reactions.
 
-In contrast, when inflows and outflows are enabled with a cache of size $2^8$ (Figure~\ref{fig:cacheFlow}), the cache fills much more rapidly, within the first $2\times 10^3$ steps. The cache hit rate drops sharply during the early stages of the simulation, indicating a higher initial diversity of reactions. This decline gradually decreases and stabilizes around $61\pm 9\%$ beyond the first $2\times 10^5$ steps.
+In contrast, when inflows and outflows are enabled with a cache of size $2^8$ (Figure~\ref{fig:cacheFlow}), the cache fills much more rapidly, within the first $2\times 10^3$ steps. The cache hit rate drops sharply during the early stages of the simulation, indicating a higher initial diversity of reactions. This decline gradually decreases and stabilizes around $75\pm 8\%$ beyond the first $2\times 10^5$ steps.
 The higher steady-state hit rate in the flow-enabled system reflects the lower molecular diversity maintained in the system under open conditions, as seen in Figure~\ref{fig:distMolsFlow}. Continuous inflow of methanal and outflow of larger molecules restricts the range of molecular classes present at any given time, reducing the number of distinct molecular pairs and reaction templates encountered.
 
 \begin{figure}
     \centering
+    \vspace{0.5cm}
     \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter7/cache_noFlow_256.png}
+        \includegraphics[width=\textwidth]{graphics/chapter7/cache_noFlow_256.pdf}
         \caption{Flows disabled and cache size $2^8$.}
         \label{fig:cacheNoFlow}
     \end{subfigure}% 
     \hfill
     \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter7/cache_flow_256.png}
+        \includegraphics[width=\textwidth]{graphics/chapter7/cache_flow_256.pdf}
         \caption{Flows enabled and cache size $2^8$.}
         \label{fig:cacheFlow}
     \end{subfigure}\\
-    \vspace{0.5cm}
+    \vspace{1.0cm}
     \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter7/cache_noFlow_32768.png}
+        \includegraphics[width=\textwidth]{graphics/chapter7/cache_noFlow_32768.pdf}
         \caption{Flows disabled and cache size $2^{15}$.}
         \label{fig:bigCacheNoFlow}
     \end{subfigure}% 
     \hfill
     \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter7/cache_flow_32768.png}
+        \includegraphics[width=\textwidth]{graphics/chapter7/cache_flow_32768.pdf}
         \caption{Flows enabled and cache size $2^{15}$.}
         \label{fig:bigCacheFlow}
     \end{subfigure}
-    \caption{Cache hit rate (blue) and fraction of utilization of the cache (orange) under the two different flow conditions and two different cache sizes.}
+    \vspace{0.5cm}
+    \caption{Cache hit rate (blue) and fraction of utilization of the cache (navy) under the two different flow conditions and two different cache sizes.}
     \label{fig:cacheAccess}
 \end{figure}
 
@@ -151,8 +155,10 @@ Despite the higher cache hit rate observed in the flow-enabled system, the relat
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{graphics/chapter7/cache_fracTimes.png}
-    \caption{Breakdown of the total runtime of an average of $10$ trials of the simulation into what is spent on collision pair and reaction template selection (blue), template application or cache lookup on cache hit (orange), state update (green), and logging (red), when caching is disabled (top) and enabled (bottom). The labels (white) give the fraction of the total simulation time used for those components.}
+    \vspace{0.5cm}
+    \includegraphics[width=0.9\linewidth]{graphics/chapter7/cache_fracTimes.pdf}
+    \vspace{0.5cm}
+    \caption{Breakdown of the total runtime of an average of $10$ trials of the simulation into what is spent on collision pair and reaction template selection (blue), template application or cache lookup on cache hit (navy), state update (cyan), and logging (aqua), when caching is disabled (top) and enabled (bottom). The labels (white) give the fraction of the total simulation time used for those components.}
     \label{fig:fracCacheTimes}
 \end{figure}
 
@@ -168,8 +174,10 @@ Thus, while the stochastic simulation itself does not require explicit construct
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.75\textwidth]{graphics/chapter7/templateFreq.png}
-    \caption{Comparison of the relative distribution of the four reaction templates among the successful applications of a reaction template~$r$ on a molecular pair $(m_1,m_2)$. Successful means that the left-hand side of $r$ has one or more matches as a subgraph of $m_1 \cup m_2$. The blue bars show this for the contents of a cache of size~$2^8$ at the end of the simulation, the orange bars show the same for a cache of size~$2^{15}$, and the green bars show the distribution across all steps of the entire simulation. The error bars represent the standard deviation in the frequency over the $10$ trials conducted.}
+    \vspace{0.5cm}
+    \includegraphics[width=0.75\textwidth]{graphics/chapter7/templateFreq.pdf}
+    \vspace{0.5cm}
+    \caption{Comparison of the relative distribution of the four reaction templates among the successful applications of a reaction template~$r$ on a molecular pair $(m_1,m_2)$. Successful means that the left-hand side of $r$ has one or more matches as a subgraph of $m_1 \cup m_2$. The blue bars show this for the contents of a cache of size~$2^8$ at the end of the simulation, the cyan bars show the same for a cache of size~$2^{15}$, and the navy bars show the distribution across all steps of the entire simulation. The error bars represent the standard deviation in the frequency over the $10$ trials conducted.}
     \label{fig:frequencyTemplate}
 \end{figure}
 
@@ -177,7 +185,7 @@ By modifying the cache size or replacement policy, different regions of the expl
 
 To investigate to what extent the cached portion is representative of the entire explored network, we for caches of two sizes ($2^8$ and $2^{15}$) compared the coverage of reactions and molecules in their final state with that of the entire simulation.
 
-Figure~\ref{fig:frequencyTemplate} shows the relative distribution of the four reaction templates among the successful applications of a reaction template~$r$ on a molecular pair $(m_1,m_2)$. Successful means that the left-hand side of $r$ has one or more matches as a subgraph of $m_1 \cup m_2$. The blue bars show this distribution for the keys stored in a cache of size~$2^8$ at the end of a simulation of $10^6$ steps (the keys of the cache have type $(r, m_1,m_2)$ and successful is equivalent to the list of the cache element being non-empty). The orange bars show the same distribution for a cache of size~$2^{15}$. The green bars show the same distribution for all steps of the entire simulation (but only counting the first successful application for each $(r, m_1,m_2)$ triple, not repetitions, to be consistent with the counting of the cache contents).
+Figure~\ref{fig:frequencyTemplate} shows the relative distribution of the four reaction templates among the successful applications of a reaction template~$r$ on a molecular pair $(m_1,m_2)$. Successful means that the left-hand side of $r$ has one or more matches as a subgraph of $m_1 \cup m_2$. The blue bars show this distribution for the keys stored in a cache of size~$2^8$ at the end of a simulation of $10^6$ steps (the keys of the cache have type $(r, m_1,m_2)$ and successful is equivalent to the list of the cache element being non-empty). The cyan bars show the same distribution for a cache of size~$2^{15}$. The navy bars show the same distribution for all steps of the entire simulation (but only counting the first successful application for each $(r, m_1,m_2)$ triple, not repetitions, to be consistent with the counting of the cache contents).
 The error bars depict the standard deviation over $10$ trials of the simulation.
 The relative ordering of the frequencies of the reaction templates (which result in reaction instances) remains the same in all three cases, with cache of size $2^8$, $2^{15}$ and the explored network, namely template $4$ is the most frequent, followed by $1$, $2$ and $3$. The absolute counts of the number of times the particular template appears in the cache with instantiated reaction differ slightly.
 Reactions generated using template $2$ are overrepresented in the cache of size $2^8$ at the expense of reactions effected using template $3$. 
