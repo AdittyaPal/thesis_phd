@@ -1,5 +1,5 @@
 %************************************************
-\chapter{Another case study: Glycolonitrile Chemistry}
+\chapter[Glycolonitrile Chemistry]{Another Case study: Glycolonitrile Chemistry}
 \label{ch:casestudy2} %
 %************************************************
 
@@ -14,6 +14,9 @@
 {\sffamily\slshape The text in this chapter is identical to Section 4 of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609}.\\}
 
 In this chapter, we apply the methods from Chapter~\ref{ch:refined_model} to a reaction network generated in silico from glycolonitrile (or more formally 2-hydroxyethanenitrile), ammonia (NH$_3$), and water (H$_2$O), a network previously studied in \cite{implemented_CRN}. The choice of 2-hydroxyethanenitrile as the starting molecule was driven by the fact that it has been reported to occur in interstellar medium as a product of the condensation of methanal with hydrogen cyanide and act as a precursor to important molecules in pre-biotic systems~\cite{MeCN_precursor}. The previous work~\cite{implemented_CRN} constructed a free-energy map of the molecules that might be present when 2-hydroxyethanenitrile reacts with water and ammonia using computationally-intensive density functional theory calculations. It focused on finding thermodynamic sinks and kinetic barriers in the different regions of the free energy landscape.
+
+\section{Network Generation}
+
 In this chapter, the network was expanded using the graph transformation based generative framework M{\O}D \cite{mod_web}. The generation of the network, starting from the three above-mentioned molecules was done through the recursive application of the three graph transformation rules shown in Figure~\ref{fig:graphTransformationRules}.
 A graph transformation rules (to repeat what was already stated in Chapter~\ref{ch:casestudy1}) is a template representing a class of reactions, which share the same set of atoms involved in the reaction, with similar changes in the bond set. The left hand side of the rules is a subgraph (representing a molecular fragment), which can be rewritten as the subgraph on the right hand side, when a match is found in one of the graphs representing molecules already present in the reaction network. This executes a reaction, adding the new product molecules and the reaction the reaction network, and expands the molecular space.
 
@@ -79,6 +82,8 @@ The reason for choosing glycine is that it is the simplest amino acid and can be
     \caption{target molecules in the flow query.}
     \label{fig:targetMolecules}
 \end{figure}
+
+\section{Pathways to Glycine}
 
 The five best scoring pathways to the target glycine is depicted in Figure \ref{fig:pathway1}.
 The structures for the molecules in the corresponding vertices is listed in Table \ref{tab:molecular_structures1} and the weights assigned to the hyperedges listed in Table \ref{tab:pathways1}.
@@ -194,6 +199,7 @@ Ab initio molecular dynamics has been used in a previous work~\cite{crn_expand_q
     \label{tab:pathways2}
 \end{table}
 
+\section{Pathways to Glyoxlic acid}
 
 \begin{figure}[!t]
     \centering
@@ -215,5 +221,4 @@ Figure \ref{fig:pathway2} shows the six best pathways to 2-hydroxyethanoic acid 
 Table \ref{tab:pathways2} contains six columns that list the assigned weights for the hyperedges in the pathways illustrated in Figure \ref{fig:pathway2}. As in Table \ref{tab:pathways1}, the shaded cells indicate hyperedges that have already been used in a previously enumerated pathway. The specific hyperedge is mentioned below the energy barrier, with the reactants as the first element of the pair and the products as the second element. Individual molecules are separated by a `+', and the structures of the molecules the labels correspond to can be looked up from Table \ref{tab:molecular_structures2}. 
 
 The expansion of the network shown in Figure~\ref{fig: hypergraphRNChapter5} took 67 seconds. It is quite faster than comparable methods using reaction templates without using graph transformation, molecular dynamics or potential energy search as done in~\cite{implemented_CRN}. Annotating the $116$ hyperedges with the energy barriers of the reactions as weights took around an hour. Using a neural network instead of more accurate traditional methods does lead to trade off of the accuracy for speed, but it allows scalability for larger networks. Formulating the ILP and enumerating the pathways in the network to the two target molecules using the objective function \eqref{proposed_objective} took around $52$ seconds. All the reported times are the average of $10$ runs on an AMD$^{\circledR}$ Ryzen 5 PRO 4650U CPU (2.1 GHz) utilizing $8$ threads.
-One may also expand the network from methanal and hydrogen cyanide instead of 2-hydroxyethanenitrile and use a more general version of the rules where the variable heavy atoms are allowed to match with carbon. nitrogen or oxygen atoms. However, it leads to a larger network with $481$ vertices and $2768$ hyperedges, of which the considered network is a sub-network.
 

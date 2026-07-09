@@ -5,6 +5,10 @@
 
 {\sffamily\slshape The text in this chapter is identical to Appendix A and B of the published version of the preprint at \href{https://arxiv.org/abs/2504.10609}{arXiv:2504.10609}.\\}
 
+This chapter presents an alternative exposition, aiming to be less formal than Chapter~\ref{ch:toolbox}, of how reaction networks can be represented as hypergraphs and how pathways in them can be represented as integer hyperflows.
+
+\section{Reactions as Hyperedges}
+
 While one might choose to represent a reaction formally by \eqref{chemical_equation}, for more practical scenarios, it is just a collection of reactant molecules (with their multiplicities) that gets converted into a collection of product molecules (with some different multiplicities). For example,\\
 
 \begin{center}
@@ -37,53 +41,62 @@ This reaction is a two-to-one map which converts molecules $\{v_0, v_1\}$ to $\{
 \end{center}
 
 This object is called an hyperedge and the individual molecules $v_0$, $v_2$ and $v_3$ form the vertices. However, in a practical scenario, when the molecules $v_0$ and $v_2$ are allowed to react, reaction $e_1$ is not the only reaction that would occur and the system would not stop reacting after producing $v_3$. Successive reactions might also be possible.
-Some of the reactions that might occur when molecules of $v_0$ and $v_2$ are allowed to react is shown in the next page. To a chemist, not all the reactions would look feasible due to reactivity constraints on the molecules, which would disallow some of the reactions. However, all these reactions might possibly occur in the system in parallel, making it an example of a concurrent system. 
+Some of the reactions that might occur when molecules of $v_0$ and $v_2$ are allowed to react is shown in Table~\ref{tab:sample_reactions}. To a chemist, not all the reactions would look feasible due to reactivity constraints on the molecules, which would disallow some of the reactions. However, all these reactions might possibly occur in the system in parallel, making it an example of a concurrent system. 
 We would represent each reaction by a separate hyperedge and each class of molecules by a distinct vertex. This results in the structure shown in Figure~\ref{fig:sample_crnetwork}.
 The reverse reactions are omitted from the hypergraph in Figure~\ref{fig:sample_crnetwork} to reduce clutter. However, in our actual modeling, we do add separate hyperedges to represent the forward and backward directions of reversible reactions.
 
-\begin{center}
-\begin{tiny}
-\textcolor{Blue}{
-\begin{tabular}{cccccc}
-     $e_1$: &\chemfig{H_2O} + &\chemfig{HO-[:30]-[:-30]~[:-30]N} &$\rightarrow$ &\chemfig{HO-[:-30]-[:30](-[:90]OH)=[:-30]NH} \\
-     & $v_2$ & $v_0$ && $v_3$ \\[4mm]
-     $e_2$: &\chemfig{H_2O} + &\chemfig{HO-[:-30]-[:30](-[:90]OH)=[:-30]NH} &$\rightleftarrows$ &\chemfig{HO-[:-30]-[:30](-[:120]HO)(-[:60]OH)-[:-30]NH_2} \\
-     & $v_2$ & $v_3$ && $v_4$ \\[4mm]
-     $e_3$: &&\chemfig{HO-[:-30]-[:30](-[:90]OH)=[:-30]NH} &$\rightleftarrows$ &\chemfig{HO-[:-30]-[:30](=[:90]O)-[:-30]NH_2}\\
-     && $v_3$ && $v_5$ \\[4mm]
-     $e_4$: &\chemfig{H_2O} + &\chemfig{HO-[:-30]-[:30](=[:90]O)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{HO-[:-30]-[:30](-[:120]HO)(-[:60]OH)-[:-30]NH_2} \\
-     & $v_2$ & $v_5$ && $v_4$ \\[4mm]
-     $e_5$: &&\chemfig{HO-[:-30]-[:30](-[:120]HO)(-[:60]OH)-[:-30]NH_2} &$\rightarrow$ &\chemfig{HO-[:-30]-[:30](=[:90]O)-[:-30]OH} &+ \chemfig{NH_3}\\
-     && $v_4$  && $v_6$ & $v_1$ \\[4mm]
-     $e_6$: &&\chemfig{HO-[:-30]-[:30](-[:90]OH)=[:-30]NH} &$\rightleftarrows$ &\chemfig{HO-[:-30]=[:30](-[:90]OH)-[:-30]NH_2} \\
-     && $v_3$ && $v_7$ \\[4mm]
-     $e_7$: &&\chemfig{HO-[:-30]-[:30](=[:90]O)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{HO-[:-30]=[:30](-[:90]OH)-[:-30]NH_2} \\
-     && $v_5$ && $v_7$ \\[4mm]
-     $e_8$: &&\chemfig{HO-[:-30]=[:30](-[:90]OH)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{O=[:-30]-[:30](-[:90]OH)-[:-30]NH_2} \\
-     && $v_7$ && $v_8$ \\[4mm]
-     $e_9$: &&\chemfig{O=[:-30]-[:30](-[:90]OH)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{O=[:-30]-[:30]=[:-30]O} &+\chemfig{NH_3} \\
-     && $v_8$ && $v_9$ & $v_1$ \\[4mm]
-     $e_{10}$: &&\chemfig{O=[:-30]-[:30](-[:90]OH)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{O=[:-30]-[:30]=[:-30]NH} &+\chemfig{H_2O} \\
-     && $v_8$ && $v_{10}$ & $v_2$ \\[4mm]
-     $e_{11}$: &\chemfig{H_2O} + &\chemfig{O=[:-30]-[:30](-[:90]OH)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{HO-[:-30](-[:-90]OH)-[:30](-[:90]OH)-[:-30]NH_2} \\
-     &$v_2$ & $v_8$ && $v_{11}$ \\[5mm]
-\end{tabular}
-}
-\end{tiny}
-\end{center}
-
 This data structure representing the concurrent set of reactions in the system is called a multi-directed hypergraph or for simplicity, just a hypergraph and is shown in Figure~\ref{fig:sample_crnetwork}. An advantage of using this data structure is that is faithfully represents the many-to-many mappings which are present in reactions which are not unimolecular. Contrast this with a simple directed graph containing edges which map one vertex to another vertex, which are often used to represent and study networks in many situations. The hypergraph in Figure~\ref{fig: hypergraph} is an abstraction of another system of concurrent reactions.
 
-\begin{figure}[!h]
+Besides hypergraphs, reaction networks can also be represented by bipartite graphs~\cite{bipartite_crn,bipartite_crn2}, where the edges are represented by vertices instead of hyperedges. Therefore, in this representation there are two types of vertices: one representing molecules and the other reactions. While this allows the use of standard graph algorithms to the data structure, a single reaction consists of multiple edges. It becomes a subgraph in this representation instead of a single object. A particular variant representing a reaction network as a bipartite graph is the species-reaction graph~\cite{species_reaction_graph}, which uses two graphs: a species graph where the molecules are vertices and each reaction induces several edges, and a reaction graph where the reactions are vertices and an edge indicates that the product of the reaction is the reactant of the reaction on which the edge is incident. While these are simpler representations which are easier to analyse, it leads to loss of information compared to representing reaction networks as hypergraphs. Reaction networks can also be represented by a single stonchiometric matrix as it is often done during flux-balance and elementary mode analysis.
+
+\begin{figure}[!b]
     \centering
+    \vspace{0.8cm}
     \includegraphics[scale=1.0]{graphics/chapter1/sample_network.pdf}
+    \vspace{0.4cm}
     \caption{A hypergraph representation of the reactions in the concurrent system.}
     \label{fig:sample_crnetwork}
 \end{figure}
 
+\begin{table}[!h]
+	\begin{center}
+	\begin{tiny}
+	\textcolor{Blue}{
+		\begin{tabular}{cccccc}
+			 $e_1$: &\chemfig{H_2O} + &\chemfig{HO-[:30]-[:-30]~[:-30]N} &$\rightarrow$ &\chemfig{HO-[:-30]-[:30](-[:90]OH)=[:-30]NH} \\
+			 & $v_2$ & $v_0$ && $v_3$ \\[4mm]
+			 $e_2$: &\chemfig{H_2O} + &\chemfig{HO-[:-30]-[:30](-[:90]OH)=[:-30]NH} &$\rightleftarrows$ &\chemfig{HO-[:-30]-[:30](-[:120]HO)(-[:60]OH)-[:-30]NH_2} \\
+			 & $v_2$ & $v_3$ && $v_4$ \\[4mm]
+			 $e_3$: &&\chemfig{HO-[:-30]-[:30](-[:90]OH)=[:-30]NH} &$\rightleftarrows$ &\chemfig{HO-[:-30]-[:30](=[:90]O)-[:-30]NH_2}\\
+			 && $v_3$ && $v_5$ \\[4mm]
+			 $e_4$: &\chemfig{H_2O} + &\chemfig{HO-[:-30]-[:30](=[:90]O)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{HO-[:-30]-[:30](-[:120]HO)(-[:60]OH)-[:-30]NH_2} \\
+			 & $v_2$ & $v_5$ && $v_4$ \\[4mm]
+			 $e_5$: &&\chemfig{HO-[:-30]-[:30](-[:120]HO)(-[:60]OH)-[:-30]NH_2} &$\rightarrow$ &\chemfig{HO-[:-30]-[:30](=[:90]O)-[:-30]OH} &+ \chemfig{NH_3}\\
+			 && $v_4$  && $v_6$ & $v_1$ \\[4mm]
+			 $e_6$: &&\chemfig{HO-[:-30]-[:30](-[:90]OH)=[:-30]NH} &$\rightleftarrows$ &\chemfig{HO-[:-30]=[:30](-[:90]OH)-[:-30]NH_2} \\
+			 && $v_3$ && $v_7$ \\[4mm]
+			 $e_7$: &&\chemfig{HO-[:-30]-[:30](=[:90]O)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{HO-[:-30]=[:30](-[:90]OH)-[:-30]NH_2} \\
+			 && $v_5$ && $v_7$ \\[4mm]
+			 $e_8$: &&\chemfig{HO-[:-30]=[:30](-[:90]OH)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{O=[:-30]-[:30](-[:90]OH)-[:-30]NH_2} \\
+			 && $v_7$ && $v_8$ \\[4mm]
+			 $e_9$: &&\chemfig{O=[:-30]-[:30](-[:90]OH)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{O=[:-30]-[:30]=[:-30]O} &+\chemfig{NH_3} \\
+			 && $v_8$ && $v_9$ & $v_1$ \\[4mm]
+			 $e_{10}$: &&\chemfig{O=[:-30]-[:30](-[:90]OH)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{O=[:-30]-[:30]=[:-30]NH} &+\chemfig{H_2O} \\
+			 && $v_8$ && $v_{10}$ & $v_2$ \\[4mm]
+			 $e_{11}$: &\chemfig{H_2O} + &\chemfig{O=[:-30]-[:30](-[:90]OH)-[:-30]NH_2} &$\rightleftarrows$ &\chemfig{HO-[:-30](-[:-90]OH)-[:30](-[:90]OH)-[:-30]NH_2} \\
+			 &$v_2$ & $v_8$ && $v_{11}$ \\[5mm]
+		\end{tabular}
+	}
+	\end{tiny}
+	\end{center}
+	\caption{Some reactions that might occur when the molecules $v_0$ and $v_1$ are allowed to react.}
+    \label{tab:sample_reactions}
+\end{table}
+\clearpage
+
 \begin{figure}[!h]
 	\centering
-	\vspace{1.5cm}
+	\vspace{1.0cm}
 	\begin{subfigure}{\textwidth}
 		\centering
 		\begin{tiny}
@@ -97,31 +110,33 @@ This data structure representing the concurrent set of reactions in the system i
 		\label{tab:sample_path1}
     \end{subfigure}
     \\
-    \vspace{0.8cm}
+    \vspace{0.5cm}
     \begin{subfigure}{\textwidth}
     	\centering
     	\includegraphics[scale=1.0]{graphics/chapter1/sample_path1.pdf}
+    	\vspace{0.5cm}
     	\caption{A pathway in a hypergraph with the queried molecules $v_9$. The number in the squares denote the number of times the reaction is used to carry out the transformation or the flow assigned to the corresponding hyperedge.}
     	\label{fig:sample_path1}
 	\end{subfigure}
-	\vspace{0.4cm}
+	\vspace{0.5cm}
     \caption{The hyperflow denoting the pathway from Figure~\ref{tab:sample_path1} is shown in the hypergraph from Figure~\ref{fig:sample_crnetwork}.}
     \label{fig: samplePath1}
 \end{figure}
-\newpage
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=1.0]{graphics/chapter1/sample_path2.pdf}
+    \vspace{0.5cm}
+    \caption{An alternative pathway to the same flow query as in Figure~\ref{fig:sample_path1}.}
+    \label{fig:sample_path2}
+\end{figure}
+
+\section{Pathways as Hyperflows}
 One observes that glyoxal is represented as vertex $v_9$ in the hypergraph. One might query, how one inside this hypergraph can find a pathway producing glyoxal while using the input molecules $v_0$ and $v_2$. One possible transformation pathway is shown in Scheme~\ref{tab:sample_path1}.
 
 Highlighting the hyperedges used in this transformation pathway in the hypergraph results in Figure~\ref{fig:sample_path1}. This sequence of reactions in a pathway can be found by formulating it as a flow query with molecules $v_0$ and $v_2$ as the source molecules and $v_9$ as the target molecule. The ILP assigns integers to the hyperedges which denote the number of times the hyperedge is used in the pathway. Since the flows assigned to the hyperedges are constrained to be integers, this is called an integer hyperflow. The motivation behind using allowing only non-negative integers as permissible hyperflows on a hyperedge is discussed in Chapter~\ref{ch:thermodynamic_model}.
 
 Often, there might exist alternative solutions to the flow query. In this case, there exists another valid integer hyperflow to the same flow query in the network with molecules $v_0$ and $v_2$ as the source molecules and $v_9$ as the target molecule which is shown in Figure~\ref{fig:sample_path2}
-
-\begin{figure}[!t]
-    \centering
-    \includegraphics[scale=1.0]{graphics/chapter1/sample_path2.pdf}
-    \caption{An alternative pathway to the same flow query as in Figure~\ref{fig:sample_path1}.}
-    \label{fig:sample_path2}
-\end{figure}
 
 It might so happen than the reaction $v_3 \rightarrow v_7$ is slow (because it has a high energy barrier) and the two step process $v_3 \rightarrow v_5 \rightarrow v_7$ is faster. To judge which of the two pathways is better, a score is assign to them by evaluating an objective function (expression \eqref{proposed_objective} is used in this work) on the pathway, and the one with a better score is ranked higher. This automated search for pathways in a reaction system represented as a hypergraph is the motivation behind introducing the formalism of integer hyperflows in Chapter~\ref{ch:toolbox}.
 
@@ -136,7 +151,7 @@ For example, in the list of reaction depicted in the hypergraph~\ref{fig:sample_
 \end{itemize}
 Some might prefer more fine-grained reaction templates. For instance, one might define separate templates for keto-enol tautomerism, amide-iminol tautomerism or imine-enamine tautomerism, and similarly for addition to a trigonal planar carbonyl carbon atom and addition to a trigonal planar imine carbon atom. However, that is simply a question of the level of abstraction that the user chooses to work with.
 
-\subsection{Graph transformation rules}
+\section{Graph transformation rules}
 We choose to represent molecules using undirected labeled graphs (hereafter called molecular graphs). The nodes in the graph represent atoms labeled by the symbol of the element, and can carry attributes such as the charge on the atom. The edges in the graph represent bonds labeled by the bond type (single, double, triple or aromatic). with this representation of molecules, the reaction templates used to abstract reactions become graph transformation rules.
 
 A graph transformation rule consists of a subgraph on the left side which can be replaced by the subgraph on the right side when a match of the left-hand side is found in an already existing molecular graph in the network. In other words, the rule converts a part of the graph (representing a fragment of a molecule) and performs a chemical reaction. Let's consider the exchange of hydrogen atoms between oxygen atoms in a carboxylic acid.
@@ -150,7 +165,7 @@ A graph transformation rule consists of a subgraph on the left side which can be
 \end{tiny}
 \end{center}
 
-The graph transformation rule for this class of reactions would be:
+\noindent The graph transformation rule for this class of reactions would be:
 \begin{center}
     \begin{tikzpicture}[scale=1.0]    
         \tikzset{
@@ -179,7 +194,7 @@ The graph transformation rule for this class of reactions would be:
     \end{tikzpicture}
 \end{center}
 
-The amide-iminol conversion is a more substantial example.
+\noindent The amide-iminol conversion is a more substantial example.
 \begin{center}
 \begin{tiny}
 \textcolor{Blue}{
@@ -189,7 +204,7 @@ The amide-iminol conversion is a more substantial example.
 \end{tiny}
 \end{center}
 
-The graph transformation rule for this class of reactions would be:
+\noindent The graph transformation rule for this class of reactions would be:
 \begin{center}
     \begin{tikzpicture}[scale=1.0]    
         \tikzset{
@@ -219,7 +234,7 @@ The graph transformation rule for this class of reactions would be:
 \end{center}
 This rule rewrites an amide fragment when it is found in a molecule with an iminol fragment, thus effecting the required reaction.
 
-For a keto-enol tautomerism like
+\noindent For a keto-enol tautomerism like
 \begin{center}
 \begin{tiny}
 \textcolor{Blue}{
@@ -229,7 +244,7 @@ For a keto-enol tautomerism like
 \end{tiny}
 \end{center}
 
-the graph transformation rule for this class of reactions would be:
+\noindent the graph transformation rule for this class of reactions would be:
 \begin{center}
     \begin{tikzpicture}[scale=1.0]    
         \tikzset{
@@ -336,7 +351,7 @@ Similarly the graph transformation rule
     \end{tikzpicture}
 \end{center}
 
-encodes the addition of a water or ammonia molecule to a carbonyl or imine group.
+\noindent encodes the addition of a water or ammonia molecule to a carbonyl or imine group.
 \begin{center}
 \begin{tiny}
 \textcolor{Blue}{
@@ -352,11 +367,20 @@ We admit that these reactions are not a simple one step process as the transform
 
 In all the graph transformation rules in this section, the context graph $K$, which comes between the left and right-hand sides, is omitted. The context graph must be added to the graph transformation rules for mathematical correctness. It ensures that logically the bonds are first removed, and then added, making the graph rewriting a two-step process.
 
-\subsection{Rule application to a graph}
+\section{Rule application to a graph}
+\label{rule_application}
 
-When a graph transformation rule is applied to a set of reactant molecules, a reaction might occur. First, it is checked if the left-hand side of the rule, $L$, is present as a subgraph in the set of reactant molecules $G$. If so, then that subgraph is rewritten according to the rule to R, to generate a new set of molecules $H$, the product molecules. This process is illustrated in Figure~\ref{fig:rule_application1}.
+There are multiple ways to transform graphs and for the generation of reactions, the Double Pushout (DPO) method is used. As illustrative example is shown in Figure~\ref{fig:dpo_diagram}. The graph transformation operation can be labelled allowing changes to the labels of vertices or edges in the molecular graph to be specified by the rule. For chemical reactions, the graphs $G$ or $H$ might not be a single molecule (or in other words be a single connected component). 
 
 \begin{figure}[!b]
+    \centering
+    \includegraphics[scale=1.0]{graphics/chapter1/dpo.pdf}
+    \vspace{0.5cm}
+    \caption{The diagram representing the graph transformation opreration $G\implies H$ using the Double Pushout method using the graph transformation rule $p\equiv L\leftarrow K\rightarrow R$ and the match $m_0$.}
+    \label{fig:dpo_diagram}
+\end{figure}
+
+\begin{figure}[!th]
 	\vspace{0.5cm}
     \begin{subfigure}{\textwidth}
         \centering
@@ -374,6 +398,10 @@ When a graph transformation rule is applied to a set of reactant molecules, a re
     \caption{Two examples of the application of a graph transformation rule to a collection of molecules.}
     \label{fig:rule_application1}
 \end{figure}
+
+When a graph transformation rule is applied to a set of reactant molecules, a reaction might occur. In the double pushout (DPO) approach, a rule is defined by three graphs, $(L \xleftarrow{} K \xrightarrow{} R)$, where $L$ is the left-hand side (the reaction pattern before the transformation), $R$ is the right-hand side (the reaction pattern after the transformation), and $K$ is the context graph containing the atoms and bonds that are preserved during the reaction and are necessary for it to occur.
+
+To apply a rule, the algorithm first determines whether the left graph $L$ can be embedded into the graph $G$ representing the set of reactant molecules. This embedding, known as a graph morphism or match, identifies a subgraph of $G$ that satisfies the structural constraints of the rule. If a match is found, the matched subgraph is transformed by removing the atoms and bonds specified by $L \setminus K$ and inserting those specified by $R \setminus K$. The resulting graph, denoted by $H$, represents the set of product molecules generated by the reaction. This transformation preserves the connectivity of the unaffected parts of the reactant molecules and ensures that atoms are neither arbitrarily created nor destroyed, reflecting the mass conservation principles of chemical reactions. This process is illustrated in Figure~\ref{fig:rule_application1}. Note that in Figure~\ref{fig:rule_application1b}, there are two graphs on the reactant side to which the left side of the transformation rule has matched. The context graph $K$ in the transformation rule and the corresponding molecular graph is omitted from Figure~\ref{fig:rule_application1} for clarity, but it is important for correct order of the operations while transforming graphs: first edges are removed and then edges are added.
 
 If the left-hand side of the rule, $L$, is not present in the set of molecules $G$, then that reaction template cannot be applied to the given set of molecules as shown in Figure~\ref{fig:rule_application2}.
 
@@ -425,7 +453,7 @@ Therefore, the application of a rule to an existing set of molecules might produ
 \end{figure}
 
 
-\subsection{Construction of the reaction network}
+\section{Construction of the reaction network}
 
 The construction of the reaction network requires a set of input molecules and some graph transformation rules. A match between a collection of molecules and the subgraph on the left-hand side of one of the transformation rules means that this reaction template can be applied to that collection of molecules created from the input set of molecules. Thus, when a rule is applied to a collection of molecules from the current set of molecules, new molecules are created. In a generative process, these new molecules are then added to the set of available molecules (i.e., this set is updated). Graph transformation rules can be recursively applied to this new set of molecules, effecting more reactions to be made and thus the molecular space expands. The hypergraph representation of the network keeps track of all the reactions performed and of the molecules current present in the network.
 

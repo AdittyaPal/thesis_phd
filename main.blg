@@ -1,15 +1,21 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
+[1] Config.pm:307> INFO - This is Biber 2.19
 [1] Config.pm:310> INFO - Logfile is 'main.blg'
-[163] biber:340> INFO - === Wed Jun 17, 2026, 15:24:54
-[190] Biber.pm:419> INFO - Reading 'main.bcf'
-[350] Biber.pm:979> INFO - Found 109 citekeys in bib section 0
-[375] Biber.pm:4419> INFO - Processing section 0
-[397] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
-[409] bibtex.pm:1713> INFO - LaTeX decoding ...
-[685] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[2541] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2541] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2541] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[2541] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[2737] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[2885] bbl.pm:763> INFO - Output to main.bbl
+[249] biber:340> INFO - === Thu Jul  9, 2026, 11:41:54
+[312] Biber.pm:419> INFO - Reading 'main.bcf'
+[567] Biber.pm:979> INFO - Found 150 citekeys in bib section 0
+[604] Biber.pm:4419> INFO - Processing section 0
+[639] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[663] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1477] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[5638] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[5638] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[5638] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[5639] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[5936] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[6269] bbl.pm:763> INFO - Output to main.bbl
+[6270] Biber.pm:131> WARN - Duplicate entry key: 'jakob_graph_grammar' in file 'references.bib', skipping ...
+[6270] Biber.pm:131> WARN - Duplicate entry key: 'large_crn' in file 'references.bib', skipping ...
+[6271] Biber.pm:131> WARN - Duplicate entry key: 'large_crn2' in file 'references.bib', skipping ...
+[6271] Biber.pm:131> WARN - legacy month field 'Mar' in entry 'randomwalk2' is not an integer - this will probably not sort properly.
+[6271] Biber.pm:131> WARN - legacy month field 'Jan' in entry 'randomwalk3' is not an integer - this will probably not sort properly.
+[6271] Biber.pm:133> INFO - WARNINGS: 5

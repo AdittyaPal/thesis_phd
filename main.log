@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.24)  23 JUN 2026 22:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.24)  9 JUL 2026 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1046,17 +1046,50 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 )
 \SF@tempdima=\dimen285
 )
-(/usr/share/texlive/texmf-dist/tex/generic/chemfig/chemfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count480
+\float@exts=\toks37
+\float@box=\box62
+\@float@everytoks=\toks38
+\@floatcapt=\box63
+)
+\@float@every@algorithm=\toks39
+\c@algorithm=\count481
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count482
+\c@ALG@rem=\count483
+\c@ALG@nested=\count484
+\ALG@tlm=\skip279
+\ALG@thistlm=\skip280
+\c@ALG@Lnr=\count485
+\c@ALG@blocknr=\count486
+\c@ALG@storecount=\count487
+\c@ALG@tmpcounter=\count488
+\ALG@tmplength=\skip281
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/generic/chemfig/chemfig.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks37
+\pgfutil@everybye=\toks40
 \pgfutil@tempdima=\dimen286
 \pgfutil@tempdimb=\dimen287
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box62
+\pgfutil@abb=\box64
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -1070,12 +1103,12 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks38
-\pgfkeys@temptoks=\toks39
+\pgfkeys@pathtoks=\toks41
+\pgfkeys@temptoks=\toks42
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
 .code.tex
-\pgfkeys@tmptoks=\toks40
+\pgfkeys@tmptoks=\toks43
 ))
 \pgf@x=\dimen288
 \pgf@y=\dimen289
@@ -1089,14 +1122,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen297
 \w@pgf@writea=\write6
 \r@pgf@reada=\read5
-\c@pgf@counta=\count480
-\c@pgf@countb=\count481
-\c@pgf@countc=\count482
-\c@pgf@countd=\count483
-\t@pgf@toka=\toks41
-\t@pgf@tokb=\toks42
-\t@pgf@tokc=\toks43
-\pgf@sys@id@count=\count484
+\c@pgf@counta=\count489
+\c@pgf@countb=\count490
+\c@pgf@countc=\count491
+\c@pgf@countd=\count492
+\t@pgf@toka=\toks44
+\t@pgf@tokb=\toks45
+\t@pgf@tokc=\toks46
+\pgf@sys@id@count=\count493
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -1111,8 +1144,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count485
-\pgfsyssoftpath@bigbuffer@items=\count486
+\pgfsyssoftpath@smallbuffer@items=\count494
+\pgfsyssoftpath@bigbuffer@items=\count495
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -1125,11 +1158,11 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen298
-\pgfmath@count=\count487
-\pgfmath@box=\box63
-\pgfmath@toks=\toks44
-\pgfmath@stack@operand=\toks45
-\pgfmath@stack@operation=\toks46
+\pgfmath@count=\count496
+\pgfmath@box=\box65
+\pgfmath@toks=\toks47
+\pgfmath@stack@operand=\toks48
+\pgfmath@stack@operation=\toks49
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -1150,7 +1183,7 @@ tex)
 thmetics.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count488
+\c@pgfmathroundto@lastzeros=\count497
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
@@ -1186,10 +1219,10 @@ File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box64
-\pgf@hbox=\box65
-\pgf@layerbox@main=\box66
-\pgf@picture@serial@count=\count489
+\pgfpic=\box66
+\pgf@hbox=\box67
+\pgf@layerbox@main=\box68
+\pgf@picture@serial@count=\count498
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -1222,8 +1255,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen322
-\pgf@sys@shading@range@num=\count490
-\pgf@shadingcount=\count491
+\pgf@sys@shading@range@num=\count499
+\pgf@shadingcount=\count500
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -1231,7 +1264,7 @@ File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box67
+\pgfexternal@startupbox=\box69
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -1250,7 +1283,7 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box68
+\pgfnodeparttextbox=\box70
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -1272,8 +1305,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen325
 \pgffor@skip=\dimen326
-\pgffor@stack=\toks47
-\pgffor@toks=\toks48
+\pgffor@stack=\toks50
+\pgffor@toks=\toks51
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
@@ -1281,7 +1314,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count492
+\pgf@plot@mark@count=\count501
 \pgfplotmarksize=\dimen327
 )
 \tikz@lastx=\dimen328
@@ -1292,22 +1325,22 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@lastmovetoy=\dimen333
 \tikzleveldistance=\dimen334
 \tikzsiblingdistance=\dimen335
-\tikz@figbox=\box69
-\tikz@figbox@bg=\box70
-\tikz@tempbox=\box71
-\tikz@tempbox@bg=\box72
-\tikztreelevel=\count493
-\tikznumberofchildren=\count494
-\tikznumberofcurrentchild=\count495
-\tikz@fig@count=\count496
+\tikz@figbox=\box71
+\tikz@figbox@bg=\box72
+\tikz@tempbox=\box73
+\tikz@tempbox@bg=\box74
+\tikztreelevel=\count502
+\tikznumberofchildren=\count503
+\tikznumberofcurrentchild=\count504
+\tikz@fig@count=\count505
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count497
-\pgfmatrixcurrentcolumn=\count498
-\pgf@matrix@numberofcolumns=\count499
+\pgfmatrixcurrentrow=\count506
+\pgfmatrixcurrentcolumn=\count507
+\pgf@matrix@numberofcolumns=\count508
 )
-\tikz@expandcount=\count500
+\tikz@expandcount=\count509
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1325,21 +1358,21 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowwidth=\dimen338
 \pgfarrowlinewidth=\dimen339
 )
-\CF_cnt_atomgroup=\count501
-\CF_cnt_group=\count502
-\CF_cnt_atom=\count503
-\CF_cnt_cycle=\count504
-\CF_cnt_cyclebonds=\count505
-\CF_cnt_compound=\count506
+\CF_cnt_atomgroup=\count510
+\CF_cnt_group=\count511
+\CF_cnt_atom=\count512
+\CF_cnt_cycle=\count513
+\CF_cnt_cyclebonds=\count514
+\CF_cnt_compound=\count515
 \CF_dim=\dimen340
 \CF_turnangle=\dimen341
 \CF_arrowsize=\dimen342
 \CF_zero=\dimen343
-\CF_box=\box73
-\CF_boxstuff=\box74
-\CF_testbox=\box75
-\CF_chargebox=\box76
-\CF_substtoks=\toks49
+\CF_box=\box75
+\CF_boxstuff=\box76
+\CF_testbox=\box77
+\CF_chargebox=\box78
+\CF_substtoks=\toks52
 )
 Package: chemfig 2023/12/28 v1.66 Draw molecule with an easy syntax (CT)
 ) (./config/metadata.tex)
@@ -1347,8 +1380,8 @@ Package: chemfig 2023/12/28 v1.66 Draw molecule with an easy syntax (CT)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count507
-\@quotereset=\count508
+\@quotelevel=\count516
+\@quotereset=\count517
 (./main.aux
 
 LaTeX Warning: Label `fig: hyperedge' multiply defined.
@@ -1356,24 +1389,24 @@ LaTeX Warning: Label `fig: hyperedge' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1388,21 +1421,21 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 42.
-Package biblatex Info: Reference segment=0 on input line 42.
+Package biblatex Info: Reference section=0 on input line 46.
+Package biblatex Info: Reference segment=0 on input line 46.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count509
+\scratchcounter=\count518
 \scratchdimen=\dimen344
-\scratchbox=\box77
-\nofMPsegments=\count510
-\nofMParguments=\count511
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count512
+\scratchbox=\box79
+\nofMPsegments=\count519
+\nofMParguments=\count520
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count521
 \MPscratchDim=\dimen345
-\MPnumerator=\count513
-\makeMPintoPDFobject=\count514
-\everyMPtoPDFconversion=\toks51
+\MPnumerator=\count522
+\makeMPintoPDFobject=\count523
+\everyMPtoPDFconversion=\toks54
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1413,21 +1446,22 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 42.
-Package microtype Info: Applying patch `item' on input line 42.
-Package microtype Info: Applying patch `toc' on input line 42.
-Package microtype Info: Applying patch `eqnum' on input line 42.
-Package microtype Info: Applying patch `footnote' on input line 42.
-Package microtype Info: Applying patch `verbatim' on input line 42.
+LaTeX Info: Redefining \microtypecontext on input line 46.
+Package microtype Info: Applying patch `item' on input line 46.
+Package microtype Info: Applying patch `toc' on input line 46.
+Package microtype Info: Applying patch `eqnum' on input line 46.
+Package microtype Info: Applying patch `footnote' on input line 46.
+Package microtype Info: Applying patch `verbatim' on input line 46.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 42.
+LaTeX Info: Redefining \showhyphens on input line 46.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1436,7 +1470,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring ON on input line 42.
+Package hyperref Info: Link coloring ON on input line 46.
  (./main.out)
 (./main.out)
 \@outlinefile=\write7
@@ -1467,10 +1501,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
-(./frontmatter/abstract.tex [3] [4
+) [3]
+Overfull \hbox (1.74956pt too wide) detected at line 53
+ \T1/cmr/bx/n/10 101
+ []
 
-] [5]) [6] (./chapters/prolog.tex
+
+Overfull \hbox (1.74956pt too wide) detected at line 60
+ \T1/cmr/bx/n/10 111
+ []
+
+
+Overfull \hbox (1.74956pt too wide) detected at line 61
+ \T1/cmr/bx/n/10 115
+ []
+
+) (./frontmatter/abstract.tex [4] [5
+
+]) [6] (./chapters/prolog.tex
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 6
 .
 
@@ -1486,29 +1534,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-<graphics/prolog/crn_metabolite.pdf, id=195, 151.15572pt x 220.81195pt>
+<graphics/prolog/crn_metabolite.pdf, id=291, 151.15572pt x 220.81195pt>
 File: graphics/prolog/crn_metabolite.pdf Graphic file (type pdf)
 <use graphics/prolog/crn_metabolite.pdf>
 Package pdftex.def Info: graphics/prolog/crn_metabolite.pdf  used on input line
  21.
-(pdftex.def)             Requested size: 163.67854pt x 239.12698pt.
+(pdftex.def)             Requested size: 113.3665pt x 165.60855pt.
 
 Underfull \hbox (badness 1975) in paragraph at lines 22--22
 []\T1/cmr/m/n/9 (+20) (a) |a re-ac-tion net-work show-ing the
  []
 
-<graphics/prolog/crn_atmosphere.pdf, id=198, 163.64537pt x 241.42696pt>
+<graphics/prolog/crn_atmosphere.pdf, id=294, 163.64537pt x 241.42696pt>
 File: graphics/prolog/crn_atmosphere.pdf Graphic file (type pdf)
 <use graphics/prolog/crn_atmosphere.pdf>
 Package pdftex.def Info: graphics/prolog/crn_atmosphere.pdf  used on input line
  28.
-(pdftex.def)             Requested size: 163.67854pt x 241.48161pt.
-<graphics/prolog/crn_astronomy.pdf, id=201, 467.10411pt x 154.59657pt>
+(pdftex.def)             Requested size: 122.73372pt x 181.06976pt.
+<graphics/prolog/crn_astronomy.pdf, id=297, 467.10411pt x 154.59657pt>
 File: graphics/prolog/crn_astronomy.pdf Graphic file (type pdf)
 <use graphics/prolog/crn_astronomy.pdf>
 Package pdftex.def Info: graphics/prolog/crn_astronomy.pdf  used on input line 
 37.
-(pdftex.def)             Requested size: 341.0pt x 112.86162pt.
+(pdftex.def)             Requested size: 340.98317pt x 112.85454pt.
+<graphics/prolog/crn_formose.pdf, id=300, 1124.28333pt x 341.83308pt>
+File: graphics/prolog/crn_formose.pdf Graphic file (type pdf)
+<use graphics/prolog/crn_formose.pdf>
+Package pdftex.def Info: graphics/prolog/crn_formose.pdf  used on input line 45
+.
+(pdftex.def)             Requested size: 224.85268pt x 68.3654pt.
 
 Underfull \vbox (badness 4927) has occurred while \output is active []
 
@@ -1516,111 +1570,113 @@ Underfull \vbox (badness 4927) has occurred while \output is active []
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./graphics/prolog/crn_metabolite.pdf> <./graphics/prolog/crn_atmosphere.pd
-f> <./graphics/prolog/crn_astronomy.pdf>] [3] [4] [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Text page 2 contains only floats.
 
- [6])
-(./chapters/chapter0.tex [7] [8
+
+Overfull \vbox (1.80247pt too high) has occurred while \output is active []
+
+
+[2 <./graphics/prolog/crn_metabolite.pdf> <./graphics/prolog/crn_atmosphere.pdf
+> <./graphics/prolog/crn_astronomy.pdf> <./graphics/prolog/crn_formose.pdf>]
+[3] [4] [5] [6] [7] [8]) (./chapters/chapter0.tex [9] [10
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[9]
-<graphics/chapter0/hyperedge.pdf, id=421, 108.11893pt x 51.21333pt>
+[11]
+<graphics/chapter0/hyperedge.pdf, id=574, 108.11893pt x 51.21333pt>
 File: graphics/chapter0/hyperedge.pdf Graphic file (type pdf)
 <use graphics/chapter0/hyperedge.pdf>
 Package pdftex.def Info: graphics/chapter0/hyperedge.pdf  used on input line 50
 .
 (pdftex.def)             Requested size: 108.11864pt x 51.2132pt.
-<graphics/chapter0/hyperedge_catalyst.pdf, id=422, 108.11893pt x 51.21333pt>
+<graphics/chapter0/hyperedge_catalyst.pdf, id=575, 108.11893pt x 51.21333pt>
 File: graphics/chapter0/hyperedge_catalyst.pdf Graphic file (type pdf)
 <use graphics/chapter0/hyperedge_catalyst.pdf>
 Package pdftex.def Info: graphics/chapter0/hyperedge_catalyst.pdf  used on inpu
 t line 60.
 (pdftex.def)             Requested size: 108.11864pt x 51.2132pt.
-<graphics/chapter0/hypergraph.pdf, id=423, 156.11021pt x 158.31145pt>
+<graphics/chapter0/hypergraph.pdf, id=576, 156.11021pt x 158.31145pt>
 File: graphics/chapter0/hypergraph.pdf Graphic file (type pdf)
 <use graphics/chapter0/hypergraph.pdf>
 Package pdftex.def Info: graphics/chapter0/hypergraph.pdf  used on input line 6
 9.
 (pdftex.def)             Requested size: 156.10982pt x 158.31105pt.
- [10 <./graphics/chapter0/hyperedge.pdf> <./graphics/chapter0/hyperedge_catalys
+ [12 <./graphics/chapter0/hyperedge.pdf> <./graphics/chapter0/hyperedge_catalys
 t.pdf> <./graphics/chapter0/hypergraph.pdf>]
-<graphics/chapter0/flowQuery.pdf, id=487, 197.09735pt x 189.31628pt>
+<graphics/chapter0/flowQuery.pdf, id=640, 197.09735pt x 189.31628pt>
 File: graphics/chapter0/flowQuery.pdf Graphic file (type pdf)
 <use graphics/chapter0/flowQuery.pdf>
 Package pdftex.def Info: graphics/chapter0/flowQuery.pdf  used on input line 11
 9.
 (pdftex.def)             Requested size: 197.09686pt x 189.31581pt.
- [11]
+ [13]
 Underfull \vbox (badness 4967) has occurred while \output is active []
 
- [12 <./graphics/chapter0/flowQuery.pdf>] [13]
-<graphics/chapter0/hyperpath1.pdf, id=569, 197.09735pt x 171.43549pt>
+ [14 <./graphics/chapter0/flowQuery.pdf>] [15]
+<graphics/chapter0/hyperpath1.pdf, id=722, 197.09735pt x 171.43549pt>
 File: graphics/chapter0/hyperpath1.pdf Graphic file (type pdf)
 <use graphics/chapter0/hyperpath1.pdf>
 Package pdftex.def Info: graphics/chapter0/hyperpath1.pdf  used on input line 2
 37.
 (pdftex.def)             Requested size: 163.67854pt x 142.36989pt.
-<graphics/chapter0/hyperpath2.pdf, id=570, 197.09735pt x 171.43549pt>
+<graphics/chapter0/hyperpath2.pdf, id=723, 197.09735pt x 171.43549pt>
 File: graphics/chapter0/hyperpath2.pdf Graphic file (type pdf)
 <use graphics/chapter0/hyperpath2.pdf>
 Package pdftex.def Info: graphics/chapter0/hyperpath2.pdf  used on input line 2
 44.
 (pdftex.def)             Requested size: 163.67854pt x 142.36989pt.
-<graphics/chapter0/hyperpath3.pdf, id=571, 197.09735pt x 171.43549pt>
+<graphics/chapter0/hyperpath3.pdf, id=724, 197.09735pt x 171.43549pt>
 File: graphics/chapter0/hyperpath3.pdf Graphic file (type pdf)
 <use graphics/chapter0/hyperpath3.pdf>
 Package pdftex.def Info: graphics/chapter0/hyperpath3.pdf  used on input line 2
 52.
 (pdftex.def)             Requested size: 163.67854pt x 142.36989pt.
-<graphics/chapter0/hyperpath4.pdf, id=572, 197.09735pt x 171.43549pt>
+<graphics/chapter0/hyperpath4.pdf, id=725, 197.09735pt x 171.43549pt>
 File: graphics/chapter0/hyperpath4.pdf Graphic file (type pdf)
 <use graphics/chapter0/hyperpath4.pdf>
 Package pdftex.def Info: graphics/chapter0/hyperpath4.pdf  used on input line 2
 59.
 (pdftex.def)             Requested size: 163.67854pt x 142.36989pt.
-<graphics/chapter0/hyperpath5.pdf, id=573, 197.09735pt x 171.43549pt>
+<graphics/chapter0/hyperpath5.pdf, id=726, 197.09735pt x 171.43549pt>
 File: graphics/chapter0/hyperpath5.pdf Graphic file (type pdf)
 <use graphics/chapter0/hyperpath5.pdf>
 Package pdftex.def Info: graphics/chapter0/hyperpath5.pdf  used on input line 2
 67.
 (pdftex.def)             Requested size: 163.67854pt x 142.36989pt.
-<graphics/chapter0/hyperpath6.pdf, id=574, 197.09735pt x 171.43549pt>
+<graphics/chapter0/hyperpath6.pdf, id=727, 197.09735pt x 171.43549pt>
 File: graphics/chapter0/hyperpath6.pdf Graphic file (type pdf)
 <use graphics/chapter0/hyperpath6.pdf>
 Package pdftex.def Info: graphics/chapter0/hyperpath6.pdf  used on input line 2
 74.
 (pdftex.def)             Requested size: 163.67854pt x 142.36989pt.
- [14 <./graphics/chapter0/hyperpath1.pdf> <./graphics/chapter0/hyperpath2.pdf> 
+ [16 <./graphics/chapter0/hyperpath1.pdf> <./graphics/chapter0/hyperpath2.pdf> 
 <./graphics/chapter0/hyperpath3.pdf> <./graphics/chapter0/hyperpath4.pdf> <./gr
 aphics/chapter0/hyperpath5.pdf> <./graphics/chapter0/hyperpath6.pdf>]
-<graphics/chapter0/example_network.pdf, id=774, 191.72026pt x 106.35735pt>
+<graphics/chapter0/example_network.pdf, id=927, 191.72026pt x 106.35735pt>
 File: graphics/chapter0/example_network.pdf Graphic file (type pdf)
 <use graphics/chapter0/example_network.pdf>
 Package pdftex.def Info: graphics/chapter0/example_network.pdf  used on input l
 ine 315.
 (pdftex.def)             Requested size: 191.71979pt x 106.35707pt.
-<graphics/chapter0/example_flux.pdf, id=775, 193.72375pt x 130.4875pt>
+<graphics/chapter0/example_flux.pdf, id=928, 193.72375pt x 130.4875pt>
 File: graphics/chapter0/example_flux.pdf Graphic file (type pdf)
 <use graphics/chapter0/example_flux.pdf>
 Package pdftex.def Info: graphics/chapter0/example_flux.pdf  used on input line
  323.
 (pdftex.def)             Requested size: 193.72327pt x 130.48717pt.
-<graphics/chapter0/example_flow.pdf, id=776, 193.38048pt x 130.30281pt>
+<graphics/chapter0/example_flow.pdf, id=929, 193.38048pt x 130.30281pt>
 File: graphics/chapter0/example_flow.pdf Graphic file (type pdf)
 <use graphics/chapter0/example_flow.pdf>
 Package pdftex.def Info: graphics/chapter0/example_flow.pdf  used on input line
  331.
 (pdftex.def)             Requested size: 193.37999pt x 130.30247pt.
- [15] [16 <./graphics/chapter0/example_network.pdf> <./graphics/chapter0/exampl
+ [17] [18 <./graphics/chapter0/example_network.pdf> <./graphics/chapter0/exampl
 e_flux.pdf> <./graphics/chapter0/example_flow.pdf>])
-(./chapters/chapter1.tex [17] [18
+(./chapters/chapter1.tex [19] [20
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
@@ -1628,107 +1684,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[19]
-<graphics/chapter1/sample_network.pdf, id=841, 234.98991pt x 149.63103pt>
+[21]
+<graphics/chapter1/sample_network.pdf, id=999, 234.98991pt x 149.63103pt>
 File: graphics/chapter1/sample_network.pdf Graphic file (type pdf)
 <use graphics/chapter1/sample_network.pdf>
 Package pdftex.def Info: graphics/chapter1/sample_network.pdf  used on input li
-ne 79.
+ne 55.
 (pdftex.def)             Requested size: 234.98933pt x 149.63065pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<graphics/chapter1/sample_path1.pdf, id=842, 259.01468pt x 150.3738pt>
+[22 <./graphics/chapter1/sample_network.pdf>] [23]
+<graphics/chapter1/sample_path1.pdf, id=1036, 259.01468pt x 150.3738pt>
 File: graphics/chapter1/sample_path1.pdf Graphic file (type pdf)
 <use graphics/chapter1/sample_path1.pdf>
 Package pdftex.def Info: graphics/chapter1/sample_path1.pdf  used on input line
- 103.
+ 116.
 (pdftex.def)             Requested size: 259.01404pt x 150.37341pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[20]
-
-LaTeX Warning: Text page 21 contains only floats.
-
-[21 <./graphics/chapter1/sample_network.pdf> <./graphics/chapter1/sample_path1.
-pdf>]
-<graphics/chapter1/sample_path2.pdf, id=915, 259.01468pt x 150.3738pt>
+<graphics/chapter1/sample_path2.pdf, id=1041, 259.01468pt x 150.3738pt>
 File: graphics/chapter1/sample_path2.pdf Graphic file (type pdf)
 <use graphics/chapter1/sample_path2.pdf>
 Package pdftex.def Info: graphics/chapter1/sample_path2.pdf  used on input line
- 121.
+ 128.
 (pdftex.def)             Requested size: 259.01404pt x 150.37341pt.
- [22{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./graphics/ch
-apter1/sample_path2.pdf>] [23] [24]
-<graphics/chapter1/rule_app1.pdf, id=969, 249.03038pt x 150.07266pt>
+
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+ [24
+
+ <./graphics/chapter1/sample_path1.pdf> <./graphics/chapter1/sample_path2.pdf>]
+
+[25{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [26] [27]
+<graphics/chapter1/dpo.pdf, id=1134, 141.19952pt x 77.46541pt>
+File: graphics/chapter1/dpo.pdf Graphic file (type pdf)
+<use graphics/chapter1/dpo.pdf>
+Package pdftex.def Info: graphics/chapter1/dpo.pdf  used on input line 377.
+(pdftex.def)             Requested size: 141.19917pt x 77.4652pt.
+<graphics/chapter1/rule_app1.pdf, id=1135, 249.03038pt x 150.07266pt>
 File: graphics/chapter1/rule_app1.pdf Graphic file (type pdf)
 <use graphics/chapter1/rule_app1.pdf>
-Package pdftex.def Info: graphics/chapter1/rule_app1.pdf  used on input line 36
-3.
+Package pdftex.def Info: graphics/chapter1/rule_app1.pdf  used on input line 38
+7.
 (pdftex.def)             Requested size: 249.02975pt x 150.07228pt.
-<graphics/chapter1/rule_app2.pdf, id=970, 249.03038pt x 152.9183pt>
+<graphics/chapter1/rule_app2.pdf, id=1136, 249.03038pt x 152.9183pt>
 File: graphics/chapter1/rule_app2.pdf Graphic file (type pdf)
 <use graphics/chapter1/rule_app2.pdf>
-Package pdftex.def Info: graphics/chapter1/rule_app2.pdf  used on input line 37
-0.
+Package pdftex.def Info: graphics/chapter1/rule_app2.pdf  used on input line 39
+4.
 (pdftex.def)             Requested size: 249.02975pt x 152.91792pt.
- [25] [26 <./graphics/chapter1/rule_app1.pdf> <./graphics/chapter1/rule_app2.pd
-f>]
-<graphics/chapter1/recurse1.pdf, id=1011, 305.4371pt x 555.12393pt>
+
+[28 <./graphics/chapter1/dpo.pdf>]
+Underfull \vbox (badness 3068) has occurred while \output is active []
+
+ [29 <./graphics/chapter1/rule_app1.pdf> <./graphics/chapter1/rule_app2.pdf>]
+<graphics/chapter1/recurse1.pdf, id=1194, 305.4371pt x 555.12393pt>
 File: graphics/chapter1/recurse1.pdf Graphic file (type pdf)
 <use graphics/chapter1/recurse1.pdf>
-Package pdftex.def Info: graphics/chapter1/recurse1.pdf  used on input line 435
+Package pdftex.def Info: graphics/chapter1/recurse1.pdf  used on input line 463
 .
 (pdftex.def)             Requested size: 91.63182pt x 166.53845pt.
 
 
 pdfTeX warning: pdflatex (file ./graphics/chapter1/recurse2.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/chapter1/recurse2.pdf, id=1012, 566.95818pt x 532.36893pt>
+<graphics/chapter1/recurse2.pdf, id=1195, 566.95818pt x 532.36893pt>
 File: graphics/chapter1/recurse2.pdf Graphic file (type pdf)
 <use graphics/chapter1/recurse2.pdf>
-Package pdftex.def Info: graphics/chapter1/recurse2.pdf  used on input line 442
+Package pdftex.def Info: graphics/chapter1/recurse2.pdf  used on input line 470
 .
 (pdftex.def)             Requested size: 226.77925pt x 212.94379pt.
 
 
 pdfTeX warning: pdflatex (file ./graphics/chapter1/recurse3.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/chapter1/recurse3.pdf, id=1013, 805.08781pt x 657.19527pt>
+<graphics/chapter1/recurse3.pdf, id=1196, 805.08781pt x 657.19527pt>
 File: graphics/chapter1/recurse3.pdf Graphic file (type pdf)
 <use graphics/chapter1/recurse3.pdf>
-Package pdftex.def Info: graphics/chapter1/recurse3.pdf  used on input line 453
+Package pdftex.def Info: graphics/chapter1/recurse3.pdf  used on input line 481
 .
 (pdftex.def)             Requested size: 341.0pt x 278.36667pt.
-[27] [28 <./graphics/chapter1/recurse1.pdf> <./graphics/chapter1/recurse2.pdf>]
-<graphics/chapter1/recurse4.pdf, id=1620, 1528.71124pt x 1105.12875pt>
+[30] [31 <./graphics/chapter1/recurse1.pdf> <./graphics/chapter1/recurse2.pdf>]
+
+Underfull \vbox (badness 1968) has occurred while \output is active []
+
+ [32 <./graphics/chapter1/recurse3.pdf>]
+<graphics/chapter1/recurse4.pdf, id=2074, 1528.71124pt x 1105.12875pt>
 File: graphics/chapter1/recurse4.pdf Graphic file (type pdf)
 <use graphics/chapter1/recurse4.pdf>
-Package pdftex.def Info: graphics/chapter1/recurse4.pdf  used on input line 472
+Package pdftex.def Info: graphics/chapter1/recurse4.pdf  used on input line 500
 .
 (pdftex.def)             Requested size: 341.0pt x 246.50165pt.
-[29 <./graphics/chapter1/recurse3.pdf>]) (./chapters/chapter2.tex [30 <./graphi
-cs/chapter1/recurse4.pdf>]
+ [33 <./graphics/chapter1/recurse4.pdf>])
+(./chapters/chapter2.tex [34]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[31
+[35
 
 ]
-<graphics/chapter2/heatEngine.pdf, id=2474, 87.13052pt x 101.35767pt>
+<graphics/chapter2/heatEngine.pdf, id=2662, 87.13052pt x 101.35767pt>
 File: graphics/chapter2/heatEngine.pdf Graphic file (type pdf)
 <use graphics/chapter2/heatEngine.pdf>
 Package pdftex.def Info: graphics/chapter2/heatEngine.pdf  used on input line 3
 0.
 (pdftex.def)             Requested size: 138.10312pt x 160.663pt.
-<graphics/chapter2/heatPathway.pdf, id=2475, 105.01233pt x 92.65515pt>
+<graphics/chapter2/heatPathway.pdf, id=2663, 105.01233pt x 92.65515pt>
 File: graphics/chapter2/heatPathway.pdf Graphic file (type pdf)
 <use graphics/chapter2/heatPathway.pdf>
 Package pdftex.def Info: graphics/chapter2/heatPathway.pdf  used on input line 
@@ -1736,56 +1802,56 @@ Package pdftex.def Info: graphics/chapter2/heatPathway.pdf  used on input line
 (pdftex.def)             Requested size: 184.14061pt x 162.48964pt.
 
 
-LaTeX Warning: Text page 32 contains only floats.
+LaTeX Warning: Text page 36 contains only floats.
 
 
 Underfull \vbox (badness 1661) has occurred while \output is active []
 
- [32 <./graphics/chapter2/heatEngine.pdf> <./graphics/chapter2/heatPathway.pdf>
+ [36 <./graphics/chapter2/heatEngine.pdf> <./graphics/chapter2/heatPathway.pdf>
 ]
-<graphics/chapter2/thermPathway.pdf, id=2508, 137.61311pt x 64.81917pt>
+<graphics/chapter2/thermPathway.pdf, id=2696, 137.61311pt x 64.81917pt>
 File: graphics/chapter2/thermPathway.pdf Graphic file (type pdf)
 <use graphics/chapter2/thermPathway.pdf>
 Package pdftex.def Info: graphics/chapter2/thermPathway.pdf  used on input line
  63.
 (pdftex.def)             Requested size: 306.89792pt x 144.57576pt.
-<graphics/chapter2/thermConstraints.pdf, id=2509, 160.23363pt x 171.41641pt>
+<graphics/chapter2/thermConstraints.pdf, id=2697, 160.23363pt x 171.41641pt>
 File: graphics/chapter2/thermConstraints.pdf Graphic file (type pdf)
 <use graphics/chapter2/thermConstraints.pdf>
 Package pdftex.def Info: graphics/chapter2/thermConstraints.pdf  used on input 
 line 72.
 (pdftex.def)             Requested size: 184.14061pt x 197.00961pt.
-<graphics/chapter2/flowConv1.pdf, id=2510, 125.54805pt x 69.27481pt>
+<graphics/chapter2/flowConv1.pdf, id=2698, 125.54805pt x 69.27481pt>
 File: graphics/chapter2/flowConv1.pdf Graphic file (type pdf)
 <use graphics/chapter2/flowConv1.pdf>
 Package pdftex.def Info: graphics/chapter2/flowConv1.pdf  used on input line 89
 .
 (pdftex.def)             Requested size: 136.39792pt x 75.26173pt.
-<graphics/chapter2/flowConv4.pdf, id=2511, 125.54805pt x 44.89372pt>
+<graphics/chapter2/flowConv4.pdf, id=2699, 125.54805pt x 44.89372pt>
 File: graphics/chapter2/flowConv4.pdf Graphic file (type pdf)
 <use graphics/chapter2/flowConv4.pdf>
 Package pdftex.def Info: graphics/chapter2/flowConv4.pdf  used on input line 96
 .
 (pdftex.def)             Requested size: 136.39792pt x 48.77356pt.
-<graphics/chapter2/flowConv2.pdf, id=2512, 123.01257pt x 69.27481pt>
+<graphics/chapter2/flowConv2.pdf, id=2700, 123.01257pt x 69.27481pt>
 File: graphics/chapter2/flowConv2.pdf Graphic file (type pdf)
 <use graphics/chapter2/flowConv2.pdf>
 Package pdftex.def Info: graphics/chapter2/flowConv2.pdf  used on input line 10
 4.
 (pdftex.def)             Requested size: 136.39792pt x 76.81982pt.
-<graphics/chapter2/flowConv3.pdf, id=2513, 123.01257pt x 66.97421pt>
+<graphics/chapter2/flowConv3.pdf, id=2701, 123.01257pt x 66.97421pt>
 File: graphics/chapter2/flowConv3.pdf Graphic file (type pdf)
 <use graphics/chapter2/flowConv3.pdf>
 Package pdftex.def Info: graphics/chapter2/flowConv3.pdf  used on input line 11
 1.
 (pdftex.def)             Requested size: 136.39792pt x 74.26866pt.
- [33]
+ [37]
 
-LaTeX Warning: Text page 34 contains only floats.
+LaTeX Warning: Text page 38 contains only floats.
 
-[34 <./graphics/chapter2/thermPathway.pdf> <./graphics/chapter2/thermConstraint
+[38 <./graphics/chapter2/thermPathway.pdf> <./graphics/chapter2/thermConstraint
 s.pdf>]
-<graphics/chapter2/thermoConstraint.pdf, id=2566, 224.24478pt x 134.29672pt>
+<graphics/chapter2/thermoConstraint.pdf, id=2757, 224.24478pt x 134.29672pt>
 File: graphics/chapter2/thermoConstraint.pdf Graphic file (type pdf)
 <use graphics/chapter2/thermoConstraint.pdf>
 Package pdftex.def Info: graphics/chapter2/thermoConstraint.pdf  used on input 
@@ -1795,19 +1861,19 @@ line 177.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35 <./graphics/chapter2/flowConv1.pdf> <./graphics/chapter2/flowConv4.pdf> <./
+[39 <./graphics/chapter2/flowConv1.pdf> <./graphics/chapter2/flowConv4.pdf> <./
 graphics/chapter2/flowConv2.pdf> <./graphics/chapter2/flowConv3.pdf>]
 
-LaTeX Warning: Text page 36 contains only floats.
+LaTeX Warning: Text page 40 contains only floats.
 
-[36 <./graphics/chapter2/thermoConstraint.pdf>]
-<graphics/chapter2/concTweak1.pdf, id=2683, 247.17645pt x 91.2489pt>
+[40 <./graphics/chapter2/thermoConstraint.pdf>]
+<graphics/chapter2/concTweak1.pdf, id=2874, 247.17645pt x 91.2489pt>
 File: graphics/chapter2/concTweak1.pdf Graphic file (type pdf)
 <use graphics/chapter2/concTweak1.pdf>
 Package pdftex.def Info: graphics/chapter2/concTweak1.pdf  used on input line 2
 14.
 (pdftex.def)             Requested size: 341.0pt x 125.89436pt.
-<graphics/chapter2/concTweak2.pdf, id=2684, 247.17645pt x 91.2489pt>
+<graphics/chapter2/concTweak2.pdf, id=2875, 247.17645pt x 91.2489pt>
 File: graphics/chapter2/concTweak2.pdf Graphic file (type pdf)
 <use graphics/chapter2/concTweak2.pdf>
 Package pdftex.def Info: graphics/chapter2/concTweak2.pdf  used on input line 2
@@ -1816,15 +1882,15 @@ Package pdftex.def Info: graphics/chapter2/concTweak2.pdf  used on input line 2
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-[38 <./graphics/chapter2/concTweak1.pdf> <./graphics/chapter2/concTweak2.pdf>]
-[39] [40]
+ [41]
+[42 <./graphics/chapter2/concTweak1.pdf> <./graphics/chapter2/concTweak2.pdf>]
+[43] [44]
 Underfull \vbox (badness 1264) has occurred while \output is active []
 
- [41]
+ [45]
 Underfull \vbox (badness 7685) has occurred while \output is active []
 
- [42]
+ [46]
 Overfull \hbox (28.46985pt too wide) in paragraph at lines 406--429
  [][] 
  []
@@ -1832,8 +1898,8 @@ Overfull \hbox (28.46985pt too wide) in paragraph at lines 406--429
 
 Underfull \vbox (badness 3657) has occurred while \output is active []
 
- [43]
-[44]
+ [47]
+[48]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
 19.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1843,39 +1909,39 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [45])
-(./chapters/chapter3.tex [46]
+ [49])
+(./chapters/chapter3.tex [50]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-<graphics/chapter3/molGraphs.pdf, id=2992, 170.06535pt x 38.5179pt>
+<graphics/chapter3/molGraphs.pdf, id=3182, 170.06535pt x 38.5179pt>
 File: graphics/chapter3/molGraphs.pdf Graphic file (type pdf)
 <use graphics/chapter3/molGraphs.pdf>
 Package pdftex.def Info: graphics/chapter3/molGraphs.pdf  used on input line 20
 .
 (pdftex.def)             Requested size: 255.09738pt x 57.77669pt.
-<graphics/chapter3/rule0.pdf, id=2993, 80.99258pt x 53.53601pt>
+<graphics/chapter3/rule0.pdf, id=3183, 80.99258pt x 53.53601pt>
 File: graphics/chapter3/rule0.pdf Graphic file (type pdf)
 <use graphics/chapter3/rule0.pdf>
 Package pdftex.def Info: graphics/chapter3/rule0.pdf  used on input line 30.
 (pdftex.def)             Requested size: 121.48856pt x 80.30379pt.
-<graphics/chapter3/rule1.pdf, id=2994, 80.99258pt x 52.37668pt>
+<graphics/chapter3/rule1.pdf, id=3184, 80.99258pt x 52.37668pt>
 File: graphics/chapter3/rule1.pdf Graphic file (type pdf)
 <use graphics/chapter3/rule1.pdf>
 Package pdftex.def Info: graphics/chapter3/rule1.pdf  used on input line 39.
 (pdftex.def)             Requested size: 121.48856pt x 78.56479pt.
-<graphics/chapter3/rule2.pdf, id=2995, 106.64243pt x 34.83916pt>
+<graphics/chapter3/rule2.pdf, id=3185, 106.64243pt x 34.83916pt>
 File: graphics/chapter3/rule2.pdf Graphic file (type pdf)
 <use graphics/chapter3/rule2.pdf>
 Package pdftex.def Info: graphics/chapter3/rule2.pdf  used on input line 48.
 (pdftex.def)             Requested size: 159.96323pt x 52.25859pt.
-<graphics/chapter3/rule3.pdf, id=2996, 113.47293pt x 40.688pt>
+<graphics/chapter3/rule3.pdf, id=3186, 113.47293pt x 40.688pt>
 File: graphics/chapter3/rule3.pdf Graphic file (type pdf)
 <use graphics/chapter3/rule3.pdf>
 Package pdftex.def Info: graphics/chapter3/rule3.pdf  used on input line 57.
 (pdftex.def)             Requested size: 170.20895pt x 61.03185pt.
-<graphics/chapter3/reactionNetworkChapter3.png, id=2997, 467.7475pt x 499.8675p
+<graphics/chapter3/reactionNetworkChapter3.png, id=3187, 467.7475pt x 499.8675p
 t>
 File: graphics/chapter3/reactionNetworkChapter3.png Graphic file (type png)
 <use graphics/chapter3/reactionNetworkChapter3.png>
@@ -1885,26 +1951,26 @@ Package pdftex.def Info: graphics/chapter3/reactionNetworkChapter3.png  used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[47
+[51
 
  <./graphics/chapter3/molGraphs.pdf>]
 
-LaTeX Warning: Text page 48 contains only floats.
+LaTeX Warning: Text page 52 contains only floats.
 
 
 Overfull \vbox (1.82631pt too high) has occurred while \output is active []
 
 
-[48 <./graphics/chapter3/rule0.pdf> <./graphics/chapter3/rule1.pdf> <./graphics
+[52 <./graphics/chapter3/rule0.pdf> <./graphics/chapter3/rule1.pdf> <./graphics
 /chapter3/rule2.pdf> <./graphics/chapter3/rule3.pdf>]
-<graphics/chapter3/compCostCC.pdf, id=3068, 265.61034pt x 150.40791pt>
+<graphics/chapter3/compCostCC.pdf, id=3258, 265.61034pt x 150.40791pt>
 File: graphics/chapter3/compCostCC.pdf Graphic file (type pdf)
 <use graphics/chapter3/compCostCC.pdf>
 Package pdftex.def Info: graphics/chapter3/compCostCC.pdf  used on input line 8
 5.
 (pdftex.def)             Requested size: 272.80104pt x 154.48811pt.
- [49 <./graphics/chapter3/reactionNetworkChapter3.png>]
-<graphics/chapter3/epsPrinciple.pdf, id=3086, 153.04979pt x 131.8225pt>
+ [53 <./graphics/chapter3/reactionNetworkChapter3.png>]
+<graphics/chapter3/epsPrinciple.pdf, id=3275, 153.04979pt x 131.8225pt>
 File: graphics/chapter3/epsPrinciple.pdf Graphic file (type pdf)
 <use graphics/chapter3/epsPrinciple.pdf>
 Package pdftex.def Info: graphics/chapter3/epsPrinciple.pdf  used on input line
@@ -1913,21 +1979,22 @@ Package pdftex.def Info: graphics/chapter3/epsPrinciple.pdf  used on input line
 
 Underfull \vbox (badness 2961) has occurred while \output is active []
 
- [50 <./graphics/chapter3/compCostCC.pdf>]
-<graphics/chapter3/sampleConformer.pdf, id=3129, 258.02498pt x 191.44023pt>
+ [54 <./graphics/chapter3/compCostCC.pdf>]
+<graphics/chapter3/sampleConformer.pdf, id=3318, 258.02498pt x 191.44023pt>
 File: graphics/chapter3/sampleConformer.pdf Graphic file (type pdf)
 <use graphics/chapter3/sampleConformer.pdf>
 Package pdftex.def Info: graphics/chapter3/sampleConformer.pdf  used on input l
 ine 119.
 (pdftex.def)             Requested size: 306.89792pt x 227.72029pt.
- [51 <./graphics/chapter3/epsPrinciple.pdf>]
-Overfull \hbox (41.85889pt too wide) in paragraph at lines 133--134
-\OT1/cmr/m/n/10 (-20) 10[]$\T1/cmr/m/n/10 (-20) . Next, to iden-tify a low en-e
-rgy con-former, [][]\T1/cmtt/m/n/10 OBForceField::WeightedRotorSearch()[][]
+ [55 <./graphics/chapter3/epsPrinciple.pdf>]
+Overfull \hbox (64.17578pt too wide) in paragraph at lines 133--134
+\T1/cmr/m/n/10 (-20) than $\OT1/cmr/m/n/10 (-20) 10[]$\T1/cmr/m/n/10 (-20) . Ne
+xt, to iden-tify a low en-ergy con-former, [][]\T1/cmtt/m/n/10 OBForceField::We
+ightedRotorSearch()[][]
  []
 
-[52 <./graphics/chapter3/sampleConformer.pdf>]
-<graphics/chapter3/thermOracle.pdf, id=3177, 331.36998pt x 171.18153pt>
+[56 <./graphics/chapter3/sampleConformer.pdf>]
+<graphics/chapter3/thermOracle.pdf, id=3367, 331.36998pt x 171.18153pt>
 File: graphics/chapter3/thermOracle.pdf Graphic file (type pdf)
 <use graphics/chapter3/thermOracle.pdf>
 Package pdftex.def Info: graphics/chapter3/thermOracle.pdf  used on input line 
@@ -1941,15 +2008,15 @@ Overfull \hbox (34.10208pt too wide) in paragraph at lines 137--139
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53 <./graphics/chapter3/thermOracle.pdf>] [54]
-<graphics/chapter3/queryPathway.pdf, id=3223, 277.57301pt x 111.11311pt>
+ [57 <./graphics/chapter3/thermOracle.pdf>] [58]
+<graphics/chapter3/queryPathway.pdf, id=3413, 277.57301pt x 111.11311pt>
 File: graphics/chapter3/queryPathway.pdf Graphic file (type pdf)
 <use graphics/chapter3/queryPathway.pdf>
 Package pdftex.def Info: graphics/chapter3/queryPathway.pdf  used on input line
  173.
 (pdftex.def)             Requested size: 341.0pt x 136.50725pt.
- [55 <./graphics/chapter3/queryPathway.pdf>]
-<graphics/chapter3/pathway1.pdf, id=3256, 311.13339pt x 126.81479pt>
+ [59 <./graphics/chapter3/queryPathway.pdf>]
+<graphics/chapter3/pathway1.pdf, id=3445, 311.13339pt x 126.81479pt>
 File: graphics/chapter3/pathway1.pdf Graphic file (type pdf)
 <use graphics/chapter3/pathway1.pdf>
 Package pdftex.def Info: graphics/chapter3/pathway1.pdf  used on input line 189
@@ -1957,12 +2024,12 @@ Package pdftex.def Info: graphics/chapter3/pathway1.pdf  used on input line 189
 (pdftex.def)             Requested size: 311.13263pt x 126.81447pt.
 
 
-LaTeX Warning: Text page 56 contains only floats.
+LaTeX Warning: Text page 60 contains only floats.
 
-[56
+[60
 
  <./graphics/chapter3/pathway1.pdf>]
-<graphics/chapter3/pathway2.pdf, id=3287, 284.72876pt x 141.04193pt>
+<graphics/chapter3/pathway2.pdf, id=3476, 284.72876pt x 141.04193pt>
 File: graphics/chapter3/pathway2.pdf Graphic file (type pdf)
 <use graphics/chapter3/pathway2.pdf>
 Package pdftex.def Info: graphics/chapter3/pathway2.pdf  used on input line 243
@@ -1970,15 +2037,15 @@ Package pdftex.def Info: graphics/chapter3/pathway2.pdf  used on input line 243
 (pdftex.def)             Requested size: 284.72806pt x 141.04156pt.
 
 
-LaTeX Warning: Text page 57 contains only floats.
+LaTeX Warning: Text page 61 contains only floats.
 
-[57 <./graphics/chapter3/pathway2.pdf>]
-<graphics/chapter3/symAdd.pdf, id=3323, 306.2903pt x 43.72435pt>
+[61 <./graphics/chapter3/pathway2.pdf>]
+<graphics/chapter3/symAdd.pdf, id=3513, 306.2903pt x 43.72435pt>
 File: graphics/chapter3/symAdd.pdf Graphic file (type pdf)
 <use graphics/chapter3/symAdd.pdf>
 Package pdftex.def Info: graphics/chapter3/symAdd.pdf  used on input line 311.
 (pdftex.def)             Requested size: 306.28954pt x 43.72423pt.
-<graphics/chapter3/stepAdd.pdf, id=3326, 306.2903pt x 43.72435pt>
+<graphics/chapter3/stepAdd.pdf, id=3516, 306.2903pt x 43.72435pt>
 File: graphics/chapter3/stepAdd.pdf Graphic file (type pdf)
 <use graphics/chapter3/stepAdd.pdf>
 Package pdftex.def Info: graphics/chapter3/stepAdd.pdf  used on input line 320.
@@ -1989,72 +2056,72 @@ Overfull \hbox (2.22168pt too wide) in paragraph at lines 308--325
  [] 
  []
 
-[58 <./graphics/chapter3/symAdd.pdf> <./graphics/chapter3/stepAdd.pdf>]
-<graphics/chapter3/rxnList.pdf, id=3376, 326.72163pt x 466.54pt>
+[62 <./graphics/chapter3/symAdd.pdf> <./graphics/chapter3/stepAdd.pdf>]
+<graphics/chapter3/rxnList.pdf, id=3566, 326.72163pt x 466.54pt>
 File: graphics/chapter3/rxnList.pdf Graphic file (type pdf)
 <use graphics/chapter3/rxnList.pdf>
 Package pdftex.def Info: graphics/chapter3/rxnList.pdf  used on input line 374.
 
 (pdftex.def)             Requested size: 326.72083pt x 466.53885pt.
 )
-(./chapters/chapter4.tex [59] [60 <./graphics/chapter3/rxnList.pdf>]
+(./chapters/chapter4.tex [63] [64 <./graphics/chapter3/rxnList.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[61
+[65
 
 ]
-<graphics/chapter4/case1.pdf, id=3414, 391.23766pt x 135.28743pt>
+<graphics/chapter4/case1.pdf, id=3603, 391.23766pt x 135.28743pt>
 File: graphics/chapter4/case1.pdf Graphic file (type pdf)
 <use graphics/chapter4/case1.pdf>
 Package pdftex.def Info: graphics/chapter4/case1.pdf  used on input line 20.
 (pdftex.def)             Requested size: 272.80104pt x 94.33514pt.
-<graphics/chapter4/case2.pdf, id=3415, 391.23766pt x 135.28743pt>
+<graphics/chapter4/case2.pdf, id=3604, 391.23766pt x 135.28743pt>
 File: graphics/chapter4/case2.pdf Graphic file (type pdf)
 <use graphics/chapter4/case2.pdf>
 Package pdftex.def Info: graphics/chapter4/case2.pdf  used on input line 27.
 (pdftex.def)             Requested size: 272.80104pt x 94.33514pt.
-<graphics/chapter4/case3.pdf, id=3416, 391.23766pt x 135.28743pt>
+<graphics/chapter4/case3.pdf, id=3605, 391.23766pt x 135.28743pt>
 File: graphics/chapter4/case3.pdf Graphic file (type pdf)
 <use graphics/chapter4/case3.pdf>
 Package pdftex.def Info: graphics/chapter4/case3.pdf  used on input line 34.
 (pdftex.def)             Requested size: 272.80104pt x 94.33514pt.
-<graphics/chapter4/case4.pdf, id=3417, 391.23766pt x 135.28743pt>
+<graphics/chapter4/case4.pdf, id=3606, 391.23766pt x 135.28743pt>
 File: graphics/chapter4/case4.pdf Graphic file (type pdf)
 <use graphics/chapter4/case4.pdf>
 Package pdftex.def Info: graphics/chapter4/case4.pdf  used on input line 41.
 (pdftex.def)             Requested size: 272.80104pt x 94.33514pt.
- [62 <./graphics/chapter4/case1.pdf> <./graphics/chapter4/case2.pdf> <./graphic
-s/chapter4/case3.pdf> <./graphics/chapter4/case4.pdf>] [63]
-<graphics/chapter4/twoReactions.pdf, id=3497, 391.23766pt x 135.28743pt>
+ [66 <./graphics/chapter4/case1.pdf> <./graphics/chapter4/case2.pdf> <./graphic
+s/chapter4/case3.pdf> <./graphics/chapter4/case4.pdf>] [67]
+<graphics/chapter4/twoReactions.pdf, id=3687, 391.23766pt x 135.28743pt>
 File: graphics/chapter4/twoReactions.pdf Graphic file (type pdf)
 <use graphics/chapter4/twoReactions.pdf>
 Package pdftex.def Info: graphics/chapter4/twoReactions.pdf  used on input line
  89.
 (pdftex.def)             Requested size: 306.89792pt x 106.12653pt.
-<graphics/chapter4/twoReactionsNumberDensity.pdf, id=3498, 388.47034pt x 169.54
+<graphics/chapter4/twoReactionsNumberDensity.pdf, id=3688, 388.47034pt x 169.54
 341pt>
 File: graphics/chapter4/twoReactionsNumberDensity.pdf Graphic file (type pdf)
 <use graphics/chapter4/twoReactionsNumberDensity.pdf>
 Package pdftex.def Info: graphics/chapter4/twoReactionsNumberDensity.pdf  used 
 on input line 97.
 (pdftex.def)             Requested size: 306.89792pt x 133.9404pt.
- [64 <./graphics/chapter4/twoReactions.pdf> <./graphics/chapter4/twoReactionsNu
+ [68 <./graphics/chapter4/twoReactions.pdf> <./graphics/chapter4/twoReactionsNu
 mberDensity.pdf>]
-<graphics/chapter4/objFunc1.pdf, id=3534, 481.75684pt x 100.94914pt>
+<graphics/chapter4/objFunc1.pdf, id=3724, 481.75684pt x 100.94914pt>
 File: graphics/chapter4/objFunc1.pdf Graphic file (type pdf)
 <use graphics/chapter4/objFunc1.pdf>
 Package pdftex.def Info: graphics/chapter4/objFunc1.pdf  used on input line 115
 .
 (pdftex.def)             Requested size: 289.05632pt x 60.56993pt.
-<graphics/chapter4/objFunc2.pdf, id=3535, 481.75684pt x 83.87737pt>
+<graphics/chapter4/objFunc2.pdf, id=3725, 481.75684pt x 83.87737pt>
 File: graphics/chapter4/objFunc2.pdf Graphic file (type pdf)
 <use graphics/chapter4/objFunc2.pdf>
 Package pdftex.def Info: graphics/chapter4/objFunc2.pdf  used on input line 122
 .
 (pdftex.def)             Requested size: 289.05632pt x 50.3268pt.
-<graphics/chapter4/objFunc3.pdf, id=3536, 588.45444pt x 100.94914pt>
+<graphics/chapter4/objFunc3.pdf, id=3726, 588.45444pt x 100.94914pt>
 File: graphics/chapter4/objFunc3.pdf Graphic file (type pdf)
 <use graphics/chapter4/objFunc3.pdf>
 Package pdftex.def Info: graphics/chapter4/objFunc3.pdf  used on input line 129
@@ -2065,45 +2132,45 @@ Overfull \hbox (12.07538pt too wide) in paragraph at lines 129--130
 [][] 
  []
 
-[65 <./graphics/chapter4/objFunc1.pdf> <./graphics/chapter4/objFunc2.pdf> <./gr
-aphics/chapter4/objFunc3.pdf>] [66]
+[69 <./graphics/chapter4/objFunc1.pdf> <./graphics/chapter4/objFunc2.pdf> <./gr
+aphics/chapter4/objFunc3.pdf>] [70]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[67]
-<graphics/chapter4/null_cycle.pdf, id=3625, 156.2347pt x 108.11893pt>
+[71]
+<graphics/chapter4/null_cycle.pdf, id=3814, 156.2347pt x 108.11893pt>
 File: graphics/chapter4/null_cycle.pdf Graphic file (type pdf)
 <use graphics/chapter4/null_cycle.pdf>
 Package pdftex.def Info: graphics/chapter4/null_cycle.pdf  used on input line 2
 50.
 (pdftex.def)             Requested size: 234.35144pt x 162.17795pt.
- [68]
-<graphics/chapter4/subset1.pdf, id=3643, 128.52417pt x 108.11893pt>
+ [72]
+<graphics/chapter4/subset1.pdf, id=3833, 128.52417pt x 108.11893pt>
 File: graphics/chapter4/subset1.pdf Graphic file (type pdf)
 <use graphics/chapter4/subset1.pdf>
 Package pdftex.def Info: graphics/chapter4/subset1.pdf  used on input line 272.
 
 (pdftex.def)             Requested size: 160.6548pt x 135.14828pt.
-<graphics/chapter4/subset2.pdf, id=3644, 128.52417pt x 108.11893pt>
+<graphics/chapter4/subset2.pdf, id=3834, 128.52417pt x 108.11893pt>
 File: graphics/chapter4/subset2.pdf Graphic file (type pdf)
 <use graphics/chapter4/subset2.pdf>
 Package pdftex.def Info: graphics/chapter4/subset2.pdf  used on input line 281.
 
 (pdftex.def)             Requested size: 160.6548pt x 135.14828pt.
-<graphics/chapter4/overlap.pdf, id=3645, 128.52417pt x 108.11893pt>
+<graphics/chapter4/overlap.pdf, id=3835, 128.52417pt x 108.11893pt>
 File: graphics/chapter4/overlap.pdf Graphic file (type pdf)
 <use graphics/chapter4/overlap.pdf>
 Package pdftex.def Info: graphics/chapter4/overlap.pdf  used on input line 290.
 
 (pdftex.def)             Requested size: 160.6548pt x 135.14828pt.
- [69 <./graphics/chapter4/null_cycle.pdf>]
+ [73 <./graphics/chapter4/null_cycle.pdf>]
 
-LaTeX Warning: Text page 70 contains only floats.
+LaTeX Warning: Text page 74 contains only floats.
 
 
 Underfull \vbox (badness 1314) has occurred while \output is active []
 
- [70 <./graphics/chapter4/subset1.pdf> <./graphics/chapter4/subset2.pdf> <./gra
+ [74 <./graphics/chapter4/subset1.pdf> <./graphics/chapter4/subset2.pdf> <./gra
 phics/chapter4/overlap.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.6.3.
 4}) has been already used, duplicate ignored
@@ -2128,16 +2195,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.3.
 <to be read again> 
                    \relax 
 l.315 \begin{equation}
-                       [71
+                       [75
 
 ]
-<graphics/chapter4/selfLoop.pdf, id=3770, 177.3827pt x 79.66664pt>
+<graphics/chapter4/selfLoop.pdf, id=3960, 177.3827pt x 79.66664pt>
 File: graphics/chapter4/selfLoop.pdf Graphic file (type pdf)
 <use graphics/chapter4/selfLoop.pdf>
 Package pdftex.def Info: graphics/chapter4/selfLoop.pdf  used on input line 346
 .
 (pdftex.def)             Requested size: 266.0734pt x 119.49963pt.
-<graphics/chapter4/pathway_tvAssign.pdf, id=3776, 83.73685pt x 176.99828pt>
+<graphics/chapter4/pathway_tvAssign.pdf, id=3966, 83.73685pt x 176.99828pt>
 File: graphics/chapter4/pathway_tvAssign.pdf Graphic file (type pdf)
 <use graphics/chapter4/pathway_tvAssign.pdf>
 Package pdftex.def Info: graphics/chapter4/pathway_tvAssign.pdf  used on input 
@@ -2151,93 +2218,80 @@ Overfull \hbox (4.70015pt too wide) in paragraph at lines 365--366
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[72 <./graphics/chapter4/selfLoop.pdf>] [73 <./graphics/chapter4/pathway_tvAssi
-gn.pdf>]) (./chapters/chapter5.tex [74]
+[76 <./graphics/chapter4/selfLoop.pdf>] [77 <./graphics/chapter4/pathway_tvAssi
+gn.pdf>]) (./chapters/chapter5.tex [78]
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-<graphics/chapter5/rule0.pdf, id=3855, 80.99258pt x 53.53601pt>
+<graphics/chapter5/rule0.pdf, id=4044, 80.99258pt x 53.53601pt>
 File: graphics/chapter5/rule0.pdf Graphic file (type pdf)
 <use graphics/chapter5/rule0.pdf>
-Package pdftex.def Info: graphics/chapter5/rule0.pdf  used on input line 24.
+Package pdftex.def Info: graphics/chapter5/rule0.pdf  used on input line 27.
 (pdftex.def)             Requested size: 121.48856pt x 80.30379pt.
-<graphics/chapter5/rule1.pdf, id=3856, 80.99258pt x 52.37668pt>
+<graphics/chapter5/rule1.pdf, id=4045, 80.99258pt x 52.37668pt>
 File: graphics/chapter5/rule1.pdf Graphic file (type pdf)
 <use graphics/chapter5/rule1.pdf>
-Package pdftex.def Info: graphics/chapter5/rule1.pdf  used on input line 32.
+Package pdftex.def Info: graphics/chapter5/rule1.pdf  used on input line 35.
 (pdftex.def)             Requested size: 121.48856pt x 78.56479pt.
-<graphics/chapter5/rule2.pdf, id=3857, 106.64243pt x 34.83916pt>
+<graphics/chapter5/rule2.pdf, id=4046, 106.64243pt x 34.83916pt>
 File: graphics/chapter5/rule2.pdf Graphic file (type pdf)
 <use graphics/chapter5/rule2.pdf>
-Package pdftex.def Info: graphics/chapter5/rule2.pdf  used on input line 40.
+Package pdftex.def Info: graphics/chapter5/rule2.pdf  used on input line 43.
 (pdftex.def)             Requested size: 159.96323pt x 52.25859pt.
-<graphics/chapter5/reactionNetworkChapter5.png, id=3858, 742.775pt x 716.6775pt
+<graphics/chapter5/reactionNetworkChapter5.png, id=4047, 742.775pt x 716.6775pt
 >
 File: graphics/chapter5/reactionNetworkChapter5.png Graphic file (type png)
 <use graphics/chapter5/reactionNetworkChapter5.png>
 Package pdftex.def Info: graphics/chapter5/reactionNetworkChapter5.png  used on
- input line 52.
+ input line 55.
 (pdftex.def)             Requested size: 272.80104pt x 263.21999pt.
-
-Underfull \vbox (badness 3701) has occurred while \output is active []
-
- [75
+[79
 
 ]
-<graphics/chapter5/glycine.pdf, id=3872, 68.4146pt x 35.9995pt>
+<graphics/chapter5/glycine.pdf, id=4061, 68.4146pt x 35.9995pt>
 File: graphics/chapter5/glycine.pdf Graphic file (type pdf)
 <use graphics/chapter5/glycine.pdf>
-Package pdftex.def Info: graphics/chapter5/glycine.pdf  used on input line 68.
+Package pdftex.def Info: graphics/chapter5/glycine.pdf  used on input line 71.
 (pdftex.def)             Requested size: 68.41441pt x 35.9994pt.
-<graphics/chapter5/glycolic acid.pdf, id=3873, 72.76184pt x 35.9995pt>
+<graphics/chapter5/glycolic acid.pdf, id=4062, 72.76184pt x 35.9995pt>
 File: graphics/chapter5/glycolic acid.pdf Graphic file (type pdf)
 <use graphics/chapter5/glycolic acid.pdf>
 Package pdftex.def Info: graphics/chapter5/glycolic acid.pdf  used on input lin
-e 75.
+e 78.
 (pdftex.def)             Requested size: 72.76166pt x 35.9994pt.
 
-Underfull \vbox (badness 1708) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-Class memoir Warning: The material used in the headers is too large
-(24.0pt) for the given head height (12.0pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 90.
-
-
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
-
- [76 <./graphics/chapter5/rule0.pdf> <./graphics/chapter5/rule1.pdf> <./graphic
-s/chapter5/rule2.pdf>] [77 <./graphics/chapter5/reactionNetworkChapter5.png> <.
+ [80 <./graphics/chapter5/rule0.pdf> <./graphics/chapter5/rule1.pdf> <./graphic
+s/chapter5/rule2.pdf>] [81 <./graphics/chapter5/reactionNetworkChapter5.png> <.
 /graphics/chapter5/glycine.pdf> <./graphics/chapter5/glycolic acid.pdf>]
 
 pdfTeX warning: pdflatex (file ./graphics/chapter5/pathway1.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/chapter5/pathway1.pdf, id=3948, 441.01773pt x 170.71654pt>
+<graphics/chapter5/pathway1.pdf, id=4138, 441.01773pt x 170.71654pt>
 File: graphics/chapter5/pathway1.pdf Graphic file (type pdf)
 <use graphics/chapter5/pathway1.pdf>
-Package pdftex.def Info: graphics/chapter5/pathway1.pdf  used on input line 105
+Package pdftex.def Info: graphics/chapter5/pathway1.pdf  used on input line 110
 .
 (pdftex.def)             Requested size: 341.0pt x 132.00436pt.
-<graphics/chapter5/bestPathway1.pdf, id=3949, 447.50285pt x 133.32109pt>
+<graphics/chapter5/bestPathway1.pdf, id=4139, 447.50285pt x 133.32109pt>
 File: graphics/chapter5/bestPathway1.pdf Graphic file (type pdf)
 <use graphics/chapter5/bestPathway1.pdf>
 Package pdftex.def Info: graphics/chapter5/bestPathway1.pdf  used on input line
- 107.
+ 112.
 (pdftex.def)             Requested size: 341.0pt x 101.59157pt.
-<graphics/chapter5/molStrucPathway1.png, id=3950, 679.53876pt x 644.4075pt>
+<graphics/chapter5/molStrucPathway1.png, id=4140, 679.53876pt x 644.4075pt>
 File: graphics/chapter5/molStrucPathway1.png Graphic file (type png)
 <use graphics/chapter5/molStrucPathway1.png>
 Package pdftex.def Info: graphics/chapter5/molStrucPathway1.png  used on input 
-line 118.
+line 123.
 (pdftex.def)             Requested size: 203.8632pt x 193.32373pt.
-<graphics/chapter5/molStrucPathway2.png, id=3953, 310.15875pt x 640.3925pt>
+<graphics/chapter5/molStrucPathway2.png, id=4143, 310.15875pt x 640.3925pt>
 File: graphics/chapter5/molStrucPathway2.png Graphic file (type png)
 <use graphics/chapter5/molStrucPathway2.png>
 Package pdftex.def Info: graphics/chapter5/molStrucPathway2.png  used on input 
-line 124.
+line 129.
 (pdftex.def)             Requested size: 93.04834pt x 192.11923pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2249,40 +2303,234 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex (file ./graphics/chapter5/pathway2.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/chapter5/pathway2.pdf, id=3964, 323.56473pt x 115.97343pt>
+<graphics/chapter5/pathway2.pdf, id=4154, 323.56473pt x 115.97343pt>
 File: graphics/chapter5/pathway2.pdf Graphic file (type pdf)
 <use graphics/chapter5/pathway2.pdf>
-Package pdftex.def Info: graphics/chapter5/pathway2.pdf  used on input line 200
+Package pdftex.def Info: graphics/chapter5/pathway2.pdf  used on input line 206
 .
 (pdftex.def)             Requested size: 341.0pt x 122.22163pt.
-
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
-
- [78])
-(./chapters/epilog.tex [79 <./graphics/chapter5/pathway1.pdf> <./graphics/chapt
-er5/bestPathway1.pdf>]
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
-
- [80 <./graphics/chapter5/molStrucPathway1.png> <./graphics/chapter5/molStrucPa
-thway2.png> <./graphics/chapter5/pathway2.pdf>] [81]
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
-
- [82]
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+[82] [83 <./graphics/chapter5/pathway1.pdf> <./graphics/chapter5/bestPathway1.p
+df>]) (./chapters/chapter6.tex [84 <./graphics/chapter5/molStrucPathway1.png> <
+./graphics/chapter5/molStrucPathway2.png> <./graphics/chapter5/pathway2.pdf>]
+[85] [86]
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[83
+[87
 
-] [84]) [85] [86
+]
+Underfull \vbox (badness 1515) has occurred while \output is active []
 
-] (./backmatter/bibliography.tex
+ [88]
+[89] [90]
+
+LaTeX Warning: Reference `collision_theory' on page 91 undefined on input line 
+90.
+
+<graphics/chapter6/rel_prob.pdf, id=4342, 284.92749pt x 83.57724pt>
+File: graphics/chapter6/rel_prob.pdf Graphic file (type pdf)
+<use graphics/chapter6/rel_prob.pdf>
+Package pdftex.def Info: graphics/chapter6/rel_prob.pdf  used on input line 103
+.
+(pdftex.def)             Requested size: 170.5pt x 50.01282pt.
+[91 <./graphics/chapter6/rel_prob.pdf>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 119.
+ [92]
+
+LaTeX Warning: Reference `fig:reactionTemplate' on page 93 undefined on input l
+ine 179.
+
+[93]
+<graphics/chapter6/numMolsNoFlow.png, id=4412, 281.1303pt x 208.6194pt>
+File: graphics/chapter6/numMolsNoFlow.png Graphic file (type png)
+<use graphics/chapter6/numMolsNoFlow.png>
+Package pdftex.def Info: graphics/chapter6/numMolsNoFlow.png  used on input lin
+e 185.
+(pdftex.def)             Requested size: 153.44896pt x 113.87198pt.
+
+Underfull \hbox (badness 3471) in paragraph at lines 186--186
+[]\T1/cmr/m/n/9 (+20) (a) |In the closed sys-tem, larger
+ []
+
+<graphics/chapter6/numMolsFlow.png, id=4415, 281.1303pt x 208.3785pt>
+File: graphics/chapter6/numMolsFlow.png Graphic file (type png)
+<use graphics/chapter6/numMolsFlow.png>
+Package pdftex.def Info: graphics/chapter6/numMolsFlow.png  used on input line 
+192.
+(pdftex.def)             Requested size: 153.44896pt x 113.74048pt.
+<graphics/chapter6/numMolsNoFlow_3_7.png, id=4418, 385.44pt x 208.3785pt>
+File: graphics/chapter6/numMolsNoFlow_3_7.png Graphic file (type png)
+<use graphics/chapter6/numMolsNoFlow_3_7.png>
+Package pdftex.def Info: graphics/chapter6/numMolsNoFlow_3_7.png  used on input
+ line 200.
+(pdftex.def)             Requested size: 192.71953pt x 104.18898pt.
+
+Overfull \hbox (39.27057pt too wide) in paragraph at lines 200--201
+ [][] 
+ []
+
+<graphics/chapter6/numMolsFlow_3_7.png, id=4423, 281.1303pt x 208.3785pt>
+File: graphics/chapter6/numMolsFlow_3_7.png Graphic file (type png)
+<use graphics/chapter6/numMolsFlow_3_7.png>
+Package pdftex.def Info: graphics/chapter6/numMolsFlow_3_7.png  used on input l
+ine 207.
+(pdftex.def)             Requested size: 140.5648pt x 104.18898pt.
+
+Underfull \vbox (badness 4927) has occurred while \output is active []
+
+ [94 <./graphics/chapter6/numMolsNoFlow.png> <./graphics/chapter6/numMolsFlow.p
+ng> <./graphics/chapter6/numMolsNoFlow_3_7.png> <./graphics/chapter6/numMolsFlo
+w_3_7.png>]
+<graphics/chapter6/numCarbons.png, id=4444, 281.1303pt x 208.6194pt>
+File: graphics/chapter6/numCarbons.png Graphic file (type png)
+<use graphics/chapter6/numCarbons.png>
+Package pdftex.def Info: graphics/chapter6/numCarbons.png  used on input line 2
+24.
+(pdftex.def)             Requested size: 153.44896pt x 113.87198pt.
+<graphics/chapter6/numMols.png, id=4445, 281.1303pt x 208.6194pt>
+File: graphics/chapter6/numMols.png Graphic file (type png)
+<use graphics/chapter6/numMols.png>
+Package pdftex.def Info: graphics/chapter6/numMols.png  used on input line 231.
+
+(pdftex.def)             Requested size: 153.44896pt x 113.87198pt.
+<graphics/chapter6/avgMolLength.png, id=4446, 281.1303pt x 208.6194pt>
+File: graphics/chapter6/avgMolLength.png Graphic file (type png)
+<use graphics/chapter6/avgMolLength.png>
+Package pdftex.def Info: graphics/chapter6/avgMolLength.png  used on input line
+ 239.
+(pdftex.def)             Requested size: 153.44896pt x 113.87198pt.
+<graphics/chapter6/uniqueMols.png, id=4447, 281.1303pt x 205.0059pt>
+File: graphics/chapter6/uniqueMols.png Graphic file (type png)
+<use graphics/chapter6/uniqueMols.png>
+Package pdftex.def Info: graphics/chapter6/uniqueMols.png  used on input line 2
+46.
+(pdftex.def)             Requested size: 153.44896pt x 111.8996pt.
+
+Underfull \hbox (badness 1789) in paragraph at lines 247--247
+[]\T1/cmr/m/n/9 (+20) (d) |Num-ber of dis-tinct classes of
+ []
+
+<graphics/chapter6/longestMol.png, id=4448, 281.1303pt x 208.6194pt>
+File: graphics/chapter6/longestMol.png Graphic file (type png)
+<use graphics/chapter6/longestMol.png>
+Package pdftex.def Info: graphics/chapter6/longestMol.png  used on input line 2
+54.
+(pdftex.def)             Requested size: 153.44896pt x 113.87198pt.
+<graphics/chapter6/newMols.png, id=4449, 293.898pt x 208.3785pt>
+File: graphics/chapter6/newMols.png Graphic file (type png)
+<use graphics/chapter6/newMols.png>
+Package pdftex.def Info: graphics/chapter6/newMols.png  used on input line 261.
+
+(pdftex.def)             Requested size: 153.44896pt x 108.7994pt.
+[95] [96 <./graphics/chapter6/numCarbons.png> <./graphics/chapter6/numMols.png>
+ <./graphics/chapter6/avgMolLength.png> <./graphics/chapter6/uniqueMols.png> <.
+/graphics/chapter6/longestMol.png> <./graphics/chapter6/newMols.png>] [97]
+<graphics/chapter6/reac_mh_prob.pdf, id=4480, 284.92749pt x 89.2675pt>
+File: graphics/chapter6/reac_mh_prob.pdf Graphic file (type pdf)
+<use graphics/chapter6/reac_mh_prob.pdf>
+Package pdftex.def Info: graphics/chapter6/reac_mh_prob.pdf  used on input line
+ 296.
+(pdftex.def)             Requested size: 170.5pt x 53.41788pt.
+
+[98 <./graphics/chapter6/reac_mh_prob.pdf>]) (./chapters/chapter7.tex [99]
+[100
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+[101]
+<graphics/chapter7/cache.pdf, id=4566, 164.20346pt x 179.33499pt>
+File: graphics/chapter7/cache.pdf Graphic file (type pdf)
+<use graphics/chapter7/cache.pdf>
+Package pdftex.def Info: graphics/chapter7/cache.pdf  used on input line 33.
+(pdftex.def)             Requested size: 82.10152pt x 89.66727pt.
+<graphics/chapter7/cache_hit.pdf, id=4567, 177.64668pt x 199.2524pt>
+File: graphics/chapter7/cache_hit.pdf Graphic file (type pdf)
+<use graphics/chapter7/cache_hit.pdf>
+Package pdftex.def Info: graphics/chapter7/cache_hit.pdf  used on input line 40
+.
+(pdftex.def)             Requested size: 88.82312pt x 99.62595pt.
+<graphics/chapter7/cache_miss.pdf, id=4568, 164.20346pt x 198.75253pt>
+File: graphics/chapter7/cache_miss.pdf Graphic file (type pdf)
+<use graphics/chapter7/cache_miss.pdf>
+Package pdftex.def Info: graphics/chapter7/cache_miss.pdf  used on input line 4
+7.
+(pdftex.def)             Requested size: 82.10152pt x 99.376pt.
+ [102] [103 <./graphics/chapter7/cache.pdf> <./graphics/chapter7/cache_hit.pdf>
+ <./graphics/chapter7/cache_miss.pdf>] [104]
+<graphics/chapter7/cacheSizeEffect.png, id=4639, 578.16pt x 361.35pt>
+File: graphics/chapter7/cacheSizeEffect.png Graphic file (type png)
+<use graphics/chapter7/cacheSizeEffect.png>
+Package pdftex.def Info: graphics/chapter7/cacheSizeEffect.png  used on input l
+ine 75.
+(pdftex.def)             Requested size: 272.80104pt x 170.49617pt.
+ [105 <./graphics/chapter7/cacheSizeEffect.png>]
+<graphics/chapter7/cache_noFlow_256.png, id=4652, 289.08pt x 216.81pt>
+File: graphics/chapter7/cache_noFlow_256.png Graphic file (type png)
+<use graphics/chapter7/cache_noFlow_256.png>
+Package pdftex.def Info: graphics/chapter7/cache_noFlow_256.png  used on input 
+line 94.
+(pdftex.def)             Requested size: 167.09187pt x 125.3165pt.
+<graphics/chapter7/cache_flow_256.png, id=4653, 289.08pt x 216.81pt>
+File: graphics/chapter7/cache_flow_256.png Graphic file (type png)
+<use graphics/chapter7/cache_flow_256.png>
+Package pdftex.def Info: graphics/chapter7/cache_flow_256.png  used on input li
+ne 101.
+(pdftex.def)             Requested size: 167.09187pt x 125.3165pt.
+<graphics/chapter7/cache_noFlow_32768.png, id=4654, 289.08pt x 216.81pt>
+File: graphics/chapter7/cache_noFlow_32768.png Graphic file (type png)
+<use graphics/chapter7/cache_noFlow_32768.png>
+Package pdftex.def Info: graphics/chapter7/cache_noFlow_32768.png  used on inpu
+t line 108.
+(pdftex.def)             Requested size: 167.09187pt x 125.3165pt.
+<graphics/chapter7/cache_flow_32768.png, id=4655, 289.08pt x 216.81pt>
+File: graphics/chapter7/cache_flow_32768.png Graphic file (type png)
+<use graphics/chapter7/cache_flow_32768.png>
+Package pdftex.def Info: graphics/chapter7/cache_flow_32768.png  used on input 
+line 115.
+(pdftex.def)             Requested size: 167.09187pt x 125.3165pt.
+
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
+ [106 <./graphics/chapter7/cache_noFlow_256.png> <./graphics/chapter7/cache_flo
+w_256.png> <./graphics/chapter7/cache_noFlow_32768.png> <./graphics/chapter7/ca
+che_flow_32768.png>]
+<graphics/chapter7/cache_fracTimes.png, id=4668, 722.7pt x 108.405pt>
+File: graphics/chapter7/cache_fracTimes.png Graphic file (type png)
+<use graphics/chapter7/cache_fracTimes.png>
+Package pdftex.def Info: graphics/chapter7/cache_fracTimes.png  used on input l
+ine 154.
+(pdftex.def)             Requested size: 306.89792pt x 46.03429pt.
+ [107]
+<graphics/chapter7/templateFreq.png, id=4681, 433.62pt x 289.08pt>
+File: graphics/chapter7/templateFreq.png Graphic file (type png)
+<use graphics/chapter7/templateFreq.png>
+Package pdftex.def Info: graphics/chapter7/templateFreq.png  used on input line
+ 171.
+(pdftex.def)             Requested size: 255.75pt x 170.50278pt.
+ [108 <./graphics/chapter7/cache_fracTimes.png>])
+(./chapters/epilog.tex
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [109 <./graphics/chapter7/templateFreq.png>] [110]
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+[111
+
+] [112] [113]) [114] (./backmatter/bibliography.tex
 Overfull \hbox (12.18175pt too wide) in paragraph at lines 4--4
 []\T1/cmr/m/n/10 (-20) Jan L. Krüse-mann et al. ``Ar-ti-fi-cial path-way emer-g
 ence in cen-tral metabolism
  []
 
-[87
+[115
+
 
 ]
 Overfull \hbox (8.46547pt too wide) in paragraph at lines 4--4
@@ -2290,13 +2538,26 @@ Overfull \hbox (8.46547pt too wide) in paragraph at lines 4--4
 ) Chem-Sys-tem-sChem \T1/cmr/m/n/10 (-20) 2.4 (2020), e1900047.
  []
 
-[88] [89]
+[116] [117]
 Overfull \hbox (0.15022pt too wide) in paragraph at lines 4--4
 []\T1/cmr/m/n/10 (-20) Mingjian Wen, Evan Walter Clark Spotte-Smith, et al. ``C
 hemical reaction
  []
 
-[90]
+
+Overfull \hbox (8.49112pt too wide) in paragraph at lines 4--4
+\T1/cmr/m/it/10 (-20) tional Bi-ol-ogy \T1/cmr/m/n/10 (-20) 11.06 (2013), p. 13
+43007. \T1/cmr/m/sc/10 (-20) doi\T1/cmr/m/n/10 (-20) : [][]$\T1/cmtt/m/n/10 10 
+. 1142 / S0219720013430075$[][]\T1/cmr/m/n/10 (-20) . 
+ []
+
+[118]
+Overfull \hbox (65.3339pt too wide) in paragraph at lines 4--4
+\T1/cmtt/m/n/10 neurips . cc / paper _ files / paper / 2019 / file / 4fc28b7093
+b135c21c7183ac07e928a6 -[]
+ []
+
+[119] [120]
 Overfull \hbox (11.29697pt too wide) in paragraph at lines 4--4
 \T1/cmtt/m/n/10 stable / tutorials / tutorial _ practical _ alternateOptimalSol
 utions .
@@ -2308,14 +2569,20 @@ Overfull \hbox (0.41428pt too wide) in paragraph at lines 4--4
 '. In: \T1/cmr/m/it/10 (-20) Complexity
  []
 
-[91] [92] [93] [94]) (./backmatter/acknowledgements.tex)
+[121] [122] [123] [124]
+Overfull \hbox (8.44376pt too wide) in paragraph at lines 4--4
+[]\T1/cmr/m/n/10 (-20) William E Robin-son et al. ``En-vi-ron-men-tal con-di-ti
+ons drive self-organization
+ []
 
-Class memoir Warning: The material used in the headers is too large
-(24.0pt) for the given head height (12.0pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 64.
 
-[95]
+Overfull \hbox (4.31396pt too wide) in paragraph at lines 4--4
+\T1/cmr/m/it/10 (-20) Dict()\T1/cmr/m/n/10 (-20) . 2001. \T1/cmr/m/sc/10 (-20) 
+url\T1/cmr/m/n/10 (-20) : [][]$\T1/cmtt/m/n/10 https : / / docs . python . org 
+/ 3 / library / collections .
+ []
+
+[125]) (./backmatter/acknowledgements.tex) [126]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -2326,28 +2593,25 @@ L3 programming layer <2020/03/25>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 9069EBE57006BA4CD0D445C865D0E367;5268
-(rerunfilecheck)             After:  D1724894AE9F6AEA225F9CAB14BE71C5;5253.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C0308405AD7098404D28ACA9F65DA9BA;8397.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40926 strings out of 474222
- 773699 string characters out of 5748732
- 2104975 words of memory out of 5000000
- 61777 multiletter control sequences out of 15000+600000
- 597487 words of font info for 298 fonts, out of 8000000 for 9000
+ 42160 strings out of 474222
+ 800722 string characters out of 5748732
+ 2083975 words of memory out of 5000000
+ 62806 multiletter control sequences out of 15000+600000
+ 602673 words of font info for 333 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,27n,101p,1520b,1982s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,27n,101p,2254b,2225s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texliv
@@ -2380,25 +2644,29 @@ ype1/public/hfbright/hfbr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/hfbright/hfbrmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbrig
 ht/hfbrsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-bx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
-1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1
-000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sftt1000.pfb>
-Output written on main.pdf (101 pages, 4888326 bytes).
+/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+bx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfi
+t1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0500.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
+0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
+200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti08
+00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt100
+0.pfb>
+Output written on main.pdf (132 pages, 7137762 bytes).
 PDF statistics:
- 4617 PDF objects out of 5155 (max. 8388607)
- 3434 compressed objects within 35 object streams
- 376 named destinations out of 1000 (max. 500000)
- 69251 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 5343 PDF objects out of 6186 (max. 8388607)
+ 4019 compressed objects within 41 object streams
+ 495 named destinations out of 1000 (max. 500000)
+ 76691 words of extra memory for PDF output out of 89155 (max. 10000000)
 
