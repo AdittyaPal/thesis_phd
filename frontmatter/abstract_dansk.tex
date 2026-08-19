@@ -1,0 +1,41 @@
+\chapter{Resumé}
+\label{ch:abstract_da}
+
+Systemer med interagerende komponenter modelleres ofte som netværk, både inden for naturvidenskaben som biologi og fysik, og inden for samfundsvidenskaben. 
+Transportprocesser i disse netværk er af særlig interesse og undersøges ofte ved hjælp af flowoptimering. 
+Denne afhandling fokuserer på flow i netværk, der indeholder kemiske reaktioner, såkaldte \emph{reaktionsnetværk}, hvor de enkelte molekylers struktur er kendt. 
+Molekylernes struktur har betydning for, hvilke reaktionsveje der kan identificeres i netværket. 
+Reaktionsnetværk kan naturligt repræsenteres som hypergrafer, hvilket giver et matematisk grundlag, der understøtter den beregningsmæssige søgning efter reaktionsveje.
+
+Reaktionsnetværks størrelse, komplekse struktur og kombinatoriske kompleksitet gør dem vanskelige at analysere manuelt. 
+Et centralt problem er at identificere reaktionsveje fra et givet sæt af tilgængelige udgangsmolekyler til et bestemt målmolekyle, samtidig med at de underliggende fysiske og kemiske begrænsninger overholdes. 
+At finde reaktionsveje, der optimerer dannelsen af et målmolekyle ud fra enten termodynamisk gunstighed eller reaktionssandsynlighed, er et grundlæggende problem i mange sammenhænge, herunder kemiske reaktorsystemer.
+Afhandlingen bidrager med tre metodiske nyudviklinger. For det første udvides søgningen efter reaktionsveje ved at inddrage termodynamisk information. 
+For det andet integreres kinetisk information i rangordningen af fundne reaktionsveje. 
+For det tredje introduceres en stokastisk rammeværk til udforskning af implicit definerede reaktionsnetværk.
+
+De foreslåede metoder kombinerer veletablerede beregningskemiske værktøjer og fysisk motiveret modellering med eksisterende algoritmiske metoder til søgning efter reaktionsveje i reaktionsnetværk. 
+Desuden udvides det eksisterende eksekverbare rammeværk for graftransformation, så det muliggør en mere realistisk udforskning af reaktionsnetværk. 
+Søgeproblemet formuleres som et heltalsblandet lineært programmeringsproblem (MILP), hvor kemiske potentialer og molekylkoncentrationer indgår i optimeringsmodellen.
+Da molekylernes struktur er kendt, kan kemiske potentialer estimeres og sammen med molekylkoncentrationer integreres i optimeringsmodellen, hvilket gør det muligt at begrænse søgningen til reaktionsveje, der udelukkende består af termodynamisk gunstig reaktioner. 
+Når flere mulige reaktionsveje identificeres, kan de desuden rangordnes ved hjælp af en termodynamisk motiveret målfunktion.
+
+Den beregningsmæssige metode til identifikation af reaktionsveje udvides yderligere ved at inddrage information om de enkelte reaktioners kinetik. 
+De kinetiske parametre estimeres ud fra molekylernes struktur ved hjælp af en beregningskemisk model. 
+Da flere reaktionsveje ofte opfylder de angivne søgekriterier, introduceres en målfunktion udledt af fysiske principper med henblik på at maksimere den samlede sandsynlighed for en reaktionsvej. 
+Det resulterende rammeværk udgør en automatiseret analysepipeline, der muliggør en fleksibel og kinetisk informeret analyse af reaktionsveje i store reaktionsnetværk, herunder netværk genereret ved metoder til udvidelse af det molekylære rum, hvor kinetiske data ikke er tilgængelige.
+
+Mange reaktionsnetværk er for store til, at de kan genereres og lagres eksplicit som molekylære netværk. 
+For at håndtere denne udfordring introducerer denne afhandling et stokastisk rammeværk til udforskning af reaktionsnetværk, der er implicit defineret ved en grafgrammatik. 
+Udforskningsstrategien efterligner stokastisk kemisk kinetik ved at kombinere kollisionsbaseret udvælgelse af molekylepar med behovsstyret instansiering af reaktionsskabeloner. 
+Ved hvert udforskningstrin udvælger algoritmen først et molekylepar, der skal kollidere, derefter en reaktionsskabelon og til sidst en konkret reaktionsinstans blandt de fundne match til den valgte skabelon. 
+Denne kollisionsbaserede faktorisering undgår en udtømmende opregning af alle aktuelt mulige reaktioner og muliggør en effektiv udforskning af store reaktionsnetværk under både åbne og lukkede systembetingelser. 
+Det udforskede delnetværk kan efterfølgende betragtes som et repræsentativt udsnit af det samlede molekylære rum og analyseres ved hjælp af de metoder, der er udviklet i denne afhandling.
+
+De foreslåede metoder demonstreres gennem en række casestudier, der belyser både deres styrker og deres begrænsninger. 
+Det termodynamisk informerede rammeværk anvendes på et reaktionsnetværk, der beskriver hydrogencyanid-formamid-kemien. 
+Alternative reaktionsveje til dem, der i øjeblikket anses for de hidtil accepterede reaktionsveje, identificeres og opregnes, herunder reaktionsveje, der opnår mere fordelagtige værdier af den termodynamiske målfunktion. 
+Et reaktionsnetværk genereret ud fra glycolonitril, vand og ammoniak annoteres med beregnede aktiveringsenergier, hvorefter reaktionsveje til glycin og glykolsyre identificeres ved hjælp af den udviklede metode. 
+Afslutningsvis demonstreres det stokastiske rammeværk til udforskning af store molekylære rum med formosekemi som casestudie. 
+Casestudiet undersøger både de kemiske egenskaber ved det udforskede delnetværk og de beregningsmæssige fordele ved caching under udforskningen.
+

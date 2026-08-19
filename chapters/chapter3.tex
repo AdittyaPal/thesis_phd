@@ -1,5 +1,5 @@
 %************************************************
-\chapter[Foramide Chemistry]{A Case Study: Foramide Chemistry}
+\chapter[Formamide Chemistry]{Case Study: Formamide Chemistry}
 \label{ch:casestudy1} %
 %************************************************
 
@@ -115,8 +115,9 @@ Using quantum chemical methods to assign these chemical potentials quickly becom
 The memory requirement scales as $\mathcal{O}(N^2)$ because of the number of two-electron integrals contributing to the energy of the system. Moreover, it is an iterative process which is repeated until an acceptable convergence criteria is reached.
 
 \begin{figure}[!t]
+	\vspace{1cm}
     \centering
-    \includegraphics[width=0.9\textwidth]{graphics/chapter3/sampleConformer.pdf}
+    \includegraphics[width=0.75\textwidth]{graphics/chapter3/sampleConformer.pdf}
     \vspace{0.5cm}
     \caption{OpenBabel's \texttt{WeightetedRotorSearch()} iteratively samples conformers to reach towards the lowest energy conformer of the molecule. It randomly chooses from the allowed torsion angles, and reweights the choice based on the energy of the last generated lowest energy conformer. Progressively, the generated conformer has increasingly lower energy.}
     \label{fig: sampleConformer}
@@ -130,7 +131,7 @@ In the rest of this Section, we describe how we estimate the chemical potentials
 
 The molecules in the expanded reaction network were modeled as graphs where individual vertices represented atoms (labeled by the symbol of the corresponding element), while edges represented bonds. The adjacency matrix of this graph was utilized to determine the connectivity for that molecule. Given a connectivity matrix that satisfies the valences of each atom in the molecule, a three-dimensional embedding for the molecule was generated using the VSEPR theory. The \href{https://github.com/openbabel/openbabel/blob/32cf131444c1555c749b356dab44fb9fe275271f/include/openbabel/builder.h#L42}{\texttt{OBBuilder}} class from the Open Babel~\cite{open_babel, openbabel_web} library was employed to generate the three dimensional coordinates for the atoms utilizing a combination of VSEPR rules and commonly encountered fragments.
 
-The generated geometry of the molecule was refined using 1000 iterations of conjugate gradient descent or until the change in energy (in atomic units, calculated using the universal force field~\cite{uff}) between successive iterations is less than $10^{-4}$. Next, to identify a low energy conformer, \href{https://github.com/openbabel/openbabel/blob/32cf131444c1555c749b356dab44fb9fe275271f/src/forcefield.cpp#L1595}{\texttt{OBForceField::WeightedRotorSearch()}} was utilized to systematically perform a tree-search for a conformer of the molecule with a low energy, by biasing the expansion of the search tree towards the current low energy conformer as shown in Figure~\ref{fig: sampleConformer}. At each iterative expansion step, 25 conformers were generated, and 100 steps of conjugate descent are executed on each. This lead to the generation of conformers with successively lower energies over subsequent iterations. The conformer with the lowest energy identified at the end of this search process was further subjected to 250 iterations of conjugate descent or until the energy tolerance of $10^{-5}$ is reached. The energy for a conformer at each step was estimated using the universal force field~\cite{uff}. The result of this search process, the configuration of the low-energy conformer, containing the three dimensional Cartesian coordinate of each atom in the molecule was written into an \texttt{.xyz} file. 
+The generated geometry of the molecule was refined using 1000 iterations of conjugate gradient descent or until the change in energy (in atomic units, calculated using the universal force field~\cite{uff}) between successive iterations is less than $10^{-4}$. Next, to identify a low energy conformer, \href{https://github.com/openbabel/openbabel/blob/32cf131444c1555c749b356dab44fb9fe275271f/src/forcefield.cpp#L1595}{\texttt{OBForceField::Weighted RotorSearch()}} was utilized to systematically perform a tree-search for a conformer of the molecule with a low energy, by biasing the expansion of the search tree towards the current low energy conformer as shown in Figure~\ref{fig: sampleConformer}. At each iterative expansion step, 25 conformers were generated, and 100 steps of conjugate descent are executed on each. This lead to the generation of conformers with successively lower energies over subsequent iterations. The conformer with the lowest energy identified at the end of this search process was further subjected to 250 iterations of conjugate descent or until the energy tolerance of $10^{-5}$ is reached. The energy for a conformer at each step was estimated using the universal force field~\cite{uff}. The result of this search process, the configuration of the low-energy conformer, containing the three dimensional Cartesian coordinate of each atom in the molecule was written into an \texttt{.xyz} file. 
 
 \begin{figure}[!t]
     \centering

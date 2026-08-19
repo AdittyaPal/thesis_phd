@@ -8,29 +8,9 @@
 Thermodynamics emerged from efforts to analyze the operation of steam engines while maximizing their work.
 In a nice analogy, the search for pathways may be phrased as viewing reaction networks as chemical engines in which we want to maximize the output of some target molecule(s).
 Recognizing that thermodynamics, encapsulated by the Gibbs free energies of the reactions, play a pivotal role in determining the probability of a reaction, Chapter~\ref{ch:thermodynamic_model} focused on developing ways to integrate them into the search for pathways.
+We provided a systematic and thermodynamically informed approach to optimize the computational search for pathways in reaction networks.
 
-Exploring pathways with favorable energy profiles involves challenging navigation of a large and complex energy landscape where the driving thermodynamic forces are influenced by the concentration ratios, inflows of the source molecules, and outflows of the target molecules.
-Chapter~\ref{ch:thermodynamic_model} attempted to address part of that challenge.
-However, there might be several refinements possible to the model proposed in Chapter~\ref{ch:thermodynamic_model}, some of which we list here:
-\begin{enumerate}
-    \item The constraint enforcing that only reactions with negative free energies are allowed in the returned pathways (implemented through the constraint in Equation~\eqref{proposed_constraint3}) may be overly stringent.
-    Under experimental conditions, the reactions observed to occur do not always align with those predicted to occur theoretically: the thermal decomposition of lithium carbonate is observed to occur in practice despite being predicted to be thermodynamically unfavorable using computed (or experimental) free energies for the reaction.
-    However, reactions predicted to be thermodynamically favorable do not always occur in practice because they have a high energy barrier (like the allotropic conversion of diamond into graphite).
-    Therefore, there should be some flexibility in delineating the boundary between those reactions that are considered likely and included in the pathway and those that are not, to bring the model closer to reality. 
-    Such extensions of the current modeling should be fairly straightforward.
-    \item The objective function minimizes the sum of the Gibbs free energies of the reactions in the pathway.
-    However, this approach might favor a pathway with more extreme values for the free energies rather than one with more moderate free energy values.
-    Therefore, it might be worthwhile to explore alternative objective functions, such as the min-max, in addition to the min-sum used here.
-    \item The current formulation disregards the kinetics of individual reactions.
-    However, the probability of a reaction occurring is determined to a substantial extent by the reaction barrier height, and not only by the concentration of the reactants and the products.
-    As a result, our framework might include a reaction in the returned pathway with a favorable thermodynamic driving force but too high a reaction barrier, making it a slow and rate-limiting step for the entire pathway.
-    On the other hand, coming up with a generic `kinetic oracle' with wide applicability to estimate the barrier heights for diverse reactions poses a significant challenge.
-    The transition states determining the barrier heights are saddle points on the potential energy surface, unlike reactants or products that are minima and can be located by gradient descent optimization methods. 
-\end{enumerate}
-
-Hence, we do not claim that the model proposed in Chapter~\ref{ch:thermodynamic_model} to be the final in the quest to incorporate thermodynamics into the search for pathways in reaction networks.
-Still, we believe that it constitutes a valuable step forward, and we end by summarizing its virtues.
-We provide a systematic and thermodynamically informed approach to optimize the computational search for pathways in reaction networks.
+\section{Outlook}
 
 Modeling pathways as integer hyperflows gives results that can be interpreted in mechanistic terms,
 as each molecule is present in integral quantities.
@@ -62,5 +42,52 @@ The present method provides a lightweight, highly scalable way to navigate regio
 It enables stochastic, network-free exploration of large, generative molecular spaces under minimal kinetic assumptions.
 Together, with stochastic simulation schemes like the Gillespie algorithm or kinetic Monte Carlo, it forms two complementary probes to molecular networks: one for exact stochastic dynamics, one for graph-based exploration.
 
-In summary, this work contributes to field of stochastical exploring large reaction networks and computationally assisted analysis and design of pathways in reaction networks represented as directed hypergraphs.
+In summary, this work contributes to field of stochastic rule-based exploration of large reaction networks where molecules are represented on an atomistic level and computationally assisted analysis and design of pathways in reaction networks represented as directed hypergraphs.
+
+
+\section{Future Work}
+
+Exploring pathways with favorable energy profiles involves challenging navigation of a large and complex energy landscape where the driving thermodynamic forces are influenced by the concentration ratios, inflows of the source molecules, and outflows of the target molecules.
+Chapter~\ref{ch:thermodynamic_model} attempted to address part of that challenge.
+However, there might be several refinements possible to the model proposed in Chapter~\ref{ch:thermodynamic_model}, some of which we list here:
+\begin{enumerate}
+    \item The constraint enforcing that only reactions with negative free energies are allowed in the returned pathways (implemented through the constraint in Equation~\eqref{proposed_constraint3}) may be overly stringent.
+    Under experimental conditions, the reactions observed to occur do not always align with those predicted to occur theoretically: the thermal decomposition of lithium carbonate is observed to occur in practice despite being predicted to be thermodynamically unfavorable using computed (or experimental) free energies for the reaction.
+    However, reactions predicted to be thermodynamically favorable do not always occur in practice because they have a high energy barrier (like the allotropic conversion of diamond into graphite).
+    Therefore, there should be some flexibility in delineating the boundary between those reactions that are considered likely and included in the pathway and those that are not, to bring the model closer to reality. 
+    Such extensions of the current modeling should be fairly straightforward.
+    \item The objective function minimizes the sum of the Gibbs free energies of the reactions in the pathway.
+    However, this approach might favor a pathway with more extreme values for the free energies rather than one with more moderate free energy values.
+    Therefore, it might be worthwhile to explore alternative objective functions, such as the min-max, in addition to the min-sum used here.
+    \item The current formulation disregards the kinetics of individual reactions.
+    However, the probability of a reaction occurring is determined to a substantial extent by the reaction barrier height, and not only by the concentration of the reactants and the products.
+    As a result, our framework might include a reaction in the returned pathway with a favorable thermodynamic driving force but too high a reaction barrier, making it a slow and rate-limiting step for the entire pathway.
+    On the other hand, coming up with a generic `kinetic oracle' with wide applicability to estimate the barrier heights for diverse reactions poses a significant challenge.
+    The transition states determining the barrier heights are saddle points on the potential energy surface, unlike reactants or products that are minima and can be located by gradient descent optimization methods. 
+\end{enumerate}
+
+Hence, we do not claim that the model proposed in Chapter~\ref{ch:thermodynamic_model} to be the final in the quest to incorporate thermodynamics into the search for pathways in reaction networks.
+Still, we believe that it constitutes a valuable step forward, and we end by summarizing its virtues.
+
+Regarding the stochastic exploration framework presented in Chapter~\ref{ch:stoc_explore}, several directions exist for improving the physical fidelity and computational efficiency of the framework:
+
+\begin{enumerate}
+    \item The two random-choice steps for selecting reaction templates and instances are intentionally simplified. A more realistic dynamics would incorporate reaction probabilities derived from the law of mass action, which requires rate constants (requiring estimates of activation energy barriers). Although computing these quantities is challenging, incorporating them would be necessary for recovering quantitatively accurate kinetics rather than purely exploratory behaviour. We expect caching reaction instances along with their energy barriers would significantly reduce the computation and speed up the simulation. Most simulation algorithms utilize educated guesses for the rate constants, which makes the behaviour of the system particularly sensitive to the inputs for these parameters. 
+    \item As a less ambitious alternative, reaction instance selection could use a Metropolis Hastings type acceptance rule (which is often used in high dimensional systems).
+    	We sketch a possible scheme using weights of the form $\exp(-E_i/(\alpha k_B T))$ in Figure~\ref{fig:reac_mh_prob}, where $E_i$ is the free energy difference associated with the products of the $i$th candidate reaction and $\alpha$ is a parameter to adjust the relative probabilities of the candidate reactions. While such weights resemble those used in equilibrium sampling (e.g., grand canonical ensembles) in thermodynamic Monte Carlo simulations, adapting them to chemical kinetic transitions may offer a controllable bias with reaction pathways towards energetically favourable regions of the network. Moreover, in simulations to elucidate the equilibrium state through Monte Carlo simulations, the energy $E_i$ used in the acceptance rule is the free energy of the sampled state, and not the difference in free energies of two states.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{graphics/epilog/reac_mh_prob.pdf}
+        \caption{The calculation of the weights using a Metropolis-Hastings-type scheme after applying a reaction template to the selected pair of molecules generating the reactions $\{r_1, r_2, r_3, \cdots r_i\}$.}
+        \label{fig:reac_mh_prob}
+    \end{figure}
+    
+    \item Many scientific questions, such as identifying plausible formation pathways from input molecules for queried molecules, require keeping track of reaction provenance. Alternative caching strategies can be investigated to quantify the speed-up they provide to the simulation and select the subspace of the implicit network explored by the algorithm. More sophisticated caching, indexing, or provenance-tracking structures could be developed depending on the needs of the study.
+    \item The framework can be naturally extended to simulate systems that are not well mixed by partitioning the volume or surface into multiple coupled regions (possibly arranged on a lattice). Each region hosts an independent instance of the stochastic simulation, while diffusion is modelled as inflow-outflow events between adjacent regions. This enables the study of systems with spatial heterogeneity emerging from the coupling of stochastic kinetics with diffusive transport. This allows investigation of concentration gradients, travelling waves, and oscillations, which arise in chemical systems with feedback loops and nonlinear kinetics.
+    
+    Coupling generative, rule-based frameworks with spatial discretization allows local differences in the exploration of molecular space while permitting mass exchange between them. This opens the possibility of studying how spatial constraints influence molecular diversity, and the emergence of phenomena that are difficult to capture in well-mixed models: localized accumulation and shielding of molecules from dilution, or enabling compartmentalized autocatalysis. This broadens the applicability of the framework to heterogeneous environments on films, membranes, microfluidics, and early-earth or extraterrestrial settings.
+\end{enumerate}
+
+Future work will focus on incorporating these refinements in order to increase both accuracy and scalability. By combining template-based modelling with stochastic exploration, the framework opens a path toward systematically probing large chemical spaces that are otherwise difficult to enumerate or simulate with conventional deterministic or kinetics-driven methods. 
 

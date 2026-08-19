@@ -1,6 +1,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Contents}{iii}{section*.1}%
 \contentsline {chapter}{Abstract}{v}{chapter*.2}%
+\contentsline {chapter}{Resumé}{vii}{chapter*.3}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Thermodynamics and Reaction Networks}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Energy Barriers and Reaction Networks}{4}{section.1.2}%
@@ -19,25 +20,25 @@
 \contentsline {section}{\numberline {3.5}Construction of the reaction network}{30}{section.3.5}%
 \contentsline {chapter}{\chapternumberline {4}A Constraint-based Model}{35}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Mathematical Formulation}{37}{section.4.1}%
-\contentsline {subsection}{Constraint-Based Model}{37}{section*.23}%
-\contentsline {subsection}{Objective Function}{43}{section*.28}%
+\contentsline {subsection}{Constraint-Based Model}{37}{section*.24}%
+\contentsline {subsection}{Objective Function}{43}{section*.29}%
 \contentsline {section}{\numberline {4.2}Implementation}{45}{section.4.2}%
-\contentsline {subsection}{Implementing the Objective function}{45}{section*.29}%
-\contentsline {subsection}{Linearizing the Constraints}{45}{section*.30}%
-\contentsline {subsection}{Implemented Model}{47}{section*.34}%
+\contentsline {subsection}{Implementing the Objective function}{45}{section*.30}%
+\contentsline {subsection}{Linearizing the Constraints}{45}{section*.31}%
+\contentsline {subsection}{Implemented Model}{47}{section*.35}%
 \contentsline {section}{\numberline {4.3}Contextualizing this method}{49}{section.4.3}%
-\contentsline {chapter}{\chapternumberline {5}Foramide Chemistry}{51}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}Formamide Chemistry}{51}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Network Generation}{51}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Thermodynamic Oracle}{53}{section.5.2}%
 \contentsline {section}{\numberline {5.3}On assigning the Chemical Potentials}{55}{section.5.3}%
 \contentsline {section}{\numberline {5.4}On the range of the concentration variable}{58}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Pathways to Formamide trimer}{59}{section.5.5}%
-\contentsline {chapter}{\chapternumberline {6}Refinements to the model}{65}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}Pathways using Energy Barriers}{65}{chapter.6}%
 \contentsline {section}{\numberline {6.1}From Rate Constants to Edge Weights}{67}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Formulating an Objective Function}{69}{section.6.2}%
 \contentsline {section}{\numberline {6.3}ILP Modeling}{71}{section.6.3}%
-\contentsline {subsection}{Enumeration of solutions}{73}{section*.96}%
-\contentsline {subsection}{Partial Ordering of Molecules}{75}{section*.99}%
+\contentsline {subsection}{Enumeration of solutions}{73}{section*.97}%
+\contentsline {subsection}{Partial Ordering of Molecules}{75}{section*.100}%
 \contentsline {section}{\numberline {6.4}Comparison with other methods}{77}{section.6.4}%
 \contentsline {chapter}{\chapternumberline {7}Glycolonitrile Chemistry}{79}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Network Generation}{79}{section.7.1}%
@@ -46,7 +47,7 @@
 \contentsline {chapter}{\chapternumberline {8}Exploring large Reaction Networks}{87}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Effecting a Reaction}{87}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Towards a Stochastic Process}{89}{section.8.2}%
-\contentsline {subsection}{Adding inflows of source molecules and outflows}{90}{section*.111}%
+\contentsline {subsection}{Adding inflows of source molecules and outflows}{90}{section*.112}%
 \contentsline {section}{\numberline {8.3}Algorithm}{92}{section.8.3}%
 \contentsline {section}{\numberline {8.4}Experiments}{93}{section.8.4}%
 \contentsline {section}{\numberline {8.5}Suggested Improvements}{97}{section.8.5}%
@@ -54,8 +55,10 @@
 \contentsline {section}{\numberline {9.1}Caching Scheme}{101}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Cache Replacement Policy}{102}{section.9.2}%
 \contentsline {section}{\numberline {9.3}Effects of Caching}{104}{section.9.3}%
-\contentsline {subsection}{Cache utilization and hit rates over time}{105}{section*.118}%
-\contentsline {subsection}{Impact on runtime}{107}{section*.120}%
-\contentsline {subsection}{Cache as a partial record of network}{108}{section*.123}%
+\contentsline {subsection}{Cache utilization and hit rates over time}{105}{section*.119}%
+\contentsline {subsection}{Impact on runtime}{107}{section*.121}%
+\contentsline {subsection}{Cache as a partial record of network}{108}{section*.124}%
 \contentsline {chapter}{\chapternumberline {10}Summary}{111}{chapter.10}%
-\contentsline {chapter}{References}{115}{section*.127}%
+\contentsline {section}{\numberline {10.1}Outlook}{111}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Future Work}{113}{section.10.2}%
+\contentsline {chapter}{References}{117}{section*.129}%

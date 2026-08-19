@@ -1,5 +1,5 @@
 %************************************************
-\chapter{A Constraint-based Model}
+\chapter[A Constraint-based Model]{Pathways using Thermodynamic Constraints}
 \label{ch:thermodynamic_model}
 %************************************************
 
@@ -26,17 +26,17 @@ from the equilibrium, so that using equations from equilibrium thermodynamics do
     \centering
     \begin{subfigure}{0.9\textwidth}
         \centering
-        \vspace{0.2cm}
-        \includegraphics[width=0.45\textwidth]{graphics/chapter2/heatEngine.pdf}
+        \vspace{0.4cm}
+        \includegraphics[width=0.4\textwidth]{graphics/chapter2/heatEngine.pdf}
         \vspace{0.5cm}
         \caption{A heat engine attempts to maximize the work done $W = Q_H - Q_C$, while transferring energy in the form of heat between two reservoirs at temperatures $T_0$ and $T_1$, respectively.}
         \label{fig: heatEngine}
     \end{subfigure}
     \\
-    \vspace{1.5cm}
+    \vspace{2cm}
     \begin{subfigure}{0.9\textwidth}
         \centering
-        \includegraphics[width=0.6\textwidth]{graphics/chapter2/heatPathway.pdf}
+        \includegraphics[width=0.5\textwidth]{graphics/chapter2/heatPathway.pdf}
         \vspace{0.5cm}
         \caption{The pathway followed by the heat engine while performing work $W$ is illustrated in the physical $P-V$ space of the system.}
         \label{fig: heatPathway}
@@ -57,24 +57,24 @@ MILP attempts to model the system with linear inequalities involving some variab
 
 \begin{figure}[!t]
     \centering
-    \vspace{0.2cm}
+    \vspace{1cm}
     \begin{subfigure}{0.9\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter2/thermPathway.pdf}
-        \vspace{0.2cm}
+        \includegraphics[width=0.75\textwidth]{graphics/chapter2/thermPathway.pdf}
+        \vspace{0.5cm}
         \caption{A pathway in a chemical reaction network is a sequence of reactions that convert the source molecules (with supplied inflow) to the target molecules (with required inflow). In a thermodynamically consistent modeling, the pathway would aim to maximize the thermodynamic driving force along the pathway producing the target molecules.}
         \label{fig: thermPathway}
     \end{subfigure}
     \\
-    \vspace{1.2cm}
+    \vspace{2cm}
     \begin{subfigure}{0.9\textwidth}
         \centering
-        \includegraphics[width=0.6\textwidth]{graphics/chapter2/thermConstraints.pdf}
-        \vspace{0.2cm}
+        \includegraphics[width=0.55\textwidth]{graphics/chapter2/thermConstraints.pdf}
+        \vspace{0.5cm}
         \caption{The addition of constraints describing the thermodynamics of the system prunes the solution space of the system, leading to hyperflow solutions that were valid earlier being thermodynamically infeasible.}
         \label{fig: thermConstraints}
     \end{subfigure}
-    \vspace{0.4cm}
+    \vspace{0.5cm}
     \caption{A thermodynamically informed modeling of pathways in reaction networks requires the addition of constraints based on thermodynamics to capture the energetics in the system. This leads to the modification of the solution space.}
     \label{fig: thermModeling}
 \end{figure}
@@ -117,12 +117,12 @@ MILP attempts to model the system with linear inequalities involving some variab
     \label{fig: flowConv}
 \end{figure}
 
-Since we are extending the existing integer hyperflow formulation defined earlier, the base ILP formulation for modeling flow conservation in pathways in reaction networks stated by Equation~\eqref{int_hyperflow_jakob} is inherited from that work.
+Since we are extending the existing integer hyperflow formulation defined earlier, the base ILP formulation for modeling flow conservation in pathways in reaction networks stated by Equation~\eqref{int_hyperflow_jakob} 
 \[
 \forall v\in V\colon \sum_{ e\in \overline{E} } s_{ve}^+ f_e - \sum_{ e\in \overline{E} } s_{ve}^- f_e = 0
 \]
 
-The working of Constraint~\eqref{int_hyperflow_jakob} is illustrated in the four example cases in Figure~\ref{fig: flowConv}. 
+is inherited from that work. The working of Constraint~\eqref{int_hyperflow_jakob} is illustrated in the four example cases in Figure~\ref{fig: flowConv}. 
 
 Any set of integer flow values on $E$ induces some overall reaction, which corresponds to flow values on $E^+ \cup E^-$ that make Equation~\eqref{int_hyperflow_jakob} hold.
 However, the set of available source molecules is often constrained by practical considerations such as cost, ease of availability and purity.
@@ -173,8 +173,8 @@ We would like to have an assignment of variables $x_v^K$ (within practical limit
 
 \begin{figure}[!h]
 	\centering
-	\vspace{1.0cm}
-    \includegraphics[width=0.8\textwidth]{graphics/chapter2/thermoConstraint.pdf}
+	\vspace{1.5cm}
+    \includegraphics[width=0.75\textwidth]{graphics/chapter2/thermoConstraint.pdf}
     \vspace{0.5cm}
     \caption{Separate hyperedges have been added for the reaction $e_> : v_0 + v_1 \rightarrow v_2 + v_2$ and its reverse $e_< : v_2 + v_2 \rightarrow v_0 + v_1$. The difference in chemical potential for the hyperedge is calculated as $x_{e_>}^{\Delta G} = \Delta G(\text{RHS}) - \Delta G(\text{LHS}) = \left[\Delta G(v_2) + \Delta G(v_3)\right] - \left[\Delta G(v_0) + \Delta G(v_-)\right] = -x_{e_<}^{\Delta G}$. As a result of constraints~\ref{proposed_constraint2} and \ref{proposed_constraint3}, it is allowed to have a positive hyperflow only on the hyperedge corresponding to $e_>$. The hyperedge corresponding to $e_<$ might be assigned a hyperflow only when $x_{e_<}^{\Delta G} \leq 0$, by some possible assignment of the concentration variables $x_v^K$ of the vertices involved. Therefore, thermodynamic free energy differences dicatate the direction of mass flows in the network.}
     \label{fig: thermoConstraint}
@@ -211,14 +211,17 @@ set by practical and physical constraints detailed in Chapter \ref{ch:casestudy1
     \centering
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter2/concTweak1.pdf}
+        \includegraphics[width=0.75\textwidth]{graphics/chapter2/concTweak1.pdf}
+        \vspace{0.4cm}
         \caption{with default values of $x_v^K$.}
         \label{fig: concTweak1}
     \end{subfigure}
     \\
+    \vspace{0.8cm}
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{graphics/chapter2/concTweak2.pdf}
+        \includegraphics[width=0.75\textwidth]{graphics/chapter2/concTweak2.pdf}
+        \vspace{0.4cm}
         \caption{after tweaking values of $x_v^K$}
         \label{fig: concTweak2}
     \end{subfigure}
@@ -535,7 +538,7 @@ listed in the order of increasing value of the objective function \eqref{obj_fun
 \label{discussions_method} %
 %************************************************
 
-In this short chapter, we give a detailed comparison of our methods with some existing frameworks.
+In this section, we give a detailed comparison of our methods with some existing frameworks.
 One of the closest is \emph{thermodynamics-based metabolic flux analysis} (TMFA) \cite{hatz_thermo_flow} which also utilizes mixed integer linear constraints.
 Despite similarities in parts of the thermodynamic modeling, the problem solved is different, with some of the key differences being:
 \begin{itemize}

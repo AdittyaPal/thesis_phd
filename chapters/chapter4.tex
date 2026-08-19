@@ -1,5 +1,5 @@
 %************************************************
-\chapter{Refinements to the model}
+\chapter{Pathways using Energy Barriers}
 \label{ch:refined_model} %
 %************************************************
 
@@ -246,8 +246,10 @@ The constraints specifying the pathway consist of the desired outflow of the que
 \label{enumerateSolutions}
 
 \begin{figure}[t]
+	\vspace{1cm}
     \centering
-    \includegraphics[scale=1.5]{graphics/chapter4/null_cycle.pdf}
+    \includegraphics[scale=1.1]{graphics/chapter4/null_cycle.pdf}
+    \vspace{0.5cm}
     \caption{An example of a solution (the hyperflow of the entire figure) which contains a previous solution (the hyperflow shown in solid blue) as a subset, seen in terms of the edges (reactions) used. 
     Adding the faded hyperedges to the integer hyperflow depicted in solid blue creates a `null cycle' which creates a hyperflow solution that satisfies constraint~\eqref{int_hyperflow_jakob} but does not create a physically different solution.
     Addition of constrain~\eqref{subset_elimination} for all previously returned solutions ensures that such solutions are not returned.} 
@@ -269,29 +271,30 @@ That is, if we define $supp(f) = \{e\in E \mid z_e = 1\}$ then two solutions $f_
     \centering
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[scale=1.25]{graphics/chapter4/subset1.pdf}
-        \vspace{0.2cm}
+        \includegraphics[scale=1.1]{graphics/chapter4/subset1.pdf}
+        \vspace{0.25cm}
         \caption{An integer hyperflow solution with $4$ hyperedges.}
         \label{fig:solution1}
     \end{subfigure}
-    \vspace{0.4cm}
+    \vspace{0.5cm}
     \\
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[scale=1.25]{graphics/chapter4/subset2.pdf}
-        \vspace{0.2cm}
+        \includegraphics[scale=1.1]{graphics/chapter4/subset2.pdf}
+        \vspace{0.25cm}
         \caption{Another integer hyperflow solution to the same flow query using $5$ hyperedges.}
         \label{fig:solution2}
     \end{subfigure}
-    \vspace{0.4cm}
+    \vspace{0.5cm}
     \\
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[scale=1.25]{graphics/chapter4/overlap.pdf}
-        \vspace{0.2cm}
+        \includegraphics[scale=1.1]{graphics/chapter4/overlap.pdf}
+        \vspace{0.25cm}
         \caption{An integer hyperflow satisfying all constraints listed in Section~\ref{implemented_model}. However, it is just the superposition of the solutions~\ref{fig:solution1} and~\ref{fig:solution2}.}
         \label{fig:overlap}
     \end{subfigure}
+    \vspace{0.4cm}
     \caption{Addition of constrain~\eqref{subset_elimination} removes solutions like those shown in~\ref{fig:overlap} from the enumerated solutions.}
     \label{fig: union_solutions}
 \end{figure}
@@ -342,8 +345,10 @@ This is ensured by the following implication constraint:
 \end{align}
 
 \begin{figure}[t]
+	\vspace{0.8cm}
     \centering
-    \includegraphics[scale=1.5]{graphics/chapter4/selfLoop.pdf}
+    \includegraphics[scale=1.1]{graphics/chapter4/selfLoop.pdf}
+    \vspace{0.5cm}
     \caption{An example of a solution which satisfies the flow conservation constraint~\eqref{int_hyperflow_jakob} but cannot be realized if only $v_0$ is the allowed source and $v_3$ the requested target. To effect the first hyperedge, vertex $v_1$ is required to be present, which is in turn produced by the second hyperedge.
     Addition of constrain~\eqref{prevent_back_edges} remove such solution from being enumerated which are not physically realizable as a sequence of reaction to the target molecule(s).} 
     \label{fig: selfLoop}
@@ -362,7 +367,7 @@ We refer the reader to a detailed study~\cite{sissel_realisability_petrinets} fo
     \centering
     \begin{subfigure}[b]{0.33\textwidth}
         \centering
-        \includegraphics[scale=1.4]{graphics/chapter4/pathway_tvAssign.pdf}
+        \includegraphics[scale=1.1]{graphics/chapter4/pathway_tvAssign.pdf}
     \end{subfigure}%
     \hspace{1cm}
     \begin{subfigure}[b]{0.5\textwidth}
