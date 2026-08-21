@@ -76,7 +76,7 @@ This state update rule is governed by the collision frequency and the stoichiome
 
 The update step depends on the current state $s[i]$ only and no information from the sequence of past states $s[i-1]$, $s[i-2]$, \ldots influences it. Moreover, the reaction templates and the collision pair selection procedure does not change over time in this framework.
 
-\subsection{Adding inflows of source molecules and outflows}
+\subsection{Adding Inflows and Outflows}
 \label{sec:inflowOutflow}
 While inflow–outflow dynamics are well established in biological simulators, these frameworks operate at levels of abstraction of sites that preclude explicit atomic bond rearrangements. Conversely, atomistic exploration methods for reaction networks rarely incorporate stochastic open-system dynamics during simulation.
 Therefore, we add two mechanisms to make the exploration closer to that in an open system exchanging mass with the surroundings as in terrestrial systems and in flow reactors:
@@ -282,29 +282,4 @@ Because the molecular network is explored through a stochastic strategy, trackin
 
 In the closed system, a transient rise in innovation rate occurs between $\sim 0.8\times 10^5$ and $\sim 2.4\times 10^5$ steps, coinciding with the sharp increase in the number of unique molecules (in Figure~\ref{fig:uniqueMols}), the average length of the molecule (in Figure~\ref{fig:lenMols}) and the rapid decline in the number of methanal molecules. This generative phase in the simulation of the closed system is in Figure~\ref{fig:newMols} marked by the vertical dotted red lines. After this point, the number of new molecular classes generated becomes small but non-zero, as seen by the observed gradual decay in the innovation rate.
 When flows are enabled, this generative phase does not appear in the simulation, and the innovation rate monotonically decreases as the simulation progresses.
-
-\section{Suggested Improvements}
-
-Several directions exist for improving the physical fidelity and computational efficiency of the framework:
-\begin{enumerate}
-    \item \emph{Kinetically informed sampling}: The two random-choice steps for selecting reaction templates and instances are intentionally simplified. A more realistic dynamics would incorporate reaction probabilities derived from the law of mass action, which requires rate constants (requiring estimates of activation energy barriers). Although computing these quantities is challenging, incorporating them would be necessary for recovering quantitatively accurate kinetics rather than purely exploratory behaviour. We expect caching reaction instances along with their energy barriers would significantly reduce the computation and speed up the simulation. Most simulation algorithms utilize educated guesses for the rate constants, which makes the behaviour of the system particularly sensitive to the inputs for these parameters. 
-    \item \emph{Free Energy difference weighted instance selection}:
-    	As a less ambitious alternative, reaction instance selection could use a Metropolis Hastings type acceptance rule (which is often used in high dimensional systems).
-    	We sketch a possible scheme using weights of the form $\exp(-E_i/(\alpha k_B T))$ in Figure~\ref{fig:reac_mh_prob}, where $E_i$ is the free energy difference associated with the products of the $i$th candidate reaction and $\alpha$ is a parameter to adjust the relative probabilities of the candidate reactions. While such weights resemble those used in equilibrium sampling (e.g., grand canonical ensembles) in thermodynamic Monte Carlo simulations, adapting them to chemical kinetic transitions may offer a controllable bias with reaction pathways towards energetically favourable regions of the network. Moreover, in simulations to elucidate the equilibrium state through Monte Carlo simulations, the energy $E_i$ used in the acceptance rule is the free energy of the sampled state, and not the difference in free energies of two states.
-
-    \begin{figure}
-        \centering
-        \vspace{0.5cm}
-        \includegraphics[width=0.5\linewidth]{graphics/chapter6/reac_mh_prob.pdf}
-        \vspace{0.5cm}
-        \caption{The calculation of the weights using a Metropolis-Hastings-type scheme after applying a reaction template to the selected pair of molecules generating the reactions $\{r_1, r_2, r_3, \cdots r_i\}$.}
-        \label{fig:reac_mh_prob}
-    \end{figure}
-    
-    \item \emph{Pathway tracing and caching strategies}: Many scientific questions, such as identifying plausible formation pathways from input molecules for queried molecules, require keeping track of reaction provenance. Alternative caching strategies can be investigated to quantify the speed-up they provide to the simulation and select the subspace of the implicit network explored by the algorithm. More sophisticated caching, indexing, or provenance-tracking structures could be developed depending on the needs of the study.
-    \item \emph{Spatio-temporal simulations}: The framework can be naturally extended to simulate systems that are not well mixed by partitioning the volume or surface into multiple coupled regions (possibly arranged on a lattice). Each region hosts an independent instance of the stochastic simulation, while diffusion is modelled as inflow-outflow events between adjacent regions. This enables the study of systems with spatial heterogeneity emerging from the coupling of stochastic kinetics with diffusive transport. This allows investigation of concentration gradients, travelling waves, and oscillations, which arise in chemical systems with feedback loops and nonlinear kinetics.
-    
-    Coupling generative, rule-based frameworks with spatial discretization allows local differences in the exploration of the reaction network while permitting mass exchange between them. This opens the possibility of studying how spatial constraints influence molecular diversity, and the emergence of phenomena that are difficult to capture in well-mixed models: localized accumulation and shielding of molecules from dilution, or enabling compartmentalized autocatalysis. This broadens the applicability of the framework to heterogeneous environments on films, membranes, microfluidics, and early-earth or extraterrestrial settings.
-\end{enumerate}
-The continuation of this work will focus on incorporating these refinements in order to increase both accuracy and scalability of the algorithm for the exploration of large reaction networks. By combining template-based modelling with stochastic exploration, the framework opens a path toward systematically probing large reaction networks that are otherwise difficult to enumerate or simulate with conventional deterministic or kinetics-driven methods. 
 

@@ -242,7 +242,7 @@ In summary, the resulting ILP looks as follows:
 
 The constraints specifying the pathway consist of the desired outflow of the queried target molecule and the supplied source molecules. Additionally, it might involve constraints such an disallowing particular molecules as by-products (by restricting their outflow to zero), or disallowing the use of particular reactions (by specifying $f_e = 0 = z_e$ for those reactions). An overview of the variables and constants in the ILP can be found in Table \ref{tab: ILP variables} and \ref{tab: ILP constants}, respectively.
 
-\subsection{Enumeration of solutions}
+\subsection{Enumeration of Solutions}
 \label{enumerateSolutions}
 
 \begin{figure}[t]
@@ -403,7 +403,7 @@ The constraint in Equation~\eqref{linear_constraint8} enforces the assignment $t
 The size of the set of vertices in the hypergraph $|V|$ is used instead of the large integer $M$ in the constraint in Equation~\eqref{linear_constraint8} and as an upper bound for the temporal ordering variable $t_v$ for each vertex $v$ in the constraint in Equation~\eqref{linear_constraint9}.
 The number of constraints added to the MILP model to determine the topological sorting of the vertices is $\mathcal{O}\left(|V|^2\right)$.
 
-\section{Comparison with other methods}
+\section{Comparison with other Methods}
 \label{discussions}
 
 Previous work such as~\cite{shortest_path_hypergraph1,shortest_path_hypergraph2} have utilized hyperpaths in directed hypergraphs to depict pathways in reaction networks. However, they use the notion of path length to characterize the goodness of the pathway: a shorter pathway is considered better. Often this might not be the case as the shortest pathway might contain a slow or a high-cost reaction, which becomes a bottleneck for the entire pathway. Therefore, it is important to consider some physical attributes of the reactions (such as the barrier heights) in addition to the number of reactions while searching for pathways.

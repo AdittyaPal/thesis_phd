@@ -1,5 +1,5 @@
 %************************************************
-\chapter[Caching of Reaction networks]{Caching and Exploration of Reaction Networks}
+\chapter[Caching of Reaction Networks]{Caching and Exploration of Reaction Networks}
 \label{ch:cache_in_crns} %
 %************************************************
 
@@ -79,7 +79,7 @@ For the formose system studied here, a cache size of $2^{15}$ reaction instances
     \label{fig:cacheSizeEffects}
 \end{figure}
 
-\subsection{Cache utilization and hit rates over time}
+\subsection{Cache Utilization and Hit Rates}
 
 With the cache size fixed at $2^8$ and $2^{15}$ reaction instances, we analysed how cache utilization and hit rates evolve during the course of a simulation. The cache hit rate (blue) and the fraction of cache capacity utilized (navy) are shown in Figure~\ref{fig:cacheAccess}. Cache hit rate and utilization are two correlated measures of cache use: once the entire cache has been utilized, new instances would be added to the cache at the expense of existing instances and the hit rate would start to fall. Prior to that, the hit rate would be close to one, because any new instances can be added to the cache which has not yet reached its capacity.
 
@@ -128,7 +128,7 @@ In the closed system with cache size $2^{15}$ (Figure~\ref{fig:bigCacheNoFlow}),
 
 When flows are allowed along with using a cache size $2^{15}$ (Figure~\ref{fig:bigCacheFlow}), the cache is filled over the first $5\times 10^5$ simulation steps, with the rate being roughly similar over the entire phase. The cache hit rate is maintained at roughly $\sim 95\pm 3 \%$ over the entire simulation.
 
-\subsection{Impact on runtime}
+\subsection{Impact on Runtime}
 
 The primary motivation for introducing caching is to reduce the computational overhead associated with repeatedly enumerating reaction instances, particularly the costly subgraph isomorphism checks required to match reaction templates. Even though the underlying graph transformation engine MØD~\cite{mod_graphTransformation} is highly optimized, caching at the simulation level still yields measurable performance improvements. Caching does not alter the observables of the system (such as the distribution of the number of carbons in the molecules, the innovation rate for molecules or the relative abundances of different molecular classes or the trajectory of the simulation) and has no impact on the outcome of the stochastic exploration.
 
@@ -166,7 +166,7 @@ Figure~\ref{fig:fracCacheTimes} gives the cost breakdown for the various compone
 
 With caching, we observe from Figure~\ref{fig:fracCacheTimes} that the fraction of runtime required to choose a pair of molecules from the state dictionary now is the largest part of the total runtime. This indicates that a next step in future work towards improving the proposed method might possibly be to try to optimize the choosing of the colliding pair of molecules, e.g.\ by improving on the data structures storing the state of the system.
 
-\subsection{Cache as a partial record of network}
+\subsection{Cache as Partial Record of Network}
 
 At the end of a simulation, the cache contains the most recently used reaction instances, effectively storing a subnetwork of the explored reaction network.
 More precisely, as described in Section~\ref{cacheScheme}, each element of the cache stores a list of all reaction instances possible to generate by applying one template $r$ to one molecular pair $(m_1, m_2)$. It is the union of those lists that we consider the subnetwork represented by the cache.

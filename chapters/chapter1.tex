@@ -151,7 +151,7 @@ For example, in the list of reaction depicted in the hypergraph~\ref{fig:sample_
 \end{itemize}
 Some might prefer more fine-grained reaction templates. For instance, one might define separate templates for keto-enol tautomerism, amide-iminol tautomerism or imine-enamine tautomerism, and similarly for addition to a trigonal planar carbonyl carbon atom and addition to a trigonal planar imine carbon atom. However, that is simply a question of the level of abstraction that the user chooses to work with.
 
-\section{Graph transformation rules}
+\section{Graph Transformation Rules}
 We choose to represent molecules using undirected labeled graphs (hereafter called molecular graphs). The nodes in the graph represent atoms labeled by the symbol of the element, and can carry attributes such as the charge on the atom. The edges in the graph represent bonds labeled by the bond type (single, double, triple or aromatic). with this representation of molecules, the reaction templates used to abstract reactions become graph transformation rules.
 
 A graph transformation rule consists of a subgraph on the left side which can be replaced by the subgraph on the right side when a match of the left-hand side is found in an already existing molecular graph in the network. In other words, the rule converts a part of the graph (representing a fragment of a molecule) and performs a chemical reaction. Let's consider the exchange of hydrogen atoms between oxygen atoms in a carboxylic acid.
@@ -367,7 +367,7 @@ We admit that these reactions are not a simple one step process as the transform
 
 In all the graph transformation rules in this section, the context graph $K$, which comes between the left and right-hand sides, is omitted. The context graph must be added to the graph transformation rules for mathematical correctness. It ensures that logically the bonds are first removed, and then added, making the graph rewriting a two-step process.
 
-\section{Rule application to a graph}
+\section{Rule Application to a Graph}
 \label{rule_application}
 
 There are multiple ways to transform graphs and for the generation of reactions, the Double Pushout (DPO) method is used. As illustrative example is shown in Figure~\ref{fig:dpo_diagram}. The graph transformation operation can be labelled allowing changes to the labels of vertices or edges in the molecular graph to be specified by the rule. For chemical reactions, the graphs $G$ or $H$ might not be a single molecule (or in other words be a single connected component). 
@@ -453,7 +453,7 @@ Therefore, the application of a rule to an existing set of molecules might produ
 \end{figure}
 
 
-\section{Construction of the reaction network}
+\section{Construction of Reaction Networks}
 
 The construction of the reaction network requires a set of input molecules and some graph transformation rules. A match between a collection of molecules and the subgraph on the left-hand side of one of the transformation rules means that this reaction template can be applied to that collection of molecules created from the input set of molecules. Thus, when a rule is applied to a collection of molecules from the current set of molecules, new molecules are created. In a generative process, these new molecules are then added to the set of available molecules (i.e., this set is updated). Graph transformation rules can be recursively applied to this new set of molecules, effecting more reactions to be made and thus the molecular space expands. The hypergraph representation of the network keeps track of all the reactions performed and of the molecules current present in the network.
 

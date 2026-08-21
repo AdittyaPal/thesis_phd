@@ -1371,7 +1371,6 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{3097}
       \field{journaltitle}{Nat Commun}
       \field{title}{A graph-based network for predicting chemical reaction pathways in solid-state materials synthesis.}
       \field{volume}{12}
@@ -1481,7 +1480,6 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{4}
       \field{journaltitle}{Phys. Rev. X}
       \field{title}{Nonequilibrium Thermodynamics of Chemical Reaction Networks: Wisdom from Stochastic Thermodynamics}
       \field{volume}{6}
@@ -1523,7 +1521,6 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{2}
       \field{journaltitle}{Phys. Rev. X}
       \field{title}{Circuit Theory for Chemical Reaction Networks}
       \field{volume}{13}
@@ -2316,7 +2313,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{1367-4803}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{12}
       \field{number}{7}
       \field{title}{Efficient searching and annotation of metabolic networks using chemical similarity}
       \field{volume}{31}
@@ -2618,7 +2614,6 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{1}
       \field{journaltitle}{Digital Discovery}
       \field{title}{Predictive stochastic analysis of massive filter-based electrochemical reaction networks}
       \field{volume}{2}
@@ -2675,7 +2670,6 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{13}
       \field{journaltitle}{Chem. Sci.}
       \field{title}{A chemically consistent graph architecture for massive reaction networks applied to solid-electrolyte interphase formation}
       \field{volume}{12}
@@ -2828,7 +2822,6 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{27}
       \field{journaltitle}{Chem. Sci.}
       \field{title}{First principles reaction discovery: from the Schrodinger equation to experimental prediction for methane pyrolysis}
       \field{volume}{14}
@@ -2904,7 +2897,6 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{36}
       \field{journaltitle}{RSC Adv.}
       \field{title}{Discovering surface reaction pathways using accelerated molecular dynamics and network analysis tools}
       \field{volume}{12}
@@ -3274,7 +3266,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{1367-4803}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{06}
       \field{number}{13}
       \field{title}{The Kappa platform for rule-based modeling}
       \field{volume}{34}
@@ -3319,7 +3310,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{06}
       \field{number}{17}
       \field{title}{BioNetGen: software for rule-based modeling of signal transduction based on the interactions of molecular domains}
       \field{volume}{20}
@@ -3395,7 +3385,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{1367-4803}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{07}
       \field{number}{21}
       \field{title}{BioNetGen 2.2: advances in rule-based modeling}
       \field{volume}{32}
@@ -3740,7 +3729,6 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{3}
       \field{journaltitle}{Phys. Rev. E}
       \field{title}{Entropy production fluctuation theorem and the nonequilibrium work relation for free energy differences}
       \field{volume}{60}
@@ -3773,7 +3761,6 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{3}
       \field{journaltitle}{Phys. Rev. E}
       \field{title}{Path-ensemble averages in systems driven far from equilibrium}
       \field{volume}{61}
@@ -3810,7 +3797,6 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{9}
       \field{journaltitle}{Phys. Rev. Lett.}
       \field{title}{Generalized Jarzynski Equality under Nonequilibrium Feedback Control}
       \field{volume}{104}
@@ -3847,7 +3833,6 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{1}
       \field{journaltitle}{Phys. Rev. E}
       \field{title}{Jarzynski equality: Connections to thermodynamics and the second law}
       \field{volume}{75}
@@ -4397,6 +4382,7 @@
       \field{number}{28}
       \field{title}{AutoMeKin2021: An open-source program for automated reaction discovery}
       \field{volume}{42}
+      \field{year}{2021}
       \field{pages}{2036\bibrangedash 2048}
       \range{pages}{13}
       \verb{doi}
@@ -4744,6 +4730,7 @@
       \field{number}{6}
       \field{title}{Automated reaction kinetics and network exploration (Arkane): A statistical mechanics, thermodynamics, transition state theory, and master equation software}
       \field{volume}{55}
+      \field{year}{2023}
       \field{pages}{300\bibrangedash 323}
       \range{pages}{24}
       \verb{doi}
@@ -4788,6 +4775,7 @@
       \field{number}{8}
       \field{title}{autodE: Automated Calculation of Reaction Energy Profiles— Application to Organic and Organometallic Reactions}
       \field{volume}{60}
+      \field{year}{2020}
       \field{pages}{4266\bibrangedash 4274}
       \range{pages}{9}
       \verb{doi}
@@ -4955,7 +4943,6 @@
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{4870}
       \field{journaltitle}{Nat Commun}
       \field{title}{Teaching a neural network to attach and detach electrons from molecules.}
       \field{volume}{12}
@@ -5750,7 +5737,6 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{4}
       \field{journaltitle}{Chem. Sci.}
       \field{title}{Efficient prediction of reaction paths through molecular graph and reaction network analysis}
       \field{volume}{9}
@@ -5836,7 +5822,6 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{83}
       \field{journaltitle}{Chem. Commun.}
       \field{title}{Predicting and analyzing organic reaction pathways by combining machine learning and reaction network approaches}
       \field{volume}{59}
@@ -6015,7 +6000,6 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{Theories of Molecular Reaction Dynamics: The Microscopic Foundation of Chemical Kinetics}
       \field{isbn}{9780198805014}
-      \field{month}{11}
       \field{title}{Unimolecular Reactions}
       \field{year}{2018}
       \verb{doi}
@@ -6434,7 +6418,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{0001-0782}
       \field{journaltitle}{Commun. ACM}
-      \field{month}{2}
       \field{number}{2}
       \field{title}{Amortized efficiency of list update and paging rules}
       \field{volume}{28}
@@ -6770,7 +6753,6 @@
       \field{labeltitlesource}{title}
       \field{issn}{1367-4803}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{07}
       \field{number}{3}
       \field{title}{Random walk with restart on multiplex and heterogeneous biological networks}
       \field{volume}{35}
@@ -6807,9 +6789,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{11}
       \field{journaltitle}{Phys. Rev. Lett.}
-      \field{month}{3}
       \field{title}{Random Walks on Complex Networks}
       \field{volume}{92}
       \field{year}{2004}
@@ -6845,9 +6825,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{1}
       \field{journaltitle}{Phys. Rev. E}
-      \field{month}{1}
       \field{title}{Exploring complex networks through random walks}
       \field{volume}{75}
       \field{year}{2007}
